@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Makaretu.Globalization</id>
+    <version>$version$</version>
+    <title>Access the Unicode CLDR</title>
+    <authors>Richard Schneider</authors>
+    <owners>Richard Schneider</owners>
+    <licenseUrl>https://github.com/richardschneider/net-cldr/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/richardschneider/net-cldr</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Provides locale content for internationalisation software using the Unicode Common Local Data Repository (CLDR).
+    </description>
+    <summary>Locale data for internationalisation software</summary>
+    <copyright>© 2017 Richard Schneider</copyright>
+    <tags>
+      i18n internationalization internationalisation
+      10n localization localisation
+      locale culture
+    </tags>
+  </metadata>
+  <files>
+    <file src="bin\release\Makaretu.Globalization.dll" target="lib\net452\" />
+    <file src="bin\release\Makaretu.Globalization.pdb" target="lib\net452\" />
+    <file src="bin\release\Makaretu.Globalization.xml" target="lib\net452\" />
+  </files>
+</package>
