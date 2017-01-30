@@ -13,6 +13,26 @@ Provides locale content for internationalisation software using the Unicode Comm
 
 ## Getting started
 
-Published releases of Money Works are available on [NuGet](https://www.nuget.org/packages/Makaretu.Globalization/).  To install, run the following command in the [Package Manager Console](https://docs.nuget.org/docs/start-here/using-the-package-manager-console).
+Published releases are available on [NuGet](https://www.nuget.org/packages/Makaretu.Globalization/).  To install, run the following command in the [Package Manager Console](https://docs.nuget.org/docs/start-here/using-the-package-manager-console).
 
     PM> Install-Package Makaretu.Globalization
+
+### Usage
+
+    using Makaretu.Globalization;
+
+The CLDR uses the singleton pattern.  To access the repository, use `Cldr.Instance`,
+
+Ensure that the latest version of the  CLDR is installed.
+
+    var version = Cldr.Instance.DownloadLatestAsync().Result;
+    Console.WriteLine($"Using CLDR {version}");
+
+Query the CLDR for the fractional digits of the Japanese Yen (JPY)
+
+    var jpy = Cldr.Instance
+        .GetDocuments("common/supplemental/supplementalData.xml")
+        .FirstElement("supplementalData/currencyData/fractions/info[@iso4217='JPY']");
+    Assert.AreEqual("0", jpy.Attribute("digits").Value);
+
+
