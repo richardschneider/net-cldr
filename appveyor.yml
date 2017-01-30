@@ -51,7 +51,7 @@ after_build:
 #  - if defined git_token gh-pages -d doc\_site -m "new docs %GitVersion_FullSemVer%"
 # Build the nuget package
   - nuget pack src\Cldr.nuspec -version "%GitVersion_NuGetVersion%" -prop "target=%CONFIGURATION%"
-  - appveyor PushArtifact "Cldr.%GitVersion_NuGetVersion%.nupkg"
+  - appveyor PushArtifact "Makaretu.Globalization.%GitVersion_NuGetVersion%.nupkg"
 
 after_test: 
 # Generate coverage report
