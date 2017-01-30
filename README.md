@@ -2,9 +2,9 @@
 
 [![build status](https://ci.appveyor.com/api/projects/status/github/richardschneider/net-cldr?branch=master&svg=true)](https://ci.appveyor.com/project/richardschneider/net-cldr) 
 [![Coverage Status](https://coveralls.io/repos/richardschneider/net-cldr/badge.svg?branch=master&service=github)](https://coveralls.io/github/richardschneider/net-cldr?branch=master)
-[![Version](https://img.shields.io/nuget/v/Makaretu.Globalization.svg)](https://www.nuget.org/packages/Makaretu.Globalization)
+[![NuGet](https://img.shields.io/nuget/v/Makaretu.Globalization.svg)](https://www.nuget.org/packages/Makaretu.Globalization)
 
-Provides locale content for internationalisation software using the Unicode Common Local Data Repository (CLDR)
+Provides locale content for internationalisation software using the Unicode Common Local Data Repository (CLDR).
 
 ## Features
 
@@ -21,9 +21,9 @@ Published releases are available on [NuGet](https://www.nuget.org/packages/Makar
 
     using Makaretu.Globalization;
 
-The CLDR uses the singleton pattern.  To access the repository, use `Cldr.Instance`,
+The CLDR uses the singleton pattern.  To access the repository, use `Cldr.Instance`.
 
-Ensure that the latest version of the  CLDR is installed.
+Ensure that the latest version of the  CLDR is installed.  This will download the latest published release from [unicode.org](http://www.unicode.org/Public/cldr/latest), if required.
 
     var version = Cldr.Instance.DownloadLatestAsync().Result;
     Console.WriteLine($"Using CLDR {version}");
