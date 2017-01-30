@@ -196,6 +196,7 @@ namespace Makaretu.Globalization
             {
                 var zipFolder = Path.Combine(repositoryFolder, Path.GetFileNameWithoutExtension(filename));
                 ZipFile.ExtractToDirectory(path, zipFolder);
+                File.Delete(path);
             }
             return path;
         }
