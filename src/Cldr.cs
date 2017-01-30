@@ -132,6 +132,26 @@ namespace Makaretu.Globalization
         }
 
         /// <summary>
+        ///   Downloads the latest version of CLDR.
+        /// </summary>
+        /// <returns>
+        ///   The latest published version number.
+        /// </returns>
+        /// <remarks>
+        ///   Only performs a download when the <see cref="CurrentVersion"/> is less than the <see cref="LatestVersionAsync"/>.
+        /// </remarks>
+        public async Task<Version> DownloadLatestAsync()
+        {
+            var latestVersion = await LatestVersionAsync();
+            if (CurrentVersion() < latestVersion)
+            {
+                await DownloadAsync(latestVersion);
+            }
+
+            return latestVersion;
+        }
+
+        /// <summary>
         ///   Downloads the specified CLDR <see cref="Version"/> to the current, locally cached, copy.
         /// </summary>
         /// <param name="version">
@@ -144,12 +164,9 @@ namespace Makaretu.Globalization
         {
             if (Directory.Exists(repositoryFolder))
             {
-                // TODO: delete all files
+                Directory.Delete(repositoryFolder, true);
             }
-            else
-            {
-                Directory.CreateDirectory(repositoryFolder);
-            }
+            Directory.CreateDirectory(repositoryFolder);
 
             var files = new[] { "core.zip", "keyboards.zip" };
             var tasks= files.Select(name => DownloadAsync(name, version));
