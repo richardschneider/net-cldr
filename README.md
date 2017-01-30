@@ -10,6 +10,7 @@ Provides locale content for internationalisation software using the Unicode Comm
 
 - Uses the official Unicode CLDR XML without any "build steps"
 - Can download the latest CLDR anytime
+- Use [XPath expressions](https://msdn.microsoft.com/en-us/library/ms256471(v=vs.110).aspx) to query the CLDR
 
 ## Getting started
 
