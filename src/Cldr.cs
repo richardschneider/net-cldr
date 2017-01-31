@@ -130,6 +130,13 @@ namespace Makaretu.Globalization
         /// </remarks>
         public static async Task<Version> LatestVersionAsync()
         {
+            // Hack for https://github.com/richardschneider/net-cldr/issues/1
+            if (Environment.GetEnvironmentVariable("APPVEYOR") == "True")
+            {
+                OriginUrl = "http://ftp.lanet.lv/ftp/mirror/unicode/cldr/";
+                return new Version("30.0.3");
+            }
+
             var handler = new HttpClientHandler
             {
                 AllowAutoRedirect = false,
