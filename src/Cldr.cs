@@ -124,9 +124,10 @@ namespace Makaretu.Globalization
         {
             var handler = new HttpClientHandler
             {
-                AllowAutoRedirect = false
+                AllowAutoRedirect = false,
+                UseProxy = false
             };
-            var url = "http://www.unicode.org/Public/cldr/latest";
+            var url = "http://unicode.org/Public/cldr/latest";
             if (log.IsDebugEnabled)
                 log.Debug($"GET {url}");
             using (var unicode = new HttpClient(handler))
@@ -213,6 +214,8 @@ namespace Makaretu.Globalization
                 if (log.IsDebugEnabled)
                     log.Debug($"Unzipping {filename}");
                 ZipFile.ExtractToDirectory(path, zipFolder);
+                if (log.IsDebugEnabled)
+                    log.Debug($"Deleting {filename}");
                 File.Delete(path);
             }
             return path;
