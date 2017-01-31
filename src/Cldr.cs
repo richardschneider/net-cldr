@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common.Logging;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
@@ -20,6 +21,8 @@ namespace Makaretu.Globalization
     /// </remarks>
     public class Cldr
     {
+        static ILog log = LogManager.GetLogger(typeof(Cldr));
+
         static string repositoryFolder = Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
             "UnicodeCLDR");
@@ -92,7 +95,10 @@ namespace Makaretu.Globalization
                                 }
                                 if (!version.Contains('.'))
                                     version += ".0";
-                                return new Version(version);
+                                var v = new Version(version);
+                                if (log.IsDebugEnabled)
+                                    log.Debug($"Current version {v}");
+                                return v;
                             }
                         }
                     }
@@ -102,6 +108,7 @@ namespace Makaretu.Globalization
                 // Eat it.  Returns "0.0.0" for unknown.
             }
 
+            log.Warn("CLDR data is missing");
             return new Version("0.0.0");
         }
 
@@ -120,6 +127,8 @@ namespace Makaretu.Globalization
                 AllowAutoRedirect = false
             };
             var url = "http://www.unicode.org/Public/cldr/latest";
+            if (log.IsDebugEnabled)
+                log.Debug($"GET {url}");
             using (var unicode = new HttpClient(handler))
             using (var response = await unicode.GetAsync(url, HttpCompletionOption.ResponseHeadersRead))
             {
@@ -127,7 +136,11 @@ namespace Makaretu.Globalization
                 var version = parts[parts.Length - 1];
                 if (!version.Contains('.'))
                     version += ".0";
-                return new Version(version);
+
+                var v = new Version(version);
+                if (log.IsDebugEnabled)
+                    log.Debug($"Latest version {v}");
+                return v;
             }
         }
 
@@ -184,6 +197,8 @@ namespace Makaretu.Globalization
             // Sorry, unicode.org doesn't support secure download
             var url = $"http://unicode.org/Public/cldr/{v}/{filename}";
             var path = Path.Combine(repositoryFolder, filename);
+            if (log.IsDebugEnabled)
+                log.Debug($"GET {url}");
             using (var local = File.Create(path))
             using (var unicode = new HttpClient())
             using (var response = await unicode.GetAsync(url, HttpCompletionOption.ResponseHeadersRead))
@@ -195,6 +210,8 @@ namespace Makaretu.Globalization
             if (filename.ToLowerInvariant().EndsWith(".zip"))
             {
                 var zipFolder = Path.Combine(repositoryFolder, Path.GetFileNameWithoutExtension(filename));
+                if (log.IsDebugEnabled)
+                    log.Debug($"Unzipping {filename}");
                 ZipFile.ExtractToDirectory(path, zipFolder);
                 File.Delete(path);
             }
@@ -225,6 +242,8 @@ namespace Makaretu.Globalization
                 if (File.Exists(path))
                 {
                     found = true;
+                    if (log.IsDebugEnabled)
+                        log.Debug($"Loading document {path}");
                     yield return XDocument.Load(path);
                 }
             }
@@ -256,6 +275,8 @@ namespace Makaretu.Globalization
                 if (File.Exists(path))
                 {
                     found = true;
+                    if (log.IsDebugEnabled)
+                        log.Debug($"Loading text document {path}");
                     yield return File.OpenText(path);
                 }
             }
