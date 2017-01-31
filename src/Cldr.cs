@@ -134,7 +134,7 @@ namespace Makaretu.Globalization
             if (Environment.GetEnvironmentVariable("APPVEYOR") == "True")
             {
                 OriginUrl = "http://ftp.lanet.lv/ftp/mirror/unicode/cldr/";
-                return new Version("30.0.3");
+                return new Version("30.0.2");
             }
 
             var handler = new HttpClientHandler
