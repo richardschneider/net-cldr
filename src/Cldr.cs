@@ -28,6 +28,14 @@ namespace Makaretu.Globalization
             "UnicodeCLDR");
 
         /// <summary>
+        ///   The official source for CLDR data.
+        /// </summary>
+        /// <value>
+        ///   http://unicode.org/Public/cldr/
+        /// </value>
+        public static string OriginUrl = "http://unicode.org/Public/cldr/";
+
+        /// <summary>
         ///   The instance of the CLDR.
         /// </summary>
         /// <remarks>
@@ -37,7 +45,7 @@ namespace Makaretu.Globalization
         public static Cldr Instance = new Cldr();
 
         /// <summary>
-        ///   Sources for CLDR data.
+        ///   Local sources for CLDR data.
         /// </summary>
         /// <remarks>
         ///   Sometimes the user or an app developer may want to add/change 
@@ -127,7 +135,7 @@ namespace Makaretu.Globalization
                 AllowAutoRedirect = false,
                 UseProxy = false
             };
-            var url = "http://unicode.org/Public/cldr/latest";
+            var url = OriginUrl + "latest";
             if (log.IsDebugEnabled)
                 log.Debug($"GET {url}");
             using (var unicode = new HttpClient(handler))
@@ -196,7 +204,7 @@ namespace Makaretu.Globalization
             }
 
             // Sorry, unicode.org doesn't support secure download
-            var url = $"http://unicode.org/Public/cldr/{v}/{filename}";
+            var url = OriginUrl + "{v}/{filename}";
             var path = Path.Combine(repositoryFolder, filename);
             if (log.IsDebugEnabled)
                 log.Debug($"GET {url}");
