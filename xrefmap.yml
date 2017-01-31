@@ -1,0 +1,156 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Makaretu.Globalization
+  name: Makaretu.Globalization
+  href: api/Makaretu.Globalization.html
+  commentId: N:Makaretu.Globalization
+  fullName: Makaretu.Globalization
+  nameWithType: Makaretu.Globalization
+- uid: Makaretu.Globalization.Cldr
+  name: Cldr
+  href: api/Makaretu.Globalization.Cldr.html
+  commentId: T:Makaretu.Globalization.Cldr
+  fullName: Makaretu.Globalization.Cldr
+  nameWithType: Cldr
+- uid: Makaretu.Globalization.Cldr.#ctor
+  name: Cldr()
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr__ctor
+  commentId: M:Makaretu.Globalization.Cldr.#ctor
+  fullName: Makaretu.Globalization.Cldr.Cldr()
+  nameWithType: Cldr.Cldr()
+- uid: Makaretu.Globalization.Cldr.#ctor*
+  name: Cldr
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr__ctor_
+  commentId: Overload:Makaretu.Globalization.Cldr.#ctor
+  fullName: Makaretu.Globalization.Cldr.Cldr
+  nameWithType: Cldr.Cldr
+- uid: Makaretu.Globalization.Cldr.CurrentVersion
+  name: CurrentVersion()
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_CurrentVersion
+  commentId: M:Makaretu.Globalization.Cldr.CurrentVersion
+  fullName: Makaretu.Globalization.Cldr.CurrentVersion()
+  nameWithType: Cldr.CurrentVersion()
+- uid: Makaretu.Globalization.Cldr.CurrentVersion*
+  name: CurrentVersion
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_CurrentVersion_
+  commentId: Overload:Makaretu.Globalization.Cldr.CurrentVersion
+  fullName: Makaretu.Globalization.Cldr.CurrentVersion
+  nameWithType: Cldr.CurrentVersion
+- uid: Makaretu.Globalization.Cldr.DownloadAsync(System.Version)
+  name: DownloadAsync(Version)
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_DownloadAsync_System_Version_
+  commentId: M:Makaretu.Globalization.Cldr.DownloadAsync(System.Version)
+  fullName: Makaretu.Globalization.Cldr.DownloadAsync(System.Version)
+  nameWithType: Cldr.DownloadAsync(Version)
+- uid: Makaretu.Globalization.Cldr.DownloadAsync*
+  name: DownloadAsync
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_DownloadAsync_
+  commentId: Overload:Makaretu.Globalization.Cldr.DownloadAsync
+  fullName: Makaretu.Globalization.Cldr.DownloadAsync
+  nameWithType: Cldr.DownloadAsync
+- uid: Makaretu.Globalization.Cldr.DownloadLatestAsync
+  name: DownloadLatestAsync()
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_DownloadLatestAsync
+  commentId: M:Makaretu.Globalization.Cldr.DownloadLatestAsync
+  fullName: Makaretu.Globalization.Cldr.DownloadLatestAsync()
+  nameWithType: Cldr.DownloadLatestAsync()
+- uid: Makaretu.Globalization.Cldr.DownloadLatestAsync*
+  name: DownloadLatestAsync
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_DownloadLatestAsync_
+  commentId: Overload:Makaretu.Globalization.Cldr.DownloadLatestAsync
+  fullName: Makaretu.Globalization.Cldr.DownloadLatestAsync
+  nameWithType: Cldr.DownloadLatestAsync
+- uid: Makaretu.Globalization.Cldr.GetDocuments(System.String)
+  name: GetDocuments(String)
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_GetDocuments_System_String_
+  commentId: M:Makaretu.Globalization.Cldr.GetDocuments(System.String)
+  fullName: Makaretu.Globalization.Cldr.GetDocuments(System.String)
+  nameWithType: Cldr.GetDocuments(String)
+- uid: Makaretu.Globalization.Cldr.GetDocuments*
+  name: GetDocuments
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_GetDocuments_
+  commentId: Overload:Makaretu.Globalization.Cldr.GetDocuments
+  fullName: Makaretu.Globalization.Cldr.GetDocuments
+  nameWithType: Cldr.GetDocuments
+- uid: Makaretu.Globalization.Cldr.GetTextDocuments(System.String)
+  name: GetTextDocuments(String)
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_GetTextDocuments_System_String_
+  commentId: M:Makaretu.Globalization.Cldr.GetTextDocuments(System.String)
+  fullName: Makaretu.Globalization.Cldr.GetTextDocuments(System.String)
+  nameWithType: Cldr.GetTextDocuments(String)
+- uid: Makaretu.Globalization.Cldr.GetTextDocuments*
+  name: GetTextDocuments
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_GetTextDocuments_
+  commentId: Overload:Makaretu.Globalization.Cldr.GetTextDocuments
+  fullName: Makaretu.Globalization.Cldr.GetTextDocuments
+  nameWithType: Cldr.GetTextDocuments
+- uid: Makaretu.Globalization.Cldr.Instance
+  name: Instance
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_Instance
+  commentId: F:Makaretu.Globalization.Cldr.Instance
+  fullName: Makaretu.Globalization.Cldr.Instance
+  nameWithType: Cldr.Instance
+- uid: Makaretu.Globalization.Cldr.LatestVersionAsync
+  name: LatestVersionAsync()
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_LatestVersionAsync
+  commentId: M:Makaretu.Globalization.Cldr.LatestVersionAsync
+  fullName: Makaretu.Globalization.Cldr.LatestVersionAsync()
+  nameWithType: Cldr.LatestVersionAsync()
+- uid: Makaretu.Globalization.Cldr.LatestVersionAsync*
+  name: LatestVersionAsync
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_LatestVersionAsync_
+  commentId: Overload:Makaretu.Globalization.Cldr.LatestVersionAsync
+  fullName: Makaretu.Globalization.Cldr.LatestVersionAsync
+  nameWithType: Cldr.LatestVersionAsync
+- uid: Makaretu.Globalization.Cldr.Repositories
+  name: Repositories
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_Repositories
+  commentId: F:Makaretu.Globalization.Cldr.Repositories
+  fullName: Makaretu.Globalization.Cldr.Repositories
+  nameWithType: Cldr.Repositories
+- uid: Makaretu.Globalization.CldrExentsions
+  name: CldrExentsions
+  href: api/Makaretu.Globalization.CldrExentsions.html
+  commentId: T:Makaretu.Globalization.CldrExentsions
+  fullName: Makaretu.Globalization.CldrExentsions
+  nameWithType: CldrExentsions
+- uid: Makaretu.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable{System.Xml.Linq.XDocument},System.String)
+  name: FirstElement(IEnumerable<XDocument>, String)
+  href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_FirstElement_System_Collections_Generic_IEnumerable_System_Xml_Linq_XDocument__System_String_
+  commentId: M:Makaretu.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable{System.Xml.Linq.XDocument},System.String)
+  name.vb: FirstElement(IEnumerable(Of XDocument), String)
+  fullName: Makaretu.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable<System.Xml.Linq.XDocument>, System.String)
+  fullName.vb: Makaretu.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable(Of System.Xml.Linq.XDocument), System.String)
+  nameWithType: CldrExentsions.FirstElement(IEnumerable<XDocument>, String)
+  nameWithType.vb: CldrExentsions.FirstElement(IEnumerable(Of XDocument), String)
+- uid: Makaretu.Globalization.CldrExentsions.FirstElement*
+  name: FirstElement
+  href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_FirstElement_
+  commentId: Overload:Makaretu.Globalization.CldrExentsions.FirstElement
+  fullName: Makaretu.Globalization.CldrExentsions.FirstElement
+  nameWithType: CldrExentsions.FirstElement
+- uid: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.Linq.XDocument},System.String)
+  name: FirstElementOrDefault(IEnumerable<XDocument>, String)
+  href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_FirstElementOrDefault_System_Collections_Generic_IEnumerable_System_Xml_Linq_XDocument__System_String_
+  commentId: M:Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.Linq.XDocument},System.String)
+  name.vb: FirstElementOrDefault(IEnumerable(Of XDocument), String)
+  fullName: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable<System.Xml.Linq.XDocument>, System.String)
+  fullName.vb: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable(Of System.Xml.Linq.XDocument), System.String)
+  nameWithType: CldrExentsions.FirstElementOrDefault(IEnumerable<XDocument>, String)
+  nameWithType.vb: CldrExentsions.FirstElementOrDefault(IEnumerable(Of XDocument), String)
+- uid: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.Linq.XDocument},System.String,System.Func{System.Collections.Generic.IEnumerable{System.Xml.Linq.XDocument},System.Xml.Linq.XElement})
+  name: FirstElementOrDefault(IEnumerable<XDocument>, String, Func<IEnumerable<XDocument>, XElement>)
+  href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_FirstElementOrDefault_System_Collections_Generic_IEnumerable_System_Xml_Linq_XDocument__System_String_System_Func_System_Collections_Generic_IEnumerable_System_Xml_Linq_XDocument__System_Xml_Linq_XElement__
+  commentId: M:Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.Linq.XDocument},System.String,System.Func{System.Collections.Generic.IEnumerable{System.Xml.Linq.XDocument},System.Xml.Linq.XElement})
+  name.vb: FirstElementOrDefault(IEnumerable(Of XDocument), String, Func(Of IEnumerable(Of XDocument), XElement))
+  fullName: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable<System.Xml.Linq.XDocument>, System.String, System.Func<System.Collections.Generic.IEnumerable<System.Xml.Linq.XDocument>, System.Xml.Linq.XElement>)
+  fullName.vb: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable(Of System.Xml.Linq.XDocument), System.String, System.Func(Of System.Collections.Generic.IEnumerable(Of System.Xml.Linq.XDocument), System.Xml.Linq.XElement))
+  nameWithType: CldrExentsions.FirstElementOrDefault(IEnumerable<XDocument>, String, Func<IEnumerable<XDocument>, XElement>)
+  nameWithType.vb: CldrExentsions.FirstElementOrDefault(IEnumerable(Of XDocument), String, Func(Of IEnumerable(Of XDocument), XElement))
+- uid: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault*
+  name: FirstElementOrDefault
+  href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_FirstElementOrDefault_
+  commentId: Overload:Makaretu.Globalization.CldrExentsions.FirstElementOrDefault
+  fullName: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault
+  nameWithType: CldrExentsions.FirstElementOrDefault
