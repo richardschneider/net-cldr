@@ -210,8 +210,7 @@ namespace Makaretu.Globalization
                 v = v.Substring(0, v.Length - 2);
             }
 
-            // Sorry, unicode.org doesn't support secure download
-            var url = OriginUrl + "{v}/{filename}";
+            var url = $"{OriginUrl}{v}/{filename}";
             var path = Path.Combine(repositoryFolder, filename);
             if (log.IsDebugEnabled)
                 log.Debug($"GET {url}");
