@@ -3,18 +3,19 @@
 [![build status](https://ci.appveyor.com/api/projects/status/github/richardschneider/net-cldr?branch=master&svg=true)](https://ci.appveyor.com/project/richardschneider/net-cldr) 
 [![Coverage Status](https://coveralls.io/repos/richardschneider/net-cldr/badge.svg?branch=master&service=github)](https://coveralls.io/github/richardschneider/net-cldr?branch=master)
 [![NuGet](https://img.shields.io/nuget/v/Makaretu.Globalization.svg)](https://www.nuget.org/packages/Makaretu.Globalization)
+[![docs](https://cdn.rawgit.com/richardschneider/net-cldr/master/doc/images/docs-latest-green.svg)](https://richardschneider.github.io/net-cldr)
 
 Provides locale content for internationalisation software using the Unicode Common Local Data Repository (CLDR).
 
 ## Features
 
-- Uses the official Unicode CLDR XML without any "build steps"
+- Uses the official [Unicode CLDR XML](http://www.unicode.org/Public/cldr/) without any "build steps"
 - Can download the latest CLDR anytime
 - Use [XPath expressions](https://msdn.microsoft.com/en-us/library/ms256471(v=vs.110).aspx) to query the CLDR
 
 ## Getting started
 
-Published releases are available on [NuGet](https://www.nuget.org/packages/Makaretu.Globalization/).  To install, run the following command in the [Package Manager Console](https://docs.nuget.org/docs/start-here/using-the-package-manager-console).
+Published releases of the package are available on [NuGet](https://www.nuget.org/packages/Makaretu.Globalization/).  To install, run the following command in the [Package Manager Console](https://docs.nuget.org/docs/start-here/using-the-package-manager-console).
 
     PM> Install-Package Makaretu.Globalization
 
