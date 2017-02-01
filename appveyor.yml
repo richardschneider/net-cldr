@@ -25,7 +25,7 @@ environment:
 # tools we need for bulding/testing/deploying
 install:
   - choco install gitversion.portable -pre -y
-  - choco instal docfx -y
+  - choco install docfx -y
   - npm install gh-pages -g
 
 #  - nuget install secure-file -ExcludeVersion
