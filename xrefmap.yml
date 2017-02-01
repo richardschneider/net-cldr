@@ -103,6 +103,12 @@ references:
   commentId: Overload:Makaretu.Globalization.Cldr.LatestVersionAsync
   fullName: Makaretu.Globalization.Cldr.LatestVersionAsync
   nameWithType: Cldr.LatestVersionAsync
+- uid: Makaretu.Globalization.Cldr.OriginUrl
+  name: OriginUrl
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_OriginUrl
+  commentId: F:Makaretu.Globalization.Cldr.OriginUrl
+  fullName: Makaretu.Globalization.Cldr.OriginUrl
+  nameWithType: Cldr.OriginUrl
 - uid: Makaretu.Globalization.Cldr.Repositories
   name: Repositories
   href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_Repositories
