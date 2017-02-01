@@ -217,9 +217,12 @@ namespace Makaretu.Globalization
             using (var local = File.Create(path))
             using (var unicode = new HttpClient())
             using (var response = await unicode.GetAsync(url, HttpCompletionOption.ResponseHeadersRead))
-            using (var content = await response.Content.ReadAsStreamAsync())
             {
-                await content.CopyToAsync(local);
+                response.EnsureSuccessStatusCode();
+                using (var content = await response.Content.ReadAsStreamAsync())
+                {
+                    await content.CopyToAsync(local);
+                }
             }
 
             if (filename.ToLowerInvariant().EndsWith(".zip"))
