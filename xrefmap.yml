@@ -229,3 +229,15 @@ references:
   commentId: Overload:Makaretu.Globalization.LocaleIdentifier.TryParse
   fullName: Makaretu.Globalization.LocaleIdentifier.TryParse
   nameWithType: LocaleIdentifier.TryParse
+- uid: Makaretu.Globalization.LocaleIdentifier.Variants
+  name: Variants
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Variants
+  commentId: P:Makaretu.Globalization.LocaleIdentifier.Variants
+  fullName: Makaretu.Globalization.LocaleIdentifier.Variants
+  nameWithType: LocaleIdentifier.Variants
+- uid: Makaretu.Globalization.LocaleIdentifier.Variants*
+  name: Variants
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Variants_
+  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.Variants
+  fullName: Makaretu.Globalization.LocaleIdentifier.Variants
+  nameWithType: LocaleIdentifier.Variants
