@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="CldrExtensions.cs" />
     <Compile Include="Cldr.cs" />
+    <Compile Include="LocaleIdentifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
