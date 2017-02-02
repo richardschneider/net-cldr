@@ -39,7 +39,7 @@ namespace Makaretu.Globalization
         ///   The language subtag.
         /// </summary>
         /// <value>
-        ///   ISO 639 code.
+        ///   ISO 639 code or the empty string.
         /// </value>
         /// <remarks>
         ///   All subtags are case insensitive but stored in the lower-case form.
@@ -50,7 +50,7 @@ namespace Makaretu.Globalization
         ///   The script (writing system) subtag.
         /// </summary>
         /// <value>
-        ///   ISO 15924 code.
+        ///   ISO 15924 code or the empty string.
         /// </value>
         /// <remarks>
         ///   All subtags are case insensitive but stored in the lower-case form.
@@ -61,7 +61,7 @@ namespace Makaretu.Globalization
         ///   The region subtag.
         /// </summary>
         /// <value>
-        ///   ISO 3166-1 or UN M.49 code.
+        ///   ISO 3166-1 or UN M.49 code or the empty string.
         /// </value>
         /// <remarks>
         ///   All subtags are case insensitive but stored in the lower-case form.

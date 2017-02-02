@@ -137,5 +137,23 @@ namespace Makaretu.Globalization
         {
             ExceptionAssert.Throws<FormatException>(() => LocaleIdentifier.Parse("de-CH-1901-1901"));
         }
+
+        [TestMethod]
+        public void Empty_Tags()
+        {
+            var id = LocaleIdentifier.Parse("Cyrl");
+            Assert.AreEqual("", id.Language);
+            Assert.AreEqual("cyrl", id.Script);
+            Assert.AreEqual("", id.Region);
+            Assert.AreEqual(0, id.Extensions.Count());
+            Assert.AreEqual(0, id.Variants.Count());
+
+            id = LocaleIdentifier.Parse("en");
+            Assert.AreEqual("en", id.Language);
+            Assert.AreEqual("", id.Script);
+            Assert.AreEqual("", id.Region);
+            Assert.AreEqual(0, id.Extensions.Count());
+            Assert.AreEqual(0, id.Variants.Count());
+        }
     }
 }
