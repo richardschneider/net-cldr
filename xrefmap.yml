@@ -166,6 +166,18 @@ references:
   commentId: T:Makaretu.Globalization.LocaleIdentifier
   fullName: Makaretu.Globalization.LocaleIdentifier
   nameWithType: LocaleIdentifier
+- uid: Makaretu.Globalization.LocaleIdentifier.Extensions
+  name: Extensions
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Extensions
+  commentId: P:Makaretu.Globalization.LocaleIdentifier.Extensions
+  fullName: Makaretu.Globalization.LocaleIdentifier.Extensions
+  nameWithType: LocaleIdentifier.Extensions
+- uid: Makaretu.Globalization.LocaleIdentifier.Extensions*
+  name: Extensions
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Extensions_
+  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.Extensions
+  fullName: Makaretu.Globalization.LocaleIdentifier.Extensions
+  nameWithType: LocaleIdentifier.Extensions
 - uid: Makaretu.Globalization.LocaleIdentifier.Language
   name: Language
   href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Language
