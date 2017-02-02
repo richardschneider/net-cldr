@@ -247,6 +247,15 @@ references:
   fullName.vb: Makaretu.Globalization.LocaleIdentifier.TryParse(System.String, ByRef Makaretu.Globalization.LocaleIdentifier)
   nameWithType: LocaleIdentifier.TryParse(String, out LocaleIdentifier)
   nameWithType.vb: LocaleIdentifier.TryParse(String, ByRef LocaleIdentifier)
+- uid: Makaretu.Globalization.LocaleIdentifier.TryParse(System.String,Makaretu.Globalization.LocaleIdentifier@,System.String@)
+  name: TryParse(String, out LocaleIdentifier, out String)
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_TryParse_System_String_Makaretu_Globalization_LocaleIdentifier__System_String__
+  commentId: M:Makaretu.Globalization.LocaleIdentifier.TryParse(System.String,Makaretu.Globalization.LocaleIdentifier@,System.String@)
+  name.vb: TryParse(String, ByRef LocaleIdentifier, ByRef String)
+  fullName: Makaretu.Globalization.LocaleIdentifier.TryParse(System.String, out Makaretu.Globalization.LocaleIdentifier, out System.String)
+  fullName.vb: Makaretu.Globalization.LocaleIdentifier.TryParse(System.String, ByRef Makaretu.Globalization.LocaleIdentifier, ByRef System.String)
+  nameWithType: LocaleIdentifier.TryParse(String, out LocaleIdentifier, out String)
+  nameWithType.vb: LocaleIdentifier.TryParse(String, ByRef LocaleIdentifier, ByRef String)
 - uid: Makaretu.Globalization.LocaleIdentifier.TryParse*
   name: TryParse
   href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_TryParse_
