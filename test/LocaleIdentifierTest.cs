@@ -36,7 +36,7 @@ namespace Makaretu.Globalization
             Assert.AreEqual("es", id.Language);
             Assert.AreEqual("419", id.Region);
 
-            Assert.IsFalse(LocaleIdentifier.TryParse("es-1234", out id));
+            Assert.IsFalse(LocaleIdentifier.TryParse("es-12345", out id));
         }
 
         [TestMethod]
@@ -47,6 +47,33 @@ namespace Makaretu.Globalization
             Assert.AreEqual("cyrl", id.Script);
 
             Assert.IsFalse(LocaleIdentifier.TryParse("es-NotScript", out id));
+        }
+
+        [TestMethod]
+        public void Parsing_Language_Variant()
+        {
+            var id = LocaleIdentifier.Parse("sl-nedis");
+            Assert.AreEqual("sl", id.Language);
+            Assert.IsTrue(id.Variants.Contains("nedis"));
+        }
+
+        [TestMethod]
+        public void Parsing_Language_Region_Variant()
+        {
+            var id = LocaleIdentifier.Parse("de-CH-1996");
+            Assert.AreEqual("de", id.Language);
+            Assert.AreEqual("ch", id.Region);
+            Assert.IsTrue(id.Variants.Contains("1996"));
+        }
+
+        [TestMethod]
+        public void Parsing_Language_Region_Multiple_Variants()
+        {
+            var id = LocaleIdentifier.Parse("de-CH-1996-1998");
+            Assert.AreEqual("de", id.Language);
+            Assert.AreEqual("ch", id.Region);
+            Assert.IsTrue(id.Variants.Contains("1996"));
+            Assert.IsTrue(id.Variants.Contains("1998"));
         }
 
         [TestMethod]
@@ -94,5 +121,10 @@ namespace Makaretu.Globalization
             ExceptionAssert.Throws<FormatException>(() => LocaleIdentifier.Parse("ThisIsNotALanguage"));
         }
 
+        [TestMethod]
+        public void Parsing_Variants_Are_Not_Repeated()
+        {
+            ExceptionAssert.Throws<FormatException>(() => LocaleIdentifier.Parse("de-CH-1901-1901"));
+        }
     }
 }

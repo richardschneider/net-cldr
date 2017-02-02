@@ -18,15 +18,17 @@ namespace Makaretu.Globalization
     /// </remarks>
     public class LocaleIdentifier
     {
-        const string langP = @"(?<lang>[a-zA-z]{2,3}|[a-zA-Z]{5,8})";
-        const string scriptP = @"(?<script>[a-zA-z]{4})";
-        const string regionP = @"(?<region>[a-zA-z]{2}|\d{3})";
+        const string langP = @"(?<lang>[a-z]{2,3}|[a-z]{5,8})";
+        const string scriptP = @"(?<script>[a-z]{4})";
+        const string regionP = @"(?<region>[a-z]{2}|\d{3})";
+        const string variantP = @"([a-z][\da-z]{4,7}|\d[\da-z]{3})";
         const string sepP = @"[-_]";
         static string pattern =
             "^(root" +
                 $"|{langP}({sepP}{scriptP})?" +
                 $"|{scriptP})" +
             $"({sepP}{regionP})?" +
+            $"(?<variants>({sepP}{variantP})*)" +
             "$"
             ;
         static Regex idRegex = new Regex(pattern, RegexOptions.Compiled);
@@ -63,6 +65,21 @@ namespace Makaretu.Globalization
         ///   All subtags are case insensitive but stored in the lower-case form.
         /// </remarks>
         public string Region { get; private set; }
+
+        /// <summary>
+        ///   Language variations.
+        /// </summary>
+        /// <value>
+        ///   A sequence of variant subtags.
+        /// </value>
+        /// <remarks>
+        ///   Variant subtags are used to indicate additional, well-recognized
+        ///   variations that define a language or its dialects that are not
+        ///   covered by other available subtags.
+        ///   
+        ///   All subtags are case insensitive but stored in the lower-case form.
+        /// </remarks>
+        public IEnumerable<string> Variants { get; private set; }
 
         /// <summary>
         ///   Parses the string representation of a locale identifier to a LanguageIdentifier.
@@ -104,18 +121,28 @@ namespace Makaretu.Globalization
         /// </remarks>
         public static bool TryParse(string s, out LocaleIdentifier result)
         {
+            result = null;
+
             var match = idRegex.Match(s.ToLowerInvariant());
             if (!match.Success)
             {
-                result = null;
                 return false;
             }
+
+            // Variants cannot be repeated.
+            var variants = match.Groups["variants"]
+                .Value.Split('-', '_')
+                .Where(sv => !string.IsNullOrEmpty(sv))
+                .ToArray();
+            if (variants.Distinct().Count() != variants.Length)
+                return false;
 
             result = new LocaleIdentifier
             {
                 Language = match.Groups["lang"].Value,
                 Script = match.Groups["script"].Value,
-                Region = match.Groups["region"].Value
+                Region = match.Groups["region"].Value,
+                Variants = variants
             };
             return true;
         }
