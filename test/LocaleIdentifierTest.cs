@@ -133,8 +133,26 @@ namespace Makaretu.Globalization
         }
 
         [TestMethod]
+        public void Parsing_Messages()
+        {
+            string message;
+            LocaleIdentifier id;
+            var ok = LocaleIdentifier.TryParse("en-r-alpha-r-alpha", out id, out message);
+            Assert.AreEqual(false, ok);
+            Assert.AreEqual(null, id);
+            Assert.AreEqual("'en-r-alpha-r-alpha' is not a valid locale identifier because an extension is duplicated.", message);
+        }
+
+        [TestMethod]
         public void Parsing_Variants_Are_Not_Repeated()
         {
+            string message;
+            LocaleIdentifier id;
+            var ok = LocaleIdentifier.TryParse("de-CH-1901-1901", out id, out message);
+            Assert.AreEqual(false, ok);
+            Assert.AreEqual(null, id);
+            Assert.AreEqual("'de-CH-1901-1901' is not a valid locale identifier because a variant is duplicated.", message);
+
             ExceptionAssert.Throws<FormatException>(() => LocaleIdentifier.Parse("de-CH-1901-1901"));
         }
 

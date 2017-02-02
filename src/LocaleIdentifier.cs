@@ -135,14 +135,14 @@ namespace Makaretu.Globalization
         /// <returns>
         ///   A local identifier that refers to <paramref name="s"/>.
         /// </returns>
-        /// <seealso cref="TryParse"/>
         public static LocaleIdentifier Parse(string s)
         {
             LocaleIdentifier id;
-            if (TryParse(s, out id))
+            string message;
+            if (TryParse(s, out id, out message))
                 return id;
 
-            throw new FormatException($"'{s}' is not a valid locale identifier.");
+            throw new FormatException(message);
         }
 
         /// <summary>
@@ -163,11 +163,38 @@ namespace Makaretu.Globalization
         /// </remarks>
         public static bool TryParse(string s, out LocaleIdentifier result)
         {
+            string message;
+            return TryParse(s, out result, out message);
+        }
+
+        /// <summary>
+        ///   Tries parsing the string representation of a locale identifier.
+        /// </summary>
+        /// <param name="s">
+        ///   A case insensitive string containing a locale identifier, based on BCP47.
+        /// </param>
+        /// <param name="result">
+        ///   A local identifier that refers to <paramref name="s"/> or <b>null</b> if the parsing
+        ///   failed.
+        /// </param>
+        /// <param name="message">
+        ///   The reason why the parsing failed.
+        /// </param>
+        /// <returns>
+        ///   <b>true</b> if <paramref name="s"/> was parsed successfully; otherwise, <b>false</b>.
+        /// </returns>
+        /// <remarks>
+        ///   A local identifier that refers to <paramref name="s"/>.
+        /// </remarks>
+        public static bool TryParse(string s, out LocaleIdentifier result, out string message)
+        { 
             result = null;
+            message = null;
 
             var match = idRegex.Match(s.ToLowerInvariant());
             if (!match.Success)
             {
+                message = $"'{s}' is not a valid locale identifier.";
                 return false;
             }
 
@@ -177,7 +204,10 @@ namespace Makaretu.Globalization
                 .Where(sv => !string.IsNullOrEmpty(sv))
                 .ToArray();
             if (variants.Distinct().Count() != variants.Length)
+            {
+                message = $"'{s}' is not a valid locale identifier because a variant is duplicated.";
                 return false;
+            }
 
             // Extensions cannot be repeated.
             var extensions = new List<string>();
@@ -186,7 +216,10 @@ namespace Makaretu.Globalization
                 extensions.Add(capture.Value.Replace('_', '-'));
             }
             if (extensions.Distinct().Count() != extensions.Count)
+            {
+                message = $"'{s}' is not a valid locale identifier because an extension is duplicated.";
                 return false;
+            }
 
             result = new LocaleIdentifier
             {
