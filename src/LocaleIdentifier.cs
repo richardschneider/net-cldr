@@ -73,9 +73,10 @@ namespace Makaretu.Globalization
         /// <exception cref="FormatException">
         ///   <paramref name="s"/> is not in the correct format.
         /// </exception>
-        /// <remarks>
+        /// <returns>
         ///   A local identifier that refers to <paramref name="s"/>.
-        /// </remarks>
+        /// </returns>
+        /// <seealso cref="TryParse"/>
         public static LocaleIdentifier Parse(string s)
         {
             LocaleIdentifier id;
