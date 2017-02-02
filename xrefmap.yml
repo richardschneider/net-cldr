@@ -226,6 +226,18 @@ references:
   commentId: Overload:Makaretu.Globalization.LocaleIdentifier.Script
   fullName: Makaretu.Globalization.LocaleIdentifier.Script
   nameWithType: LocaleIdentifier.Script
+- uid: Makaretu.Globalization.LocaleIdentifier.ToString
+  name: ToString()
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_ToString
+  commentId: M:Makaretu.Globalization.LocaleIdentifier.ToString
+  fullName: Makaretu.Globalization.LocaleIdentifier.ToString()
+  nameWithType: LocaleIdentifier.ToString()
+- uid: Makaretu.Globalization.LocaleIdentifier.ToString*
+  name: ToString
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_ToString_
+  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.ToString
+  fullName: Makaretu.Globalization.LocaleIdentifier.ToString
+  nameWithType: LocaleIdentifier.ToString
 - uid: Makaretu.Globalization.LocaleIdentifier.TryParse(System.String,Makaretu.Globalization.LocaleIdentifier@)
   name: TryParse(String, out LocaleIdentifier)
   href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_TryParse_System_String_Makaretu_Globalization_LocaleIdentifier__
