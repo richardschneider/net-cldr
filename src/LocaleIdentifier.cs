@@ -18,20 +18,22 @@ namespace Makaretu.Globalization
     /// </remarks>
     public class LocaleIdentifier
     {
+        const string sepP = @"[-_]";
         const string langP = @"(?<lang>[a-z]{2,3}|[a-z]{5,8})";
         const string scriptP = @"(?<script>[a-z]{4})";
         const string regionP = @"(?<region>[a-z]{2}|\d{3})";
         const string variantP = @"([a-z][\da-z]{4,7}|\d[\da-z]{3})";
-        const string sepP = @"[-_]";
+        static string extensionP = $"(?<ext>[a-wy-z]({sepP}[\\da-z]{{2,8}})+)";
         static string pattern =
             "^(root" +
                 $"|{langP}({sepP}{scriptP})?" +
                 $"|{scriptP})" +
             $"({sepP}{regionP})?" +
             $"(?<variants>({sepP}{variantP})*)" +
+            $"(({sepP}{extensionP})*)" +
             "$"
             ;
-        static Regex idRegex = new Regex(pattern, RegexOptions.Compiled);
+        static Regex idRegex = new Regex(pattern, RegexOptions.Compiled | RegexOptions.CultureInvariant);
 
         /// <summary>
         ///   The language subtag.
@@ -67,7 +69,7 @@ namespace Makaretu.Globalization
         public string Region { get; private set; }
 
         /// <summary>
-        ///   Language variations.
+        ///   Locale variations.
         /// </summary>
         /// <value>
         ///   A sequence of variant subtags.
@@ -80,6 +82,20 @@ namespace Makaretu.Globalization
         ///   All subtags are case insensitive but stored in the lower-case form.
         /// </remarks>
         public IEnumerable<string> Variants { get; private set; }
+
+        /// <summary>
+        ///   Locale extensions.
+        /// </summary>
+        /// <value>
+        ///   A sequence of extension subtags.
+        /// </value>
+        /// <remarks>
+        ///   Extensions provide a mechanism for extending language tags for 
+        ///   use in various applications.
+        ///   
+        ///   All subtags are case insensitive but stored in the lower-case form.
+        /// </remarks>
+        public IEnumerable<string> Extensions { get; private set; }
 
         /// <summary>
         ///   Parses the string representation of a locale identifier to a LanguageIdentifier.
@@ -137,12 +153,22 @@ namespace Makaretu.Globalization
             if (variants.Distinct().Count() != variants.Length)
                 return false;
 
+            // Extensions cannot be repeated.
+            var extensions = new List<string>();
+            foreach (Capture capture in match.Groups["ext"].Captures)
+            {
+                extensions.Add(capture.Value);
+            }
+            if (extensions.Distinct().Count() != extensions.Count)
+                return false;
+
             result = new LocaleIdentifier
             {
                 Language = match.Groups["lang"].Value,
                 Script = match.Groups["script"].Value,
                 Region = match.Groups["region"].Value,
-                Variants = variants
+                Variants = variants,
+                Extensions = extensions.ToArray()
             };
             return true;
         }

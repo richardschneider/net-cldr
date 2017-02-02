@@ -116,6 +116,17 @@ namespace Makaretu.Globalization
         }
 
         [TestMethod]
+        public void Parsing_Extension()
+        {
+            var id = LocaleIdentifier.Parse("en-Latn-GB-r-extended-sequence-r-foo");
+            Assert.AreEqual("en", id.Language);
+            Assert.AreEqual("latn", id.Script);
+            Assert.AreEqual("gb", id.Region);
+            Assert.IsTrue(id.Extensions.Contains("r-extended-sequence"));
+            Assert.IsTrue(id.Extensions.Contains("r-foo"));
+        }
+
+        [TestMethod]
         public void Parsing_Throws()
         {
             ExceptionAssert.Throws<FormatException>(() => LocaleIdentifier.Parse("ThisIsNotALanguage"));
