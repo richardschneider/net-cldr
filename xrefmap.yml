@@ -160,3 +160,72 @@ references:
   commentId: Overload:Makaretu.Globalization.CldrExentsions.FirstElementOrDefault
   fullName: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault
   nameWithType: CldrExentsions.FirstElementOrDefault
+- uid: Makaretu.Globalization.LocaleIdentifier
+  name: LocaleIdentifier
+  href: api/Makaretu.Globalization.LocaleIdentifier.html
+  commentId: T:Makaretu.Globalization.LocaleIdentifier
+  fullName: Makaretu.Globalization.LocaleIdentifier
+  nameWithType: LocaleIdentifier
+- uid: Makaretu.Globalization.LocaleIdentifier.Language
+  name: Language
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Language
+  commentId: P:Makaretu.Globalization.LocaleIdentifier.Language
+  fullName: Makaretu.Globalization.LocaleIdentifier.Language
+  nameWithType: LocaleIdentifier.Language
+- uid: Makaretu.Globalization.LocaleIdentifier.Language*
+  name: Language
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Language_
+  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.Language
+  fullName: Makaretu.Globalization.LocaleIdentifier.Language
+  nameWithType: LocaleIdentifier.Language
+- uid: Makaretu.Globalization.LocaleIdentifier.Parse(System.String)
+  name: Parse(String)
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Parse_System_String_
+  commentId: M:Makaretu.Globalization.LocaleIdentifier.Parse(System.String)
+  fullName: Makaretu.Globalization.LocaleIdentifier.Parse(System.String)
+  nameWithType: LocaleIdentifier.Parse(String)
+- uid: Makaretu.Globalization.LocaleIdentifier.Parse*
+  name: Parse
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Parse_
+  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.Parse
+  fullName: Makaretu.Globalization.LocaleIdentifier.Parse
+  nameWithType: LocaleIdentifier.Parse
+- uid: Makaretu.Globalization.LocaleIdentifier.Region
+  name: Region
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Region
+  commentId: P:Makaretu.Globalization.LocaleIdentifier.Region
+  fullName: Makaretu.Globalization.LocaleIdentifier.Region
+  nameWithType: LocaleIdentifier.Region
+- uid: Makaretu.Globalization.LocaleIdentifier.Region*
+  name: Region
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Region_
+  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.Region
+  fullName: Makaretu.Globalization.LocaleIdentifier.Region
+  nameWithType: LocaleIdentifier.Region
+- uid: Makaretu.Globalization.LocaleIdentifier.Script
+  name: Script
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Script
+  commentId: P:Makaretu.Globalization.LocaleIdentifier.Script
+  fullName: Makaretu.Globalization.LocaleIdentifier.Script
+  nameWithType: LocaleIdentifier.Script
+- uid: Makaretu.Globalization.LocaleIdentifier.Script*
+  name: Script
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Script_
+  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.Script
+  fullName: Makaretu.Globalization.LocaleIdentifier.Script
+  nameWithType: LocaleIdentifier.Script
+- uid: Makaretu.Globalization.LocaleIdentifier.TryParse(System.String,Makaretu.Globalization.LocaleIdentifier@)
+  name: TryParse(String, out LocaleIdentifier)
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_TryParse_System_String_Makaretu_Globalization_LocaleIdentifier__
+  commentId: M:Makaretu.Globalization.LocaleIdentifier.TryParse(System.String,Makaretu.Globalization.LocaleIdentifier@)
+  name.vb: TryParse(String, ByRef LocaleIdentifier)
+  fullName: Makaretu.Globalization.LocaleIdentifier.TryParse(System.String, out Makaretu.Globalization.LocaleIdentifier)
+  fullName.vb: Makaretu.Globalization.LocaleIdentifier.TryParse(System.String, ByRef Makaretu.Globalization.LocaleIdentifier)
+  nameWithType: LocaleIdentifier.TryParse(String, out LocaleIdentifier)
+  nameWithType.vb: LocaleIdentifier.TryParse(String, ByRef LocaleIdentifier)
+- uid: Makaretu.Globalization.LocaleIdentifier.TryParse*
+  name: TryParse
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_TryParse_
+  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.TryParse
+  fullName: Makaretu.Globalization.LocaleIdentifier.TryParse
+  nameWithType: LocaleIdentifier.TryParse
