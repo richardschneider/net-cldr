@@ -155,5 +155,18 @@ namespace Makaretu.Globalization
             Assert.AreEqual(0, id.Extensions.Count());
             Assert.AreEqual(0, id.Variants.Count());
         }
+
+        [TestMethod]
+        public void Formatting()
+        {
+            var id = LocaleIdentifier.Parse("EN_LATN_GB_R_EXTENDED_SEQUENCE_R-FOO");
+            Assert.AreEqual("en-Latn-GB-r-extended-sequence-r-foo", id.ToString());
+
+            id = LocaleIdentifier.Parse("EN_nz");
+            Assert.AreEqual("en-NZ", id.ToString());
+
+            id = LocaleIdentifier.Parse("EN");
+            Assert.AreEqual("en", id.ToString());
+        }
     }
 }

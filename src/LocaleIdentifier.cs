@@ -97,6 +97,32 @@ namespace Makaretu.Globalization
         /// </remarks>
         public IEnumerable<string> Extensions { get; private set; }
 
+        /// <inheritdoc/>
+        /// <remarks>
+        ///   Uses the casing recommendations in [BCP47] for subtag casing. 
+        ///   The <see cref="Region"/> subtag is in uppercase, 
+        ///   the <see cref="Script"/> subtag is in title case, and all other subtags are 
+        ///   in lowercase.
+        /// </remarks>
+        public override string ToString()
+        {
+            var tags = new[] {
+                Language,
+                ToTitleCase(Script),
+                Region.ToUpperInvariant()
+            }
+                .Concat(Variants)
+                .Concat(Extensions)
+                .Where(tag => tag != String.Empty);
+            return String.Join("-", tags);
+        }
+
+        string ToTitleCase(string s)
+        {
+            if (s.Length > 1 &&  'a' <= s[0] && s[0] <= 'z')
+                return s[0].ToString().ToUpperInvariant() + s.Substring(1);
+            return s;
+        }
         /// <summary>
         ///   Parses the string representation of a locale identifier to a LanguageIdentifier.
         /// </summary>
@@ -157,7 +183,7 @@ namespace Makaretu.Globalization
             var extensions = new List<string>();
             foreach (Capture capture in match.Groups["ext"].Captures)
             {
-                extensions.Add(capture.Value);
+                extensions.Add(capture.Value.Replace('_', '-'));
             }
             if (extensions.Distinct().Count() != extensions.Count)
                 return false;
