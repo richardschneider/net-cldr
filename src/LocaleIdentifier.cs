@@ -117,12 +117,37 @@ namespace Makaretu.Globalization
             return String.Join("-", tags);
         }
 
+        /// <summary>
+        ///   Get the Unicode Language ID.
+        /// </summary>
+        /// <returns>
+        ///   The unicode language ID, consisting of the <see cref="Language"/>, <see cref="Script"/> and
+        ///   <see cref="Region"/> separated by "_".
+        /// </returns>
+        /// <remarks>
+        ///   Uses the casing recommendations in [BCP47] for subtag casing. 
+        ///   The <see cref="Region"/> subtag is in uppercase, 
+        ///   the <see cref="Script"/> subtag is in title case, and all other subtags are 
+        ///   in lowercase.
+        /// </remarks>
+        public string ToUnicodeLanguage()
+        {
+            var tags = new[] {
+                Language,
+                ToTitleCase(Script),
+                Region.ToUpperInvariant()
+            }
+                .Where(tag => tag != String.Empty);
+            return String.Join("_", tags);
+        }
+
         string ToTitleCase(string s)
         {
             if (s.Length > 1 &&  'a' <= s[0] && s[0] <= 'z')
                 return s[0].ToString().ToUpperInvariant() + s.Substring(1);
             return s;
         }
+
         /// <summary>
         ///   Parses the string representation of a locale identifier to a LanguageIdentifier.
         /// </summary>
@@ -146,6 +171,32 @@ namespace Makaretu.Globalization
         }
 
         /// <summary>
+        ///   Parses the string representation of a locale identifier to a LanguageIdentifier.
+        /// </summary>
+        /// <param name="s">
+        ///   A case insensitive string containing a locale identifier, based on BCP47.
+        /// </param>
+        /// <exception cref="FormatException">
+        ///   <paramref name="s"/> is not in the correct format.
+        /// </exception>
+        /// <returns>
+        ///   A local identifier that refers to <paramref name="s"/>.
+        /// </returns>
+        /// <remarks>
+        ///   The transformation rules for converting a BCP 47 tag into a
+        ///   Unicode Locale ID are <b>not</b> applied.
+        /// </remarks>
+        public static LocaleIdentifier ParseBcp47(string s)
+        {
+            LocaleIdentifier id;
+            string message;
+            if (TryParseBcp47(s, out id, out message))
+                return id;
+
+            throw new FormatException(message);
+        }
+
+        /// <summary>
         ///   Tries parsing the string representation of a locale identifier.
         /// </summary>
         /// <param name="s">
@@ -158,9 +209,6 @@ namespace Makaretu.Globalization
         /// <returns>
         ///   <b>true</b> if <paramref name="s"/> was parsed successfully; otherwise, <b>false</b>.
         /// </returns>
-        /// <remarks>
-        ///   A local identifier that refers to <paramref name="s"/>.
-        /// </remarks>
         public static bool TryParse(string s, out LocaleIdentifier result)
         {
             string message;
@@ -187,6 +235,35 @@ namespace Makaretu.Globalization
         ///   A local identifier that refers to <paramref name="s"/>.
         /// </remarks>
         public static bool TryParse(string s, out LocaleIdentifier result, out string message)
+        {
+            if (TryParseBcp47(s, out result, out message))
+            {
+                message = result.TransformFromBcp47();
+            }
+            return message == null;
+        }
+
+        /// <summary>
+        ///   Tries parsing the string representation of a locale identifier.
+        /// </summary>
+        /// <param name="s">
+        ///   A case insensitive string containing a locale identifier, based on BCP47.
+        /// </param>
+        /// <param name="result">
+        ///   A BCP 47 language identifier that refers to <paramref name="s"/> or <b>null</b> if the parsing
+        ///   failed.
+        /// </param>
+        /// <param name="message">
+        ///   The reason why the parsing failed.
+        /// </param>
+        /// <returns>
+        ///   <b>true</b> if <paramref name="s"/> was parsed successfully; otherwise, <b>false</b>.
+        /// </returns>
+        /// <remarks>
+        ///   The transformation rules for converting a BCP 47 tag into a
+        ///   Unicode Locale ID are <b>not</b> applied.
+        /// </remarks>
+        public static bool TryParseBcp47(string s, out LocaleIdentifier result, out string message)
         { 
             result = null;
             message = null;
@@ -229,7 +306,72 @@ namespace Makaretu.Globalization
                 Variants = variants,
                 Extensions = extensions.ToArray()
             };
+
             return true;
+        }
+
+        /// <summary>
+        ///   Convert BCP 47 tag to a valid Unicode locale identifier
+        /// </summary>
+        string TransformFromBcp47()
+        {
+
+            // 1. Canonicalize the language tag (afterwards, there will be no extlang subtag)
+
+            // 2. Replace the BCP 47 primary language subtag "und" with "root" if no script, region, 
+            //    or variant subtags are present
+            if (Language == "und" && Script == "" && Region == "" && Variants.Count() == 0)
+            {
+                Language = "root";
+            }
+
+            // 3. If the BCP 47 primary language subtag matches the type attribute of a languageAlias 
+            //    element in Supplemental Data, replace the language subtag with the replacement value.
+            // 3.1 If there are additional subtags in the replacement value, add them to the result, but only 
+            //     if there is no corresponding subtag already in the tag.
+            var languageAlias = Cldr.Instance
+                .GetDocuments("common/supplemental/supplementalMetadata.xml")
+                .FirstElementOrDefault($"supplementalData/metadata/alias/languageAlias[@type='{Language}']");
+            if (languageAlias != null)
+            {
+                var replacement = LocaleIdentifier.Parse(languageAlias.Attribute("replacement").Value);
+                Language = replacement.Language;
+                if (Script == "")
+                    Script = replacement.Script;
+                if (Region == "")
+                    Region = replacement.Region;
+            }
+
+            // 4. If the BCP 47 region subtag matches the type attribute of a territoryAlias 
+            //    element in Supplemental Data, replace the language subtag with the replacement value, as follows:
+            var territoryAlias = Cldr.Instance
+                .GetDocuments("common/supplemental/supplementalMetadata.xml")
+                .FirstElementOrDefault($"supplementalData/metadata/alias/territoryAlias[@type='{Region.ToUpperInvariant()}']");
+            if (territoryAlias != null)
+            {
+                var replacements = territoryAlias.Attribute("replacement").Value.Split(' ');
+                //    4.1 If there is a single territory in the replacement, use it.
+                var replacementValue = replacements[0].ToLowerInvariant();
+                //    4.2 If there are multiple territories:
+                //        4.2.1 Look up the most likely territory for the base language code(and script, if there is one).
+                //        4.2.2 If that likely territory is in the list, use it.
+                //        4.2.3 Otherwise, use the first territory in the list.
+                if (replacements.Length > 1)
+                {
+                    var best = Cldr.Instance
+                        .GetDocuments("common/supplemental/likelySubtags.xml")
+                        .FirstElementOrDefault($"supplementalData/likelySubtags/likelySubtag[@from='{Language}']");
+                    if (best != null)
+                    {
+                        var to = LocaleIdentifier.Parse(best.Attribute("to").Value);
+                        if (replacements.Contains(to.Region.ToUpperInvariant()))
+                            replacementValue = to.Region;
+                    }
+                }
+                Region = replacementValue;
+            }
+
+            return null;
         }
     }
 }

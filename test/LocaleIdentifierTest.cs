@@ -175,6 +175,20 @@ namespace Makaretu.Globalization
         }
 
         [TestMethod]
+        public void Parsing_Transforms()
+        {
+            Assert.AreEqual("en-US", LocaleIdentifier.Parse("en-US").ToString());
+            Assert.AreEqual("root", LocaleIdentifier.Parse("und").ToString());
+            Assert.AreEqual("und-US", LocaleIdentifier.Parse("und-US").ToString());
+            Assert.AreEqual("root-u-cu-usd", LocaleIdentifier.Parse("und-u-cu-USD").ToString());
+            Assert.AreEqual("zh-TW", LocaleIdentifier.Parse("cmn-TW").ToString());
+            Assert.AreEqual("sr-RS", LocaleIdentifier.Parse("sr-CS").ToString());
+            Assert.AreEqual("sr-Latn", LocaleIdentifier.Parse("sh").ToString());
+            Assert.AreEqual("sr-Cyrl", LocaleIdentifier.Parse("sh-Cyrl").ToString());
+            Assert.AreEqual("hy-AM", LocaleIdentifier.Parse("hy-SU").ToString());
+        }
+
+        [TestMethod]
         public void Formatting()
         {
             var id = LocaleIdentifier.Parse("EN_LATN_GB_R_EXTENDED_SEQUENCE_R-FOO");
@@ -185,6 +199,19 @@ namespace Makaretu.Globalization
 
             id = LocaleIdentifier.Parse("EN");
             Assert.AreEqual("en", id.ToString());
+        }
+
+        [TestMethod]
+        public void UnicodeLangugeTag()
+        {
+            var id = LocaleIdentifier.Parse("EN_LATN_GB_R_EXTENDED_SEQUENCE_R-FOO");
+            Assert.AreEqual("en_Latn_GB", id.ToUnicodeLanguage());
+
+            id = LocaleIdentifier.Parse("EN_nz");
+            Assert.AreEqual("en_NZ", id.ToUnicodeLanguage());
+
+            id = LocaleIdentifier.Parse("EN");
+            Assert.AreEqual("en", id.ToUnicodeLanguage());
         }
     }
 }
