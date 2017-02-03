@@ -202,6 +202,18 @@ references:
   commentId: Overload:Makaretu.Globalization.LocaleIdentifier.Parse
   fullName: Makaretu.Globalization.LocaleIdentifier.Parse
   nameWithType: LocaleIdentifier.Parse
+- uid: Makaretu.Globalization.LocaleIdentifier.ParseBcp47(System.String)
+  name: ParseBcp47(String)
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_ParseBcp47_System_String_
+  commentId: M:Makaretu.Globalization.LocaleIdentifier.ParseBcp47(System.String)
+  fullName: Makaretu.Globalization.LocaleIdentifier.ParseBcp47(System.String)
+  nameWithType: LocaleIdentifier.ParseBcp47(String)
+- uid: Makaretu.Globalization.LocaleIdentifier.ParseBcp47*
+  name: ParseBcp47
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_ParseBcp47_
+  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.ParseBcp47
+  fullName: Makaretu.Globalization.LocaleIdentifier.ParseBcp47
+  nameWithType: LocaleIdentifier.ParseBcp47
 - uid: Makaretu.Globalization.LocaleIdentifier.Region
   name: Region
   href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Region
@@ -238,6 +250,18 @@ references:
   commentId: Overload:Makaretu.Globalization.LocaleIdentifier.ToString
   fullName: Makaretu.Globalization.LocaleIdentifier.ToString
   nameWithType: LocaleIdentifier.ToString
+- uid: Makaretu.Globalization.LocaleIdentifier.ToUnicodeLanguage
+  name: ToUnicodeLanguage()
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_ToUnicodeLanguage
+  commentId: M:Makaretu.Globalization.LocaleIdentifier.ToUnicodeLanguage
+  fullName: Makaretu.Globalization.LocaleIdentifier.ToUnicodeLanguage()
+  nameWithType: LocaleIdentifier.ToUnicodeLanguage()
+- uid: Makaretu.Globalization.LocaleIdentifier.ToUnicodeLanguage*
+  name: ToUnicodeLanguage
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_ToUnicodeLanguage_
+  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.ToUnicodeLanguage
+  fullName: Makaretu.Globalization.LocaleIdentifier.ToUnicodeLanguage
+  nameWithType: LocaleIdentifier.ToUnicodeLanguage
 - uid: Makaretu.Globalization.LocaleIdentifier.TryParse(System.String,Makaretu.Globalization.LocaleIdentifier@)
   name: TryParse(String, out LocaleIdentifier)
   href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_TryParse_System_String_Makaretu_Globalization_LocaleIdentifier__
@@ -262,6 +286,21 @@ references:
   commentId: Overload:Makaretu.Globalization.LocaleIdentifier.TryParse
   fullName: Makaretu.Globalization.LocaleIdentifier.TryParse
   nameWithType: LocaleIdentifier.TryParse
+- uid: Makaretu.Globalization.LocaleIdentifier.TryParseBcp47(System.String,Makaretu.Globalization.LocaleIdentifier@,System.String@)
+  name: TryParseBcp47(String, out LocaleIdentifier, out String)
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_TryParseBcp47_System_String_Makaretu_Globalization_LocaleIdentifier__System_String__
+  commentId: M:Makaretu.Globalization.LocaleIdentifier.TryParseBcp47(System.String,Makaretu.Globalization.LocaleIdentifier@,System.String@)
+  name.vb: TryParseBcp47(String, ByRef LocaleIdentifier, ByRef String)
+  fullName: Makaretu.Globalization.LocaleIdentifier.TryParseBcp47(System.String, out Makaretu.Globalization.LocaleIdentifier, out System.String)
+  fullName.vb: Makaretu.Globalization.LocaleIdentifier.TryParseBcp47(System.String, ByRef Makaretu.Globalization.LocaleIdentifier, ByRef System.String)
+  nameWithType: LocaleIdentifier.TryParseBcp47(String, out LocaleIdentifier, out String)
+  nameWithType.vb: LocaleIdentifier.TryParseBcp47(String, ByRef LocaleIdentifier, ByRef String)
+- uid: Makaretu.Globalization.LocaleIdentifier.TryParseBcp47*
+  name: TryParseBcp47
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_TryParseBcp47_
+  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.TryParseBcp47
+  fullName: Makaretu.Globalization.LocaleIdentifier.TryParseBcp47
+  nameWithType: LocaleIdentifier.TryParseBcp47
 - uid: Makaretu.Globalization.LocaleIdentifier.Variants
   name: Variants
   href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Variants
