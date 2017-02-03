@@ -24,7 +24,7 @@ namespace Makaretu.Globalization
         {
             var id = LocaleIdentifier.Parse("en-US");
             Assert.AreEqual("en", id.Language);
-            Assert.AreEqual("us", id.Region);
+            Assert.AreEqual("US", id.Region);
 
             Assert.IsFalse(LocaleIdentifier.TryParse("en-NotACountryCode", out id));
         }
@@ -44,7 +44,7 @@ namespace Makaretu.Globalization
         {
             var  id = LocaleIdentifier.Parse("uz-Cyrl");
             Assert.AreEqual("uz", id.Language);
-            Assert.AreEqual("cyrl", id.Script);
+            Assert.AreEqual("Cyrl", id.Script);
 
             Assert.IsFalse(LocaleIdentifier.TryParse("es-NotScript", out id));
         }
@@ -62,7 +62,7 @@ namespace Makaretu.Globalization
         {
             var id = LocaleIdentifier.Parse("de-CH-1996");
             Assert.AreEqual("de", id.Language);
-            Assert.AreEqual("ch", id.Region);
+            Assert.AreEqual("CH", id.Region);
             Assert.IsTrue(id.Variants.Contains("1996"));
         }
 
@@ -71,7 +71,7 @@ namespace Makaretu.Globalization
         {
             var id = LocaleIdentifier.Parse("de-CH-1996-1998");
             Assert.AreEqual("de", id.Language);
-            Assert.AreEqual("ch", id.Region);
+            Assert.AreEqual("CH", id.Region);
             Assert.IsTrue(id.Variants.Contains("1996"));
             Assert.IsTrue(id.Variants.Contains("1998"));
         }
@@ -81,8 +81,8 @@ namespace Makaretu.Globalization
         {
             var id = LocaleIdentifier.Parse("zh-Hant-CN");
             Assert.AreEqual("zh", id.Language);
-            Assert.AreEqual("hant", id.Script);
-            Assert.AreEqual("cn", id.Region);
+            Assert.AreEqual("Hant", id.Script);
+            Assert.AreEqual("CN", id.Region);
 
             Assert.IsFalse(LocaleIdentifier.TryParse("zh-Hant-NotACountry", out id));
         }
@@ -91,7 +91,7 @@ namespace Makaretu.Globalization
         public void Parsing_Script()
         {
             var id = LocaleIdentifier.Parse("Cyrl");
-            Assert.AreEqual("cyrl", id.Script);
+            Assert.AreEqual("Cyrl", id.Script);
 
             Assert.IsFalse(LocaleIdentifier.TryParse("NotAScript", out id));
         }
@@ -100,8 +100,8 @@ namespace Makaretu.Globalization
         public void Parsing_Script_Region()
         {
             var id = LocaleIdentifier.Parse("Cyrl-RU");
-            Assert.AreEqual("cyrl", id.Script);
-            Assert.AreEqual("ru", id.Region);
+            Assert.AreEqual("Cyrl", id.Script);
+            Assert.AreEqual("RU", id.Region);
 
             Assert.IsFalse(LocaleIdentifier.TryParse("Cyrl-NotACounty", out id));
         }
@@ -111,8 +111,8 @@ namespace Makaretu.Globalization
         {
             var id = LocaleIdentifier.Parse("zh_Hant_CN");
             Assert.AreEqual("zh", id.Language);
-            Assert.AreEqual("hant", id.Script);
-            Assert.AreEqual("cn", id.Region);
+            Assert.AreEqual("Hant", id.Script);
+            Assert.AreEqual("CN", id.Region);
         }
 
         [TestMethod]
@@ -120,8 +120,8 @@ namespace Makaretu.Globalization
         {
             var id = LocaleIdentifier.Parse("en-Latn-GB-r-extended-sequence-r-foo");
             Assert.AreEqual("en", id.Language);
-            Assert.AreEqual("latn", id.Script);
-            Assert.AreEqual("gb", id.Region);
+            Assert.AreEqual("Latn", id.Script);
+            Assert.AreEqual("GB", id.Region);
             Assert.IsTrue(id.Extensions.Contains("r-extended-sequence"));
             Assert.IsTrue(id.Extensions.Contains("r-foo"));
         }
@@ -161,7 +161,7 @@ namespace Makaretu.Globalization
         {
             var id = LocaleIdentifier.Parse("Cyrl");
             Assert.AreEqual("", id.Language);
-            Assert.AreEqual("cyrl", id.Script);
+            Assert.AreEqual("Cyrl", id.Script);
             Assert.AreEqual("", id.Region);
             Assert.AreEqual(0, id.Extensions.Count());
             Assert.AreEqual(0, id.Variants.Count());
@@ -186,6 +186,7 @@ namespace Makaretu.Globalization
             Assert.AreEqual("sr-Latn", LocaleIdentifier.Parse("sh").ToString());
             Assert.AreEqual("sr-Cyrl", LocaleIdentifier.Parse("sh-Cyrl").ToString());
             Assert.AreEqual("hy-AM", LocaleIdentifier.Parse("hy-SU").ToString());
+            Assert.AreEqual("zh_Hans_SG", LocaleIdentifier.Parse("ZH-ZZZZ-SG").ToString());
         }
 
         [TestMethod]

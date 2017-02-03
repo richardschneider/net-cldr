@@ -42,7 +42,7 @@ namespace Makaretu.Globalization
         ///   ISO 639 code or the empty string.
         /// </value>
         /// <remarks>
-        ///   All subtags are case insensitive but stored in the lower-case form.
+        ///   The language subtag is case insensitive but stored in the lower-case form.
         /// </remarks>
         public string Language { get; private set; }
 
@@ -53,7 +53,7 @@ namespace Makaretu.Globalization
         ///   ISO 15924 code or the empty string.
         /// </value>
         /// <remarks>
-        ///   All subtags are case insensitive but stored in the lower-case form.
+        ///   The script subtag is case insensitive but stored in the title-case form.
         /// </remarks>
         public string Script { get; private set; }
 
@@ -64,7 +64,7 @@ namespace Makaretu.Globalization
         ///   ISO 3166-1 or UN M.49 code or the empty string.
         /// </value>
         /// <remarks>
-        ///   All subtags are case insensitive but stored in the lower-case form.
+        ///   The region subtag is case insensitive but stored in the title-case form.
         /// </remarks>
         public string Region { get; private set; }
 
@@ -106,11 +106,7 @@ namespace Makaretu.Globalization
         /// </remarks>
         public override string ToString()
         {
-            var tags = new[] {
-                Language,
-                ToTitleCase(Script),
-                Region.ToUpperInvariant()
-            }
+            var tags = new[] { Language, Script, Region }
                 .Concat(Variants)
                 .Concat(Extensions)
                 .Where(tag => tag != String.Empty);
@@ -132,16 +128,12 @@ namespace Makaretu.Globalization
         /// </remarks>
         public string ToUnicodeLanguage()
         {
-            var tags = new[] {
-                Language,
-                ToTitleCase(Script),
-                Region.ToUpperInvariant()
-            }
+            var tags = new[] { Language, Script, Region }
                 .Where(tag => tag != String.Empty);
             return String.Join("_", tags);
         }
 
-        string ToTitleCase(string s)
+        static string ToTitleCase(string s)
         {
             if (s.Length > 1 &&  'a' <= s[0] && s[0] <= 'z')
                 return s[0].ToString().ToUpperInvariant() + s.Substring(1);
@@ -301,8 +293,8 @@ namespace Makaretu.Globalization
             result = new LocaleIdentifier
             {
                 Language = match.Groups["lang"].Value,
-                Script = match.Groups["script"].Value,
-                Region = match.Groups["region"].Value,
+                Script = ToTitleCase(match.Groups["script"].Value),
+                Region = match.Groups["region"].Value.ToUpperInvariant(),
                 Variants = variants,
                 Extensions = extensions.ToArray()
             };
@@ -317,6 +309,10 @@ namespace Makaretu.Globalization
         {
 
             // 1. Canonicalize the language tag (afterwards, there will be no extlang subtag)
+            if (Script == "Zzzz")
+                Script = String.Empty;
+            if (Region == "ZZ")
+                Region = String.Empty;
 
             // 2. Replace the BCP 47 primary language subtag "und" with "root" if no script, region, 
             //    or variant subtags are present
@@ -346,12 +342,12 @@ namespace Makaretu.Globalization
             //    element in Supplemental Data, replace the language subtag with the replacement value, as follows:
             var territoryAlias = Cldr.Instance
                 .GetDocuments("common/supplemental/supplementalMetadata.xml")
-                .FirstElementOrDefault($"supplementalData/metadata/alias/territoryAlias[@type='{Region.ToUpperInvariant()}']");
+                .FirstElementOrDefault($"supplementalData/metadata/alias/territoryAlias[@type='{Region}']");
             if (territoryAlias != null)
             {
                 var replacements = territoryAlias.Attribute("replacement").Value.Split(' ');
                 //    4.1 If there is a single territory in the replacement, use it.
-                var replacementValue = replacements[0].ToLowerInvariant();
+                var replacementValue = replacements[0];
                 //    4.2 If there are multiple territories:
                 //        4.2.1 Look up the most likely territory for the base language code(and script, if there is one).
                 //        4.2.2 If that likely territory is in the list, use it.
@@ -364,7 +360,7 @@ namespace Makaretu.Globalization
                     if (best != null)
                     {
                         var to = LocaleIdentifier.Parse(best.Attribute("to").Value);
-                        if (replacements.Contains(to.Region.ToUpperInvariant()))
+                        if (replacements.Contains(to.Region))
                             replacementValue = to.Region;
                     }
                 }
