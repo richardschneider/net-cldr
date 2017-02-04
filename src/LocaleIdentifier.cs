@@ -65,7 +65,7 @@ namespace Makaretu.Globalization
         ///   ISO 3166-1 or UN M.49 code or the empty string.
         /// </value>
         /// <remarks>
-        ///   The region subtag is case insensitive but stored in the title-case form.
+        ///   The region subtag is case insensitive but stored in the upper-case form.
         /// </remarks>
         public string Region { get; private set; }
 
@@ -138,7 +138,9 @@ namespace Makaretu.Globalization
         ///   A new locale with the all the empty subtags filled in
         ///   with a likely value.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>
+        ///   A new locale with the all subtags filled in.
+        /// </returns>
         public LocaleIdentifier MostLikelySubtags()
         {
             var result = (LocaleIdentifier)this.MemberwiseClone();

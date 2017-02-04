@@ -314,7 +314,7 @@ namespace Makaretu.Globalization
         ///   The language code to check.
         /// </param>
         /// <returns>
-        ///   <b>true</b> if the <paramref name="code"/>; otherwise, <b>false</b>.
+        ///   <b>true</b> if the <paramref name="code"/> is defined; otherwise, <b>false</b>.
         /// </returns>
         public bool IsLanguageDefined(string code)
         {
@@ -330,7 +330,7 @@ namespace Makaretu.Globalization
         ///   The script (writting system) code to check.
         /// </param>
         /// <returns>
-        ///   <b>true</b> if the <paramref name="code"/>; otherwise, <b>false</b>.
+        ///   <b>true</b> if the <paramref name="code"/> is defined; otherwise, <b>false</b>.
         /// </returns>
         public bool IsScriptDefined(string code)
         {
@@ -346,7 +346,7 @@ namespace Makaretu.Globalization
         ///   The region code to check.
         /// </param>
         /// <returns>
-        ///   <b>true</b> if the <paramref name="code"/>; otherwise, <b>false</b>.
+        ///   <b>true</b> if the <paramref name="code"/> is defined; otherwise, <b>false</b>.
         /// </returns>
         public bool IsRegionDefined(string code)
         {
@@ -362,7 +362,7 @@ namespace Makaretu.Globalization
         ///   The currency code to check.
         /// </param>
         /// <returns>
-        ///   <b>true</b> if the <paramref name="code"/>; otherwise, <b>false</b>.
+        ///   <b>true</b> if the <paramref name="code"/> is defined; otherwise, <b>false</b>.
         /// </returns>
         public bool IsCurrencyDefined(string code)
         {
