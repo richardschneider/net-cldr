@@ -6,8 +6,7 @@ using System.IO.Compression;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using System.Xml.Linq;
-
+using System.Xml.XPath;
 
 namespace Makaretu.Globalization
 {
@@ -247,13 +246,13 @@ namespace Makaretu.Globalization
         ///   as "common/supplemental/supplementalData.xml".
         /// </param>
         /// <returns>
-        ///   A sequence of <b>XDocuments</b> that match the <paramref name="name"/>.
+        ///   A sequence of <b>XPathDocuments</b> that match the <paramref name="name"/>.
         /// </returns>
         /// <remarks>
         ///   Each <see cref="Repositories">Reposistory</see> is searched for
         ///   for the document <paramref name="name"/>.
         /// </remarks>
-        public IEnumerable<XDocument> GetDocuments(string name)
+        public IEnumerable<XPathDocument> GetDocuments(string name)
         {
             var found = false;
             foreach (var repo in Repositories)
@@ -264,7 +263,7 @@ namespace Makaretu.Globalization
                     found = true;
                     if (log.IsDebugEnabled)
                         log.Debug($"Loading document {path}");
-                    yield return XDocument.Load(path);
+                    yield return new XPathDocument(path);
                 }
             }
 

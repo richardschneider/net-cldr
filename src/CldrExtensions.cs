@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Xml.Linq;
 using System.Xml.XPath;
 
 namespace Makaretu.Globalization
@@ -27,8 +26,8 @@ namespace Makaretu.Globalization
         /// <exception cref="KeyNotFoundException">
         ///   No elements match the <paramref name="predicate"/>.
         /// </exception>
-        public static XElement FirstElement(
-            this IEnumerable<XDocument> docs,
+        public static XPathNavigator FirstElement(
+            this IEnumerable<XPathDocument> docs,
             string predicate)
         {
             var element = FirstElementOrDefault(docs, predicate);
@@ -58,10 +57,10 @@ namespace Makaretu.Globalization
         /// <exception cref="KeyNotFoundException ">
         ///   No elements match the <paramref name="predicate"/>.
         /// </exception>
-        public static XElement FirstElementOrDefault(
-            this IEnumerable<XDocument> docs,
+        public static XPathNavigator FirstElementOrDefault(
+            this IEnumerable<XPathDocument> docs,
             string predicate,
-            Func<IEnumerable<XDocument>, XElement> defaultAction)
+            Func<IEnumerable<XPathDocument>, XPathNavigator> defaultAction)
         {
             var element = FirstElementOrDefault(docs, predicate);
             if (element != null)
@@ -82,12 +81,13 @@ namespace Makaretu.Globalization
         /// <returns>
         ///   The matched XElement or <b>null</b>.
         /// </returns>
-        public static XElement FirstElementOrDefault(
-            this IEnumerable<XDocument> docs,
+        public static XPathNavigator FirstElementOrDefault(
+            this IEnumerable<XPathDocument> docs,
             string predicate)
         {
             return docs
-                .Select(doc => doc.XPathSelectElement(predicate))
+                .Select(doc => doc.CreateNavigator())
+                .Select(nav => nav.SelectSingleNode(predicate))
                 .FirstOrDefault(e => e != null);
         }
     }

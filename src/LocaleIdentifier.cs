@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using System.Xml.Linq;
+using System.Xml.XPath;
 
 namespace Makaretu.Globalization
 {
@@ -169,7 +169,7 @@ namespace Makaretu.Globalization
                 .Where(k => k != String.Empty)
                 .Distinct();
 
-            XElement likely = null;
+            XPathNavigator likely = null;
             foreach (var key in keys)
             {
                 likely = Cldr.Instance
@@ -181,7 +181,7 @@ namespace Makaretu.Globalization
 
             if (likely != null)
             {
-                var defaults = LocaleIdentifier.ParseBcp47(likely.Attribute("to").Value);
+                var defaults = LocaleIdentifier.ParseBcp47(likely.GetAttribute("to", ""));
                 if (result.Language == "")
                     result.Language = defaults.Language;
                 if (result.Script == "")
@@ -387,7 +387,7 @@ namespace Makaretu.Globalization
                 .FirstElementOrDefault($"supplementalData/metadata/alias/languageAlias[@type='{Language}']");
             if (languageAlias != null)
             {
-                var replacement = LocaleIdentifier.ParseBcp47(languageAlias.Attribute("replacement").Value);
+                var replacement = LocaleIdentifier.ParseBcp47(languageAlias.GetAttribute("replacement", ""));
                 Language = replacement.Language;
                 if (Script == "")
                     Script = replacement.Script;
@@ -402,7 +402,7 @@ namespace Makaretu.Globalization
                 .FirstElementOrDefault($"supplementalData/metadata/alias/territoryAlias[@type='{Region}']");
             if (territoryAlias != null)
             {
-                var replacements = territoryAlias.Attribute("replacement").Value.Split(' ');
+                var replacements = territoryAlias.GetAttribute("replacement", "").Split(' ');
                 //    4.1 If there is a single territory in the replacement, use it.
                 var replacementValue = replacements[0];
                 //    4.2 If there are multiple territories:
@@ -416,7 +416,7 @@ namespace Makaretu.Globalization
                         .FirstElementOrDefault($"supplementalData/likelySubtags/likelySubtag[@from='{Language}']");
                     if (best != null)
                     {
-                        var to = LocaleIdentifier.ParseBcp47(best.Attribute("to").Value);
+                        var to = LocaleIdentifier.ParseBcp47(best.GetAttribute("to", ""));
                         if (replacements.Contains(to.Region))
                             replacementValue = to.Region;
                     }

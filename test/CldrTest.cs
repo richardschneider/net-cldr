@@ -52,7 +52,7 @@ namespace Makaretu.Globalization
             var bhd = Cldr.Instance
                 .GetDocuments("common/supplemental/supplementalData.xml")
                 .FirstElement("supplementalData/currencyData/fractions/info[@iso4217='BHD']");
-            Assert.AreEqual("3", bhd.Attribute("digits").Value);
+            Assert.AreEqual("3", bhd.GetAttribute("digits", ""));
         }
 
         [TestMethod]
@@ -72,7 +72,7 @@ namespace Makaretu.Globalization
             var bhd = Cldr.Instance
                 .GetDocuments("common/supplemental/supplementalData.xml")
                 .FirstElementOrDefault("supplementalData/currencyData/fractions/info[@iso4217='BHD']");
-            Assert.AreEqual("3", bhd.Attribute("digits").Value);
+            Assert.AreEqual("3", bhd.GetAttribute("digits", ""));
 
             var unknown = Cldr.Instance
                 .GetDocuments("common/supplemental/supplementalData.xml")
@@ -86,14 +86,14 @@ namespace Makaretu.Globalization
             var bhd = Cldr.Instance
                 .GetDocuments("common/supplemental/supplementalData.xml")
                 .FirstElementOrDefault("supplementalData/currencyData/fractions/info[@iso4217='BHD']", docs => null);
-            Assert.AreEqual("3", bhd.Attribute("digits").Value);
+            Assert.AreEqual("3", bhd.GetAttribute("digits", ""));
 
             var unknown = Cldr.Instance
                 .GetDocuments("common/supplemental/supplementalData.xml")
                 .FirstElementOrDefault(
                     "supplementalData/currencyData/fractions/info[@iso4217='unknown']",
                     docs => docs.FirstElement("supplementalData/currencyData/fractions/info[@iso4217='DEFAULT']"));
-            Assert.AreEqual("2", unknown.Attribute("digits").Value);
+            Assert.AreEqual("2", unknown.GetAttribute("digits", ""));
         }
 
         [TestMethod]
