@@ -208,6 +208,48 @@ references:
   commentId: Overload:Makaretu.Globalization.CldrExentsions.FirstElementOrDefault
   fullName: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault
   nameWithType: CldrExentsions.FirstElementOrDefault
+- uid: Makaretu.Globalization.CodeList
+  name: CodeList
+  href: api/Makaretu.Globalization.CodeList.html
+  commentId: T:Makaretu.Globalization.CodeList
+  fullName: Makaretu.Globalization.CodeList
+  nameWithType: CodeList
+- uid: Makaretu.Globalization.CodeList.#ctor(System.String)
+  name: CodeList(String)
+  href: api/Makaretu.Globalization.CodeList.html#Makaretu_Globalization_CodeList__ctor_System_String_
+  commentId: M:Makaretu.Globalization.CodeList.#ctor(System.String)
+  fullName: Makaretu.Globalization.CodeList.CodeList(System.String)
+  nameWithType: CodeList.CodeList(String)
+- uid: Makaretu.Globalization.CodeList.#ctor*
+  name: CodeList
+  href: api/Makaretu.Globalization.CodeList.html#Makaretu_Globalization_CodeList__ctor_
+  commentId: Overload:Makaretu.Globalization.CodeList.#ctor
+  fullName: Makaretu.Globalization.CodeList.CodeList
+  nameWithType: CodeList.CodeList
+- uid: Makaretu.Globalization.CodeList.Contains(System.String)
+  name: Contains(String)
+  href: api/Makaretu.Globalization.CodeList.html#Makaretu_Globalization_CodeList_Contains_System_String_
+  commentId: M:Makaretu.Globalization.CodeList.Contains(System.String)
+  fullName: Makaretu.Globalization.CodeList.Contains(System.String)
+  nameWithType: CodeList.Contains(String)
+- uid: Makaretu.Globalization.CodeList.Contains*
+  name: Contains
+  href: api/Makaretu.Globalization.CodeList.html#Makaretu_Globalization_CodeList_Contains_
+  commentId: Overload:Makaretu.Globalization.CodeList.Contains
+  fullName: Makaretu.Globalization.CodeList.Contains
+  nameWithType: CodeList.Contains
+- uid: Makaretu.Globalization.CodeList.Separator
+  name: Separator
+  href: api/Makaretu.Globalization.CodeList.html#Makaretu_Globalization_CodeList_Separator
+  commentId: P:Makaretu.Globalization.CodeList.Separator
+  fullName: Makaretu.Globalization.CodeList.Separator
+  nameWithType: CodeList.Separator
+- uid: Makaretu.Globalization.CodeList.Separator*
+  name: Separator
+  href: api/Makaretu.Globalization.CodeList.html#Makaretu_Globalization_CodeList_Separator_
+  commentId: Overload:Makaretu.Globalization.CodeList.Separator
+  fullName: Makaretu.Globalization.CodeList.Separator
+  nameWithType: CodeList.Separator
 - uid: Makaretu.Globalization.LocaleIdentifier
   name: LocaleIdentifier
   href: api/Makaretu.Globalization.LocaleIdentifier.html
@@ -373,3 +415,21 @@ references:
   commentId: Overload:Makaretu.Globalization.LocaleIdentifier.Variants
   fullName: Makaretu.Globalization.LocaleIdentifier.Variants
   nameWithType: LocaleIdentifier.Variants
+- uid: Makaretu.Globalization.StringRange
+  name: StringRange
+  href: api/Makaretu.Globalization.StringRange.html
+  commentId: T:Makaretu.Globalization.StringRange
+  fullName: Makaretu.Globalization.StringRange
+  nameWithType: StringRange
+- uid: Makaretu.Globalization.StringRange.Enumerate(System.String,System.String)
+  name: Enumerate(String, String)
+  href: api/Makaretu.Globalization.StringRange.html#Makaretu_Globalization_StringRange_Enumerate_System_String_System_String_
+  commentId: M:Makaretu.Globalization.StringRange.Enumerate(System.String,System.String)
+  fullName: Makaretu.Globalization.StringRange.Enumerate(System.String, System.String)
+  nameWithType: StringRange.Enumerate(String, String)
+- uid: Makaretu.Globalization.StringRange.Enumerate*
+  name: Enumerate
+  href: api/Makaretu.Globalization.StringRange.html#Makaretu_Globalization_StringRange_Enumerate_
+  commentId: Overload:Makaretu.Globalization.StringRange.Enumerate
+  fullName: Makaretu.Globalization.StringRange.Enumerate
+  nameWithType: StringRange.Enumerate
