@@ -169,39 +169,39 @@ references:
   commentId: T:Makaretu.Globalization.CldrExentsions
   fullName: Makaretu.Globalization.CldrExentsions
   nameWithType: CldrExentsions
-- uid: Makaretu.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable{System.Xml.Linq.XDocument},System.String)
-  name: FirstElement(IEnumerable<XDocument>, String)
-  href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_FirstElement_System_Collections_Generic_IEnumerable_System_Xml_Linq_XDocument__System_String_
-  commentId: M:Makaretu.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable{System.Xml.Linq.XDocument},System.String)
-  name.vb: FirstElement(IEnumerable(Of XDocument), String)
-  fullName: Makaretu.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable<System.Xml.Linq.XDocument>, System.String)
-  fullName.vb: Makaretu.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable(Of System.Xml.Linq.XDocument), System.String)
-  nameWithType: CldrExentsions.FirstElement(IEnumerable<XDocument>, String)
-  nameWithType.vb: CldrExentsions.FirstElement(IEnumerable(Of XDocument), String)
+- uid: Makaretu.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
+  name: FirstElement(IEnumerable<XPathDocument>, String)
+  href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_FirstElement_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_
+  commentId: M:Makaretu.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
+  name.vb: FirstElement(IEnumerable(Of XPathDocument), String)
+  fullName: Makaretu.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.String)
+  fullName.vb: Makaretu.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.String)
+  nameWithType: CldrExentsions.FirstElement(IEnumerable<XPathDocument>, String)
+  nameWithType.vb: CldrExentsions.FirstElement(IEnumerable(Of XPathDocument), String)
 - uid: Makaretu.Globalization.CldrExentsions.FirstElement*
   name: FirstElement
   href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_FirstElement_
   commentId: Overload:Makaretu.Globalization.CldrExentsions.FirstElement
   fullName: Makaretu.Globalization.CldrExentsions.FirstElement
   nameWithType: CldrExentsions.FirstElement
-- uid: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.Linq.XDocument},System.String)
-  name: FirstElementOrDefault(IEnumerable<XDocument>, String)
-  href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_FirstElementOrDefault_System_Collections_Generic_IEnumerable_System_Xml_Linq_XDocument__System_String_
-  commentId: M:Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.Linq.XDocument},System.String)
-  name.vb: FirstElementOrDefault(IEnumerable(Of XDocument), String)
-  fullName: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable<System.Xml.Linq.XDocument>, System.String)
-  fullName.vb: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable(Of System.Xml.Linq.XDocument), System.String)
-  nameWithType: CldrExentsions.FirstElementOrDefault(IEnumerable<XDocument>, String)
-  nameWithType.vb: CldrExentsions.FirstElementOrDefault(IEnumerable(Of XDocument), String)
-- uid: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.Linq.XDocument},System.String,System.Func{System.Collections.Generic.IEnumerable{System.Xml.Linq.XDocument},System.Xml.Linq.XElement})
-  name: FirstElementOrDefault(IEnumerable<XDocument>, String, Func<IEnumerable<XDocument>, XElement>)
-  href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_FirstElementOrDefault_System_Collections_Generic_IEnumerable_System_Xml_Linq_XDocument__System_String_System_Func_System_Collections_Generic_IEnumerable_System_Xml_Linq_XDocument__System_Xml_Linq_XElement__
-  commentId: M:Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.Linq.XDocument},System.String,System.Func{System.Collections.Generic.IEnumerable{System.Xml.Linq.XDocument},System.Xml.Linq.XElement})
-  name.vb: FirstElementOrDefault(IEnumerable(Of XDocument), String, Func(Of IEnumerable(Of XDocument), XElement))
-  fullName: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable<System.Xml.Linq.XDocument>, System.String, System.Func<System.Collections.Generic.IEnumerable<System.Xml.Linq.XDocument>, System.Xml.Linq.XElement>)
-  fullName.vb: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable(Of System.Xml.Linq.XDocument), System.String, System.Func(Of System.Collections.Generic.IEnumerable(Of System.Xml.Linq.XDocument), System.Xml.Linq.XElement))
-  nameWithType: CldrExentsions.FirstElementOrDefault(IEnumerable<XDocument>, String, Func<IEnumerable<XDocument>, XElement>)
-  nameWithType.vb: CldrExentsions.FirstElementOrDefault(IEnumerable(Of XDocument), String, Func(Of IEnumerable(Of XDocument), XElement))
+- uid: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
+  name: FirstElementOrDefault(IEnumerable<XPathDocument>, String)
+  href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_FirstElementOrDefault_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_
+  commentId: M:Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
+  name.vb: FirstElementOrDefault(IEnumerable(Of XPathDocument), String)
+  fullName: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.String)
+  fullName.vb: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.String)
+  nameWithType: CldrExentsions.FirstElementOrDefault(IEnumerable<XPathDocument>, String)
+  nameWithType.vb: CldrExentsions.FirstElementOrDefault(IEnumerable(Of XPathDocument), String)
+- uid: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String,System.Func{System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.Xml.XPath.XPathNavigator})
+  name: FirstElementOrDefault(IEnumerable<XPathDocument>, String, Func<IEnumerable<XPathDocument>, XPathNavigator>)
+  href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_FirstElementOrDefault_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_System_Func_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_Xml_XPath_XPathNavigator__
+  commentId: M:Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String,System.Func{System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.Xml.XPath.XPathNavigator})
+  name.vb: FirstElementOrDefault(IEnumerable(Of XPathDocument), String, Func(Of IEnumerable(Of XPathDocument), XPathNavigator))
+  fullName: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.String, System.Func<System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.Xml.XPath.XPathNavigator>)
+  fullName.vb: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.String, System.Func(Of System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.Xml.XPath.XPathNavigator))
+  nameWithType: CldrExentsions.FirstElementOrDefault(IEnumerable<XPathDocument>, String, Func<IEnumerable<XPathDocument>, XPathNavigator>)
+  nameWithType.vb: CldrExentsions.FirstElementOrDefault(IEnumerable(Of XPathDocument), String, Func(Of IEnumerable(Of XPathDocument), XPathNavigator))
 - uid: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault*
   name: FirstElementOrDefault
   href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_FirstElementOrDefault_
