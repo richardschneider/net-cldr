@@ -95,5 +95,34 @@ namespace Makaretu.Globalization
                     docs => docs.FirstElement("supplementalData/currencyData/fractions/info[@iso4217='DEFAULT']"));
             Assert.AreEqual("2", unknown.Attribute("digits").Value);
         }
+
+        [TestMethod]
+        public void LanguageDefined()
+        {
+            Assert.IsTrue(Cldr.Instance.IsLanguageDefined("en"));
+            Assert.IsFalse(Cldr.Instance.IsLanguageDefined("unknown"));
+        }
+
+        [TestMethod]
+        public void ScriptDefined()
+        {
+            Assert.IsTrue(Cldr.Instance.IsScriptDefined("Arab"));
+            Assert.IsFalse(Cldr.Instance.IsScriptDefined("Axxx"));
+        }
+
+        [TestMethod]
+        public void RegionDefined()
+        {
+            Assert.IsTrue(Cldr.Instance.IsRegionDefined("NZ"));
+            Assert.IsFalse(Cldr.Instance.IsRegionDefined("ZX"));
+        }
+
+        [TestMethod]
+        public void CurrenyDefined()
+        {
+            Assert.IsTrue(Cldr.Instance.IsCurrencyDefined("JPY"));
+            Assert.IsFalse(Cldr.Instance.IsCurrencyDefined("JPD"));
+        }
+
     }
 }

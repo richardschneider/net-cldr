@@ -304,5 +304,72 @@ namespace Makaretu.Globalization
             if (!found)
                 throw new FileNotFoundException($"CLDR data '{name}' does not exist.");
         }
+
+        #region Code validation
+
+        /// <summary>
+        ///   Determines if the language code is defined.
+        /// </summary>
+        /// <param name="code">
+        ///   The language code to check.
+        /// </param>
+        /// <returns>
+        ///   <b>true</b> if the <paramref name="code"/>; otherwise, <b>false</b>.
+        /// </returns>
+        public bool IsLanguageDefined(string code)
+        {
+            return null != this
+                .GetDocuments("common/validity/language.xml")
+                .FirstElementOrDefault($"supplementalData/idValidity/id[@type='language'][contains(.,'{code}')]");
+        }
+
+        /// <summary>
+        ///   Determines if the script code is defined.
+        /// </summary>
+        /// <param name="code">
+        ///   The script (writting system) code to check.
+        /// </param>
+        /// <returns>
+        ///   <b>true</b> if the <paramref name="code"/>; otherwise, <b>false</b>.
+        /// </returns>
+        public bool IsScriptDefined(string code)
+        {
+            return null != this
+                .GetDocuments("common/validity/script.xml")
+                .FirstElementOrDefault($"supplementalData/idValidity/id[@type='script'][contains(.,'{code}')]");
+        }
+
+        /// <summary>
+        ///   Determines if the region code is defined.
+        /// </summary>
+        /// <param name="code">
+        ///   The region code to check.
+        /// </param>
+        /// <returns>
+        ///   <b>true</b> if the <paramref name="code"/>; otherwise, <b>false</b>.
+        /// </returns>
+        public bool IsRegionDefined(string code)
+        {
+            return null != this
+                .GetDocuments("common/validity/region.xml")
+                .FirstElementOrDefault($"supplementalData/idValidity/id[@type='region'][contains(.,'{code}')]");
+        }
+
+        /// <summary>
+        ///   Determines if the currency code is defined.
+        /// </summary>
+        /// <param name="code">
+        ///   The currency code to check.
+        /// </param>
+        /// <returns>
+        ///   <b>true</b> if the <paramref name="code"/>; otherwise, <b>false</b>.
+        /// </returns>
+        public bool IsCurrencyDefined(string code)
+        {
+            return null != this
+                .GetDocuments("common/validity/currency.xml")
+                .FirstElementOrDefault($"supplementalData/idValidity/id[@type='currency'][contains(.,'{code}')]");
+        }
+        #endregion
     }
 }

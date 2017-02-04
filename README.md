@@ -12,7 +12,9 @@ Provides locale content for internationalisation software using the Unicode Comm
 - Uses the official [Unicode CLDR XML](http://www.unicode.org/Public/cldr/) without any "build steps"
 - Can download the latest CLDR anytime
 - Use [XPath expressions](https://msdn.microsoft.com/en-us/library/ms256471(v=vs.110).aspx) to query the CLDR
-
+- Parsing of a locale identifier
+- Validation of common codes (language, currency, ...)
+- 
 ## Getting started
 
 Published releases of the package are available on [NuGet](https://www.nuget.org/packages/Makaretu.Globalization/).  To install, run the following command in the [Package Manager Console](https://docs.nuget.org/docs/start-here/using-the-package-manager-console).
