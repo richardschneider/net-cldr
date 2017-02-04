@@ -42,7 +42,7 @@ namespace Makaretu.Globalization
         [TestMethod]
         public void Parsing_Language_Script()
         {
-            var  id = LocaleIdentifier.Parse("uz-Cyrl");
+            var id = LocaleIdentifier.Parse("uz-Cyrl");
             Assert.AreEqual("uz", id.Language);
             Assert.AreEqual("Cyrl", id.Script);
 
@@ -186,7 +186,6 @@ namespace Makaretu.Globalization
             Assert.AreEqual("sr-Latn", LocaleIdentifier.Parse("sh").ToString());
             Assert.AreEqual("sr-Cyrl", LocaleIdentifier.Parse("sh-Cyrl").ToString());
             Assert.AreEqual("hy-AM", LocaleIdentifier.Parse("hy-SU").ToString());
-            Assert.AreEqual("zh_Hans_SG", LocaleIdentifier.Parse("ZH-ZZZZ-SG").ToString());
         }
 
         [TestMethod]
@@ -214,5 +213,15 @@ namespace Makaretu.Globalization
             id = LocaleIdentifier.Parse("EN");
             Assert.AreEqual("en", id.ToUnicodeLanguage());
         }
+
+        [TestMethod]
+        public void MostLikely()
+        {
+            Assert.AreEqual("en-Latn-US", LocaleIdentifier.Parse("en").MostLikelySubtags().ToString());
+            Assert.AreEqual("zh-Hans-CN", LocaleIdentifier.Parse("zh").MostLikelySubtags().ToString());
+            Assert.AreEqual("zh-Hant-TW", LocaleIdentifier.Parse("zh-TW").MostLikelySubtags().ToString());
+            Assert.AreEqual("zh-Hans-SG", LocaleIdentifier.Parse("ZH-ZZZZ-SG").MostLikelySubtags().ToString());
+        }
+
     }
 }

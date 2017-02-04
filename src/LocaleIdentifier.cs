@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Makaretu.Globalization
 {
@@ -131,6 +132,64 @@ namespace Makaretu.Globalization
             var tags = new[] { Language, Script, Region }
                 .Where(tag => tag != String.Empty);
             return String.Join("_", tags);
+        }
+
+        /// <summary>
+        ///   A new locale with the all the empty subtags filled in
+        ///   with a likely value.
+        /// </summary>
+        /// <returns></returns>
+        public LocaleIdentifier MostLikelySubtags()
+        {
+            var result = (LocaleIdentifier)this.MemberwiseClone();
+
+            // Remove the script code 'Zzzz' and the region code 'ZZ' if they occur.
+            if (result.Script == "Zzzz")
+                result.Script = String.Empty;
+            if (result.Region == "ZZ")
+                result.Region = String.Empty;
+
+            // Short cut if all subtags have a value.
+            if (result.Language != "" && result.Script != "" && result.Region != "")
+                return result;
+
+
+            // Find the language in likely subtags.
+            var keys = new[]
+            {
+                $"{result.Language}_{result.Script}_{result.Region}",
+                $"{result.Language}_{result.Region}",
+                $"{result.Language}_{result.Script}",
+                $"{result.Language}",
+                $"und_{result.Script}",
+            }
+                .Select(k => k.Replace("__", "_").Trim('_'))
+                .Where(k => k != String.Empty)
+                .Distinct();
+
+            XElement likely = null;
+            foreach (var key in keys)
+            {
+                likely = Cldr.Instance
+                    .GetDocuments("common/supplemental/likelySubtags.xml")
+                    .FirstElementOrDefault($"supplementalData/likelySubtags/likelySubtag[@from='{key}']");
+                if (likely != null)
+                    break;
+            }
+
+            if (likely != null)
+            {
+                var defaults = LocaleIdentifier.ParseBcp47(likely.Attribute("to").Value);
+                if (result.Language == "")
+                    result.Language = defaults.Language;
+                if (result.Script == "")
+                    result.Script = defaults.Script;
+                if (result.Region == "")
+                    result.Region = defaults.Region;
+            }
+
+            return result;
+
         }
 
         static string ToTitleCase(string s)
@@ -309,10 +368,6 @@ namespace Makaretu.Globalization
         {
 
             // 1. Canonicalize the language tag (afterwards, there will be no extlang subtag)
-            if (Script == "Zzzz")
-                Script = String.Empty;
-            if (Region == "ZZ")
-                Region = String.Empty;
 
             // 2. Replace the BCP 47 primary language subtag "und" with "root" if no script, region, 
             //    or variant subtags are present
@@ -330,7 +385,7 @@ namespace Makaretu.Globalization
                 .FirstElementOrDefault($"supplementalData/metadata/alias/languageAlias[@type='{Language}']");
             if (languageAlias != null)
             {
-                var replacement = LocaleIdentifier.Parse(languageAlias.Attribute("replacement").Value);
+                var replacement = LocaleIdentifier.ParseBcp47(languageAlias.Attribute("replacement").Value);
                 Language = replacement.Language;
                 if (Script == "")
                     Script = replacement.Script;
@@ -359,7 +414,7 @@ namespace Makaretu.Globalization
                         .FirstElementOrDefault($"supplementalData/likelySubtags/likelySubtag[@from='{Language}']");
                     if (best != null)
                     {
-                        var to = LocaleIdentifier.Parse(best.Attribute("to").Value);
+                        var to = LocaleIdentifier.ParseBcp47(best.Attribute("to").Value);
                         if (replacements.Contains(to.Region))
                             replacementValue = to.Region;
                     }
@@ -367,7 +422,9 @@ namespace Makaretu.Globalization
                 Region = replacementValue;
             }
 
+
             return null;
         }
+
     }
 }
