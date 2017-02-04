@@ -190,6 +190,18 @@ references:
   commentId: Overload:Makaretu.Globalization.LocaleIdentifier.Language
   fullName: Makaretu.Globalization.LocaleIdentifier.Language
   nameWithType: LocaleIdentifier.Language
+- uid: Makaretu.Globalization.LocaleIdentifier.MostLikelySubtags
+  name: MostLikelySubtags()
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_MostLikelySubtags
+  commentId: M:Makaretu.Globalization.LocaleIdentifier.MostLikelySubtags
+  fullName: Makaretu.Globalization.LocaleIdentifier.MostLikelySubtags()
+  nameWithType: LocaleIdentifier.MostLikelySubtags()
+- uid: Makaretu.Globalization.LocaleIdentifier.MostLikelySubtags*
+  name: MostLikelySubtags
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_MostLikelySubtags_
+  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.MostLikelySubtags
+  fullName: Makaretu.Globalization.LocaleIdentifier.MostLikelySubtags
+  nameWithType: LocaleIdentifier.MostLikelySubtags
 - uid: Makaretu.Globalization.LocaleIdentifier.Parse(System.String)
   name: Parse(String)
   href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Parse_System_String_
