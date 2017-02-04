@@ -189,6 +189,15 @@ namespace Makaretu.Globalization
         }
 
         [TestMethod]
+        public void Parsing_Normalisation()
+        {
+            Assert.AreEqual("en-US", LocaleIdentifier.Parse("eng-840").ToString());
+            Assert.AreEqual("en-NZ", LocaleIdentifier.Parse("eng-NZ").ToString());
+            Assert.AreEqual("en-GB", LocaleIdentifier.Parse("eng-UK").ToString());
+            Assert.AreEqual("en-GB", LocaleIdentifier.Parse("en-UK").ToString());
+        }
+
+        [TestMethod]
         public void Formatting()
         {
             var id = LocaleIdentifier.Parse("EN_LATN_GB_R_EXTENDED_SEQUENCE_R-FOO");
