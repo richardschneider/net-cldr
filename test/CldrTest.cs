@@ -124,5 +124,10 @@ namespace Makaretu.Globalization
             Assert.IsFalse(Cldr.Instance.IsCurrencyDefined("JPD"));
         }
 
+        [TestMethod, Ignore]
+        public void Issue_2()
+        {
+            Assert.IsTrue(Cldr.Instance.IsRegionDefined("GB"));
+        }
     }
 }
