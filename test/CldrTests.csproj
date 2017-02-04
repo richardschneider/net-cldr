@@ -61,6 +61,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="StringRangeTest.cs" />
     <Compile Include="LocaleIdentifierTest.cs" />
     <Compile Include="CldrTest.cs" />
     <Compile Include="ExceptionAssert.cs" />
