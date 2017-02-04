@@ -11,7 +11,7 @@ namespace Makaretu.Globalization
         [AssemblyInitialize]
         public static void InstallCldr(TestContext context)
         {
-            var version = Cldr.Instance.DownloadLatestAsync().Result;
+            //var version = Cldr.Instance.DownloadLatestAsync().Result;
         }
     }
 }

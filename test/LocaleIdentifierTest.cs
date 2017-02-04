@@ -193,8 +193,8 @@ namespace Makaretu.Globalization
         {
             Assert.AreEqual("en-US", LocaleIdentifier.Parse("eng-840").ToString());
             Assert.AreEqual("en-NZ", LocaleIdentifier.Parse("eng-NZ").ToString());
-            Assert.AreEqual("en-GB", LocaleIdentifier.Parse("eng-UK").ToString());
             Assert.AreEqual("en-GB", LocaleIdentifier.Parse("en-UK").ToString());
+            Assert.AreEqual("en-GB", LocaleIdentifier.Parse("eng-UK").ToString());
         }
 
         [TestMethod]
