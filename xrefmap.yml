@@ -91,6 +91,54 @@ references:
   commentId: F:Makaretu.Globalization.Cldr.Instance
   fullName: Makaretu.Globalization.Cldr.Instance
   nameWithType: Cldr.Instance
+- uid: Makaretu.Globalization.Cldr.IsCurrencyDefined(System.String)
+  name: IsCurrencyDefined(String)
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_IsCurrencyDefined_System_String_
+  commentId: M:Makaretu.Globalization.Cldr.IsCurrencyDefined(System.String)
+  fullName: Makaretu.Globalization.Cldr.IsCurrencyDefined(System.String)
+  nameWithType: Cldr.IsCurrencyDefined(String)
+- uid: Makaretu.Globalization.Cldr.IsCurrencyDefined*
+  name: IsCurrencyDefined
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_IsCurrencyDefined_
+  commentId: Overload:Makaretu.Globalization.Cldr.IsCurrencyDefined
+  fullName: Makaretu.Globalization.Cldr.IsCurrencyDefined
+  nameWithType: Cldr.IsCurrencyDefined
+- uid: Makaretu.Globalization.Cldr.IsLanguageDefined(System.String)
+  name: IsLanguageDefined(String)
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_IsLanguageDefined_System_String_
+  commentId: M:Makaretu.Globalization.Cldr.IsLanguageDefined(System.String)
+  fullName: Makaretu.Globalization.Cldr.IsLanguageDefined(System.String)
+  nameWithType: Cldr.IsLanguageDefined(String)
+- uid: Makaretu.Globalization.Cldr.IsLanguageDefined*
+  name: IsLanguageDefined
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_IsLanguageDefined_
+  commentId: Overload:Makaretu.Globalization.Cldr.IsLanguageDefined
+  fullName: Makaretu.Globalization.Cldr.IsLanguageDefined
+  nameWithType: Cldr.IsLanguageDefined
+- uid: Makaretu.Globalization.Cldr.IsRegionDefined(System.String)
+  name: IsRegionDefined(String)
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_IsRegionDefined_System_String_
+  commentId: M:Makaretu.Globalization.Cldr.IsRegionDefined(System.String)
+  fullName: Makaretu.Globalization.Cldr.IsRegionDefined(System.String)
+  nameWithType: Cldr.IsRegionDefined(String)
+- uid: Makaretu.Globalization.Cldr.IsRegionDefined*
+  name: IsRegionDefined
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_IsRegionDefined_
+  commentId: Overload:Makaretu.Globalization.Cldr.IsRegionDefined
+  fullName: Makaretu.Globalization.Cldr.IsRegionDefined
+  nameWithType: Cldr.IsRegionDefined
+- uid: Makaretu.Globalization.Cldr.IsScriptDefined(System.String)
+  name: IsScriptDefined(String)
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_IsScriptDefined_System_String_
+  commentId: M:Makaretu.Globalization.Cldr.IsScriptDefined(System.String)
+  fullName: Makaretu.Globalization.Cldr.IsScriptDefined(System.String)
+  nameWithType: Cldr.IsScriptDefined(String)
+- uid: Makaretu.Globalization.Cldr.IsScriptDefined*
+  name: IsScriptDefined
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_IsScriptDefined_
+  commentId: Overload:Makaretu.Globalization.Cldr.IsScriptDefined
+  fullName: Makaretu.Globalization.Cldr.IsScriptDefined
+  nameWithType: Cldr.IsScriptDefined
 - uid: Makaretu.Globalization.Cldr.LatestVersionAsync
   name: LatestVersionAsync()
   href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_LatestVersionAsync
