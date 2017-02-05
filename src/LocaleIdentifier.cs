@@ -118,8 +118,8 @@ namespace Makaretu.Globalization
         ///   Get the Unicode Language ID.
         /// </summary>
         /// <returns>
-        ///   The unicode language ID, consisting of the <see cref="Language"/>, <see cref="Script"/> and
-        ///   <see cref="Region"/> separated by "_".
+        ///   The unicode language ID, consists of the <see cref="Language"/>, <see cref="Script"/> and
+        ///   <see cref="Region"/> and <see cref="Variants"/> separated by "_".
         /// </returns>
         /// <remarks>
         ///   Uses the casing recommendations in [BCP47] for subtag casing. 
@@ -130,7 +130,8 @@ namespace Makaretu.Globalization
         public string ToUnicodeLanguage()
         {
             var tags = new[] { Language, Script, Region }
-                .Where(tag => tag != String.Empty);
+                .Where(tag => tag != String.Empty)
+                .Concat(Variants);
             return String.Join("_", tags);
         }
 

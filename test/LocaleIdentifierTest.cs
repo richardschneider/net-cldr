@@ -221,6 +221,9 @@ namespace Makaretu.Globalization
 
             id = LocaleIdentifier.Parse("EN");
             Assert.AreEqual("en", id.ToUnicodeLanguage());
+
+            id = LocaleIdentifier.Parse("DE-ch-1996");
+            Assert.AreEqual("de_CH_1996", id.ToUnicodeLanguage());
         }
 
         [TestMethod]
