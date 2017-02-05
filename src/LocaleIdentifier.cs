@@ -207,7 +207,7 @@ namespace Makaretu.Globalization
             var trials = new[] { max.Language, $"{max.Language}-{max.Region}", $"{max.Language}-{max.Script}" };
             foreach (var trial in trials)
             {
-                var id = LocaleIdentifier.Parse(trial);
+                var id = LocaleIdentifier.ParseBcp47(trial);
                 if (max.ToUnicodeLanguage() == id.MostLikelySubtags().ToUnicodeLanguage())
                 {
                     id.Variants = this.Variants;
