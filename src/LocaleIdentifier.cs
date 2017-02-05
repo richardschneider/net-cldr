@@ -426,12 +426,12 @@ namespace Makaretu.Globalization
 
             // Verify that the subtags are defined.
             // TODO: Need StringRanges, see https://github.com/richardschneider/net-cldr/issues/2
-            //if (Language != "" && !Cldr.Instance.IsLanguageDefined(Language))
-            //    return $"Language '{Language}' is not defined.";
-            //if (Script != "" && !Cldr.Instance.IsScriptDefined(Script))
-            //    return $"Script '{Script}' is not defined.";
-            //if (Region != "" && !Cldr.Instance.IsRegionDefined(Region))
-            //    return $"Region '{Region}' is not defined.";
+            if (Language != "" && !Cldr.Instance.IsLanguageDefined(Language))
+                return $"Language '{Language}' is not defined.";
+            if (Script != "" && !Cldr.Instance.IsScriptDefined(Script))
+                return $"Script '{Script}' is not defined.";
+            if (Region != "" && !Cldr.Instance.IsRegionDefined(Region))
+                return $"Region '{Region}' is not defined.";
             // TODO: variants
             // TODO: U extensions
             // TODO: T extensions

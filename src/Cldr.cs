@@ -197,7 +197,7 @@ namespace Makaretu.Globalization
             Directory.CreateDirectory(repositoryFolder);
 
             var files = new[] { "core.zip", "keyboards.zip" };
-            var tasks= files.Select(name => DownloadAsync(name, version));
+            var tasks = files.Select(name => DownloadAsync(name, version));
             return Task.WhenAll(tasks);
         }
 
@@ -317,9 +317,12 @@ namespace Makaretu.Globalization
         /// </returns>
         public bool IsLanguageDefined(string code)
         {
+            if (code == "root")
+                return true;
+
             return null != this
                 .GetDocuments("common/validity/language.xml")
-                .FirstElementOrDefault($"supplementalData/idValidity/id[@type='language'][contains(.,'{code}')]");
+                .FirstElementOrDefault($"supplementalData/idValidity/id[@type='language'][cldr:contains-code(.,'{code}')]");
         }
 
         /// <summary>
@@ -335,7 +338,7 @@ namespace Makaretu.Globalization
         {
             return null != this
                 .GetDocuments("common/validity/script.xml")
-                .FirstElementOrDefault($"supplementalData/idValidity/id[@type='script'][contains(.,'{code}')]");
+                .FirstElementOrDefault($"supplementalData/idValidity/id[@type='script'][cldr:contains-code(.,'{code}')]");
         }
 
         /// <summary>
@@ -351,7 +354,7 @@ namespace Makaretu.Globalization
         {
             return null != this
                 .GetDocuments("common/validity/region.xml")
-                .FirstElementOrDefault($"supplementalData/idValidity/id[@type='region'][contains(.,'{code}')]");
+                .FirstElementOrDefault($"supplementalData/idValidity/id[@type='region'][cldr:contains-code(.,'{code}')]");
         }
 
         /// <summary>
@@ -367,7 +370,7 @@ namespace Makaretu.Globalization
         {
             return null != this
                 .GetDocuments("common/validity/currency.xml")
-                .FirstElementOrDefault($"supplementalData/idValidity/id[@type='currency'][contains(.,'{code}')]");
+                .FirstElementOrDefault($"supplementalData/idValidity/id[@type='currency'][cldr:contains-code(.,'{code}')]");
         }
         #endregion
     }
