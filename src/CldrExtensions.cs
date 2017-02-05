@@ -86,8 +86,13 @@ namespace Makaretu.Globalization
             string predicate)
         {
             return docs
-                .Select(doc => doc.CreateNavigator())
-                .Select(nav => nav.SelectSingleNode(predicate))
+                .Select(doc =>
+                {
+                    var nav = doc.CreateNavigator();
+                    var expr = nav.Compile(predicate);
+                    expr.SetContext(CldrContext.Default);
+                    return nav.SelectSingleNode(expr);
+                })
                 .FirstOrDefault(e => e != null);
         }
     }
