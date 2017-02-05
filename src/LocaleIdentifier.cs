@@ -136,11 +136,11 @@ namespace Makaretu.Globalization
         }
 
         /// <summary>
-        ///   A new locale with the all the empty subtags filled in
+        ///   A new locale identifier with the all the empty subtags filled in
         ///   with a likely value.
         /// </summary>
         /// <returns>
-        ///   A new locale with the all subtags filled in.
+        ///   A new locale identifier with all subtags filled in.
         /// </returns>
         public LocaleIdentifier MostLikelySubtags()
         {
@@ -192,7 +192,31 @@ namespace Makaretu.Globalization
             }
 
             return result;
+        }
 
+        /// <summary>
+        ///   A new locale idenyifer with empty subtags that <see cref="MostLikelySubtags"/> would fill.
+        /// </summary>
+        /// <returns>
+        ///   A new locale identifier.
+        /// </returns>
+        public LocaleIdentifier RemoveMostLikelySubtags()
+        {
+            var max = this.MostLikelySubtags();
+            max.Variants = new string[0];
+            var trials = new[] { max.Language, $"{max.Language}-{max.Region}", $"{max.Language}-{max.Script}" };
+            foreach (var trial in trials)
+            {
+                var id = LocaleIdentifier.Parse(trial);
+                if (max.ToUnicodeLanguage() == id.MostLikelySubtags().ToUnicodeLanguage())
+                {
+                    id.Variants = this.Variants;
+                    return id;
+                }
+            }
+
+            max.Variants = this.Variants;
+            return max;
         }
 
         static string ToTitleCase(string s)

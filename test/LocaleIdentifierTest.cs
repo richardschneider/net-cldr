@@ -235,5 +235,12 @@ namespace Makaretu.Globalization
             Assert.AreEqual("zh-Hans-SG", LocaleIdentifier.Parse("ZH-ZZZZ-SG").MostLikelySubtags().ToString());
         }
 
+        [TestMethod]
+        public void RemoveMostLikely()
+        {
+            Assert.AreEqual("zh-TW", LocaleIdentifier.Parse("zh_Hant").RemoveMostLikelySubtags().ToString());
+            Assert.AreEqual("en", LocaleIdentifier.Parse("en-Latn-US").RemoveMostLikelySubtags().ToString());
+        }
+
     }
 }
