@@ -415,6 +415,18 @@ references:
   commentId: Overload:Makaretu.Globalization.LocaleIdentifier.Region
   fullName: Makaretu.Globalization.LocaleIdentifier.Region
   nameWithType: LocaleIdentifier.Region
+- uid: Makaretu.Globalization.LocaleIdentifier.RemoveMostLikelySubtags
+  name: RemoveMostLikelySubtags()
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_RemoveMostLikelySubtags
+  commentId: M:Makaretu.Globalization.LocaleIdentifier.RemoveMostLikelySubtags
+  fullName: Makaretu.Globalization.LocaleIdentifier.RemoveMostLikelySubtags()
+  nameWithType: LocaleIdentifier.RemoveMostLikelySubtags()
+- uid: Makaretu.Globalization.LocaleIdentifier.RemoveMostLikelySubtags*
+  name: RemoveMostLikelySubtags
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_RemoveMostLikelySubtags_
+  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.RemoveMostLikelySubtags
+  fullName: Makaretu.Globalization.LocaleIdentifier.RemoveMostLikelySubtags
+  nameWithType: LocaleIdentifier.RemoveMostLikelySubtags
 - uid: Makaretu.Globalization.LocaleIdentifier.Script
   name: Script
   href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Script
