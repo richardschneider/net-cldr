@@ -139,6 +139,18 @@ references:
   commentId: Overload:Makaretu.Globalization.Cldr.IsScriptDefined
   fullName: Makaretu.Globalization.Cldr.IsScriptDefined
   nameWithType: Cldr.IsScriptDefined
+- uid: Makaretu.Globalization.Cldr.IsVariantDefined(System.String)
+  name: IsVariantDefined(String)
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_IsVariantDefined_System_String_
+  commentId: M:Makaretu.Globalization.Cldr.IsVariantDefined(System.String)
+  fullName: Makaretu.Globalization.Cldr.IsVariantDefined(System.String)
+  nameWithType: Cldr.IsVariantDefined(String)
+- uid: Makaretu.Globalization.Cldr.IsVariantDefined*
+  name: IsVariantDefined
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_IsVariantDefined_
+  commentId: Overload:Makaretu.Globalization.Cldr.IsVariantDefined
+  fullName: Makaretu.Globalization.Cldr.IsVariantDefined
+  nameWithType: Cldr.IsVariantDefined
 - uid: Makaretu.Globalization.Cldr.LatestVersionAsync
   name: LatestVersionAsync()
   href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_LatestVersionAsync
