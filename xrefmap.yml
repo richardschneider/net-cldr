@@ -163,6 +163,81 @@ references:
   commentId: F:Makaretu.Globalization.Cldr.Repositories
   fullName: Makaretu.Globalization.Cldr.Repositories
   nameWithType: Cldr.Repositories
+- uid: Makaretu.Globalization.CldrContext
+  name: CldrContext
+  href: api/Makaretu.Globalization.CldrContext.html
+  commentId: T:Makaretu.Globalization.CldrContext
+  fullName: Makaretu.Globalization.CldrContext
+  nameWithType: CldrContext
+- uid: Makaretu.Globalization.CldrContext.CompareDocument(System.String,System.String)
+  name: CompareDocument(String, String)
+  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_CompareDocument_System_String_System_String_
+  commentId: M:Makaretu.Globalization.CldrContext.CompareDocument(System.String,System.String)
+  fullName: Makaretu.Globalization.CldrContext.CompareDocument(System.String, System.String)
+  nameWithType: CldrContext.CompareDocument(String, String)
+- uid: Makaretu.Globalization.CldrContext.CompareDocument*
+  name: CompareDocument
+  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_CompareDocument_
+  commentId: Overload:Makaretu.Globalization.CldrContext.CompareDocument
+  fullName: Makaretu.Globalization.CldrContext.CompareDocument
+  nameWithType: CldrContext.CompareDocument
+- uid: Makaretu.Globalization.CldrContext.Default
+  name: Default
+  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_Default
+  commentId: F:Makaretu.Globalization.CldrContext.Default
+  fullName: Makaretu.Globalization.CldrContext.Default
+  nameWithType: CldrContext.Default
+- uid: Makaretu.Globalization.CldrContext.PreserveWhitespace(System.Xml.XPath.XPathNavigator)
+  name: PreserveWhitespace(XPathNavigator)
+  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_PreserveWhitespace_System_Xml_XPath_XPathNavigator_
+  commentId: M:Makaretu.Globalization.CldrContext.PreserveWhitespace(System.Xml.XPath.XPathNavigator)
+  fullName: Makaretu.Globalization.CldrContext.PreserveWhitespace(System.Xml.XPath.XPathNavigator)
+  nameWithType: CldrContext.PreserveWhitespace(XPathNavigator)
+- uid: Makaretu.Globalization.CldrContext.PreserveWhitespace*
+  name: PreserveWhitespace
+  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_PreserveWhitespace_
+  commentId: Overload:Makaretu.Globalization.CldrContext.PreserveWhitespace
+  fullName: Makaretu.Globalization.CldrContext.PreserveWhitespace
+  nameWithType: CldrContext.PreserveWhitespace
+- uid: Makaretu.Globalization.CldrContext.ResolveFunction(System.String,System.String,System.Xml.XPath.XPathResultType[])
+  name: ResolveFunction(String, String, XPathResultType[])
+  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_ResolveFunction_System_String_System_String_System_Xml_XPath_XPathResultType___
+  commentId: M:Makaretu.Globalization.CldrContext.ResolveFunction(System.String,System.String,System.Xml.XPath.XPathResultType[])
+  name.vb: ResolveFunction(String, String, XPathResultType())
+  fullName: Makaretu.Globalization.CldrContext.ResolveFunction(System.String, System.String, System.Xml.XPath.XPathResultType[])
+  fullName.vb: Makaretu.Globalization.CldrContext.ResolveFunction(System.String, System.String, System.Xml.XPath.XPathResultType())
+  nameWithType: CldrContext.ResolveFunction(String, String, XPathResultType[])
+  nameWithType.vb: CldrContext.ResolveFunction(String, String, XPathResultType())
+- uid: Makaretu.Globalization.CldrContext.ResolveFunction*
+  name: ResolveFunction
+  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_ResolveFunction_
+  commentId: Overload:Makaretu.Globalization.CldrContext.ResolveFunction
+  fullName: Makaretu.Globalization.CldrContext.ResolveFunction
+  nameWithType: CldrContext.ResolveFunction
+- uid: Makaretu.Globalization.CldrContext.ResolveVariable(System.String,System.String)
+  name: ResolveVariable(String, String)
+  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_ResolveVariable_System_String_System_String_
+  commentId: M:Makaretu.Globalization.CldrContext.ResolveVariable(System.String,System.String)
+  fullName: Makaretu.Globalization.CldrContext.ResolveVariable(System.String, System.String)
+  nameWithType: CldrContext.ResolveVariable(String, String)
+- uid: Makaretu.Globalization.CldrContext.ResolveVariable*
+  name: ResolveVariable
+  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_ResolveVariable_
+  commentId: Overload:Makaretu.Globalization.CldrContext.ResolveVariable
+  fullName: Makaretu.Globalization.CldrContext.ResolveVariable
+  nameWithType: CldrContext.ResolveVariable
+- uid: Makaretu.Globalization.CldrContext.Whitespace
+  name: Whitespace
+  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_Whitespace
+  commentId: P:Makaretu.Globalization.CldrContext.Whitespace
+  fullName: Makaretu.Globalization.CldrContext.Whitespace
+  nameWithType: CldrContext.Whitespace
+- uid: Makaretu.Globalization.CldrContext.Whitespace*
+  name: Whitespace
+  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_Whitespace_
+  commentId: Overload:Makaretu.Globalization.CldrContext.Whitespace
+  fullName: Makaretu.Globalization.CldrContext.Whitespace
+  nameWithType: CldrContext.Whitespace
 - uid: Makaretu.Globalization.CldrExentsions
   name: CldrExentsions
   href: api/Makaretu.Globalization.CldrExentsions.html
