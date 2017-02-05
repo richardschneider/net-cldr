@@ -1,6 +1,7 @@
 ﻿using Common.Logging;
 using System;
 using System.Collections.Generic;
+using System.Collections.Concurrent;
 using System.IO;
 using System.IO.Compression;
 using System.Linq;
@@ -42,6 +43,8 @@ namespace Makaretu.Globalization
         ///   is via this property.
         /// </remarks>
         public static Cldr Instance = new Cldr();
+
+        ConcurrentDictionary<string, XPathDocument> DocumentCache = new ConcurrentDictionary<string, XPathDocument>();
 
         /// <summary>
         ///   Local sources for CLDR data.
@@ -198,7 +201,10 @@ namespace Makaretu.Globalization
 
             var files = new[] { "core.zip", "keyboards.zip" };
             var tasks = files.Select(name => DownloadAsync(name, version));
-            return Task.WhenAll(tasks);
+            var result = Task.WhenAll(tasks);
+
+            ClearCaches();
+            return result;
         }
 
         async Task<string> DownloadAsync(string filename, Version version)
@@ -236,6 +242,12 @@ namespace Makaretu.Globalization
             }
             return path;
         }
+
+        void ClearCaches()
+        {
+            DocumentCache.Clear();
+        }
+
         #endregion
 
         /// <summary>
@@ -258,12 +270,20 @@ namespace Makaretu.Globalization
             foreach (var repo in Repositories)
             {
                 var path = Path.Combine(repo, name);
-                if (File.Exists(path))
+                var doc = DocumentCache.GetOrAdd(path, fqn =>
+                {
+                    if (File.Exists(fqn))
+                    {
+                        if (log.IsDebugEnabled)
+                            log.Debug($"Loading document {fqn}");
+                        return new XPathDocument(fqn);
+                    }
+                    return null;
+                });
+                if (doc != null)
                 {
                     found = true;
-                    if (log.IsDebugEnabled)
-                        log.Debug($"Loading document {path}");
-                    yield return new XPathDocument(path);
+                    yield return doc;
                 }
             }
 
