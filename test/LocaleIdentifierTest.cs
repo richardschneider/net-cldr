@@ -69,11 +69,11 @@ namespace Makaretu.Globalization
         [TestMethod]
         public void Parsing_Language_Region_Multiple_Variants()
         {
-            var id = LocaleIdentifier.Parse("de-CH-1996-1998");
+            var id = LocaleIdentifier.Parse("de-CH-1996-1901");
             Assert.AreEqual("de", id.Language);
             Assert.AreEqual("CH", id.Region);
             Assert.IsTrue(id.Variants.Contains("1996"));
-            Assert.IsTrue(id.Variants.Contains("1998"));
+            Assert.IsTrue(id.Variants.Contains("1901"));
         }
 
         [TestMethod]

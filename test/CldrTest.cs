@@ -129,5 +129,12 @@ namespace Makaretu.Globalization
         {
             Assert.IsTrue(Cldr.Instance.IsRegionDefined("GB"));
         }
+
+        [TestMethod]
+        public void VariantDefined()
+        {
+            Assert.IsTrue(Cldr.Instance.IsVariantDefined("nedis"));
+            Assert.IsFalse(Cldr.Instance.IsVariantDefined("nedis1"));
+        }
     }
 }

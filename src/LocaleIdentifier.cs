@@ -432,6 +432,11 @@ namespace Makaretu.Globalization
                 return $"Script '{Script}' is not defined.";
             if (Region != "" && !Cldr.Instance.IsRegionDefined(Region))
                 return $"Region '{Region}' is not defined.";
+            foreach (var variant in Variants)
+            {
+                if (!Cldr.Instance.IsVariantDefined(variant))
+                    return $"Language variant '{variant}' is not defined.";
+            }
             // TODO: variants
             // TODO: U extensions
             // TODO: T extensions

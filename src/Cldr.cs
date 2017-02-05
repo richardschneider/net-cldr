@@ -372,6 +372,22 @@ namespace Makaretu.Globalization
                 .GetDocuments("common/validity/currency.xml")
                 .FirstElementOrDefault($"supplementalData/idValidity/id[@type='currency'][cldr:contains-code(.,'{code}')]");
         }
+
+        /// <summary>
+        ///   Determines if the language variant code is defined.
+        /// </summary>
+        /// <param name="code">
+        ///   The language variant code to check.
+        /// </param>
+        /// <returns>
+        ///   <b>true</b> if the <paramref name="code"/> is defined; otherwise, <b>false</b>.
+        /// </returns>
+        public bool IsVariantDefined(string code)
+        {
+            return null != this
+                .GetDocuments("common/validity/variant.xml")
+                .FirstElementOrDefault($"supplementalData/idValidity/id[@type='variant'][cldr:contains-code(.,'{code}')]");
+        }
         #endregion
     }
 }
