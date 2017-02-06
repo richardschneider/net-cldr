@@ -117,6 +117,10 @@ namespace Makaretu.Globalization
         /// <summary>
         ///   Get the Unicode Language ID.
         /// </summary>
+        /// <param name="variantUppercase">
+        ///   Controls the casing of the <see cref="Variants"/>.  The default is <b>false</b>,
+        ///   which is lowercase.  When <b>true</b> the variant(s) are in uppecase.
+        /// </param>
         /// <returns>
         ///   The unicode language ID, consists of the <see cref="Language"/>, <see cref="Script"/> and
         ///   <see cref="Region"/> and <see cref="Variants"/> separated by "_".
@@ -127,11 +131,14 @@ namespace Makaretu.Globalization
         ///   the <see cref="Script"/> subtag is in title case, and all other subtags are 
         ///   in lowercase.
         /// </remarks>
-        public string ToUnicodeLanguage()
+        public string ToUnicodeLanguage(bool variantUppercase = false)
         {
+            var variants = (variantUppercase)
+                ? Variants.Select(v => v.ToUpperInvariant())
+                : Variants;
             var tags = new[] { Language, Script, Region }
                 .Where(tag => tag != String.Empty)
-                .Concat(Variants);
+                .Concat(variants);
             return String.Join("_", tags);
         }
 
@@ -224,6 +231,30 @@ namespace Makaretu.Globalization
             if (s.Length > 1 &&  'a' <= s[0] && s[0] <= 'z')
                 return s[0].ToString().ToUpperInvariant() + s.Substring(1);
             return s;
+        }
+
+        /// <summary>
+        ///   The search chain for a resource.
+        /// </summary>
+        /// <returns>
+        ///   A sequence of "languages" that should be searched.
+        /// </returns>
+        /// <remarks>
+        ///   This is simple truncation of the subtags and can be used
+        ///   to create the Resource Bundle.
+        /// </remarks>
+        public IEnumerable<string> SearchChain()
+        {
+            var language = this.ToUnicodeLanguage(true);
+            while (language != String.Empty)
+            {
+                yield return language;
+                var sep = language.LastIndexOf('_');
+                if (sep < 0)
+                    break;
+                language = language.Remove(sep);
+            }
+            yield return "root";
         }
 
         /// <summary>

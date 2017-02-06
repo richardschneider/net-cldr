@@ -224,6 +224,12 @@ namespace Makaretu.Globalization
 
             id = LocaleIdentifier.Parse("DE-ch-1996");
             Assert.AreEqual("de_CH_1996", id.ToUnicodeLanguage());
+
+            id = LocaleIdentifier.Parse("sl-nedis");
+            Assert.AreEqual("sl_nedis", id.ToUnicodeLanguage());
+
+            id = LocaleIdentifier.Parse("sl-nedis");
+            Assert.AreEqual("sl_NEDIS", id.ToUnicodeLanguage(true));
         }
 
         [TestMethod]
@@ -242,5 +248,16 @@ namespace Makaretu.Globalization
             Assert.AreEqual("en", LocaleIdentifier.Parse("en-Latn-US").RemoveMostLikelySubtags().ToString());
         }
 
+        [TestMethod]
+        public void SearchChain()
+        {
+            var id = LocaleIdentifier.Parse("sl-SI-nedis");
+            var chain = id.SearchChain().ToArray();
+            Assert.AreEqual(4, chain.Length);
+            Assert.AreEqual("sl_SI_NEDIS", chain[0]);
+            Assert.AreEqual("sl_SI", chain[1]);
+            Assert.AreEqual("sl", chain[2]);
+            Assert.AreEqual("root", chain[3]);
+        }
     }
 }
