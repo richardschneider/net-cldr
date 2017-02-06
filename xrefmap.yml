@@ -439,6 +439,18 @@ references:
   commentId: Overload:Makaretu.Globalization.LocaleIdentifier.Script
   fullName: Makaretu.Globalization.LocaleIdentifier.Script
   nameWithType: LocaleIdentifier.Script
+- uid: Makaretu.Globalization.LocaleIdentifier.SearchChain
+  name: SearchChain()
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_SearchChain
+  commentId: M:Makaretu.Globalization.LocaleIdentifier.SearchChain
+  fullName: Makaretu.Globalization.LocaleIdentifier.SearchChain()
+  nameWithType: LocaleIdentifier.SearchChain()
+- uid: Makaretu.Globalization.LocaleIdentifier.SearchChain*
+  name: SearchChain
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_SearchChain_
+  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.SearchChain
+  fullName: Makaretu.Globalization.LocaleIdentifier.SearchChain
+  nameWithType: LocaleIdentifier.SearchChain
 - uid: Makaretu.Globalization.LocaleIdentifier.ToString
   name: ToString()
   href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_ToString
@@ -451,12 +463,12 @@ references:
   commentId: Overload:Makaretu.Globalization.LocaleIdentifier.ToString
   fullName: Makaretu.Globalization.LocaleIdentifier.ToString
   nameWithType: LocaleIdentifier.ToString
-- uid: Makaretu.Globalization.LocaleIdentifier.ToUnicodeLanguage
-  name: ToUnicodeLanguage()
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_ToUnicodeLanguage
-  commentId: M:Makaretu.Globalization.LocaleIdentifier.ToUnicodeLanguage
-  fullName: Makaretu.Globalization.LocaleIdentifier.ToUnicodeLanguage()
-  nameWithType: LocaleIdentifier.ToUnicodeLanguage()
+- uid: Makaretu.Globalization.LocaleIdentifier.ToUnicodeLanguage(System.Boolean)
+  name: ToUnicodeLanguage(Boolean)
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_ToUnicodeLanguage_System_Boolean_
+  commentId: M:Makaretu.Globalization.LocaleIdentifier.ToUnicodeLanguage(System.Boolean)
+  fullName: Makaretu.Globalization.LocaleIdentifier.ToUnicodeLanguage(System.Boolean)
+  nameWithType: LocaleIdentifier.ToUnicodeLanguage(Boolean)
 - uid: Makaretu.Globalization.LocaleIdentifier.ToUnicodeLanguage*
   name: ToUnicodeLanguage
   href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_ToUnicodeLanguage_
