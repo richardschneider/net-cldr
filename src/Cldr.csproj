@@ -55,6 +55,7 @@
     <Compile Include="CldrXPath.cs" />
     <Compile Include="Locale.cs" />
     <Compile Include="LocaleIdentifier.cs" />
+    <Compile Include="Numbers\NumberingSystem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CodeList.cs" />
     <Compile Include="StringRange.cs" />
@@ -63,6 +64,7 @@
     <None Include="Cldr.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

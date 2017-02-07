@@ -64,6 +64,7 @@
     <Compile Include="CldrXPathTest.cs" />
     <Compile Include="CodeListTest.cs" />
     <Compile Include="LocaleTest.cs" />
+    <Compile Include="Numbers\NumberingSystemTest.cs" />
     <Compile Include="StringRangeTest.cs" />
     <Compile Include="LocaleIdentifierTest.cs" />
     <Compile Include="CldrTest.cs" />
@@ -81,6 +82,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
