@@ -75,7 +75,7 @@ namespace Makaretu.Globalization.Numbers
         public bool IsAlgorithmic { get { return Type == "algorithmic"; } }
 
         /// <summary>
-        ///   Creates or reuses a number system with the specified identifier.
+        ///   Creates or reuses a numbering system with the specified identifier.
         /// </summary>
         /// <param name="id">
         ///   A case insensitive string containing the <see cref="Id"/>.
@@ -103,6 +103,26 @@ namespace Makaretu.Globalization.Numbers
                 };
             });
         }
+
+        /// <summary>
+        ///   Creates or reuses a numbering system for the specified <see cref="Locale"/>.
+        /// </summary>
+        /// <param name="locale">
+        ///   The locale.
+        /// </param>
+        /// <returns>
+        ///   A numbering system that is the best for the <paramref name="locale"/>.
+        /// </returns>
+        public static NumberingSystem Create(Locale locale)
+        {
+            // Find the default numbering system for the locale.
+            var ns = locale
+                .ResourceBundle()
+                .FirstElement("ldml/numbers/defaultNumberingSystem/text()").Value;
+
+            return NumberingSystem.Create(ns);
+        }
+
 
     }
 }

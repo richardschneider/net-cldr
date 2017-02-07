@@ -33,5 +33,16 @@ namespace Makaretu.Globalization.Numbers
             Assert.AreSame(a, b);
             Assert.AreNotSame(a, c);
         }
+
+        [TestMethod]
+        public void Create_From_Locale_Default()
+        {
+            var en = Locale.Create("en");
+            Assert.AreEqual("latn", NumberingSystem.Create(en).Id);
+
+            var ar = Locale.Create("ar");
+            Assert.AreEqual("arab", NumberingSystem.Create(ar).Id);
+        }
+
     }
 }
