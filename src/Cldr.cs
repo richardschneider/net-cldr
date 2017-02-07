@@ -260,6 +260,9 @@ namespace Makaretu.Globalization
         /// <returns>
         ///   A sequence of <b>XPathDocuments</b> that match the <paramref name="name"/>.
         /// </returns>
+        /// <exception cref="FileNotFoundException">
+        ///   When no document with the <paramref name="name"/> exists.
+        /// </exception>
         /// <remarks>
         ///   Each <see cref="Repositories">Reposistory</see> is searched for
         ///   for the document <paramref name="name"/>.
@@ -289,6 +292,45 @@ namespace Makaretu.Globalization
 
             if (!found)
                 throw new FileNotFoundException($"CLDR data '{name}' does not exist.");
+        }
+
+        /// <summary>
+        ///   Gets all the CLDR XML document(s) with the specified name, non-existent documents
+        ///   are ignored.
+        /// <param name="name">
+        ///   The SVN trunk relative name of the document, such
+        ///   as "common/main/EN_US.xml".
+        /// </param>
+        /// <returns>
+        ///   A sequence of <b>XPathDocuments</b> that match the <paramref name="name"/>.
+        /// </returns>
+        /// <remarks>
+        ///   Each <see cref="Repositories">Reposistory</see> is searched for
+        ///   for the document <paramref name="name"/>.
+        ///   <para>
+        ///   If no document is found, an empty sequence is returned.
+        ///   </para>
+        /// </remarks>
+        public IEnumerable<XPathDocument> GetAllDocuments(string name)
+        {
+            foreach (var repo in Repositories)
+            {
+                var path = Path.Combine(repo, name);
+                var doc = DocumentCache.GetOrAdd(path, fqn =>
+                {
+                    if (File.Exists(fqn))
+                    {
+                        if (log.IsDebugEnabled)
+                            log.Debug($"Loading document {fqn}");
+                        return new XPathDocument(fqn);
+                    }
+                    return null;
+                });
+                if (doc != null)
+                {
+                    yield return doc;
+                }
+            }
         }
 
         /// <summary>

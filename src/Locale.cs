@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.XPath;
 
 namespace Makaretu.Globalization
 {
@@ -35,6 +36,20 @@ namespace Makaretu.Globalization
         public override string ToString()
         {
             return Id.ToString();
+        }
+
+        /// <summary>
+        ///   A sequence of CLDR Documents that contain can a locale resource.
+        /// </summary>
+        /// <param name="prefix"></param>
+        /// <param name="suffix"></param>
+        /// <returns></returns>
+        public IEnumerable<XPathDocument> ResourceBundle(string prefix = "common/main/", string suffix = ".xml")
+        {
+            return Id
+                .SearchChain()
+                .Select(p => prefix + p + suffix)
+                .SelectMany(Cldr.Instance.GetAllDocuments);
         }
 
         /// <summary>

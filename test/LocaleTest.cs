@@ -24,5 +24,13 @@ namespace Makaretu.Globalization
             Assert.AreEqual(locale.Id.ToString(), locale.ToString());
         }
 
+        [TestMethod]
+        public void ResourceBundle()
+        {
+            var locale = Locale.Create("sl-SI-nedis");
+            var bundles = locale.ResourceBundle().ToArray();
+            Assert.AreEqual(3, bundles.Length);
+        }
+
     }
 }

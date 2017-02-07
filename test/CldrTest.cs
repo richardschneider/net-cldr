@@ -47,6 +47,20 @@ namespace Makaretu.Globalization
         }
 
         [TestMethod]
+        public void GetAllDocuments()
+        {
+            var files = Cldr.Instance.GetAllDocuments("common/supplemental/supplementalData.xml");
+            Assert.AreNotEqual(0, files.Count());
+        }
+
+        [TestMethod]
+        public void GetAllDocuments_NotFound()
+        {
+            var files = Cldr.Instance.GetAllDocuments("common/x.xml");
+            Assert.AreEqual(0, files.Count());
+        }
+
+        [TestMethod]
         public void Query()
         {
             var bhd = Cldr.Instance
