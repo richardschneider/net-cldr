@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Cldr
    | Makaretu Globalization ">
-    <meta name="generator" content="docfx 2.11.2.0">
+    <meta name="generator" content="docfx 2.11.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -366,10 +366,69 @@ add your overrides insert the path at the head of list.
 </div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
+                <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Cldr_GetAllDocuments_System_String_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Cldr.GetAllDocuments(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Cldr.cs/#L315">View Source</a>
+              </span>
+              <a id="Makaretu_Globalization_Cldr_GetAllDocuments_" data-uid="Makaretu.Globalization.Cldr.GetAllDocuments*"></a>
+              <h4 id="Makaretu_Globalization_Cldr_GetAllDocuments_System_String_" data-uid="Makaretu.Globalization.Cldr.GetAllDocuments(System.String)">GetAllDocuments(String)</h4>
+              <div class="markdown level1 summary"><p>Gets all the CLDR XML document(s) with the specified name, non-existent documents
+are ignored.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public IEnumerable&lt;XPathDocument&gt; GetAllDocuments(string name)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><span class="parametername">name</span></td>
+                    <td><p>The SVN trunk relative name of the document, such
+as &quot;common/main/EN_US.xml&quot;.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">IEnumerable</a>&lt;<span class="xref">System.Xml.XPath.XPathDocument</span>&gt;</td>
+                    <td><p>A sequence of <strong>XPathDocuments</strong> that match the <span class="paramref">name</span>.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="Makaretu_Globalization_Cldr_GetAllDocuments_System_String__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Each <a class="xref" href="Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_Repositories">Repositories</a> is searched for
+for the document <span class="paramref">name</span>.</p>
+<p>
+If no document is found, an empty sequence is returned.
+</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Cldr_GetDocuments_System_String_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Cldr.GetDocuments(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Cldr.cs/#L267">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Cldr.cs/#L270">View Source</a>
               </span>
               <a id="Makaretu_Globalization_Cldr_GetDocuments_" data-uid="Makaretu.Globalization.Cldr.GetDocuments*"></a>
               <h4 id="Makaretu_Globalization_Cldr_GetDocuments_System_String_" data-uid="Makaretu.Globalization.Cldr.GetDocuments(System.String)">GetDocuments(String)</h4>
@@ -419,12 +478,28 @@ as &quot;common/supplemental/supplementalData.xml&quot;.</p>
               <div class="markdown level1 remarks"><p>Each <a class="xref" href="Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_Repositories">Repositories</a> is searched for
 for the document <span class="paramref">name</span>.</p>
 </div>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.io.filenotfoundexception(v=vs.110).aspx">FileNotFoundException</a></td>
+                    <td><p>When no document with the <span class="paramref">name</span> exists.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Cldr_GetTextDocuments_System_String_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Cldr.GetTextDocuments(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Cldr.cs/#L308">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Cldr.cs/#L351">View Source</a>
               </span>
               <a id="Makaretu_Globalization_Cldr_GetTextDocuments_" data-uid="Makaretu.Globalization.Cldr.GetTextDocuments*"></a>
               <h4 id="Makaretu_Globalization_Cldr_GetTextDocuments_System_String_" data-uid="Makaretu.Globalization.Cldr.GetTextDocuments(System.String)">GetTextDocuments(String)</h4>
@@ -479,7 +554,7 @@ for the document <span class="paramref">name</span>.</p>
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Cldr_IsCurrencyDefined_System_String_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Cldr.IsCurrencyDefined(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Cldr.cs/#L389">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Cldr.cs/#L432">View Source</a>
               </span>
               <a id="Makaretu_Globalization_Cldr_IsCurrencyDefined_" data-uid="Makaretu.Globalization.Cldr.IsCurrencyDefined*"></a>
               <h4 id="Makaretu_Globalization_Cldr_IsCurrencyDefined_System_String_" data-uid="Makaretu.Globalization.Cldr.IsCurrencyDefined(System.String)">IsCurrencyDefined(String)</h4>
@@ -529,7 +604,7 @@ for the document <span class="paramref">name</span>.</p>
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Cldr_IsLanguageDefined_System_String_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Cldr.IsLanguageDefined(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Cldr.cs/#L338">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Cldr.cs/#L381">View Source</a>
               </span>
               <a id="Makaretu_Globalization_Cldr_IsLanguageDefined_" data-uid="Makaretu.Globalization.Cldr.IsLanguageDefined*"></a>
               <h4 id="Makaretu_Globalization_Cldr_IsLanguageDefined_System_String_" data-uid="Makaretu.Globalization.Cldr.IsLanguageDefined(System.String)">IsLanguageDefined(String)</h4>
@@ -579,7 +654,7 @@ for the document <span class="paramref">name</span>.</p>
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Cldr_IsRegionDefined_System_String_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Cldr.IsRegionDefined(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Cldr.cs/#L373">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Cldr.cs/#L416">View Source</a>
               </span>
               <a id="Makaretu_Globalization_Cldr_IsRegionDefined_" data-uid="Makaretu.Globalization.Cldr.IsRegionDefined*"></a>
               <h4 id="Makaretu_Globalization_Cldr_IsRegionDefined_System_String_" data-uid="Makaretu.Globalization.Cldr.IsRegionDefined(System.String)">IsRegionDefined(String)</h4>
@@ -629,7 +704,7 @@ for the document <span class="paramref">name</span>.</p>
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Cldr_IsScriptDefined_System_String_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Cldr.IsScriptDefined(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Cldr.cs/#L357">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Cldr.cs/#L400">View Source</a>
               </span>
               <a id="Makaretu_Globalization_Cldr_IsScriptDefined_" data-uid="Makaretu.Globalization.Cldr.IsScriptDefined*"></a>
               <h4 id="Makaretu_Globalization_Cldr_IsScriptDefined_System_String_" data-uid="Makaretu.Globalization.Cldr.IsScriptDefined(System.String)">IsScriptDefined(String)</h4>
@@ -679,7 +754,7 @@ for the document <span class="paramref">name</span>.</p>
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Cldr_IsVariantDefined_System_String_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Cldr.IsVariantDefined(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Cldr.cs/#L405">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Cldr.cs/#L448">View Source</a>
               </span>
               <a id="Makaretu_Globalization_Cldr_IsVariantDefined_" data-uid="Makaretu.Globalization.Cldr.IsVariantDefined*"></a>
               <h4 id="Makaretu_Globalization_Cldr_IsVariantDefined_System_String_" data-uid="Makaretu.Globalization.Cldr.IsVariantDefined(System.String)">IsVariantDefined(String)</h4>

@@ -61,6 +61,18 @@ references:
   commentId: Overload:Makaretu.Globalization.Cldr.DownloadLatestAsync
   fullName: Makaretu.Globalization.Cldr.DownloadLatestAsync
   nameWithType: Cldr.DownloadLatestAsync
+- uid: Makaretu.Globalization.Cldr.GetAllDocuments(System.String)
+  name: GetAllDocuments(String)
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_GetAllDocuments_System_String_
+  commentId: M:Makaretu.Globalization.Cldr.GetAllDocuments(System.String)
+  fullName: Makaretu.Globalization.Cldr.GetAllDocuments(System.String)
+  nameWithType: Cldr.GetAllDocuments(String)
+- uid: Makaretu.Globalization.Cldr.GetAllDocuments*
+  name: GetAllDocuments
+  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_GetAllDocuments_
+  commentId: Overload:Makaretu.Globalization.Cldr.GetAllDocuments
+  fullName: Makaretu.Globalization.Cldr.GetAllDocuments
+  nameWithType: Cldr.GetAllDocuments
 - uid: Makaretu.Globalization.Cldr.GetDocuments(System.String)
   name: GetDocuments(String)
   href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_GetDocuments_System_String_
@@ -337,6 +349,78 @@ references:
   commentId: Overload:Makaretu.Globalization.CodeList.Separator
   fullName: Makaretu.Globalization.CodeList.Separator
   nameWithType: CodeList.Separator
+- uid: Makaretu.Globalization.Locale
+  name: Locale
+  href: api/Makaretu.Globalization.Locale.html
+  commentId: T:Makaretu.Globalization.Locale
+  fullName: Makaretu.Globalization.Locale
+  nameWithType: Locale
+- uid: Makaretu.Globalization.Locale.#ctor(Makaretu.Globalization.LocaleIdentifier)
+  name: Locale(LocaleIdentifier)
+  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale__ctor_Makaretu_Globalization_LocaleIdentifier_
+  commentId: M:Makaretu.Globalization.Locale.#ctor(Makaretu.Globalization.LocaleIdentifier)
+  fullName: Makaretu.Globalization.Locale.Locale(Makaretu.Globalization.LocaleIdentifier)
+  nameWithType: Locale.Locale(LocaleIdentifier)
+- uid: Makaretu.Globalization.Locale.#ctor*
+  name: Locale
+  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale__ctor_
+  commentId: Overload:Makaretu.Globalization.Locale.#ctor
+  fullName: Makaretu.Globalization.Locale.Locale
+  nameWithType: Locale.Locale
+- uid: Makaretu.Globalization.Locale.Create(Makaretu.Globalization.LocaleIdentifier)
+  name: Create(LocaleIdentifier)
+  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_Create_Makaretu_Globalization_LocaleIdentifier_
+  commentId: M:Makaretu.Globalization.Locale.Create(Makaretu.Globalization.LocaleIdentifier)
+  fullName: Makaretu.Globalization.Locale.Create(Makaretu.Globalization.LocaleIdentifier)
+  nameWithType: Locale.Create(LocaleIdentifier)
+- uid: Makaretu.Globalization.Locale.Create(System.String)
+  name: Create(String)
+  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_Create_System_String_
+  commentId: M:Makaretu.Globalization.Locale.Create(System.String)
+  fullName: Makaretu.Globalization.Locale.Create(System.String)
+  nameWithType: Locale.Create(String)
+- uid: Makaretu.Globalization.Locale.Create*
+  name: Create
+  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_Create_
+  commentId: Overload:Makaretu.Globalization.Locale.Create
+  fullName: Makaretu.Globalization.Locale.Create
+  nameWithType: Locale.Create
+- uid: Makaretu.Globalization.Locale.Id
+  name: Id
+  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_Id
+  commentId: P:Makaretu.Globalization.Locale.Id
+  fullName: Makaretu.Globalization.Locale.Id
+  nameWithType: Locale.Id
+- uid: Makaretu.Globalization.Locale.Id*
+  name: Id
+  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_Id_
+  commentId: Overload:Makaretu.Globalization.Locale.Id
+  fullName: Makaretu.Globalization.Locale.Id
+  nameWithType: Locale.Id
+- uid: Makaretu.Globalization.Locale.ResourceBundle(System.String,System.String)
+  name: ResourceBundle(String, String)
+  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_ResourceBundle_System_String_System_String_
+  commentId: M:Makaretu.Globalization.Locale.ResourceBundle(System.String,System.String)
+  fullName: Makaretu.Globalization.Locale.ResourceBundle(System.String, System.String)
+  nameWithType: Locale.ResourceBundle(String, String)
+- uid: Makaretu.Globalization.Locale.ResourceBundle*
+  name: ResourceBundle
+  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_ResourceBundle_
+  commentId: Overload:Makaretu.Globalization.Locale.ResourceBundle
+  fullName: Makaretu.Globalization.Locale.ResourceBundle
+  nameWithType: Locale.ResourceBundle
+- uid: Makaretu.Globalization.Locale.ToString
+  name: ToString()
+  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_ToString
+  commentId: M:Makaretu.Globalization.Locale.ToString
+  fullName: Makaretu.Globalization.Locale.ToString()
+  nameWithType: Locale.ToString()
+- uid: Makaretu.Globalization.Locale.ToString*
+  name: ToString
+  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_ToString_
+  commentId: Overload:Makaretu.Globalization.Locale.ToString
+  fullName: Makaretu.Globalization.Locale.ToString
+  nameWithType: Locale.ToString
 - uid: Makaretu.Globalization.LocaleIdentifier
   name: LocaleIdentifier
   href: api/Makaretu.Globalization.LocaleIdentifier.html
