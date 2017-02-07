@@ -13,6 +13,7 @@ namespace Makaretu.Globalization.Numbers
     public class NumberingSystem
     {
         static ConcurrentDictionary<string, NumberingSystem> Cache = new ConcurrentDictionary<string, NumberingSystem>();
+        static string[] Others = new[] { "native", "finance", "traditio" };
 
         /// <summary>
         ///   Unique identifier of the numbering system.
@@ -117,6 +118,10 @@ namespace Makaretu.Globalization.Numbers
         ///   The locale identifier can use the "u-nu-XXX" extension to specify a numbering system.
         ///   If the extension's numbering system doesn't exist or is not specified, 
         ///   then the default numbering system for the locale is used.
+        ///   <para>
+        ///   The <see href="http://unicode.org/reports/tr35/tr35-numbers.html#otherNumberingSystems">other numbering systems</see>
+        ///   ("u-nu-native", "u-nu-finance" and "u-nu-traditio") are also allowed.
+        ///   </para>
         /// </remarks>
         public static NumberingSystem Create(Locale locale)
         {
@@ -127,7 +132,18 @@ namespace Makaretu.Globalization.Numbers
             {
                 try
                 {
-                    return NumberingSystem.Create(name);
+                    var id = name;
+                    if (Others.Contains(name))
+                    {
+                        // Consistency is the hobgoblin of small minds.
+                        var other = name == "traditio"
+                            ? "traditional"
+                            : name;
+                        id = locale
+                            .ResourceBundle()
+                            .FirstElement($"ldml/numbers/otherNumberingSystems/{other}").Value;
+                    }
+                    return NumberingSystem.Create(id);
                 }
                 catch (KeyNotFoundException)
                 {
