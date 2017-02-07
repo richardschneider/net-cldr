@@ -44,5 +44,17 @@ namespace Makaretu.Globalization.Numbers
             Assert.AreEqual("arab", NumberingSystem.Create(ar).Id);
         }
 
+        [TestMethod]
+        public void Create_From_Locale_Specified()
+        {
+            var a = Locale.Create("zh");
+            Assert.AreEqual("latn", NumberingSystem.Create(a).Id);
+
+            var b = Locale.Create("zh-u-nu-hanidec");
+            Assert.AreEqual("hanidec", NumberingSystem.Create(b).Id);
+
+            var c = Locale.Create("zh-u-nu-unknown");
+            Assert.AreEqual("latn", NumberingSystem.Create(c).Id);
+        }
     }
 }

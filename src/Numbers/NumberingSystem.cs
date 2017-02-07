@@ -113,8 +113,28 @@ namespace Makaretu.Globalization.Numbers
         /// <returns>
         ///   A numbering system that is the best for the <paramref name="locale"/>.
         /// </returns>
+        /// <remarks>
+        ///   The locale identifier can use the "u-nu-XXX" extension to specify a numbering system.
+        ///   If the extension's numbering system doesn't exist or is not specified, 
+        ///   then the default numbering system for the locale is used.
+        /// </remarks>
         public static NumberingSystem Create(Locale locale)
         {
+            var possibilities = locale.Id.Extensions
+                .Where(x => x.StartsWith("u-nu-"))
+                .Select(x => x.Substring(5));
+            foreach (var name in possibilities)
+            {
+                try
+                {
+                    return NumberingSystem.Create(name);
+                }
+                catch (KeyNotFoundException)
+                {
+                    // eat it, will fallbace to default numbering system.
+                }
+            }
+
             // Find the default numbering system for the locale.
             var ns = locale
                 .ResourceBundle()
