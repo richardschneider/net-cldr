@@ -622,6 +622,12 @@ references:
   commentId: T:Makaretu.Globalization.Numbers.NumberingSystem
   fullName: Makaretu.Globalization.Numbers.NumberingSystem
   nameWithType: NumberingSystem
+- uid: Makaretu.Globalization.Numbers.NumberingSystem.Create(Makaretu.Globalization.Locale)
+  name: Create(Locale)
+  href: api/Makaretu.Globalization.Numbers.NumberingSystem.html#Makaretu_Globalization_Numbers_NumberingSystem_Create_Makaretu_Globalization_Locale_
+  commentId: M:Makaretu.Globalization.Numbers.NumberingSystem.Create(Makaretu.Globalization.Locale)
+  fullName: Makaretu.Globalization.Numbers.NumberingSystem.Create(Makaretu.Globalization.Locale)
+  nameWithType: NumberingSystem.Create(Locale)
 - uid: Makaretu.Globalization.Numbers.NumberingSystem.Create(System.String)
   name: Create(String)
   href: api/Makaretu.Globalization.Numbers.NumberingSystem.html#Makaretu_Globalization_Numbers_NumberingSystem_Create_System_String_
