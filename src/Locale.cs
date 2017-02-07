@@ -39,10 +39,14 @@ namespace Makaretu.Globalization
         }
 
         /// <summary>
-        ///   A sequence of CLDR Documents that contain can a locale resource.
+        ///   A sequence of CLDR documents that can contain a locale resource.
         /// </summary>
-        /// <param name="prefix"></param>
-        /// <param name="suffix"></param>
+        /// <param name="prefix">
+        ///   The SVN trunk relative name of the document.  Defaults to "common/main/".
+        /// </param>
+        /// <param name="suffix">
+        ///   The file extension.  Defaults to ".xml".
+        /// </param>
         /// <returns></returns>
         public IEnumerable<XPathDocument> ResourceBundle(string prefix = "common/main/", string suffix = ".xml")
         {
