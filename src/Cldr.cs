@@ -297,6 +297,7 @@ namespace Makaretu.Globalization
         /// <summary>
         ///   Gets all the CLDR XML document(s) with the specified name, non-existent documents
         ///   are ignored.
+        /// </summary>
         /// <param name="name">
         ///   The SVN trunk relative name of the document, such
         ///   as "common/main/EN_US.xml".
