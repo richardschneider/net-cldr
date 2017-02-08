@@ -109,14 +109,77 @@
               <div class="codewrapper">
                 <pre><code class="lang-csharp hljs">public static class CldrExentsions</code></pre>
               </div>
+              <h5 id="Makaretu_Globalization_CldrExentsions_remarks"><strong>Remarks</strong></h5>
+              <div class="markdown level0 remarks"><p>These are simple XPath lookups for multiple documents. CLDR inheritance is not performed.</p>
+<p>
+The <a class="xref" href="Makaretu.Globalization.CldrContext.html">CldrContext</a> is used to provide extra XPath varaibles and functions.
+</p>
+</div>
               <h3 id="methods">Methods
               </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_CldrExentsions_Elements_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable%7BSystem.Xml.XPath.XPathDocument%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/CldrExtensions.cs/#L118">View Source</a>
+              </span>
+              <a id="Makaretu_Globalization_CldrExentsions_Elements_" data-uid="Makaretu.Globalization.CldrExentsions.Elements*"></a>
+              <h4 id="Makaretu_Globalization_CldrExentsions_Elements_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_" data-uid="Makaretu.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)">Elements(IEnumerable&lt;XPathDocument&gt;, String)</h4>
+              <div class="markdown level1 summary"><p>Find all the elements that matche the XPATH expression
+in the sequence of documents.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IEnumerable&lt;XPathNavigator&gt; Elements(this IEnumerable&lt;XPathDocument&gt; docs, string predicate)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">IEnumerable</a>&lt;<span class="xref">System.Xml.XPath.XPathDocument</span>&gt;</td>
+                    <td><span class="parametername">docs</span></td>
+                    <td><p>The documents to search.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><span class="parametername">predicate</span></td>
+                    <td><p>The XPATH expression.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">IEnumerable</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.xml.xpath.xpathnavigator(v=vs.110).aspx">XPathNavigator</a>&gt;</td>
+                    <td><p>Sequence of matched elements.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_CldrExentsions_FirstElement_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable%7BSystem.Xml.XPath.XPathDocument%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/CldrExtensions.cs/#L29">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/CldrExtensions.cs/#L35">View Source</a>
               </span>
               <a id="Makaretu_Globalization_CldrExentsions_FirstElement_" data-uid="Makaretu.Globalization.CldrExentsions.FirstElement*"></a>
               <h4 id="Makaretu_Globalization_CldrExentsions_FirstElement_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_" data-uid="Makaretu.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)">FirstElement(IEnumerable&lt;XPathDocument&gt;, String)</h4>
@@ -141,7 +204,7 @@ in the sequence of documents.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">IEnumerable</a>&lt;<span class="xref">System.Xml.XPath.XPathDocument</span>&gt;</td>
                     <td><span class="parametername">docs</span></td>
-                    <td><p>The documents to seatch.</p>
+                    <td><p>The documents to search.</p>
 </td>
                   </tr>
                   <tr>
@@ -163,7 +226,7 @@ in the sequence of documents.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.xml.xpath.xpathnavigator(v=vs.110).aspx">XPathNavigator</a></td>
-                    <td><p>The matched XElement.</p>
+                    <td><p>The matched element.</p>
 </td>
                   </tr>
                 </tbody>
@@ -189,7 +252,7 @@ in the sequence of documents.</p>
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_CldrExentsions_FirstElementOrDefault_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable%7BSystem.Xml.XPath.XPathDocument%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/CldrExtensions.cs/#L84">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/CldrExtensions.cs/#L90">View Source</a>
               </span>
               <a id="Makaretu_Globalization_CldrExentsions_FirstElementOrDefault_" data-uid="Makaretu.Globalization.CldrExentsions.FirstElementOrDefault*"></a>
               <h4 id="Makaretu_Globalization_CldrExentsions_FirstElementOrDefault_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_" data-uid="Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)">FirstElementOrDefault(IEnumerable&lt;XPathDocument&gt;, String)</h4>
@@ -214,7 +277,7 @@ in the sequence of documents or return null.</p>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">IEnumerable</a>&lt;<span class="xref">System.Xml.XPath.XPathDocument</span>&gt;</td>
                     <td><span class="parametername">docs</span></td>
-                    <td><p>The documents to seatch.</p>
+                    <td><p>The documents to search.</p>
 </td>
                   </tr>
                   <tr>
@@ -236,7 +299,7 @@ in the sequence of documents or return null.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.xml.xpath.xpathnavigator(v=vs.110).aspx">XPathNavigator</a></td>
-                    <td><p>The matched XElement or <strong>null</strong>.</p>
+                    <td><p>The matched element or <strong>null</strong>.</p>
 </td>
                   </tr>
                 </tbody>
@@ -246,7 +309,7 @@ in the sequence of documents or return null.</p>
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_CldrExentsions_FirstElementOrDefault_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_System_Func_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_Xml_XPath_XPathNavigator__.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable%7BSystem.Xml.XPath.XPathDocument%7D%2CSystem.String%2CSystem.Func%7BSystem.Collections.Generic.IEnumerable%7BSystem.Xml.XPath.XPathDocument%7D%2CSystem.Xml.XPath.XPathNavigator%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/CldrExtensions.cs/#L60">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/CldrExtensions.cs/#L66">View Source</a>
               </span>
               <a id="Makaretu_Globalization_CldrExentsions_FirstElementOrDefault_" data-uid="Makaretu.Globalization.CldrExentsions.FirstElementOrDefault*"></a>
               <h4 id="Makaretu_Globalization_CldrExentsions_FirstElementOrDefault_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_System_Func_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_Xml_XPath_XPathNavigator__" data-uid="Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String,System.Func{System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.Xml.XPath.XPathNavigator})">FirstElementOrDefault(IEnumerable&lt;XPathDocument&gt;, String, Func&lt;IEnumerable&lt;XPathDocument&gt;, XPathNavigator&gt;)</h4>
@@ -300,7 +363,7 @@ the <span class="paramref">predicate</span>.</p>
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.xml.xpath.xpathnavigator(v=vs.110).aspx">XPathNavigator</a></td>
-                    <td><p>The matched XElement.</p>
+                    <td><p>The matched element.</p>
 </td>
                   </tr>
                 </tbody>
@@ -332,7 +395,7 @@ the <span class="paramref">predicate</span>.</p>
                     <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_CldrExentsions.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.CldrExentsions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/richardschneider/net-cldr/blob/master/src/CldrExtensions.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/richardschneider/net-cldr/blob/master/src/CldrExtensions.cs/#L17" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

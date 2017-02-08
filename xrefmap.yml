@@ -268,6 +268,21 @@ references:
   commentId: T:Makaretu.Globalization.CldrExentsions
   fullName: Makaretu.Globalization.CldrExentsions
   nameWithType: CldrExentsions
+- uid: Makaretu.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
+  name: Elements(IEnumerable<XPathDocument>, String)
+  href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_Elements_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_
+  commentId: M:Makaretu.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
+  name.vb: Elements(IEnumerable(Of XPathDocument), String)
+  fullName: Makaretu.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.String)
+  fullName.vb: Makaretu.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.String)
+  nameWithType: CldrExentsions.Elements(IEnumerable<XPathDocument>, String)
+  nameWithType.vb: CldrExentsions.Elements(IEnumerable(Of XPathDocument), String)
+- uid: Makaretu.Globalization.CldrExentsions.Elements*
+  name: Elements
+  href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_Elements_
+  commentId: Overload:Makaretu.Globalization.CldrExentsions.Elements
+  fullName: Makaretu.Globalization.CldrExentsions.Elements
+  nameWithType: CldrExentsions.Elements
 - uid: Makaretu.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
   name: FirstElement(IEnumerable<XPathDocument>, String)
   href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_FirstElement_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_
@@ -409,6 +424,18 @@ references:
   commentId: Overload:Makaretu.Globalization.Locale.ResourceBundle
   fullName: Makaretu.Globalization.Locale.ResourceBundle
   nameWithType: Locale.ResourceBundle
+- uid: Makaretu.Globalization.Locale.SearchChain
+  name: SearchChain()
+  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_SearchChain
+  commentId: M:Makaretu.Globalization.Locale.SearchChain
+  fullName: Makaretu.Globalization.Locale.SearchChain()
+  nameWithType: Locale.SearchChain()
+- uid: Makaretu.Globalization.Locale.SearchChain*
+  name: SearchChain
+  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_SearchChain_
+  commentId: Overload:Makaretu.Globalization.Locale.SearchChain
+  fullName: Makaretu.Globalization.Locale.SearchChain
+  nameWithType: Locale.SearchChain
 - uid: Makaretu.Globalization.Locale.ToString
   name: ToString()
   href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_ToString
