@@ -11,9 +11,12 @@ Provides locale content for internationalisation software using the Unicode Comm
 
 - Uses the official [Unicode CLDR XML](http://www.unicode.org/Public/cldr/) without any "build steps"
 - Can download the latest CLDR anytime
-- Use [XPath expressions](https://msdn.microsoft.com/en-us/library/ms256471(v=vs.110).aspx) to query the CLDR
+- Uses [XPath expressions](https://msdn.microsoft.com/en-us/library/ms256471(v=vs.110).aspx) to query the CLDR
 - Parsing of a locale identifier
 - Validation of common codes (language, currency, ...)
+- Supports complex CLDR inheritance via
+  - [locale truncation](http://unicode.org/reports/tr35/tr35.html#Locale_Inheritance)
+  - [parent locale](http://unicode.org/reports/tr35/tr35.html#Parent_Locales)
 
 ## Getting started
 

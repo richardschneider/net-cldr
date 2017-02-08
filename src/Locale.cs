@@ -12,6 +12,23 @@ namespace Makaretu.Globalization
     /// </summary>
     public class Locale
     {
+        static Dictionary<string, string> ParentLocales;
+
+        static Locale()
+        {
+            ParentLocales = Cldr.Instance
+                .GetDocuments("common/supplemental/supplementalData.xml")
+                .Elements("supplementalData/parentLocales/parentLocale")
+                .SelectMany(x =>
+                {
+                    var parent = x.GetAttribute("parent", "");
+                    return x
+                        .GetAttribute("locales", "").Split(new[] { ' ', '\t', '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries)
+                        .Select(child => new { Parent = parent, Child = child });
+                })
+                .ToDictionary(x => x.Child, x => x.Parent);
+        }
+
         /// <summary>
         ///   Creates a new instance of the <see cref="Locale"/> class with the
         ///   specified <see cref="LocaleIdentifier"/>.
@@ -50,10 +67,35 @@ namespace Makaretu.Globalization
         /// <returns></returns>
         public IEnumerable<XPathDocument> ResourceBundle(string prefix = "common/main/", string suffix = ".xml")
         {
-            return Id
-                .SearchChain()
+            return SearchChain()
                 .Select(p => prefix + p + suffix)
                 .SelectMany(Cldr.Instance.GetAllDocuments);
+        }
+
+        /// <summary>
+        ///   The search chain for a locale resource.
+        /// </summary>
+        /// <returns>
+        ///   A sequence of "languages" that should be searched.
+        /// </returns>
+        /// <remarks>
+        ///   Same as <see cref="LocaleIdentifier.SearchChain"/> but applies
+        ///   any "parent locales".
+        /// </remarks>
+        public IEnumerable<string> SearchChain()
+        {
+            foreach (var locale in Id.SearchChain())
+            {
+                yield return locale;
+                if (ParentLocales.ContainsKey(locale))
+                {
+                    foreach (var p in Locale.Create(ParentLocales[locale]).SearchChain())
+                    {
+                        yield return p;
+                    }
+                    yield break;
+                }
+            }
         }
 
         /// <summary>
