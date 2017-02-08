@@ -148,6 +148,20 @@ namespace Makaretu.Globalization
         }
 
         /// <summary>
+        ///   A new locale identifier in the canonical form.
+        /// </summary>
+        /// <returns>
+        ///    A new locale identifier in the canonical form.
+        /// </returns>
+        /// <remarks>
+        ///   The canonical form has all subtags <see cref="MostLikelySubtags">filled in</see>.
+        /// </remarks>
+        public LocaleIdentifier CanonicalForm()
+        {
+            return MostLikelySubtags();
+        }
+
+        /// <summary>
         ///   A new locale identifier with the all the empty subtags filled in
         ///   with a likely value.
         /// </summary>
@@ -170,7 +184,7 @@ namespace Makaretu.Globalization
 
 
             // Find the language in likely subtags.
-            var keys = new[]
+            var likely = new[]
             {
                 $"{result.Language}_{result.Script}_{result.Region}",
                 $"{result.Language}_{result.Region}",
@@ -180,17 +194,12 @@ namespace Makaretu.Globalization
             }
                 .Select(k => k.Replace("__", "_").Trim('_'))
                 .Where(k => k != String.Empty)
-                .Distinct();
-
-            XPathNavigator likely = null;
-            foreach (var key in keys)
-            {
-                likely = Cldr.Instance
+                .Distinct()
+                .Select(k => Cldr.Instance
                     .GetDocuments("common/supplemental/likelySubtags.xml")
-                    .FirstElementOrDefault($"supplementalData/likelySubtags/likelySubtag[@from='{key}']");
-                if (likely != null)
-                    break;
-            }
+                    .FirstElementOrDefault($"supplementalData/likelySubtags/likelySubtag[@from='{k}']")
+                )
+                .FirstOrDefault(e => e != null);
 
             if (likely != null)
             {

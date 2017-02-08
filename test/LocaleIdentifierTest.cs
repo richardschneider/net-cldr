@@ -291,5 +291,11 @@ namespace Makaretu.Globalization
             Assert.AreEqual("root", chain[0]);
         }
 
+        [TestMethod]
+        public void CanonicalForm()
+        {
+            Assert.AreEqual("zh-Hant-TW", LocaleIdentifier.Parse("cmn-TW").CanonicalForm().ToString());
+            Assert.AreEqual("en-Latn-GB", LocaleIdentifier.Parse("eng-Latn-GB").CanonicalForm().ToString());
+        }
     }
 }
