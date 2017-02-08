@@ -254,6 +254,10 @@ namespace Makaretu.Globalization
             while (language != String.Empty)
             {
                 yield return language;
+                if (language == "root")
+                {
+                    yield break;
+                }
                 var sep = language.LastIndexOf('_');
                 if (sep < 0)
                     break;

@@ -281,5 +281,15 @@ namespace Makaretu.Globalization
             Assert.AreEqual("sl", chain[2]);
             Assert.AreEqual("root", chain[3]);
         }
+
+        [TestMethod]
+        public void SearchChain_und()
+        {
+            var id = LocaleIdentifier.Parse("und");
+            var chain = id.SearchChain().ToArray();
+            Assert.AreEqual(1, chain.Length);
+            Assert.AreEqual("root", chain[0]);
+        }
+
     }
 }
