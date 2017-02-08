@@ -421,6 +421,78 @@ references:
   commentId: Overload:Makaretu.Globalization.Locale.ToString
   fullName: Makaretu.Globalization.Locale.ToString
   nameWithType: Locale.ToString
+- uid: Makaretu.Globalization.LocaleExtension
+  name: LocaleExtension
+  href: api/Makaretu.Globalization.LocaleExtension.html
+  commentId: T:Makaretu.Globalization.LocaleExtension
+  fullName: Makaretu.Globalization.LocaleExtension
+  nameWithType: LocaleExtension
+- uid: Makaretu.Globalization.LocaleExtension.Attributes
+  name: Attributes
+  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_Attributes
+  commentId: P:Makaretu.Globalization.LocaleExtension.Attributes
+  fullName: Makaretu.Globalization.LocaleExtension.Attributes
+  nameWithType: LocaleExtension.Attributes
+- uid: Makaretu.Globalization.LocaleExtension.Attributes*
+  name: Attributes
+  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_Attributes_
+  commentId: Overload:Makaretu.Globalization.LocaleExtension.Attributes
+  fullName: Makaretu.Globalization.LocaleExtension.Attributes
+  nameWithType: LocaleExtension.Attributes
+- uid: Makaretu.Globalization.LocaleExtension.Empty
+  name: Empty
+  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_Empty
+  commentId: F:Makaretu.Globalization.LocaleExtension.Empty
+  fullName: Makaretu.Globalization.LocaleExtension.Empty
+  nameWithType: LocaleExtension.Empty
+- uid: Makaretu.Globalization.LocaleExtension.Keywords
+  name: Keywords
+  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_Keywords
+  commentId: P:Makaretu.Globalization.LocaleExtension.Keywords
+  fullName: Makaretu.Globalization.LocaleExtension.Keywords
+  nameWithType: LocaleExtension.Keywords
+- uid: Makaretu.Globalization.LocaleExtension.Keywords*
+  name: Keywords
+  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_Keywords_
+  commentId: Overload:Makaretu.Globalization.LocaleExtension.Keywords
+  fullName: Makaretu.Globalization.LocaleExtension.Keywords
+  nameWithType: LocaleExtension.Keywords
+- uid: Makaretu.Globalization.LocaleExtension.Parse(System.String)
+  name: Parse(String)
+  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_Parse_System_String_
+  commentId: M:Makaretu.Globalization.LocaleExtension.Parse(System.String)
+  fullName: Makaretu.Globalization.LocaleExtension.Parse(System.String)
+  nameWithType: LocaleExtension.Parse(String)
+- uid: Makaretu.Globalization.LocaleExtension.Parse*
+  name: Parse
+  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_Parse_
+  commentId: Overload:Makaretu.Globalization.LocaleExtension.Parse
+  fullName: Makaretu.Globalization.LocaleExtension.Parse
+  nameWithType: LocaleExtension.Parse
+- uid: Makaretu.Globalization.LocaleExtension.TryParse(System.String,Makaretu.Globalization.LocaleExtension@)
+  name: TryParse(String, out LocaleExtension)
+  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_TryParse_System_String_Makaretu_Globalization_LocaleExtension__
+  commentId: M:Makaretu.Globalization.LocaleExtension.TryParse(System.String,Makaretu.Globalization.LocaleExtension@)
+  name.vb: TryParse(String, ByRef LocaleExtension)
+  fullName: Makaretu.Globalization.LocaleExtension.TryParse(System.String, out Makaretu.Globalization.LocaleExtension)
+  fullName.vb: Makaretu.Globalization.LocaleExtension.TryParse(System.String, ByRef Makaretu.Globalization.LocaleExtension)
+  nameWithType: LocaleExtension.TryParse(String, out LocaleExtension)
+  nameWithType.vb: LocaleExtension.TryParse(String, ByRef LocaleExtension)
+- uid: Makaretu.Globalization.LocaleExtension.TryParse(System.String,Makaretu.Globalization.LocaleExtension@,System.String@)
+  name: TryParse(String, out LocaleExtension, out String)
+  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_TryParse_System_String_Makaretu_Globalization_LocaleExtension__System_String__
+  commentId: M:Makaretu.Globalization.LocaleExtension.TryParse(System.String,Makaretu.Globalization.LocaleExtension@,System.String@)
+  name.vb: TryParse(String, ByRef LocaleExtension, ByRef String)
+  fullName: Makaretu.Globalization.LocaleExtension.TryParse(System.String, out Makaretu.Globalization.LocaleExtension, out System.String)
+  fullName.vb: Makaretu.Globalization.LocaleExtension.TryParse(System.String, ByRef Makaretu.Globalization.LocaleExtension, ByRef System.String)
+  nameWithType: LocaleExtension.TryParse(String, out LocaleExtension, out String)
+  nameWithType.vb: LocaleExtension.TryParse(String, ByRef LocaleExtension, ByRef String)
+- uid: Makaretu.Globalization.LocaleExtension.TryParse*
+  name: TryParse
+  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_TryParse_
+  commentId: Overload:Makaretu.Globalization.LocaleExtension.TryParse
+  fullName: Makaretu.Globalization.LocaleExtension.TryParse
+  nameWithType: LocaleExtension.TryParse
 - uid: Makaretu.Globalization.LocaleIdentifier
   name: LocaleIdentifier
   href: api/Makaretu.Globalization.LocaleIdentifier.html
@@ -598,6 +670,18 @@ references:
   commentId: Overload:Makaretu.Globalization.LocaleIdentifier.TryParseBcp47
   fullName: Makaretu.Globalization.LocaleIdentifier.TryParseBcp47
   nameWithType: LocaleIdentifier.TryParseBcp47
+- uid: Makaretu.Globalization.LocaleIdentifier.UnicodeExtension
+  name: UnicodeExtension
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_UnicodeExtension
+  commentId: P:Makaretu.Globalization.LocaleIdentifier.UnicodeExtension
+  fullName: Makaretu.Globalization.LocaleIdentifier.UnicodeExtension
+  nameWithType: LocaleIdentifier.UnicodeExtension
+- uid: Makaretu.Globalization.LocaleIdentifier.UnicodeExtension*
+  name: UnicodeExtension
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_UnicodeExtension_
+  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.UnicodeExtension
+  fullName: Makaretu.Globalization.LocaleIdentifier.UnicodeExtension
+  nameWithType: LocaleIdentifier.UnicodeExtension
 - uid: Makaretu.Globalization.LocaleIdentifier.Variants
   name: Variants
   href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Variants
