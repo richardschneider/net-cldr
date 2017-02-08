@@ -8,6 +8,12 @@ namespace Makaretu.Globalization
     /// <summary>
     ///   Extensions to make CLDR access easier.
     /// </summary>
+    /// <remarks>
+    ///    These are simple XPath lookups for multiple documents. CLDR inheritance is not performed.
+    ///    <para>
+    ///    The <see cref="CldrContext"/> is used to provide extra XPath varaibles and functions.
+    ///    </para>
+    /// </remarks>
     public static class CldrExentsions
     {
         /// <summary>
@@ -15,13 +21,13 @@ namespace Makaretu.Globalization
         ///   in the sequence of documents.
         /// </summary>
         /// <param name="docs">
-        ///   The documents to seatch.
+        ///   The documents to search.
         /// </param>
         /// <param name="predicate">
         ///   The XPATH expression.
         /// </param>
         /// <returns>
-        ///   The matched XElement.
+        ///   The matched element.
         /// </returns>
         /// <exception cref="KeyNotFoundException">
         ///   No elements match the <paramref name="predicate"/>.
@@ -52,7 +58,7 @@ namespace Makaretu.Globalization
         ///   the <paramref name="predicate"/>.
         /// </param>
         /// <returns>
-        ///   The matched XElement.
+        ///   The matched element.
         /// </returns>
         /// <exception cref="KeyNotFoundException ">
         ///   No elements match the <paramref name="predicate"/>.
@@ -73,13 +79,13 @@ namespace Makaretu.Globalization
         ///   in the sequence of documents or return null.
         /// </summary>
         /// <param name="docs">
-        ///   The documents to seatch.
+        ///   The documents to search.
         /// </param>
         /// <param name="predicate">
         ///   The XPATH expression.
         /// </param>
         /// <returns>
-        ///   The matched XElement or <b>null</b>.
+        ///   The matched element or <b>null</b>.
         /// </returns>
         public static XPathNavigator FirstElementOrDefault(
             this IEnumerable<XPathDocument> docs,
@@ -95,5 +101,33 @@ namespace Makaretu.Globalization
                 })
                 .FirstOrDefault(e => e != null);
         }
+
+        /// <summary>
+        ///   Find all the elements that matche the XPATH expression
+        ///   in the sequence of documents.
+        /// </summary>
+        /// <param name="docs">
+        ///   The documents to search.
+        /// </param>
+        /// <param name="predicate">
+        ///   The XPATH expression.
+        /// </param>
+        /// <returns>
+        ///   Sequence of matched elements.
+        /// </returns>
+        public static IEnumerable<XPathNavigator> Elements(
+            this IEnumerable<XPathDocument> docs,
+            string predicate)
+        {
+            return docs
+                .SelectMany(doc =>
+                {
+                    var nav = doc.CreateNavigator();
+                    var expr = nav.Compile(predicate);
+                    expr.SetContext(CldrContext.Default);
+                    return nav.Select(expr).OfType<XPathNavigator>();
+                });
+        }
+
     }
 }

@@ -111,6 +111,15 @@ namespace Makaretu.Globalization
         }
 
         [TestMethod]
+        public void Query_All()
+        {
+            var parentLocales = Cldr.Instance
+                .GetDocuments("common/supplemental/supplementalData.xml")
+                .Elements("supplementalData/parentLocales/parentLocale");
+            Assert.AreNotEqual(0, parentLocales.Count());
+        }
+
+        [TestMethod]
         public void LanguageDefined()
         {
             Assert.IsTrue(Cldr.Instance.IsLanguageDefined("en"));
