@@ -21,5 +21,12 @@ namespace Makaretu.Globalization
             Assert.AreEqual("thai", extension.Keywords["nu"]);
         }
 
+        [TestMethod]
+        public void Stringify()
+        {
+            var x = "u-foo-bar-nu-thai-ca-buddhist-kk-true";
+            Assert.AreEqual("u-bar-foo-ca-buddhist-kk-nu-thai", LocaleExtension.Parse(x).ToString());
+        }
+
     }
 }

@@ -54,6 +54,19 @@ namespace Makaretu.Globalization
         public IDictionary<string, string> Keywords { get; set; }
 
         /// <summary>
+        ///   Returns the canonical string representation.
+        /// </summary>
+        public override string ToString()
+        {
+            var a = Attributes
+                .OrderBy(s => s, StringComparer.InvariantCulture);
+            var k = Keywords
+                .OrderBy(p => p.Key, StringComparer.InvariantCulture)
+                .Select(p => p.Key  + ((p.Value == "true") ? "" : "-" + p.Value)); 
+
+            return "u-" + String.Join("-", a.Concat(k));
+        }
+        /// <summary>
         ///   Parses the string representation of a Unicode locale extension.
         /// </summary>
         /// <param name="s">
