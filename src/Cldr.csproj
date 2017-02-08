@@ -54,6 +54,7 @@
     <Compile Include="Cldr.cs" />
     <Compile Include="CldrXPath.cs" />
     <Compile Include="Locale.cs" />
+    <Compile Include="LocaleExtension.cs" />
     <Compile Include="LocaleIdentifier.cs" />
     <Compile Include="Numbers\NumberingSystem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

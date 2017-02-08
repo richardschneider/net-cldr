@@ -125,25 +125,22 @@ namespace Makaretu.Globalization.Numbers
         /// </remarks>
         public static NumberingSystem Create(Locale locale)
         {
-            var possibilities = locale.Id.Extensions
-                .Where(x => x.StartsWith("u-nu-"))
-                .Select(x => x.Substring(5));
-            foreach (var name in possibilities)
+            string name;
+            if (locale.Id.UnicodeExtension.Keywords.TryGetValue("nu", out name))
             {
                 try
                 {
-                    var id = name;
                     if (Others.Contains(name))
                     {
                         // Consistency is the hobgoblin of small minds.
                         var other = name == "traditio"
                             ? "traditional"
                             : name;
-                        id = locale
+                        name = locale
                             .ResourceBundle()
                             .FirstElement($"ldml/numbers/otherNumberingSystems/{other}").Value;
                     }
-                    return NumberingSystem.Create(id);
+                    return NumberingSystem.Create(name);
                 }
                 catch (KeyNotFoundException)
                 {

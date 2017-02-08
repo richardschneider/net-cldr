@@ -98,6 +98,11 @@ namespace Makaretu.Globalization
         /// </remarks>
         public IEnumerable<string> Extensions { get; private set; }
 
+        /// <summary>
+        ///   The Unicode BCP 47 U Extension.
+        /// </summary>
+        public LocaleExtension UnicodeExtension { get; private set; }
+
         /// <inheritdoc/>
         /// <remarks>
         ///   Uses the casing recommendations in [BCP47] for subtag casing. 
@@ -267,7 +272,7 @@ namespace Makaretu.Globalization
         ///   <paramref name="s"/> is not in the correct format.
         /// </exception>
         /// <returns>
-        ///   A local identifier that refers to <paramref name="s"/>.
+        ///   A locale identifier that refers to <paramref name="s"/>.
         /// </returns>
         public static LocaleIdentifier Parse(string s)
         {
@@ -312,7 +317,7 @@ namespace Makaretu.Globalization
         ///   A case insensitive string containing a locale identifier, based on BCP47.
         /// </param>
         /// <param name="result">
-        ///   A local identifier that refers to <paramref name="s"/> or <b>null</b> if the parsing
+        ///   A locale identifier that refers to <paramref name="s"/> or <b>null</b> if the parsing
         ///   failed.
         /// </param>
         /// <returns>
@@ -341,7 +346,7 @@ namespace Makaretu.Globalization
         ///   <b>true</b> if <paramref name="s"/> was parsed successfully; otherwise, <b>false</b>.
         /// </returns>
         /// <remarks>
-        ///   A local identifier that refers to <paramref name="s"/>.
+        ///   A locale identifier that refers to <paramref name="s"/>.
         /// </remarks>
         public static bool TryParse(string s, out LocaleIdentifier result, out string message)
         {
@@ -407,13 +412,19 @@ namespace Makaretu.Globalization
                 return false;
             }
 
+            var u = extensions
+                .Where(x => x.StartsWith("u-"))
+                .Select(x => LocaleExtension.Parse(x))
+                .FirstOrDefault();
+
             result = new LocaleIdentifier
             {
                 Language = match.Groups["lang"].Value,
                 Script = ToTitleCase(match.Groups["script"].Value),
                 Region = match.Groups["region"].Value.ToUpperInvariant(),
                 Variants = variants,
-                Extensions = extensions.ToArray()
+                Extensions = extensions.ToArray(),
+                UnicodeExtension = u ?? LocaleExtension.Empty
             };
 
             return true;
@@ -494,6 +505,7 @@ namespace Makaretu.Globalization
                     return $"Language variant '{variant}' is not defined.";
             }
             // TODO: variants
+
             // TODO: U extensions
             // TODO: T extensions
 

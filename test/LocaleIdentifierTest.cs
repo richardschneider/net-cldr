@@ -127,6 +127,28 @@ namespace Makaretu.Globalization
         }
 
         [TestMethod]
+        public void Parsing_Unicode_Extension()
+        {
+            var id = LocaleIdentifier.Parse("th-u-bar-foo-ca-buddhist-kk-nu-thai");
+            var extension = id.UnicodeExtension;
+            CollectionAssert.Contains(extension.Attributes.ToArray(), "foo");
+            CollectionAssert.Contains(extension.Attributes.ToArray(), "bar");
+            Assert.AreEqual("buddhist", extension.Keywords["ca"]);
+            Assert.AreEqual("true", extension.Keywords["kk"]);
+            Assert.AreEqual("thai", extension.Keywords["nu"]);
+        }
+
+        [TestMethod]
+        public void Parsing_Invalid_Unicode_Extension()
+        {
+            LocaleIdentifier id;
+            string message;
+            var ok = LocaleIdentifier.TryParse("th-u-xx-invalidtype", out id, out message);
+            Assert.IsFalse(ok);
+            Assert.IsNull(id);
+        }
+
+        [TestMethod]
         public void Parsing_Throws()
         {
             ExceptionAssert.Throws<FormatException>(() => LocaleIdentifier.Parse("ThisIsNotALanguage"));
