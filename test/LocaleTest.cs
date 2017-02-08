@@ -18,6 +18,20 @@ namespace Makaretu.Globalization
         }
 
         [TestMethod]
+        public void Creation_Uses_A_Cache()
+        {
+            var a = Locale.Create("en");
+            var b = Locale.Create("en");
+            var c = Locale.Create("en-NZ");
+            Assert.AreSame(a, b);
+            Assert.AreNotSame(a, c);
+
+            var x = Locale.Create("zh-TW");
+            var y = Locale.Create("cmn-TW");
+            Assert.AreSame(x, y);
+        }
+
+        [TestMethod]
         public void Stringify()
         {
             var locale = Locale.Create("zh-u-nu-finance");

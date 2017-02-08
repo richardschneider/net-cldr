@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ namespace Makaretu.Globalization
     public class Locale
     {
         static Dictionary<string, string> ParentLocales;
+        static ConcurrentDictionary<string, Locale> LocaleCache = new ConcurrentDictionary<string, Locale>();
 
         static Locale()
         {
@@ -113,7 +115,7 @@ namespace Makaretu.Globalization
         /// <seealso cref="LocaleIdentifier.Parse"/>
         public static Locale Create(string id)
         {
-            return Create(LocaleIdentifier.Parse(id));
+            return LocaleCache.GetOrAdd(id, name => Create(LocaleIdentifier.Parse(name)));
         }
 
         /// <summary>
@@ -127,9 +129,7 @@ namespace Makaretu.Globalization
         /// </returns>
         public static Locale Create(LocaleIdentifier id)
         {
-            // TODO: Caching
-
-            return new Locale(id);
+            return LocaleCache.GetOrAdd(id.ToString(), name => new Locale(id));
         }
 
     }
