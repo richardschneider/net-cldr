@@ -84,5 +84,30 @@ namespace Makaretu.Globalization
             Assert.AreEqual("root", chain[4]);
         }
 
+        [TestMethod]
+        public void Find_Simple()
+        {
+            var locale = Locale.Create("ar");
+            var ns = locale.Find("ldml/numbers/defaultNumberingSystem/text()").Value;
+            Assert.AreEqual("arab", ns);
+        }
+
+        [TestMethod]
+        public void Find_Alias()
+        {
+            var locale = Locale.Create("th");
+            var xpath = "/ldml/dates/calendars/calendar[@type='buddhist']/dateTimeFormats/dateTimeFormatLength[@type='full']/dateTimeFormat/pattern";
+            var pattern = locale.Find(xpath).Value;
+            Assert.AreEqual("{1} {0}", pattern);
+        }
+
+        [TestMethod]
+        public void Find_Alias_1()
+        {
+            var locale = Locale.Create("th");
+            var xpath = "/ldml/dates/calendars/calendar[@type='buddhist']/months/monthContext[@type='format']/monthWidth[@type='abbreviated']/month[@type='1']";
+            var month = locale.Find(xpath).Value;
+            Assert.AreEqual("ม.ค.", month);
+        }
     }
 }

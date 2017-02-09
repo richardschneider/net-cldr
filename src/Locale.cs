@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common.Logging;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,29 @@ namespace Makaretu.Globalization
     /// </summary>
     public class Locale
     {
+        class Alias
+        {
+            public string From { get; set; }
+            public string To { get; set; }
+        }
+
+        static ILog log = LogManager.GetLogger(typeof(Locale));
         static Dictionary<string, string> ParentLocales;
+        // TODO: build aliases from root.xml
+        static List<Alias> Aliases = new List<Alias>
+        {
+            new Alias
+            {
+                From = "calendar[@type='buddhist']/months",
+                To = "calendar[@type='gregorian']/months"
+            },
+            new Alias
+            {
+                From = "calendar[@type='buddhist']/dateTimeFormats",
+                To = "calendar[@type='generic']/dateTimeFormats"
+            }
+        };
+
         static ConcurrentDictionary<string, Locale> LocaleCache = new ConcurrentDictionary<string, Locale>();
 
         static Locale()
@@ -111,6 +134,34 @@ namespace Makaretu.Globalization
         }
 
         /// <summary>
+        ///   Find the first XML element that matches the XPath expression
+        ///   in the <see cref="ResourceBundle"/>.
+        /// </summary>
+        /// <param name="predicate">
+        ///   The XPath expression to match.
+        /// </param>
+        /// <returns>
+        ///   The matched element.
+        /// </returns>
+        /// <exception cref="KeyNotFoundException">
+        ///   No elements match the <paramref name="predicate"/>.
+        /// </exception>
+        public XPathNavigator Find(string predicate)
+        {
+            var nav = ResourceBundle().FirstElementOrDefault(predicate);
+            if (nav != null)
+                return nav;
+
+            var alias = Aliases.FirstOrDefault(a => predicate.Contains(a.From));
+            if (alias != null)
+            {
+                return Find(predicate.Replace(alias.From, alias.To));
+            }
+
+            throw new KeyNotFoundException($"Cannot find CLDR '{predicate}'.");
+        }
+
+        /// <summary>
         ///   Creates or reuses a locale with the specified string locale identifier.
         /// </summary>
         /// <param name="id">
@@ -139,8 +190,10 @@ namespace Makaretu.Globalization
         /// </returns>
         public static Locale Create(LocaleIdentifier id)
         {
-            id = id.CanonicalForm();
-            return LocaleCache.GetOrAdd(id.ToString(), name => new Locale(id));
+            var cid = id.CanonicalForm();
+            if (log.IsDebugEnabled)
+                log.DebugFormat("Resolved locale '{0}' to '{1}'", id, cid);
+            return LocaleCache.GetOrAdd(cid.ToString(), name => new Locale(cid));
         }
 
     }

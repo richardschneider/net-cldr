@@ -136,22 +136,18 @@ namespace Makaretu.Globalization.Numbers
                         var other = name == "traditio"
                             ? "traditional"
                             : name;
-                        name = locale
-                            .ResourceBundle()
-                            .FirstElement($"ldml/numbers/otherNumberingSystems/{other}").Value;
+                        name = locale.Find($"ldml/numbers/otherNumberingSystems/{other}").Value;
                     }
                     return NumberingSystem.Create(name);
                 }
                 catch (KeyNotFoundException)
                 {
-                    // eat it, will fallbace to default numbering system.
+                    // eat it, will fallback to default numbering system.
                 }
             }
 
             // Find the default numbering system for the locale.
-            var ns = locale
-                .ResourceBundle()
-                .FirstElement("ldml/numbers/defaultNumberingSystem/text()").Value;
+            var ns = locale.Find("ldml/numbers/defaultNumberingSystem/text()").Value;
 
             return NumberingSystem.Create(ns);
         }
