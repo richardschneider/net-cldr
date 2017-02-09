@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common.Logging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.XPath;
@@ -16,6 +17,8 @@ namespace Makaretu.Globalization
     /// </remarks>
     public static class CldrExentsions
     {
+        static ILog log = LogManager.GetLogger(typeof(CldrExentsions));
+
         /// <summary>
         ///   Find the first element that matches the XPATH expression
         ///   in the sequence of documents.
@@ -91,13 +94,21 @@ namespace Makaretu.Globalization
             this IEnumerable<XPathDocument> docs,
             string predicate)
         {
+            if (log.IsTraceEnabled)
+                log.Trace("Finding first " + predicate);
+
             return docs
                 .Select(doc =>
                 {
                     var nav = doc.CreateNavigator();
                     var expr = nav.Compile(predicate);
                     expr.SetContext(CldrContext.Default);
-                    return nav.SelectSingleNode(expr);
+                    var node = nav.SelectSingleNode(expr);
+                    if (node != null && log.IsTraceEnabled)
+                    {
+                        log.Trace("Found in " + node.BaseURI);
+                    }
+                    return node;
                 })
                 .FirstOrDefault(e => e != null);
         }
@@ -119,6 +130,9 @@ namespace Makaretu.Globalization
             this IEnumerable<XPathDocument> docs,
             string predicate)
         {
+            if (log.IsTraceEnabled)
+                log.Trace("Finding all " + predicate);
+
             return docs
                 .SelectMany(doc =>
                 {
