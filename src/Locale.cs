@@ -21,38 +21,9 @@ namespace Makaretu.Globalization
         }
 
         static ILog log = LogManager.GetLogger(typeof(Locale));
-        static Dictionary<string, string> ParentLocales;
-        // TODO: build aliases from root.xml
-        static List<Alias> Aliases = new List<Alias>
-        {
-            new Alias
-            {
-                From = "calendar[@type='buddhist']/months",
-                To = "calendar[@type='gregorian']/months"
-            },
-            new Alias
-            {
-                From = "calendar[@type='buddhist']/dateTimeFormats",
-                To = "calendar[@type='generic']/dateTimeFormats"
-            }
-        };
-
+        static Lazy<Dictionary<string, string>> ParentLocales = new Lazy<Dictionary<string, string>>(LoadParentLocales);
+        static Lazy<Alias[]> Aliases = new Lazy<Alias[]>(LoadAliases);
         static ConcurrentDictionary<string, Locale> LocaleCache = new ConcurrentDictionary<string, Locale>();
-
-        static Locale()
-        {
-            ParentLocales = Cldr.Instance
-                .GetDocuments("common/supplemental/supplementalData.xml")
-                .Elements("supplementalData/parentLocales/parentLocale")
-                .SelectMany(x =>
-                {
-                    var parent = x.GetAttribute("parent", "");
-                    return x
-                        .GetAttribute("locales", "").Split(new[] { ' ', '\t', '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries)
-                        .Select(child => new { Parent = parent, Child = child });
-                })
-                .ToDictionary(x => x.Child, x => x.Parent);
-        }
 
         /// <summary>
         ///   Creates a new instance of the <see cref="Locale"/> class with the
@@ -117,13 +88,13 @@ namespace Makaretu.Globalization
         }
 
         static IEnumerable<string> SearchChainRecursive(LocaleIdentifier id)
-        { 
+        {
             foreach (var locale in id.SearchChain())
             {
                 yield return locale;
-                if (ParentLocales.ContainsKey(locale))
+                if (ParentLocales.Value.ContainsKey(locale))
                 {
-                    var parent = LocaleIdentifier.Parse(ParentLocales[locale]);
+                    var parent = LocaleIdentifier.Parse(ParentLocales.Value[locale]);
                     foreach (var p in SearchChainRecursive(parent))
                     {
                         yield return p;
@@ -152,7 +123,7 @@ namespace Makaretu.Globalization
             if (nav != null)
                 return nav;
 
-            var alias = Aliases.FirstOrDefault(a => predicate.Contains(a.From));
+            var alias = Aliases.Value.FirstOrDefault(a => predicate.Contains(a.From));
             if (alias != null)
             {
                 return Find(predicate.Replace(alias.From, alias.To));
@@ -194,6 +165,46 @@ namespace Makaretu.Globalization
             if (log.IsDebugEnabled)
                 log.DebugFormat("Resolved locale '{0}' to '{1}'", id, cid);
             return LocaleCache.GetOrAdd(cid.ToString(), name => new Locale(cid));
+        }
+
+        static Dictionary<string,string> LoadParentLocales()
+        {
+            if (log.IsDebugEnabled)
+                log.Debug("Loading parent locales");
+
+            return Cldr.Instance
+                .GetDocuments("common/supplemental/supplementalData.xml")
+                .Elements("supplementalData/parentLocales/parentLocale")
+                .SelectMany(x =>
+                {
+                    var parent = x.GetAttribute("parent", "");
+                    return x
+                        .GetAttribute("locales", "").Split(new[] { ' ', '\t', '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries)
+                        .Select(child => new { Parent = parent, Child = child });
+                })
+                .ToDictionary(x => x.Child, x => x.Parent);
+        }
+
+        static Alias[] LoadAliases()
+        {
+            if (log.IsDebugEnabled)
+                log.Debug("Loading root aliases");
+
+            // TODO: build aliases from root.xml
+
+            return new Alias[]
+            {
+                new Alias
+                {
+                    From = "calendar[@type='buddhist']/months",
+                    To = "calendar[@type='gregorian']/months"
+                },
+                new Alias
+                {
+                    From = "calendar[@type='buddhist']/dateTimeFormats",
+                    To = "calendar[@type='generic']/dateTimeFormats"
+                }
+            };
         }
 
     }
