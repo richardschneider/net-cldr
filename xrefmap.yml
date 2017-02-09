@@ -496,6 +496,18 @@ references:
   commentId: Overload:Makaretu.Globalization.LocaleExtension.Parse
   fullName: Makaretu.Globalization.LocaleExtension.Parse
   nameWithType: LocaleExtension.Parse
+- uid: Makaretu.Globalization.LocaleExtension.ToString
+  name: ToString()
+  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_ToString
+  commentId: M:Makaretu.Globalization.LocaleExtension.ToString
+  fullName: Makaretu.Globalization.LocaleExtension.ToString()
+  nameWithType: LocaleExtension.ToString()
+- uid: Makaretu.Globalization.LocaleExtension.ToString*
+  name: ToString
+  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_ToString_
+  commentId: Overload:Makaretu.Globalization.LocaleExtension.ToString
+  fullName: Makaretu.Globalization.LocaleExtension.ToString
+  nameWithType: LocaleExtension.ToString
 - uid: Makaretu.Globalization.LocaleExtension.TryParse(System.String,Makaretu.Globalization.LocaleExtension@)
   name: TryParse(String, out LocaleExtension)
   href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_TryParse_System_String_Makaretu_Globalization_LocaleExtension__
@@ -526,6 +538,18 @@ references:
   commentId: T:Makaretu.Globalization.LocaleIdentifier
   fullName: Makaretu.Globalization.LocaleIdentifier
   nameWithType: LocaleIdentifier
+- uid: Makaretu.Globalization.LocaleIdentifier.CanonicalForm
+  name: CanonicalForm()
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_CanonicalForm
+  commentId: M:Makaretu.Globalization.LocaleIdentifier.CanonicalForm
+  fullName: Makaretu.Globalization.LocaleIdentifier.CanonicalForm()
+  nameWithType: LocaleIdentifier.CanonicalForm()
+- uid: Makaretu.Globalization.LocaleIdentifier.CanonicalForm*
+  name: CanonicalForm
+  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_CanonicalForm_
+  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.CanonicalForm
+  fullName: Makaretu.Globalization.LocaleIdentifier.CanonicalForm
+  nameWithType: LocaleIdentifier.CanonicalForm
 - uid: Makaretu.Globalization.LocaleIdentifier.Extensions
   name: Extensions
   href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Extensions
