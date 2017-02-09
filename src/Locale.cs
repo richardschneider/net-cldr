@@ -4,6 +4,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml.XPath;
 
@@ -14,12 +15,6 @@ namespace Makaretu.Globalization
     /// </summary>
     public class Locale
     {
-        class Alias
-        {
-            public string From { get; set; }
-            public string To { get; set; }
-        }
-
         static ILog log = LogManager.GetLogger(typeof(Locale));
         static Lazy<Dictionary<string, string>> ParentLocales = new Lazy<Dictionary<string, string>>(LoadParentLocales);
         static Lazy<Alias[]> Aliases = new Lazy<Alias[]>(LoadAliases);
@@ -117,6 +112,10 @@ namespace Makaretu.Globalization
         /// <exception cref="KeyNotFoundException">
         ///   No elements match the <paramref name="predicate"/>.
         /// </exception>
+        /// <remarks>
+        ///   If the <paramref name="predicate"/> cannot be matched, then it is recursively
+        ///   modified with the "root aliases" and retried.
+        /// </remarks>
         public XPathNavigator Find(string predicate)
         {
             var nav = ResourceBundle().FirstElementOrDefault(predicate);
@@ -190,21 +189,41 @@ namespace Makaretu.Globalization
             if (log.IsDebugEnabled)
                 log.Debug("Loading root aliases");
 
-            // TODO: build aliases from root.xml
+            return Cldr.Instance
+                .GetDocuments("common/main/root.xml")
+                .Elements("//alias[@source='locale']")
+                .Select(e => new Alias(e))
+                .ToArray();
+        }
 
-            return new Alias[]
+        class Alias
+        {
+            public Alias(XPathNavigator nav)
             {
-                new Alias
+                var from = new StringBuilder();
+                To = nav.GetAttribute("path", "");
+                var target = nav.Clone();
+                while (To.StartsWith("../"))
                 {
-                    From = "calendar[@type='buddhist']/months",
-                    To = "calendar[@type='gregorian']/months"
-                },
-                new Alias
-                {
-                    From = "calendar[@type='buddhist']/dateTimeFormats",
-                    To = "calendar[@type='generic']/dateTimeFormats"
+                    target.MoveToParent();
+                    from.Append(target.LocalName);
+                    if (target.HasAttributes)
+                    {
+                        target.MoveToFirstAttribute();
+                        do
+                        {
+                            from.AppendFormat("[@{0}='{1}']", target.LocalName, target.Value);
+                        } while (target.MoveToNextAttribute());
+                        target.MoveToParent(); // go back to the element
+                    }
+                    from.Append('/');
+                    To = To.Substring(3);
                 }
-            };
+                From = String.Join("/", from.ToString().TrimEnd('/').Split('/').Reverse());
+            }
+
+            public string From { get; set; }
+            public string To { get; set; }
         }
 
     }
