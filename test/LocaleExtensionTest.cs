@@ -26,6 +26,8 @@ namespace Makaretu.Globalization
         {
             var x = "u-foo-bar-nu-thai-ca-buddhist-kk-true";
             Assert.AreEqual("u-bar-foo-ca-buddhist-kk-nu-thai", LocaleExtension.Parse(x).ToString());
+
+            Assert.AreEqual("", LocaleExtension.Empty.ToString());
         }
 
     }

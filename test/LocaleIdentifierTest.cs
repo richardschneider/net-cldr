@@ -275,17 +275,39 @@ namespace Makaretu.Globalization
         {
             var id = LocaleIdentifier.Parse("sl-SI-nedis");
             var chain = id.SearchChain().ToArray();
-            Assert.AreEqual(4, chain.Length);
+            Assert.AreEqual(5, chain.Length);
             Assert.AreEqual("sl_SI_NEDIS", chain[0]);
-            Assert.AreEqual("sl_SI", chain[1]);
-            Assert.AreEqual("sl", chain[2]);
-            Assert.AreEqual("root", chain[3]);
+            Assert.AreEqual("sl_NEDIS", chain[1]);
+            Assert.AreEqual("sl_SI", chain[2]);
+            Assert.AreEqual("sl", chain[3]);
+            Assert.AreEqual("root", chain[4]);
+
+            id = LocaleIdentifier.Parse("en-Latn-US-basiceng");
+            chain = id.SearchChain().ToArray();
+            Assert.AreEqual("en_Latn_US_BASICENG", chain[0]);
+            Assert.AreEqual("en_US_BASICENG", chain[1]);
+            Assert.AreEqual("en_Latn_BASICENG", chain[2]);
+            Assert.AreEqual("en_BASICENG", chain[3]);
+            Assert.AreEqual("en_Latn_US", chain[4]);
+            Assert.AreEqual("en_US", chain[5]);
+            Assert.AreEqual("en_Latn", chain[6]);
+            Assert.AreEqual("en", chain[7]);
+            Assert.AreEqual("root", chain[8]);
         }
 
         [TestMethod]
         public void SearchChain_und()
         {
             var id = LocaleIdentifier.Parse("und");
+            var chain = id.SearchChain().ToArray();
+            Assert.AreEqual(1, chain.Length);
+            Assert.AreEqual("root", chain[0]);
+        }
+
+        [TestMethod]
+        public void SearchChain_root()
+        {
+            var id = LocaleIdentifier.Parse("root");
             var chain = id.SearchChain().ToArray();
             Assert.AreEqual(1, chain.Length);
             Assert.AreEqual("root", chain[0]);

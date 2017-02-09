@@ -58,6 +58,9 @@ namespace Makaretu.Globalization
         /// </summary>
         public override string ToString()
         {
+            if (Attributes.Count() == 0 && Keywords.Count == 0)
+                return "";
+
             var a = Attributes
                 .OrderBy(s => s, StringComparer.InvariantCulture);
             var k = Keywords

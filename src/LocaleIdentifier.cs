@@ -254,25 +254,31 @@ namespace Makaretu.Globalization
         ///   A sequence of "languages" that should be searched.
         /// </returns>
         /// <remarks>
-        ///   This is simple truncation of the subtags and can be used
-        ///   to create the Resource Bundle.
+        ///   This sequence contains a combination of <see cref="Language"/>,
+        ///   <see cref="Script"/>, <see cref="Region"/> and <see cref="Variants"/>
+        ///   subtags.
         /// </remarks>
         public IEnumerable<string> SearchChain()
         {
-            var language = this.ToUnicodeLanguage(true);
-            while (language != String.Empty)
+            var languageChain = new[]
             {
-                yield return language;
-                if (language == "root")
-                {
-                    yield break;
-                }
-                var sep = language.LastIndexOf('_');
-                if (sep < 0)
-                    break;
-                language = language.Remove(sep);
-            }
-            yield return "root";
+                $"{Language}_{Script}_{Region}",
+                $"{Language}_{Region}",
+                $"{Language}_{Script}",
+                $"{Language}"
+            };
+            // TODO: Not really sure about the search chain with more than one
+            // variant.
+            var variant = String.Join("_", Variants.Select(v => v.ToUpperInvariant()));
+            var variantChain = languageChain
+                .Select(s => s + "_" + variant);
+
+            return variantChain
+                .Concat(languageChain)
+                .Concat(new[] { "root" })
+                .Select(s => s.Replace("__", "_").Trim('_'))
+                .Where(s => s != String.Empty)
+                .Distinct();
         }
 
         /// <summary>
