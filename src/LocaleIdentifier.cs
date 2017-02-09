@@ -254,7 +254,7 @@ namespace Makaretu.Globalization
         ///   A sequence of "languages" that should be searched.
         /// </returns>
         /// <remarks>
-        ///   This sequence contains a combination of <see cref="Language"/>,
+        ///   The sequence contains a combination of <see cref="Language"/>,
         ///   <see cref="Script"/>, <see cref="Region"/> and <see cref="Variants"/>
         ///   subtags.
         /// </remarks>

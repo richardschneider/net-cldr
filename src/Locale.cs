@@ -49,6 +49,10 @@ namespace Makaretu.Globalization
         /// <summary>
         ///   Identifies a set of preferences for the locale.
         /// </summary>
+        /// <value>
+        ///   The <see cref="LocaleIdentifier">canonical form</see> of the locale
+        ///   identifier.
+        /// </value>
         public LocaleIdentifier Id { get; private set; }
 
         /// <inheritdoc/>
@@ -82,16 +86,22 @@ namespace Makaretu.Globalization
         /// </returns>
         /// <remarks>
         ///   Same as <see cref="LocaleIdentifier.SearchChain"/> but applies
-        ///   any "parent locales".
+        ///   any "parent locales" overrides.
         /// </remarks>
         public IEnumerable<string> SearchChain()
         {
-            foreach (var locale in Id.SearchChain())
+            return SearchChainRecursive(Id);
+        }
+
+        static IEnumerable<string> SearchChainRecursive(LocaleIdentifier id)
+        { 
+            foreach (var locale in id.SearchChain())
             {
                 yield return locale;
                 if (ParentLocales.ContainsKey(locale))
                 {
-                    foreach (var p in Locale.Create(ParentLocales[locale]).SearchChain())
+                    var parent = LocaleIdentifier.Parse(ParentLocales[locale]);
+                    foreach (var p in SearchChainRecursive(parent))
                     {
                         yield return p;
                     }
@@ -129,6 +139,7 @@ namespace Makaretu.Globalization
         /// </returns>
         public static Locale Create(LocaleIdentifier id)
         {
+            id = id.CanonicalForm();
             return LocaleCache.GetOrAdd(id.ToString(), name => new Locale(id));
         }
 

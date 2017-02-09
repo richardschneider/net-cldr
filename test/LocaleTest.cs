@@ -14,7 +14,7 @@ namespace Makaretu.Globalization
         public void Creation()
         {
             var locale = Locale.Create("en");
-            Assert.AreEqual("en", locale.Id.ToString());
+            Assert.AreEqual("en-Latn-US", locale.Id.ToString());
         }
 
         [TestMethod]
@@ -51,11 +51,11 @@ namespace Makaretu.Globalization
         {
             var locale = Locale.Create("sl-SI-nedis");
             var chain = locale.SearchChain().ToArray();
-            Assert.AreEqual(4, chain.Length);
-            Assert.AreEqual("sl_SI_NEDIS", chain[0]);
-            Assert.AreEqual("sl_SI", chain[1]);
-            Assert.AreEqual("sl", chain[2]);
-            Assert.AreEqual("root", chain[3]);
+            Assert.AreEqual(9, chain.Length);
+            Assert.AreEqual("sl_Latn_SI_NEDIS", chain[0]);
+            Assert.AreEqual("sl_SI_NEDIS", chain[1]);
+            Assert.AreEqual("sl", chain[7]);
+            Assert.AreEqual("root", chain[8]);
         }
 
         [TestMethod]
@@ -63,9 +63,12 @@ namespace Makaretu.Globalization
         {
             var locale = Locale.Create("az-Cyrl");
             var chain = locale.SearchChain().ToArray();
-            Assert.AreEqual(2, chain.Length);
-            Assert.AreEqual("az_Cyrl", chain[0]);
-            Assert.AreEqual("root", chain[1]);
+            Assert.AreEqual(4, chain.Length);
+            Assert.AreEqual("az_Cyrl_AZ", chain[0]);
+            Assert.AreEqual("az_AZ", chain[1]);
+            Assert.AreEqual("az_Cyrl", chain[2]);
+            // "az" is not searched because parent locale override to "root"
+            Assert.AreEqual("root", chain[3]);
         }
 
         [TestMethod]
@@ -73,11 +76,12 @@ namespace Makaretu.Globalization
         {
             var locale = Locale.Create("es-AR");
             var chain = locale.SearchChain().ToArray();
-            Assert.AreEqual(4, chain.Length);
-            Assert.AreEqual("es_AR", chain[0]);
-            Assert.AreEqual("es_419", chain[1]);
-            Assert.AreEqual("es", chain[2]);
-            Assert.AreEqual("root", chain[3]);
+            Assert.AreEqual(5, chain.Length);
+            Assert.AreEqual("es_Latn_AR", chain[0]);
+            Assert.AreEqual("es_AR", chain[1]);
+            Assert.AreEqual("es_419", chain[2]);
+            Assert.AreEqual("es", chain[3]);
+            Assert.AreEqual("root", chain[4]);
         }
 
     }
