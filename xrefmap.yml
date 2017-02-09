@@ -400,6 +400,18 @@ references:
   commentId: Overload:Makaretu.Globalization.Locale.Create
   fullName: Makaretu.Globalization.Locale.Create
   nameWithType: Locale.Create
+- uid: Makaretu.Globalization.Locale.Find(System.String)
+  name: Find(String)
+  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_Find_System_String_
+  commentId: M:Makaretu.Globalization.Locale.Find(System.String)
+  fullName: Makaretu.Globalization.Locale.Find(System.String)
+  nameWithType: Locale.Find(String)
+- uid: Makaretu.Globalization.Locale.Find*
+  name: Find
+  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_Find_
+  commentId: Overload:Makaretu.Globalization.Locale.Find
+  fullName: Makaretu.Globalization.Locale.Find
+  nameWithType: Locale.Find
 - uid: Makaretu.Globalization.Locale.Id
   name: Id
   href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_Id
