@@ -23,6 +23,8 @@ namespace Makaretu.Globalization
             @"\[@count='(?:(?!other).)*'\]",
             RegexOptions.Compiled | RegexOptions.CultureInvariant);
 
+        ConcurrentDictionary<string, XPathNavigator> QueryCache = new ConcurrentDictionary<string, XPathNavigator>();
+
         /// <summary>
         ///   Creates a new instance of the <see cref="Locale"/> class with the
         ///   specified <see cref="LocaleIdentifier"/>.
@@ -132,19 +134,22 @@ namespace Makaretu.Globalization
                 return s + " or @count='other']";
             });
 
-            // Find it.
-            var nav = ResourceBundle().FirstElementOrDefault(predicate);
-            if (nav != null)
-                return nav;
-
-            // Try root aliases.
-            var alias = Aliases.Value.FirstOrDefault(a => predicate.Contains(a.From));
-            if (alias != null)
+            return QueryCache.GetOrAdd(predicate, (key) =>
             {
-                return Find(predicate.Replace(alias.From, alias.To));
-            }
+                // Find it.
+                var nav = ResourceBundle().FirstElementOrDefault(predicate);
+                if (nav != null)
+                    return nav;
 
-            throw new KeyNotFoundException($"Cannot find CLDR '{predicate}'.");
+                // Try root aliases.
+                var alias = Aliases.Value.FirstOrDefault(a => predicate.Contains(a.From));
+                if (alias != null)
+                {
+                    return Find(predicate.Replace(alias.From, alias.To));
+                }
+
+                throw new KeyNotFoundException($"Cannot find CLDR '{predicate}'.");
+            });
         }
 
         /// <summary>

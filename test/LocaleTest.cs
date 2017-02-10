@@ -139,5 +139,17 @@ namespace Makaretu.Globalization
             var x = locale.Find(@"ldml/numbers/currencies/currency[@type='CAD']/displayName[@count='x']").Value;
             Assert.AreEqual(other, x);
         }
+
+        [TestMethod]
+        public void Find_Cache()
+        {
+            var locale = Locale.Create("fr-CA");
+
+            var a = locale.Find(@"ldml/numbers/currencies/currency[@type='CAD']/displayName[@count='other']");
+            var b = locale.Find(@"ldml/numbers/currencies/currency[@type='CAD']/displayName[@count='other']");
+            var c = locale.Find(@"ldml/numbers/currencies/currency[@type='CAD']/displayName[@count='one']");
+            Assert.AreSame(a, b);
+            Assert.AreNotSame(a, c);
+        }
     }
 }
