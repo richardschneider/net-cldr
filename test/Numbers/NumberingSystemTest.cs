@@ -15,7 +15,7 @@ namespace Makaretu.Globalization.Numbers
         {
             var hanidec = NumberingSystem.Create("HANIDEC");
             Assert.AreEqual("hanidec", hanidec.Id);
-            Assert.AreEqual("〇一二三四五六七八九", hanidec.Digits);
+            Assert.AreEqual("〇一二三四五六七八九", String.Join("", hanidec.Digits));
         }
 
         [TestMethod]
@@ -85,6 +85,14 @@ namespace Makaretu.Globalization.Numbers
 
             var ta_traditional = Locale.Create("ta-u-nu-traditio");
             Assert.AreEqual("taml", NumberingSystem.Create(ta_traditional).Id);
+        }
+
+        [TestMethod]
+        public void Digits()
+        {
+            var ns = NumberingSystem.Create("mathbold");
+            Assert.AreEqual("\U0001D7CE", ns.Digits[0]);
+            Assert.AreEqual("\U0001D7D7", ns.Digits[9]);
         }
     }
 }

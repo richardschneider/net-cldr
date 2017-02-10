@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Common.Logging;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +14,7 @@ namespace Makaretu.Globalization.Numbers
     /// </summary>
     public class NumberingSystem
     {
+        static ILog log = LogManager.GetLogger(typeof(NumberingSystem));
         static ConcurrentDictionary<string, NumberingSystem> Cache = new ConcurrentDictionary<string, NumberingSystem>();
         static string[] Others = new[] { "native", "finance", "traditio" };
 
@@ -40,7 +43,7 @@ namespace Makaretu.Globalization.Numbers
         ///   Only valid when <see cref="Type"/> equals "numeric".
         /// </value>
         /// <seealso cref="IsNumeric"/>
-        public string Digits { get; set; }
+        public string[] Digits { get; set; }
 
         /// <summary>
         ///  The RBNF ruleset to be used for formatting numbers
@@ -95,14 +98,25 @@ namespace Makaretu.Globalization.Numbers
                 var xml = Cldr.Instance
                     .GetDocuments("common/supplemental/numberingSystems.xml")
                     .FirstElement($"supplementalData/numberingSystems/numberingSystem[@id='{key}']");
+                if (log.IsDebugEnabled)
+                    log.DebugFormat("Loading '{0}'", key);
                 return new NumberingSystem
                 {
                     Id = xml.GetAttribute("id", ""),
                     Type = xml.GetAttribute("type", ""),
-                    Digits = xml.GetAttribute("digits", ""),
+                    Digits = GetTextElements(xml.GetAttribute("digits", "")).ToArray(),
                     Rules = xml.GetAttribute("rules", "")
                 };
             });
+        }
+
+        static IEnumerable<string> GetTextElements(string s)
+        {
+            var text = StringInfo.GetTextElementEnumerator(s);
+            while (text.MoveNext())
+            {
+                yield return text.GetTextElement();
+            }
         }
 
         /// <summary>
