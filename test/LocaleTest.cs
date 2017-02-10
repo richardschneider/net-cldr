@@ -109,5 +109,35 @@ namespace Makaretu.Globalization
             var month = locale.Find(xpath).Value;
             Assert.AreEqual("ม.ค.", month);
         }
+
+        [TestMethod]
+        public void Find_Lateral_Inheritance()
+        {
+            var locale = Locale.Create("fr-CA");
+
+            var other = locale.Find(@"ldml/units/unitLength[@type='long']/unit[@type='mass-gram']/unitPattern[@count='other']").Value;
+            Assert.AreEqual("{0} grammes", other);
+
+            var one = locale.Find(@"ldml/units/unitLength[@type='long']/unit[@type='mass-gram']/unitPattern[@count='one']").Value;
+            Assert.AreEqual("{0} gramme", one);
+
+            var x = locale.Find(@"ldml/units/unitLength[@type='long']/unit[@type='mass-gram']/unitPattern[@count='x']").Value;
+            Assert.AreEqual(other, x);
+        }
+
+        [TestMethod]
+        public void Find_Lateral_Inheritance_Currencies()
+        {
+            var locale = Locale.Create("fr-CA");
+
+            var other = locale.Find(@"ldml/numbers/currencies/currency[@type='CAD']/displayName[@count='other']").Value;
+            Assert.AreEqual("dollars canadiens", other);
+
+            var one = locale.Find(@"ldml/numbers/currencies/currency[@type='CAD']/displayName[@count='one']").Value;
+            Assert.AreEqual("dollar canadien", one);
+
+            var x = locale.Find(@"ldml/numbers/currencies/currency[@type='CAD']/displayName[@count='x']").Value;
+            Assert.AreEqual(other, x);
+        }
     }
 }

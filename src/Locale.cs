@@ -19,6 +19,9 @@ namespace Makaretu.Globalization
         static Lazy<Dictionary<string, string>> ParentLocales = new Lazy<Dictionary<string, string>>(LoadParentLocales);
         static Lazy<Alias[]> Aliases = new Lazy<Alias[]>(LoadAliases);
         static ConcurrentDictionary<string, Locale> LocaleCache = new ConcurrentDictionary<string, Locale>();
+        static Regex countFallback = new Regex(
+            @"\[@count='(?:(?!other).)*'\]",
+            RegexOptions.Compiled | RegexOptions.CultureInvariant);
 
         /// <summary>
         ///   Creates a new instance of the <see cref="Locale"/> class with the
@@ -115,13 +118,26 @@ namespace Makaretu.Globalization
         /// <remarks>
         ///   If the <paramref name="predicate"/> cannot be matched, then it is recursively
         ///   modified with the "root aliases" and retried.
+        ///   <para>
+        ///   Lateral inheritance is also implemented. <c>[@count='x']</c> becomes
+        ///   <c>[@count='x' or @count='other']</c>.
+        ///   </para>
         /// </remarks>
         public XPathNavigator Find(string predicate)
         {
+            // Lateral inheritance.
+            predicate = countFallback.Replace(predicate, (match) =>
+            {
+                var s = match.ToString().TrimEnd(']');
+                return s + " or @count='other']";
+            });
+
+            // Find it.
             var nav = ResourceBundle().FirstElementOrDefault(predicate);
             if (nav != null)
                 return nav;
 
+            // Try root aliases.
             var alias = Aliases.Value.FirstOrDefault(a => predicate.Contains(a.From));
             if (alias != null)
             {

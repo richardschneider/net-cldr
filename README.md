@@ -18,6 +18,7 @@ Provides locale content for internationalisation software using the Unicode Comm
   - [locale truncation](http://unicode.org/reports/tr35/tr35.html#Locale_Inheritance)
   - [parent locale](http://unicode.org/reports/tr35/tr35.html#Parent_Locales)
   - [root alias](http://unicode.org/reports/tr35/tr35.html#Alias_Elements)
+  - [lateral](http://unicode.org/reports/tr35/tr35.html#Lateral_Inheritance)
 
 ## Getting started
 
