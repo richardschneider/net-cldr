@@ -151,5 +151,17 @@ namespace Makaretu.Globalization
             Assert.AreSame(a, b);
             Assert.AreNotSame(a, c);
         }
+
+        [TestMethod]
+        public void Find_Nonexistant()
+        {
+            var locale = Locale.Create("de");
+
+            var path = "ldml/numbers/symbols[@numberSystem='latn']/minusSign";
+            Assert.AreEqual("-", locale.Find(path).Value);
+
+            path = "ldml/numbers/symbols[@numberSystem='latn']/minus";
+            ExceptionAssert.Throws<KeyNotFoundException>(() => locale.Find(path));
+        }
     }
 }

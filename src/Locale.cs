@@ -142,7 +142,8 @@ namespace Makaretu.Globalization
                     return nav;
 
                 // Try root aliases.
-                var alias = Aliases.Value.FirstOrDefault(a => predicate.Contains(a.From));
+                var alias = Aliases.Value.FirstOrDefault(a => 
+                    predicate.Contains(a.From) && !predicate.Contains(a.To));
                 if (alias != null)
                 {
                     return Find(predicate.Replace(alias.From, alias.To));
