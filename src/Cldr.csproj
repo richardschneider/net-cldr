@@ -57,6 +57,7 @@
     <Compile Include="LocaleExtension.cs" />
     <Compile Include="LocaleIdentifier.cs" />
     <Compile Include="Numbers\NumberingSystem.cs" />
+    <Compile Include="Numbers\NumberSymbols.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CodeList.cs" />
     <Compile Include="StringRange.cs" />
