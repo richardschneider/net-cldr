@@ -56,6 +56,10 @@
     <Compile Include="Locale.cs" />
     <Compile Include="LocaleExtension.cs" />
     <Compile Include="LocaleIdentifier.cs" />
+    <Compile Include="Numbers\NumericFormatter.cs" />
+    <Compile Include="Numbers\AlgorithmicFormatter.cs" />
+    <Compile Include="Numbers\INumberFormatter.cs" />
+    <Compile Include="Numbers\NumberFormatter.cs" />
     <Compile Include="Numbers\NumberingSystem.cs" />
     <Compile Include="Numbers\NumberSymbols.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

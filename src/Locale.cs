@@ -168,12 +168,20 @@ namespace Makaretu.Globalization
                     return nav;
 
                 // Try root aliases.
-                var alias = Aliases.Value.FirstOrDefault(a =>
-                    key.Contains(a.From) && !key.Contains(a.To));
+                var alias = Aliases.Value
+                    .Where(a => key.Contains(a.From) && !key.Contains(a.To))
+                    .OrderByDescending(a => a.From.Length)
+                    .FirstOrDefault();
                 if (alias != null)
                 {
-                    return Find(key.Replace(alias.From, alias.To));
+                    if (log.IsTraceEnabled)
+                        log.TraceFormat("Trying alias '{0}' => '{1}'", alias.From, alias.To);
+
+                    return FindOrDefault(key.Replace(alias.From, alias.To));
                 }
+
+                if (log.IsTraceEnabled)
+                    log.TraceFormat("Not found '{0}'", key);
 
                 return null;
             });
