@@ -3,7 +3,7 @@
   <metadata>
     <id>Makaretu.Globalization</id>
     <version>$version$</version>
-    <title>>Makaretu Globalization</title>
+    <title>Makaretu Globalization</title>
     <authors>Richard Schneider</authors>
     <owners>Richard Schneider</owners>
     <licenseUrl>https://github.com/richardschneider/net-cldr/blob/master/LICENSE</licenseUrl>
