@@ -127,6 +127,32 @@ namespace Makaretu.Globalization
         /// </remarks>
         public XPathNavigator Find(string predicate)
         {
+            var nav = FindOrDefault(predicate);
+            if (nav == null)
+                throw new KeyNotFoundException($"Cannot find CLDR '{predicate}'.");
+            return nav;
+        }
+
+        /// <summary>
+        ///   Find the first (or none) XML element that matches the XPath expression
+        ///   in the <see cref="ResourceBundle"/>.
+        /// </summary>
+        /// <param name="predicate">
+        ///   The XPath expression to match.
+        /// </param>
+        /// <returns>
+        ///   The matched element or <b>null</b>.
+        /// </returns>
+        /// <remarks>
+        ///   If the <paramref name="predicate"/> cannot be matched, then it is recursively
+        ///   modified with the "root aliases" and retried.
+        ///   <para>
+        ///   Lateral inheritance is also implemented. <c>[@count='x']</c> becomes
+        ///   <c>[@count='x' or @count='other']</c>.
+        ///   </para>
+        /// </remarks>
+        public XPathNavigator FindOrDefault(string predicate)
+        {
             // Lateral inheritance.
             predicate = countFallback.Replace(predicate, (match) =>
             {
@@ -137,19 +163,19 @@ namespace Makaretu.Globalization
             return QueryCache.GetOrAdd(predicate, (key) =>
             {
                 // Find it.
-                var nav = ResourceBundle().FirstElementOrDefault(predicate);
+                var nav = ResourceBundle().FirstElementOrDefault(key);
                 if (nav != null)
                     return nav;
 
                 // Try root aliases.
-                var alias = Aliases.Value.FirstOrDefault(a => 
-                    predicate.Contains(a.From) && !predicate.Contains(a.To));
+                var alias = Aliases.Value.FirstOrDefault(a =>
+                    key.Contains(a.From) && !key.Contains(a.To));
                 if (alias != null)
                 {
-                    return Find(predicate.Replace(alias.From, alias.To));
+                    return Find(key.Replace(alias.From, alias.To));
                 }
 
-                throw new KeyNotFoundException($"Cannot find CLDR '{predicate}'.");
+                return null;
             });
         }
 
