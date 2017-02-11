@@ -775,6 +775,90 @@ references:
   commentId: N:Makaretu.Globalization.Numbers
   fullName: Makaretu.Globalization.Numbers
   nameWithType: Makaretu.Globalization.Numbers
+- uid: Makaretu.Globalization.Numbers.INumberFormatter
+  name: INumberFormatter
+  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html
+  commentId: T:Makaretu.Globalization.Numbers.INumberFormatter
+  fullName: Makaretu.Globalization.Numbers.INumberFormatter
+  nameWithType: INumberFormatter
+- uid: Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Decimal)
+  name: ToString(Decimal)
+  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Decimal_
+  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Decimal)
+  fullName: Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Decimal)
+  nameWithType: INumberFormatter.ToString(Decimal)
+- uid: Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Int64)
+  name: ToString(Int64)
+  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Int64_
+  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Int64)
+  fullName: Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Int64)
+  nameWithType: INumberFormatter.ToString(Int64)
+- uid: Makaretu.Globalization.Numbers.INumberFormatter.ToString*
+  name: ToString
+  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_ToString_
+  commentId: Overload:Makaretu.Globalization.Numbers.INumberFormatter.ToString
+  fullName: Makaretu.Globalization.Numbers.INumberFormatter.ToString
+  nameWithType: INumberFormatter.ToString
+- uid: Makaretu.Globalization.Numbers.NumberFormatter
+  name: NumberFormatter
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html
+  commentId: T:Makaretu.Globalization.Numbers.NumberFormatter
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter
+  nameWithType: NumberFormatter
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.Create(Makaretu.Globalization.Locale,System.Object)
+  name: Create(Locale, Object)
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Create_Makaretu_Globalization_Locale_System_Object_
+  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.Create(Makaretu.Globalization.Locale,System.Object)
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Create(Makaretu.Globalization.Locale, System.Object)
+  nameWithType: NumberFormatter.Create(Locale, Object)
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.Create*
+  name: Create
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Create_
+  commentId: Overload:Makaretu.Globalization.Numbers.NumberFormatter.Create
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Create
+  nameWithType: NumberFormatter.Create
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.NumberingSystem
+  name: NumberingSystem
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_NumberingSystem
+  commentId: P:Makaretu.Globalization.Numbers.NumberFormatter.NumberingSystem
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.NumberingSystem
+  nameWithType: NumberFormatter.NumberingSystem
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.NumberingSystem*
+  name: NumberingSystem
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_NumberingSystem_
+  commentId: Overload:Makaretu.Globalization.Numbers.NumberFormatter.NumberingSystem
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.NumberingSystem
+  nameWithType: NumberFormatter.NumberingSystem
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.Symbols
+  name: Symbols
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Symbols
+  commentId: P:Makaretu.Globalization.Numbers.NumberFormatter.Symbols
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Symbols
+  nameWithType: NumberFormatter.Symbols
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.Symbols*
+  name: Symbols
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Symbols_
+  commentId: Overload:Makaretu.Globalization.Numbers.NumberFormatter.Symbols
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Symbols
+  nameWithType: NumberFormatter.Symbols
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Decimal)
+  name: ToString(Decimal)
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_ToString_System_Decimal_
+  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Decimal)
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Decimal)
+  nameWithType: NumberFormatter.ToString(Decimal)
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Int64)
+  name: ToString(Int64)
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_ToString_System_Int64_
+  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Int64)
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Int64)
+  nameWithType: NumberFormatter.ToString(Int64)
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.ToString*
+  name: ToString
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_ToString_
+  commentId: Overload:Makaretu.Globalization.Numbers.NumberFormatter.ToString
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.ToString
+  nameWithType: NumberFormatter.ToString
 - uid: Makaretu.Globalization.Numbers.NumberingSystem
   name: NumberingSystem
   href: api/Makaretu.Globalization.Numbers.NumberingSystem.html
