@@ -787,6 +787,12 @@ references:
   commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Decimal)
   fullName: Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Decimal)
   nameWithType: INumberFormatter.ToString(Decimal)
+- uid: Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Double)
+  name: ToString(Double)
+  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Double_
+  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Double)
+  fullName: Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Double)
+  nameWithType: INumberFormatter.ToString(Double)
 - uid: Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Int64)
   name: ToString(Int64)
   href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Int64_
@@ -805,18 +811,30 @@ references:
   commentId: T:Makaretu.Globalization.Numbers.NumberFormatter
   fullName: Makaretu.Globalization.Numbers.NumberFormatter
   nameWithType: NumberFormatter
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.Create(Makaretu.Globalization.Locale,System.Object)
-  name: Create(Locale, Object)
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Create_Makaretu_Globalization_Locale_System_Object_
-  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.Create(Makaretu.Globalization.Locale,System.Object)
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Create(Makaretu.Globalization.Locale, System.Object)
-  nameWithType: NumberFormatter.Create(Locale, Object)
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.Create(Makaretu.Globalization.Locale,Makaretu.Globalization.Numbers.NumberOptions)
+  name: Create(Locale, NumberOptions)
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Create_Makaretu_Globalization_Locale_Makaretu_Globalization_Numbers_NumberOptions_
+  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.Create(Makaretu.Globalization.Locale,Makaretu.Globalization.Numbers.NumberOptions)
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Create(Makaretu.Globalization.Locale, Makaretu.Globalization.Numbers.NumberOptions)
+  nameWithType: NumberFormatter.Create(Locale, NumberOptions)
 - uid: Makaretu.Globalization.Numbers.NumberFormatter.Create*
   name: Create
   href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Create_
   commentId: Overload:Makaretu.Globalization.Numbers.NumberFormatter.Create
   fullName: Makaretu.Globalization.Numbers.NumberFormatter.Create
   nameWithType: NumberFormatter.Create
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.Locale
+  name: Locale
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Locale
+  commentId: P:Makaretu.Globalization.Numbers.NumberFormatter.Locale
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Locale
+  nameWithType: NumberFormatter.Locale
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.Locale*
+  name: Locale
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Locale_
+  commentId: Overload:Makaretu.Globalization.Numbers.NumberFormatter.Locale
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Locale
+  nameWithType: NumberFormatter.Locale
 - uid: Makaretu.Globalization.Numbers.NumberFormatter.NumberingSystem
   name: NumberingSystem
   href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_NumberingSystem
@@ -829,6 +847,18 @@ references:
   commentId: Overload:Makaretu.Globalization.Numbers.NumberFormatter.NumberingSystem
   fullName: Makaretu.Globalization.Numbers.NumberFormatter.NumberingSystem
   nameWithType: NumberFormatter.NumberingSystem
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.Options
+  name: Options
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Options
+  commentId: P:Makaretu.Globalization.Numbers.NumberFormatter.Options
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Options
+  nameWithType: NumberFormatter.Options
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.Options*
+  name: Options
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Options_
+  commentId: Overload:Makaretu.Globalization.Numbers.NumberFormatter.Options
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Options
+  nameWithType: NumberFormatter.Options
 - uid: Makaretu.Globalization.Numbers.NumberFormatter.Symbols
   name: Symbols
   href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Symbols
@@ -847,6 +877,12 @@ references:
   commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Decimal)
   fullName: Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Decimal)
   nameWithType: NumberFormatter.ToString(Decimal)
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Double)
+  name: ToString(Double)
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_ToString_System_Double_
+  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Double)
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Double)
+  nameWithType: NumberFormatter.ToString(Double)
 - uid: Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Int64)
   name: ToString(Int64)
   href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_ToString_System_Int64_
@@ -955,6 +991,72 @@ references:
   commentId: Overload:Makaretu.Globalization.Numbers.NumberingSystem.Type
   fullName: Makaretu.Globalization.Numbers.NumberingSystem.Type
   nameWithType: NumberingSystem.Type
+- uid: Makaretu.Globalization.Numbers.NumberOptions
+  name: NumberOptions
+  href: api/Makaretu.Globalization.Numbers.NumberOptions.html
+  commentId: T:Makaretu.Globalization.Numbers.NumberOptions
+  fullName: Makaretu.Globalization.Numbers.NumberOptions
+  nameWithType: NumberOptions
+- uid: Makaretu.Globalization.Numbers.NumberOptions.Style
+  name: Style
+  href: api/Makaretu.Globalization.Numbers.NumberOptions.html#Makaretu_Globalization_Numbers_NumberOptions_Style
+  commentId: P:Makaretu.Globalization.Numbers.NumberOptions.Style
+  fullName: Makaretu.Globalization.Numbers.NumberOptions.Style
+  nameWithType: NumberOptions.Style
+- uid: Makaretu.Globalization.Numbers.NumberOptions.Style*
+  name: Style
+  href: api/Makaretu.Globalization.Numbers.NumberOptions.html#Makaretu_Globalization_Numbers_NumberOptions_Style_
+  commentId: Overload:Makaretu.Globalization.Numbers.NumberOptions.Style
+  fullName: Makaretu.Globalization.Numbers.NumberOptions.Style
+  nameWithType: NumberOptions.Style
+- uid: Makaretu.Globalization.Numbers.NumberOptions.useGrouping
+  name: useGrouping
+  href: api/Makaretu.Globalization.Numbers.NumberOptions.html#Makaretu_Globalization_Numbers_NumberOptions_useGrouping
+  commentId: P:Makaretu.Globalization.Numbers.NumberOptions.useGrouping
+  fullName: Makaretu.Globalization.Numbers.NumberOptions.useGrouping
+  nameWithType: NumberOptions.useGrouping
+- uid: Makaretu.Globalization.Numbers.NumberOptions.useGrouping*
+  name: useGrouping
+  href: api/Makaretu.Globalization.Numbers.NumberOptions.html#Makaretu_Globalization_Numbers_NumberOptions_useGrouping_
+  commentId: Overload:Makaretu.Globalization.Numbers.NumberOptions.useGrouping
+  fullName: Makaretu.Globalization.Numbers.NumberOptions.useGrouping
+  nameWithType: NumberOptions.useGrouping
+- uid: Makaretu.Globalization.Numbers.NumberStyle
+  name: NumberStyle
+  href: api/Makaretu.Globalization.Numbers.NumberStyle.html
+  commentId: T:Makaretu.Globalization.Numbers.NumberStyle
+  fullName: Makaretu.Globalization.Numbers.NumberStyle
+  nameWithType: NumberStyle
+- uid: Makaretu.Globalization.Numbers.NumberStyle.CurrencyAccounting
+  name: CurrencyAccounting
+  href: api/Makaretu.Globalization.Numbers.NumberStyle.html#Makaretu_Globalization_Numbers_NumberStyle_CurrencyAccounting
+  commentId: F:Makaretu.Globalization.Numbers.NumberStyle.CurrencyAccounting
+  fullName: Makaretu.Globalization.Numbers.NumberStyle.CurrencyAccounting
+  nameWithType: NumberStyle.CurrencyAccounting
+- uid: Makaretu.Globalization.Numbers.NumberStyle.CurrencyStandard
+  name: CurrencyStandard
+  href: api/Makaretu.Globalization.Numbers.NumberStyle.html#Makaretu_Globalization_Numbers_NumberStyle_CurrencyStandard
+  commentId: F:Makaretu.Globalization.Numbers.NumberStyle.CurrencyStandard
+  fullName: Makaretu.Globalization.Numbers.NumberStyle.CurrencyStandard
+  nameWithType: NumberStyle.CurrencyStandard
+- uid: Makaretu.Globalization.Numbers.NumberStyle.Decimal
+  name: Decimal
+  href: api/Makaretu.Globalization.Numbers.NumberStyle.html#Makaretu_Globalization_Numbers_NumberStyle_Decimal
+  commentId: F:Makaretu.Globalization.Numbers.NumberStyle.Decimal
+  fullName: Makaretu.Globalization.Numbers.NumberStyle.Decimal
+  nameWithType: NumberStyle.Decimal
+- uid: Makaretu.Globalization.Numbers.NumberStyle.Percent
+  name: Percent
+  href: api/Makaretu.Globalization.Numbers.NumberStyle.html#Makaretu_Globalization_Numbers_NumberStyle_Percent
+  commentId: F:Makaretu.Globalization.Numbers.NumberStyle.Percent
+  fullName: Makaretu.Globalization.Numbers.NumberStyle.Percent
+  nameWithType: NumberStyle.Percent
+- uid: Makaretu.Globalization.Numbers.NumberStyle.Scientific
+  name: Scientific
+  href: api/Makaretu.Globalization.Numbers.NumberStyle.html#Makaretu_Globalization_Numbers_NumberStyle_Scientific
+  commentId: F:Makaretu.Globalization.Numbers.NumberStyle.Scientific
+  fullName: Makaretu.Globalization.Numbers.NumberStyle.Scientific
+  nameWithType: NumberStyle.Scientific
 - uid: Makaretu.Globalization.Numbers.NumberSymbols
   name: NumberSymbols
   href: api/Makaretu.Globalization.Numbers.NumberSymbols.html
