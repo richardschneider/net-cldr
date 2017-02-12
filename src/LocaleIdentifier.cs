@@ -266,10 +266,24 @@ namespace Makaretu.Globalization
                 $"{Language}_{Region}",
                 $"{Language}_{Script}",
                 $"{Language}"
-            };
+            }
+                .Select(s => s.Replace("__", "_").Trim('_'))
+                .Where(s => s != String.Empty)
+                .Distinct();
+
             // TODO: Not really sure about the search chain with more than one
             // variant.
-            var variant = String.Join("_", Variants.Select(v => v.ToUpperInvariant()));
+            var variant = String.Join("_", 
+                Variants.Select(v => v.ToUpperInvariant())
+                );
+
+            // Check "u-va-*" for any language variants.
+            if (UnicodeExtension.Keywords.ContainsKey("va"))
+            {
+                variant += "_" + UnicodeExtension.Keywords["va"].ToUpperInvariant();
+                variant = variant.TrimStart('_');
+            }
+
             var variantChain = languageChain
                 .Select(s => s + "_" + variant);
 
@@ -523,7 +537,6 @@ namespace Makaretu.Globalization
                 if (!Cldr.Instance.IsVariantDefined(variant))
                     return $"Language variant '{variant}' is not defined.";
             }
-            // TODO: variants
 
             // TODO: U extensions
             // TODO: T extensions

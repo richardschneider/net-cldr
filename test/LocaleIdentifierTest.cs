@@ -314,6 +314,17 @@ namespace Makaretu.Globalization
         }
 
         [TestMethod]
+        public void SearchChain_Unicode_Variant_Extension()
+        {
+            var id = LocaleIdentifier.Parse("en-u-va-posix");
+            var chain = id.SearchChain().ToArray();
+            Assert.AreEqual(3, chain.Length);
+            Assert.AreEqual("en_POSIX", chain[0]);
+            Assert.AreEqual("en", chain[1]);
+            Assert.AreEqual("root", chain[2]);
+        }
+
+        [TestMethod]
         public void CanonicalForm()
         {
             Assert.AreEqual("zh-Hant-TW", LocaleIdentifier.Parse("cmn-TW").CanonicalForm().ToString());

@@ -58,12 +58,12 @@ namespace Makaretu.Globalization.Numbers
             Assert.AreEqual("1,2345679E3", formatter.ToString(1234.56789));
         }
 
-        [TestMethod, Ignore]
+        [TestMethod]
         public void Scientific_Posix()
         {
             var locale = Locale.Create("en-u-va-posix");
             var formatter = NumberFormatter.Create(locale, new NumberOptions { Style = NumberStyle.Scientific });
-            Assert.AreEqual("1.234567E+003", formatter.ToString(1234.56789));
+            Assert.AreEqual("1.234568E+003", formatter.ToString(1234.56789));
         }
 
     }
