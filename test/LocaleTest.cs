@@ -163,5 +163,12 @@ namespace Makaretu.Globalization
             path = "ldml/numbers/symbols[@numberSystem='latn']/minus";
             ExceptionAssert.Throws<KeyNotFoundException>(() => locale.Find(path));
         }
+
+        [TestMethod]
+        public void CurrencyCodes()
+        {
+            var locale = Locale.Create("de");
+            Assert.AreEqual("EUR", locale.CurrencyCode);
+        }
     }
 }

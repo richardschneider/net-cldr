@@ -24,6 +24,7 @@ namespace Makaretu.Globalization
             RegexOptions.Compiled | RegexOptions.CultureInvariant);
 
         ConcurrentDictionary<string, XPathNavigator> QueryCache = new ConcurrentDictionary<string, XPathNavigator>();
+        string currencyCode;
 
         /// <summary>
         ///   Creates a new instance of the <see cref="Locale"/> class with the
@@ -48,6 +49,29 @@ namespace Makaretu.Globalization
         ///   identifier.
         /// </value>
         public LocaleIdentifier Id { get; private set; }
+
+        /// <summary>
+        ///   The primary currency of the locale.
+        /// </summary>
+        /// <value>
+        ///   An ISO 4217 currency code.
+        /// </value>
+        /// <remarks>
+        ///   The primary currency is based on the locale's <see cref="LocaleIdentifier.Region"/>.
+        /// </remarks>
+        public string CurrencyCode {
+            get
+            {
+                if (currencyCode == null)
+                {
+                    currencyCode = Cldr.Instance
+                        .GetDocuments("common/supplemental/supplementalData.xml")
+                        .FirstElement($"supplementalData/currencyData/region[@iso3166='{Id.Region}']/currency/@iso4217")
+                        .Value;
+                }
+                return currencyCode;
+            }
+        }
 
         /// <inheritdoc/>
         public override string ToString()
