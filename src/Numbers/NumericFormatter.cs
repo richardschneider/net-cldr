@@ -13,7 +13,7 @@ namespace Makaretu.Globalization.Numbers
 
         public override string ToString(long value)
         {
-            return value.ToString(Pattern(), NumberFormatInfo());
+            return Transform(value.ToString(Pattern(), NumberFormatInfo()));
         }
 
         public override string ToString(decimal value)
@@ -24,6 +24,21 @@ namespace Makaretu.Globalization.Numbers
         public override string ToString(double value)
         {
             return Transform(value.ToString(Pattern(), NumberFormatInfo()));
+        }
+
+        public override string ToString(long value, string currencyCode)
+        {
+            return Transform(value.ToString(Pattern(), CurrencyFormatInfo(currencyCode)), currencyCode);
+        }
+
+        public override string ToString(decimal value, string currencyCode)
+        {
+            return Transform(value.ToString(Pattern(), CurrencyFormatInfo(currencyCode)), currencyCode);
+        }
+
+        public override string ToString(double value, string currencyCode)
+        {
+            return Transform(value.ToString(Pattern(), CurrencyFormatInfo(currencyCode)), currencyCode);
         }
 
         NumberFormatInfo NumberFormatInfo()
@@ -50,6 +65,13 @@ namespace Makaretu.Globalization.Numbers
             return nfi;
         }
 
+        NumberFormatInfo CurrencyFormatInfo(string currencyCode)
+        {
+            var nfi = NumberFormatInfo();
+            nfi.NumberDecimalSeparator = Symbols.CurrencyDecimal;
+            nfi.NumberGroupSeparator = Symbols.CurrencyGroup;
+            return nfi;
+        }
         string Pattern()
         {
             if (Options.Style == NumberStyle.Decimal)
@@ -71,10 +93,22 @@ namespace Makaretu.Globalization.Numbers
                 return pattern == "#E0" ? "0.0######E0" : pattern;
             }
 
+            if (Options.Style == NumberStyle.CurrencyStandard)
+            {
+                var path = $"ldml/numbers/currencyFormats[@numberSystem='{NumberingSystem.Id}']/currencyFormatLength/currencyFormat[@type='standard']/pattern";
+                return Locale.Find(path).Value;
+            }
+
+            if (Options.Style == NumberStyle.CurrencyAccounting)
+            {
+                var path = $"ldml/numbers/currencyFormats[@numberSystem='{NumberingSystem.Id}']/currencyFormatLength/currencyFormat[@type='accounting']/pattern";
+                return Locale.Find(path).Value;
+            }
+
             throw new NotImplementedException();
         }
 
-        string Transform(string s)
+        string Transform(string s, string currencyCode = null)
         {
             var sb = new StringBuilder(s);
 
@@ -82,6 +116,37 @@ namespace Makaretu.Globalization.Numbers
             for (int i = 0; i < 10; ++i)
             {
                 sb.Replace(digits[i], NumberingSystem.Digits[i]);
+            }
+
+            // Replace currency symbol
+            if (s.Contains("¤"))
+            {
+                if (currencyCode == null)
+                {
+                    currencyCode = Locale.CurrencyCode;
+                }
+
+                if (s.Contains("¤¤¤¤¤"))
+                {
+                    throw new NotImplementedException();
+                }
+                else if (s.Contains("¤¤¤¤"))
+                {
+                    throw new NotImplementedException();
+                }
+                else if (s.Contains("¤¤¤"))
+                {
+                    throw new NotImplementedException();
+                }
+                else if (s.Contains("¤¤"))
+                {
+                    sb.Replace("¤¤", currencyCode);
+                }
+                else if (s.Contains("¤"))
+                {
+                    var symbol = $"ldml/numbers/currencies/currency[@type='{currencyCode}']/symbol";
+                    sb.Replace("¤", Locale.Find(symbol).Value);
+                }
             }
 
             return sb.ToString();

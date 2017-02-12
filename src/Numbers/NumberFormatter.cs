@@ -69,5 +69,14 @@ namespace Makaretu.Globalization.Numbers
 
         /// <inheritdoc />
         public abstract string ToString(double value);
+
+        /// <inheritdoc />
+        public abstract string ToString(long value, string currencyCode);
+
+        /// <inheritdoc />
+        public abstract string ToString(decimal value, string currencyCode);
+
+        /// <inheritdoc />
+        public abstract string ToString(double value, string currencyCode);
     }
 }

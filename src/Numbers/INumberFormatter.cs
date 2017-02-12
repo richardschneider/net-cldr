@@ -31,5 +31,27 @@ namespace Makaretu.Globalization.Numbers
         /// <param name="value"></param>
         /// <returns></returns>
         string ToString(double value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="currencyCode"></param>
+        /// <returns></returns>
+        string ToString(long value, string currencyCode);
+
+        /// <summary>
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="currencyCode"></param>
+        /// <returns></returns>
+        string ToString(double value, string currencyCode);
+
+        /// <summary>
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="currencyCode"></param>
+        /// <returns></returns>
+        string ToString(decimal value, string currencyCode);
     }
 }

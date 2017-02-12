@@ -22,5 +22,20 @@ namespace Makaretu.Globalization.Numbers
         {
             throw new NotImplementedException();
         }
+
+        public override string ToString(long value, string currencyCode)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string ToString(decimal value, string currencyCode)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string ToString(double value, string currencyCode)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
