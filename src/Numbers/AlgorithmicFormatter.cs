@@ -18,5 +18,9 @@ namespace Makaretu.Globalization.Numbers
             throw new NotImplementedException();
         }
 
+        public override string ToString(double value)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

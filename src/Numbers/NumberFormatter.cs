@@ -12,6 +12,16 @@ namespace Makaretu.Globalization.Numbers
     public abstract class NumberFormatter : INumberFormatter
     {
         /// <summary>
+        ///   The options to apply when formating a number.
+        /// </summary>
+        public NumberOptions Options { get; set; }
+
+        /// <summary>
+        ///   The source for localisation information.
+        /// </summary>
+        public Locale Locale { get; set; }
+
+        /// <summary>
         ///   The localised numbering system to use.
         /// </summary>
         public NumberingSystem NumberingSystem { get; set; }
@@ -28,20 +38,22 @@ namespace Makaretu.Globalization.Numbers
         ///   The locale.
         /// </param>
         /// <param name="options">
-        ///   Undefined.
+        ///   The options to apply when formating a number.
         /// </param>
         /// <returns>
         ///   The formatter that is the best for the <paramref name="locale"/>.
         /// </returns>
-        public static INumberFormatter Create(Locale locale, object options = null)
+        public static INumberFormatter Create(Locale locale, NumberOptions options = null)
         {
             var numberingSystem = NumberingSystem.Create(locale);
             if (numberingSystem.IsNumeric)
             {
                 return new NumericFormatter
                 {
+                    Locale = locale,
                     NumberingSystem = numberingSystem,
-                    Symbols = NumberSymbols.Create(locale)
+                    Symbols = NumberSymbols.Create(locale),
+                    Options = options ?? new NumberOptions()
                 };
             }
 
@@ -54,5 +66,8 @@ namespace Makaretu.Globalization.Numbers
 
         /// <inheritdoc />
         public abstract string ToString(decimal value);
+
+        /// <inheritdoc />
+        public abstract string ToString(double value);
     }
 }

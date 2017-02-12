@@ -24,5 +24,12 @@ namespace Makaretu.Globalization.Numbers
         /// <param name="value"></param>
         /// <returns></returns>
         string ToString(decimal value);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        string ToString(double value);
     }
 }
