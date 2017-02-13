@@ -38,6 +38,9 @@ namespace Makaretu.Globalization
         /// <summary>
         ///   The instance of the CLDR.
         /// </summary>
+        /// <value>
+        ///   Provides access to the Unicode CLDR.
+        /// </value>
         /// <remarks>
         ///   CLDR implements the singleton pattern.  All access to CLDR
         ///   is via this property.
@@ -49,6 +52,9 @@ namespace Makaretu.Globalization
         /// <summary>
         ///   Local sources for CLDR data.
         /// </summary>
+        /// <value>
+        ///   The folder(s) that may contain CLDR files.
+        /// </value>
         /// <remarks>
         ///   Sometimes the user or an app developer may want to add/change 
         ///   CLDR data supplied by Unicode.  This is a list of directories

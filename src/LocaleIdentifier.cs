@@ -91,7 +91,7 @@ namespace Makaretu.Globalization
         ///   A sequence of extension subtags.
         /// </value>
         /// <remarks>
-        ///   Extensions provide a mechanism for extending the <see cref="Language"/>subtag for 
+        ///   Extensions provide a mechanism for extending the <see cref="Language"/> subtag for 
         ///   use in various applications.
         ///   
         ///   All subtags are case insensitive but stored in the lower-case form.

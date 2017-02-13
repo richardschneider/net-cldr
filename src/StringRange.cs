@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace Makaretu.Globalization
 {
     /// <summary>
-    ///   A String Range is a compact format for specifying a list of strings.
+    ///   A compact form for specifying a list of strings.
     /// </summary>
-    /// <see href="http://www.unicode.org/reports/tr35/tr35.html#String_Range">TR #35</see> 
+    /// <seealso href="http://www.unicode.org/reports/tr35/tr35.html#String_Range">TR #35</seealso> 
     public static class StringRange
     {
         /// <summary>
