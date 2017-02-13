@@ -1,1299 +1,1299 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: Makaretu.Globalization
-  name: Makaretu.Globalization
-  href: api/Makaretu.Globalization.html
-  commentId: N:Makaretu.Globalization
-  fullName: Makaretu.Globalization
-  nameWithType: Makaretu.Globalization
-- uid: Makaretu.Globalization.Cldr
+- uid: Sepia.Globalization
+  name: Sepia.Globalization
+  href: api/Sepia.Globalization.html
+  commentId: N:Sepia.Globalization
+  fullName: Sepia.Globalization
+  nameWithType: Sepia.Globalization
+- uid: Sepia.Globalization.Cldr
   name: Cldr
-  href: api/Makaretu.Globalization.Cldr.html
-  commentId: T:Makaretu.Globalization.Cldr
-  fullName: Makaretu.Globalization.Cldr
+  href: api/Sepia.Globalization.Cldr.html
+  commentId: T:Sepia.Globalization.Cldr
+  fullName: Sepia.Globalization.Cldr
   nameWithType: Cldr
-- uid: Makaretu.Globalization.Cldr.#ctor
+- uid: Sepia.Globalization.Cldr.#ctor
   name: Cldr()
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr__ctor
-  commentId: M:Makaretu.Globalization.Cldr.#ctor
-  fullName: Makaretu.Globalization.Cldr.Cldr()
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr__ctor
+  commentId: M:Sepia.Globalization.Cldr.#ctor
+  fullName: Sepia.Globalization.Cldr.Cldr()
   nameWithType: Cldr.Cldr()
-- uid: Makaretu.Globalization.Cldr.#ctor*
+- uid: Sepia.Globalization.Cldr.#ctor*
   name: Cldr
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr__ctor_
-  commentId: Overload:Makaretu.Globalization.Cldr.#ctor
-  fullName: Makaretu.Globalization.Cldr.Cldr
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr__ctor_
+  commentId: Overload:Sepia.Globalization.Cldr.#ctor
+  fullName: Sepia.Globalization.Cldr.Cldr
   nameWithType: Cldr.Cldr
-- uid: Makaretu.Globalization.Cldr.CurrentVersion
+- uid: Sepia.Globalization.Cldr.CurrentVersion
   name: CurrentVersion()
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_CurrentVersion
-  commentId: M:Makaretu.Globalization.Cldr.CurrentVersion
-  fullName: Makaretu.Globalization.Cldr.CurrentVersion()
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_CurrentVersion
+  commentId: M:Sepia.Globalization.Cldr.CurrentVersion
+  fullName: Sepia.Globalization.Cldr.CurrentVersion()
   nameWithType: Cldr.CurrentVersion()
-- uid: Makaretu.Globalization.Cldr.CurrentVersion*
+- uid: Sepia.Globalization.Cldr.CurrentVersion*
   name: CurrentVersion
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_CurrentVersion_
-  commentId: Overload:Makaretu.Globalization.Cldr.CurrentVersion
-  fullName: Makaretu.Globalization.Cldr.CurrentVersion
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_CurrentVersion_
+  commentId: Overload:Sepia.Globalization.Cldr.CurrentVersion
+  fullName: Sepia.Globalization.Cldr.CurrentVersion
   nameWithType: Cldr.CurrentVersion
-- uid: Makaretu.Globalization.Cldr.DownloadAsync(System.Version)
+- uid: Sepia.Globalization.Cldr.DownloadAsync(System.Version)
   name: DownloadAsync(Version)
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_DownloadAsync_System_Version_
-  commentId: M:Makaretu.Globalization.Cldr.DownloadAsync(System.Version)
-  fullName: Makaretu.Globalization.Cldr.DownloadAsync(System.Version)
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_DownloadAsync_System_Version_
+  commentId: M:Sepia.Globalization.Cldr.DownloadAsync(System.Version)
+  fullName: Sepia.Globalization.Cldr.DownloadAsync(System.Version)
   nameWithType: Cldr.DownloadAsync(Version)
-- uid: Makaretu.Globalization.Cldr.DownloadAsync*
+- uid: Sepia.Globalization.Cldr.DownloadAsync*
   name: DownloadAsync
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_DownloadAsync_
-  commentId: Overload:Makaretu.Globalization.Cldr.DownloadAsync
-  fullName: Makaretu.Globalization.Cldr.DownloadAsync
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_DownloadAsync_
+  commentId: Overload:Sepia.Globalization.Cldr.DownloadAsync
+  fullName: Sepia.Globalization.Cldr.DownloadAsync
   nameWithType: Cldr.DownloadAsync
-- uid: Makaretu.Globalization.Cldr.DownloadLatestAsync
+- uid: Sepia.Globalization.Cldr.DownloadLatestAsync
   name: DownloadLatestAsync()
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_DownloadLatestAsync
-  commentId: M:Makaretu.Globalization.Cldr.DownloadLatestAsync
-  fullName: Makaretu.Globalization.Cldr.DownloadLatestAsync()
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_DownloadLatestAsync
+  commentId: M:Sepia.Globalization.Cldr.DownloadLatestAsync
+  fullName: Sepia.Globalization.Cldr.DownloadLatestAsync()
   nameWithType: Cldr.DownloadLatestAsync()
-- uid: Makaretu.Globalization.Cldr.DownloadLatestAsync*
+- uid: Sepia.Globalization.Cldr.DownloadLatestAsync*
   name: DownloadLatestAsync
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_DownloadLatestAsync_
-  commentId: Overload:Makaretu.Globalization.Cldr.DownloadLatestAsync
-  fullName: Makaretu.Globalization.Cldr.DownloadLatestAsync
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_DownloadLatestAsync_
+  commentId: Overload:Sepia.Globalization.Cldr.DownloadLatestAsync
+  fullName: Sepia.Globalization.Cldr.DownloadLatestAsync
   nameWithType: Cldr.DownloadLatestAsync
-- uid: Makaretu.Globalization.Cldr.GetAllDocuments(System.String)
+- uid: Sepia.Globalization.Cldr.GetAllDocuments(System.String)
   name: GetAllDocuments(String)
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_GetAllDocuments_System_String_
-  commentId: M:Makaretu.Globalization.Cldr.GetAllDocuments(System.String)
-  fullName: Makaretu.Globalization.Cldr.GetAllDocuments(System.String)
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_GetAllDocuments_System_String_
+  commentId: M:Sepia.Globalization.Cldr.GetAllDocuments(System.String)
+  fullName: Sepia.Globalization.Cldr.GetAllDocuments(System.String)
   nameWithType: Cldr.GetAllDocuments(String)
-- uid: Makaretu.Globalization.Cldr.GetAllDocuments*
+- uid: Sepia.Globalization.Cldr.GetAllDocuments*
   name: GetAllDocuments
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_GetAllDocuments_
-  commentId: Overload:Makaretu.Globalization.Cldr.GetAllDocuments
-  fullName: Makaretu.Globalization.Cldr.GetAllDocuments
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_GetAllDocuments_
+  commentId: Overload:Sepia.Globalization.Cldr.GetAllDocuments
+  fullName: Sepia.Globalization.Cldr.GetAllDocuments
   nameWithType: Cldr.GetAllDocuments
-- uid: Makaretu.Globalization.Cldr.GetDocuments(System.String)
+- uid: Sepia.Globalization.Cldr.GetDocuments(System.String)
   name: GetDocuments(String)
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_GetDocuments_System_String_
-  commentId: M:Makaretu.Globalization.Cldr.GetDocuments(System.String)
-  fullName: Makaretu.Globalization.Cldr.GetDocuments(System.String)
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_GetDocuments_System_String_
+  commentId: M:Sepia.Globalization.Cldr.GetDocuments(System.String)
+  fullName: Sepia.Globalization.Cldr.GetDocuments(System.String)
   nameWithType: Cldr.GetDocuments(String)
-- uid: Makaretu.Globalization.Cldr.GetDocuments*
+- uid: Sepia.Globalization.Cldr.GetDocuments*
   name: GetDocuments
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_GetDocuments_
-  commentId: Overload:Makaretu.Globalization.Cldr.GetDocuments
-  fullName: Makaretu.Globalization.Cldr.GetDocuments
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_GetDocuments_
+  commentId: Overload:Sepia.Globalization.Cldr.GetDocuments
+  fullName: Sepia.Globalization.Cldr.GetDocuments
   nameWithType: Cldr.GetDocuments
-- uid: Makaretu.Globalization.Cldr.GetTextDocuments(System.String)
+- uid: Sepia.Globalization.Cldr.GetTextDocuments(System.String)
   name: GetTextDocuments(String)
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_GetTextDocuments_System_String_
-  commentId: M:Makaretu.Globalization.Cldr.GetTextDocuments(System.String)
-  fullName: Makaretu.Globalization.Cldr.GetTextDocuments(System.String)
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_GetTextDocuments_System_String_
+  commentId: M:Sepia.Globalization.Cldr.GetTextDocuments(System.String)
+  fullName: Sepia.Globalization.Cldr.GetTextDocuments(System.String)
   nameWithType: Cldr.GetTextDocuments(String)
-- uid: Makaretu.Globalization.Cldr.GetTextDocuments*
+- uid: Sepia.Globalization.Cldr.GetTextDocuments*
   name: GetTextDocuments
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_GetTextDocuments_
-  commentId: Overload:Makaretu.Globalization.Cldr.GetTextDocuments
-  fullName: Makaretu.Globalization.Cldr.GetTextDocuments
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_GetTextDocuments_
+  commentId: Overload:Sepia.Globalization.Cldr.GetTextDocuments
+  fullName: Sepia.Globalization.Cldr.GetTextDocuments
   nameWithType: Cldr.GetTextDocuments
-- uid: Makaretu.Globalization.Cldr.Instance
+- uid: Sepia.Globalization.Cldr.Instance
   name: Instance
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_Instance
-  commentId: F:Makaretu.Globalization.Cldr.Instance
-  fullName: Makaretu.Globalization.Cldr.Instance
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_Instance
+  commentId: F:Sepia.Globalization.Cldr.Instance
+  fullName: Sepia.Globalization.Cldr.Instance
   nameWithType: Cldr.Instance
-- uid: Makaretu.Globalization.Cldr.IsCurrencyDefined(System.String)
+- uid: Sepia.Globalization.Cldr.IsCurrencyDefined(System.String)
   name: IsCurrencyDefined(String)
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_IsCurrencyDefined_System_String_
-  commentId: M:Makaretu.Globalization.Cldr.IsCurrencyDefined(System.String)
-  fullName: Makaretu.Globalization.Cldr.IsCurrencyDefined(System.String)
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_IsCurrencyDefined_System_String_
+  commentId: M:Sepia.Globalization.Cldr.IsCurrencyDefined(System.String)
+  fullName: Sepia.Globalization.Cldr.IsCurrencyDefined(System.String)
   nameWithType: Cldr.IsCurrencyDefined(String)
-- uid: Makaretu.Globalization.Cldr.IsCurrencyDefined*
+- uid: Sepia.Globalization.Cldr.IsCurrencyDefined*
   name: IsCurrencyDefined
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_IsCurrencyDefined_
-  commentId: Overload:Makaretu.Globalization.Cldr.IsCurrencyDefined
-  fullName: Makaretu.Globalization.Cldr.IsCurrencyDefined
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_IsCurrencyDefined_
+  commentId: Overload:Sepia.Globalization.Cldr.IsCurrencyDefined
+  fullName: Sepia.Globalization.Cldr.IsCurrencyDefined
   nameWithType: Cldr.IsCurrencyDefined
-- uid: Makaretu.Globalization.Cldr.IsLanguageDefined(System.String)
+- uid: Sepia.Globalization.Cldr.IsLanguageDefined(System.String)
   name: IsLanguageDefined(String)
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_IsLanguageDefined_System_String_
-  commentId: M:Makaretu.Globalization.Cldr.IsLanguageDefined(System.String)
-  fullName: Makaretu.Globalization.Cldr.IsLanguageDefined(System.String)
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_IsLanguageDefined_System_String_
+  commentId: M:Sepia.Globalization.Cldr.IsLanguageDefined(System.String)
+  fullName: Sepia.Globalization.Cldr.IsLanguageDefined(System.String)
   nameWithType: Cldr.IsLanguageDefined(String)
-- uid: Makaretu.Globalization.Cldr.IsLanguageDefined*
+- uid: Sepia.Globalization.Cldr.IsLanguageDefined*
   name: IsLanguageDefined
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_IsLanguageDefined_
-  commentId: Overload:Makaretu.Globalization.Cldr.IsLanguageDefined
-  fullName: Makaretu.Globalization.Cldr.IsLanguageDefined
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_IsLanguageDefined_
+  commentId: Overload:Sepia.Globalization.Cldr.IsLanguageDefined
+  fullName: Sepia.Globalization.Cldr.IsLanguageDefined
   nameWithType: Cldr.IsLanguageDefined
-- uid: Makaretu.Globalization.Cldr.IsRegionDefined(System.String)
+- uid: Sepia.Globalization.Cldr.IsRegionDefined(System.String)
   name: IsRegionDefined(String)
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_IsRegionDefined_System_String_
-  commentId: M:Makaretu.Globalization.Cldr.IsRegionDefined(System.String)
-  fullName: Makaretu.Globalization.Cldr.IsRegionDefined(System.String)
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_IsRegionDefined_System_String_
+  commentId: M:Sepia.Globalization.Cldr.IsRegionDefined(System.String)
+  fullName: Sepia.Globalization.Cldr.IsRegionDefined(System.String)
   nameWithType: Cldr.IsRegionDefined(String)
-- uid: Makaretu.Globalization.Cldr.IsRegionDefined*
+- uid: Sepia.Globalization.Cldr.IsRegionDefined*
   name: IsRegionDefined
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_IsRegionDefined_
-  commentId: Overload:Makaretu.Globalization.Cldr.IsRegionDefined
-  fullName: Makaretu.Globalization.Cldr.IsRegionDefined
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_IsRegionDefined_
+  commentId: Overload:Sepia.Globalization.Cldr.IsRegionDefined
+  fullName: Sepia.Globalization.Cldr.IsRegionDefined
   nameWithType: Cldr.IsRegionDefined
-- uid: Makaretu.Globalization.Cldr.IsScriptDefined(System.String)
+- uid: Sepia.Globalization.Cldr.IsScriptDefined(System.String)
   name: IsScriptDefined(String)
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_IsScriptDefined_System_String_
-  commentId: M:Makaretu.Globalization.Cldr.IsScriptDefined(System.String)
-  fullName: Makaretu.Globalization.Cldr.IsScriptDefined(System.String)
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_IsScriptDefined_System_String_
+  commentId: M:Sepia.Globalization.Cldr.IsScriptDefined(System.String)
+  fullName: Sepia.Globalization.Cldr.IsScriptDefined(System.String)
   nameWithType: Cldr.IsScriptDefined(String)
-- uid: Makaretu.Globalization.Cldr.IsScriptDefined*
+- uid: Sepia.Globalization.Cldr.IsScriptDefined*
   name: IsScriptDefined
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_IsScriptDefined_
-  commentId: Overload:Makaretu.Globalization.Cldr.IsScriptDefined
-  fullName: Makaretu.Globalization.Cldr.IsScriptDefined
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_IsScriptDefined_
+  commentId: Overload:Sepia.Globalization.Cldr.IsScriptDefined
+  fullName: Sepia.Globalization.Cldr.IsScriptDefined
   nameWithType: Cldr.IsScriptDefined
-- uid: Makaretu.Globalization.Cldr.IsVariantDefined(System.String)
+- uid: Sepia.Globalization.Cldr.IsVariantDefined(System.String)
   name: IsVariantDefined(String)
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_IsVariantDefined_System_String_
-  commentId: M:Makaretu.Globalization.Cldr.IsVariantDefined(System.String)
-  fullName: Makaretu.Globalization.Cldr.IsVariantDefined(System.String)
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_IsVariantDefined_System_String_
+  commentId: M:Sepia.Globalization.Cldr.IsVariantDefined(System.String)
+  fullName: Sepia.Globalization.Cldr.IsVariantDefined(System.String)
   nameWithType: Cldr.IsVariantDefined(String)
-- uid: Makaretu.Globalization.Cldr.IsVariantDefined*
+- uid: Sepia.Globalization.Cldr.IsVariantDefined*
   name: IsVariantDefined
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_IsVariantDefined_
-  commentId: Overload:Makaretu.Globalization.Cldr.IsVariantDefined
-  fullName: Makaretu.Globalization.Cldr.IsVariantDefined
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_IsVariantDefined_
+  commentId: Overload:Sepia.Globalization.Cldr.IsVariantDefined
+  fullName: Sepia.Globalization.Cldr.IsVariantDefined
   nameWithType: Cldr.IsVariantDefined
-- uid: Makaretu.Globalization.Cldr.LatestVersionAsync
+- uid: Sepia.Globalization.Cldr.LatestVersionAsync
   name: LatestVersionAsync()
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_LatestVersionAsync
-  commentId: M:Makaretu.Globalization.Cldr.LatestVersionAsync
-  fullName: Makaretu.Globalization.Cldr.LatestVersionAsync()
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_LatestVersionAsync
+  commentId: M:Sepia.Globalization.Cldr.LatestVersionAsync
+  fullName: Sepia.Globalization.Cldr.LatestVersionAsync()
   nameWithType: Cldr.LatestVersionAsync()
-- uid: Makaretu.Globalization.Cldr.LatestVersionAsync*
+- uid: Sepia.Globalization.Cldr.LatestVersionAsync*
   name: LatestVersionAsync
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_LatestVersionAsync_
-  commentId: Overload:Makaretu.Globalization.Cldr.LatestVersionAsync
-  fullName: Makaretu.Globalization.Cldr.LatestVersionAsync
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_LatestVersionAsync_
+  commentId: Overload:Sepia.Globalization.Cldr.LatestVersionAsync
+  fullName: Sepia.Globalization.Cldr.LatestVersionAsync
   nameWithType: Cldr.LatestVersionAsync
-- uid: Makaretu.Globalization.Cldr.OriginUrl
+- uid: Sepia.Globalization.Cldr.OriginUrl
   name: OriginUrl
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_OriginUrl
-  commentId: F:Makaretu.Globalization.Cldr.OriginUrl
-  fullName: Makaretu.Globalization.Cldr.OriginUrl
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_OriginUrl
+  commentId: F:Sepia.Globalization.Cldr.OriginUrl
+  fullName: Sepia.Globalization.Cldr.OriginUrl
   nameWithType: Cldr.OriginUrl
-- uid: Makaretu.Globalization.Cldr.Repositories
+- uid: Sepia.Globalization.Cldr.Repositories
   name: Repositories
-  href: api/Makaretu.Globalization.Cldr.html#Makaretu_Globalization_Cldr_Repositories
-  commentId: F:Makaretu.Globalization.Cldr.Repositories
-  fullName: Makaretu.Globalization.Cldr.Repositories
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_Repositories
+  commentId: F:Sepia.Globalization.Cldr.Repositories
+  fullName: Sepia.Globalization.Cldr.Repositories
   nameWithType: Cldr.Repositories
-- uid: Makaretu.Globalization.CldrContext
+- uid: Sepia.Globalization.CldrContext
   name: CldrContext
-  href: api/Makaretu.Globalization.CldrContext.html
-  commentId: T:Makaretu.Globalization.CldrContext
-  fullName: Makaretu.Globalization.CldrContext
+  href: api/Sepia.Globalization.CldrContext.html
+  commentId: T:Sepia.Globalization.CldrContext
+  fullName: Sepia.Globalization.CldrContext
   nameWithType: CldrContext
-- uid: Makaretu.Globalization.CldrContext.CompareDocument(System.String,System.String)
+- uid: Sepia.Globalization.CldrContext.CompareDocument(System.String,System.String)
   name: CompareDocument(String, String)
-  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_CompareDocument_System_String_System_String_
-  commentId: M:Makaretu.Globalization.CldrContext.CompareDocument(System.String,System.String)
-  fullName: Makaretu.Globalization.CldrContext.CompareDocument(System.String, System.String)
+  href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_CompareDocument_System_String_System_String_
+  commentId: M:Sepia.Globalization.CldrContext.CompareDocument(System.String,System.String)
+  fullName: Sepia.Globalization.CldrContext.CompareDocument(System.String, System.String)
   nameWithType: CldrContext.CompareDocument(String, String)
-- uid: Makaretu.Globalization.CldrContext.CompareDocument*
+- uid: Sepia.Globalization.CldrContext.CompareDocument*
   name: CompareDocument
-  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_CompareDocument_
-  commentId: Overload:Makaretu.Globalization.CldrContext.CompareDocument
-  fullName: Makaretu.Globalization.CldrContext.CompareDocument
+  href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_CompareDocument_
+  commentId: Overload:Sepia.Globalization.CldrContext.CompareDocument
+  fullName: Sepia.Globalization.CldrContext.CompareDocument
   nameWithType: CldrContext.CompareDocument
-- uid: Makaretu.Globalization.CldrContext.Default
+- uid: Sepia.Globalization.CldrContext.Default
   name: Default
-  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_Default
-  commentId: F:Makaretu.Globalization.CldrContext.Default
-  fullName: Makaretu.Globalization.CldrContext.Default
+  href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_Default
+  commentId: F:Sepia.Globalization.CldrContext.Default
+  fullName: Sepia.Globalization.CldrContext.Default
   nameWithType: CldrContext.Default
-- uid: Makaretu.Globalization.CldrContext.PreserveWhitespace(System.Xml.XPath.XPathNavigator)
+- uid: Sepia.Globalization.CldrContext.PreserveWhitespace(System.Xml.XPath.XPathNavigator)
   name: PreserveWhitespace(XPathNavigator)
-  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_PreserveWhitespace_System_Xml_XPath_XPathNavigator_
-  commentId: M:Makaretu.Globalization.CldrContext.PreserveWhitespace(System.Xml.XPath.XPathNavigator)
-  fullName: Makaretu.Globalization.CldrContext.PreserveWhitespace(System.Xml.XPath.XPathNavigator)
+  href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_PreserveWhitespace_System_Xml_XPath_XPathNavigator_
+  commentId: M:Sepia.Globalization.CldrContext.PreserveWhitespace(System.Xml.XPath.XPathNavigator)
+  fullName: Sepia.Globalization.CldrContext.PreserveWhitespace(System.Xml.XPath.XPathNavigator)
   nameWithType: CldrContext.PreserveWhitespace(XPathNavigator)
-- uid: Makaretu.Globalization.CldrContext.PreserveWhitespace*
+- uid: Sepia.Globalization.CldrContext.PreserveWhitespace*
   name: PreserveWhitespace
-  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_PreserveWhitespace_
-  commentId: Overload:Makaretu.Globalization.CldrContext.PreserveWhitespace
-  fullName: Makaretu.Globalization.CldrContext.PreserveWhitespace
+  href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_PreserveWhitespace_
+  commentId: Overload:Sepia.Globalization.CldrContext.PreserveWhitespace
+  fullName: Sepia.Globalization.CldrContext.PreserveWhitespace
   nameWithType: CldrContext.PreserveWhitespace
-- uid: Makaretu.Globalization.CldrContext.ResolveFunction(System.String,System.String,System.Xml.XPath.XPathResultType[])
+- uid: Sepia.Globalization.CldrContext.ResolveFunction(System.String,System.String,System.Xml.XPath.XPathResultType[])
   name: ResolveFunction(String, String, XPathResultType[])
-  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_ResolveFunction_System_String_System_String_System_Xml_XPath_XPathResultType___
-  commentId: M:Makaretu.Globalization.CldrContext.ResolveFunction(System.String,System.String,System.Xml.XPath.XPathResultType[])
+  href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_ResolveFunction_System_String_System_String_System_Xml_XPath_XPathResultType___
+  commentId: M:Sepia.Globalization.CldrContext.ResolveFunction(System.String,System.String,System.Xml.XPath.XPathResultType[])
   name.vb: ResolveFunction(String, String, XPathResultType())
-  fullName: Makaretu.Globalization.CldrContext.ResolveFunction(System.String, System.String, System.Xml.XPath.XPathResultType[])
-  fullName.vb: Makaretu.Globalization.CldrContext.ResolveFunction(System.String, System.String, System.Xml.XPath.XPathResultType())
+  fullName: Sepia.Globalization.CldrContext.ResolveFunction(System.String, System.String, System.Xml.XPath.XPathResultType[])
+  fullName.vb: Sepia.Globalization.CldrContext.ResolveFunction(System.String, System.String, System.Xml.XPath.XPathResultType())
   nameWithType: CldrContext.ResolveFunction(String, String, XPathResultType[])
   nameWithType.vb: CldrContext.ResolveFunction(String, String, XPathResultType())
-- uid: Makaretu.Globalization.CldrContext.ResolveFunction*
+- uid: Sepia.Globalization.CldrContext.ResolveFunction*
   name: ResolveFunction
-  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_ResolveFunction_
-  commentId: Overload:Makaretu.Globalization.CldrContext.ResolveFunction
-  fullName: Makaretu.Globalization.CldrContext.ResolveFunction
+  href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_ResolveFunction_
+  commentId: Overload:Sepia.Globalization.CldrContext.ResolveFunction
+  fullName: Sepia.Globalization.CldrContext.ResolveFunction
   nameWithType: CldrContext.ResolveFunction
-- uid: Makaretu.Globalization.CldrContext.ResolveVariable(System.String,System.String)
+- uid: Sepia.Globalization.CldrContext.ResolveVariable(System.String,System.String)
   name: ResolveVariable(String, String)
-  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_ResolveVariable_System_String_System_String_
-  commentId: M:Makaretu.Globalization.CldrContext.ResolveVariable(System.String,System.String)
-  fullName: Makaretu.Globalization.CldrContext.ResolveVariable(System.String, System.String)
+  href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_ResolveVariable_System_String_System_String_
+  commentId: M:Sepia.Globalization.CldrContext.ResolveVariable(System.String,System.String)
+  fullName: Sepia.Globalization.CldrContext.ResolveVariable(System.String, System.String)
   nameWithType: CldrContext.ResolveVariable(String, String)
-- uid: Makaretu.Globalization.CldrContext.ResolveVariable*
+- uid: Sepia.Globalization.CldrContext.ResolveVariable*
   name: ResolveVariable
-  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_ResolveVariable_
-  commentId: Overload:Makaretu.Globalization.CldrContext.ResolveVariable
-  fullName: Makaretu.Globalization.CldrContext.ResolveVariable
+  href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_ResolveVariable_
+  commentId: Overload:Sepia.Globalization.CldrContext.ResolveVariable
+  fullName: Sepia.Globalization.CldrContext.ResolveVariable
   nameWithType: CldrContext.ResolveVariable
-- uid: Makaretu.Globalization.CldrContext.Whitespace
+- uid: Sepia.Globalization.CldrContext.Whitespace
   name: Whitespace
-  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_Whitespace
-  commentId: P:Makaretu.Globalization.CldrContext.Whitespace
-  fullName: Makaretu.Globalization.CldrContext.Whitespace
+  href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_Whitespace
+  commentId: P:Sepia.Globalization.CldrContext.Whitespace
+  fullName: Sepia.Globalization.CldrContext.Whitespace
   nameWithType: CldrContext.Whitespace
-- uid: Makaretu.Globalization.CldrContext.Whitespace*
+- uid: Sepia.Globalization.CldrContext.Whitespace*
   name: Whitespace
-  href: api/Makaretu.Globalization.CldrContext.html#Makaretu_Globalization_CldrContext_Whitespace_
-  commentId: Overload:Makaretu.Globalization.CldrContext.Whitespace
-  fullName: Makaretu.Globalization.CldrContext.Whitespace
+  href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_Whitespace_
+  commentId: Overload:Sepia.Globalization.CldrContext.Whitespace
+  fullName: Sepia.Globalization.CldrContext.Whitespace
   nameWithType: CldrContext.Whitespace
-- uid: Makaretu.Globalization.CldrExentsions
+- uid: Sepia.Globalization.CldrExentsions
   name: CldrExentsions
-  href: api/Makaretu.Globalization.CldrExentsions.html
-  commentId: T:Makaretu.Globalization.CldrExentsions
-  fullName: Makaretu.Globalization.CldrExentsions
+  href: api/Sepia.Globalization.CldrExentsions.html
+  commentId: T:Sepia.Globalization.CldrExentsions
+  fullName: Sepia.Globalization.CldrExentsions
   nameWithType: CldrExentsions
-- uid: Makaretu.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
+- uid: Sepia.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
   name: Elements(IEnumerable<XPathDocument>, String)
-  href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_Elements_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_
-  commentId: M:Makaretu.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
+  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_Elements_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_
+  commentId: M:Sepia.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
   name.vb: Elements(IEnumerable(Of XPathDocument), String)
-  fullName: Makaretu.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.String)
-  fullName.vb: Makaretu.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.String)
+  fullName: Sepia.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.String)
+  fullName.vb: Sepia.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.String)
   nameWithType: CldrExentsions.Elements(IEnumerable<XPathDocument>, String)
   nameWithType.vb: CldrExentsions.Elements(IEnumerable(Of XPathDocument), String)
-- uid: Makaretu.Globalization.CldrExentsions.Elements*
+- uid: Sepia.Globalization.CldrExentsions.Elements*
   name: Elements
-  href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_Elements_
-  commentId: Overload:Makaretu.Globalization.CldrExentsions.Elements
-  fullName: Makaretu.Globalization.CldrExentsions.Elements
+  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_Elements_
+  commentId: Overload:Sepia.Globalization.CldrExentsions.Elements
+  fullName: Sepia.Globalization.CldrExentsions.Elements
   nameWithType: CldrExentsions.Elements
-- uid: Makaretu.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
+- uid: Sepia.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
   name: FirstElement(IEnumerable<XPathDocument>, String)
-  href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_FirstElement_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_
-  commentId: M:Makaretu.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
+  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_FirstElement_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_
+  commentId: M:Sepia.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
   name.vb: FirstElement(IEnumerable(Of XPathDocument), String)
-  fullName: Makaretu.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.String)
-  fullName.vb: Makaretu.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.String)
+  fullName: Sepia.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.String)
+  fullName.vb: Sepia.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.String)
   nameWithType: CldrExentsions.FirstElement(IEnumerable<XPathDocument>, String)
   nameWithType.vb: CldrExentsions.FirstElement(IEnumerable(Of XPathDocument), String)
-- uid: Makaretu.Globalization.CldrExentsions.FirstElement*
+- uid: Sepia.Globalization.CldrExentsions.FirstElement*
   name: FirstElement
-  href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_FirstElement_
-  commentId: Overload:Makaretu.Globalization.CldrExentsions.FirstElement
-  fullName: Makaretu.Globalization.CldrExentsions.FirstElement
+  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_FirstElement_
+  commentId: Overload:Sepia.Globalization.CldrExentsions.FirstElement
+  fullName: Sepia.Globalization.CldrExentsions.FirstElement
   nameWithType: CldrExentsions.FirstElement
-- uid: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
+- uid: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
   name: FirstElementOrDefault(IEnumerable<XPathDocument>, String)
-  href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_FirstElementOrDefault_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_
-  commentId: M:Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
+  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_FirstElementOrDefault_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_
+  commentId: M:Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
   name.vb: FirstElementOrDefault(IEnumerable(Of XPathDocument), String)
-  fullName: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.String)
-  fullName.vb: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.String)
+  fullName: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.String)
+  fullName.vb: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.String)
   nameWithType: CldrExentsions.FirstElementOrDefault(IEnumerable<XPathDocument>, String)
   nameWithType.vb: CldrExentsions.FirstElementOrDefault(IEnumerable(Of XPathDocument), String)
-- uid: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String,System.Func{System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.Xml.XPath.XPathNavigator})
+- uid: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String,System.Func{System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.Xml.XPath.XPathNavigator})
   name: FirstElementOrDefault(IEnumerable<XPathDocument>, String, Func<IEnumerable<XPathDocument>, XPathNavigator>)
-  href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_FirstElementOrDefault_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_System_Func_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_Xml_XPath_XPathNavigator__
-  commentId: M:Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String,System.Func{System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.Xml.XPath.XPathNavigator})
+  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_FirstElementOrDefault_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_System_Func_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_Xml_XPath_XPathNavigator__
+  commentId: M:Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String,System.Func{System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.Xml.XPath.XPathNavigator})
   name.vb: FirstElementOrDefault(IEnumerable(Of XPathDocument), String, Func(Of IEnumerable(Of XPathDocument), XPathNavigator))
-  fullName: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.String, System.Func<System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.Xml.XPath.XPathNavigator>)
-  fullName.vb: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.String, System.Func(Of System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.Xml.XPath.XPathNavigator))
+  fullName: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.String, System.Func<System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.Xml.XPath.XPathNavigator>)
+  fullName.vb: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.String, System.Func(Of System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.Xml.XPath.XPathNavigator))
   nameWithType: CldrExentsions.FirstElementOrDefault(IEnumerable<XPathDocument>, String, Func<IEnumerable<XPathDocument>, XPathNavigator>)
   nameWithType.vb: CldrExentsions.FirstElementOrDefault(IEnumerable(Of XPathDocument), String, Func(Of IEnumerable(Of XPathDocument), XPathNavigator))
-- uid: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault*
+- uid: Sepia.Globalization.CldrExentsions.FirstElementOrDefault*
   name: FirstElementOrDefault
-  href: api/Makaretu.Globalization.CldrExentsions.html#Makaretu_Globalization_CldrExentsions_FirstElementOrDefault_
-  commentId: Overload:Makaretu.Globalization.CldrExentsions.FirstElementOrDefault
-  fullName: Makaretu.Globalization.CldrExentsions.FirstElementOrDefault
+  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_FirstElementOrDefault_
+  commentId: Overload:Sepia.Globalization.CldrExentsions.FirstElementOrDefault
+  fullName: Sepia.Globalization.CldrExentsions.FirstElementOrDefault
   nameWithType: CldrExentsions.FirstElementOrDefault
-- uid: Makaretu.Globalization.CodeList
+- uid: Sepia.Globalization.CodeList
   name: CodeList
-  href: api/Makaretu.Globalization.CodeList.html
-  commentId: T:Makaretu.Globalization.CodeList
-  fullName: Makaretu.Globalization.CodeList
+  href: api/Sepia.Globalization.CodeList.html
+  commentId: T:Sepia.Globalization.CodeList
+  fullName: Sepia.Globalization.CodeList
   nameWithType: CodeList
-- uid: Makaretu.Globalization.CodeList.#ctor(System.String)
+- uid: Sepia.Globalization.CodeList.#ctor(System.String)
   name: CodeList(String)
-  href: api/Makaretu.Globalization.CodeList.html#Makaretu_Globalization_CodeList__ctor_System_String_
-  commentId: M:Makaretu.Globalization.CodeList.#ctor(System.String)
-  fullName: Makaretu.Globalization.CodeList.CodeList(System.String)
+  href: api/Sepia.Globalization.CodeList.html#Sepia_Globalization_CodeList__ctor_System_String_
+  commentId: M:Sepia.Globalization.CodeList.#ctor(System.String)
+  fullName: Sepia.Globalization.CodeList.CodeList(System.String)
   nameWithType: CodeList.CodeList(String)
-- uid: Makaretu.Globalization.CodeList.#ctor*
+- uid: Sepia.Globalization.CodeList.#ctor*
   name: CodeList
-  href: api/Makaretu.Globalization.CodeList.html#Makaretu_Globalization_CodeList__ctor_
-  commentId: Overload:Makaretu.Globalization.CodeList.#ctor
-  fullName: Makaretu.Globalization.CodeList.CodeList
+  href: api/Sepia.Globalization.CodeList.html#Sepia_Globalization_CodeList__ctor_
+  commentId: Overload:Sepia.Globalization.CodeList.#ctor
+  fullName: Sepia.Globalization.CodeList.CodeList
   nameWithType: CodeList.CodeList
-- uid: Makaretu.Globalization.CodeList.Contains(System.String)
+- uid: Sepia.Globalization.CodeList.Contains(System.String)
   name: Contains(String)
-  href: api/Makaretu.Globalization.CodeList.html#Makaretu_Globalization_CodeList_Contains_System_String_
-  commentId: M:Makaretu.Globalization.CodeList.Contains(System.String)
-  fullName: Makaretu.Globalization.CodeList.Contains(System.String)
+  href: api/Sepia.Globalization.CodeList.html#Sepia_Globalization_CodeList_Contains_System_String_
+  commentId: M:Sepia.Globalization.CodeList.Contains(System.String)
+  fullName: Sepia.Globalization.CodeList.Contains(System.String)
   nameWithType: CodeList.Contains(String)
-- uid: Makaretu.Globalization.CodeList.Contains*
+- uid: Sepia.Globalization.CodeList.Contains*
   name: Contains
-  href: api/Makaretu.Globalization.CodeList.html#Makaretu_Globalization_CodeList_Contains_
-  commentId: Overload:Makaretu.Globalization.CodeList.Contains
-  fullName: Makaretu.Globalization.CodeList.Contains
+  href: api/Sepia.Globalization.CodeList.html#Sepia_Globalization_CodeList_Contains_
+  commentId: Overload:Sepia.Globalization.CodeList.Contains
+  fullName: Sepia.Globalization.CodeList.Contains
   nameWithType: CodeList.Contains
-- uid: Makaretu.Globalization.CodeList.Separator
+- uid: Sepia.Globalization.CodeList.Separator
   name: Separator
-  href: api/Makaretu.Globalization.CodeList.html#Makaretu_Globalization_CodeList_Separator
-  commentId: P:Makaretu.Globalization.CodeList.Separator
-  fullName: Makaretu.Globalization.CodeList.Separator
+  href: api/Sepia.Globalization.CodeList.html#Sepia_Globalization_CodeList_Separator
+  commentId: P:Sepia.Globalization.CodeList.Separator
+  fullName: Sepia.Globalization.CodeList.Separator
   nameWithType: CodeList.Separator
-- uid: Makaretu.Globalization.CodeList.Separator*
+- uid: Sepia.Globalization.CodeList.Separator*
   name: Separator
-  href: api/Makaretu.Globalization.CodeList.html#Makaretu_Globalization_CodeList_Separator_
-  commentId: Overload:Makaretu.Globalization.CodeList.Separator
-  fullName: Makaretu.Globalization.CodeList.Separator
+  href: api/Sepia.Globalization.CodeList.html#Sepia_Globalization_CodeList_Separator_
+  commentId: Overload:Sepia.Globalization.CodeList.Separator
+  fullName: Sepia.Globalization.CodeList.Separator
   nameWithType: CodeList.Separator
-- uid: Makaretu.Globalization.Locale
+- uid: Sepia.Globalization.Locale
   name: Locale
-  href: api/Makaretu.Globalization.Locale.html
-  commentId: T:Makaretu.Globalization.Locale
-  fullName: Makaretu.Globalization.Locale
+  href: api/Sepia.Globalization.Locale.html
+  commentId: T:Sepia.Globalization.Locale
+  fullName: Sepia.Globalization.Locale
   nameWithType: Locale
-- uid: Makaretu.Globalization.Locale.#ctor(Makaretu.Globalization.LocaleIdentifier)
+- uid: Sepia.Globalization.Locale.#ctor(Sepia.Globalization.LocaleIdentifier)
   name: Locale(LocaleIdentifier)
-  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale__ctor_Makaretu_Globalization_LocaleIdentifier_
-  commentId: M:Makaretu.Globalization.Locale.#ctor(Makaretu.Globalization.LocaleIdentifier)
-  fullName: Makaretu.Globalization.Locale.Locale(Makaretu.Globalization.LocaleIdentifier)
+  href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale__ctor_Sepia_Globalization_LocaleIdentifier_
+  commentId: M:Sepia.Globalization.Locale.#ctor(Sepia.Globalization.LocaleIdentifier)
+  fullName: Sepia.Globalization.Locale.Locale(Sepia.Globalization.LocaleIdentifier)
   nameWithType: Locale.Locale(LocaleIdentifier)
-- uid: Makaretu.Globalization.Locale.#ctor*
+- uid: Sepia.Globalization.Locale.#ctor*
   name: Locale
-  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale__ctor_
-  commentId: Overload:Makaretu.Globalization.Locale.#ctor
-  fullName: Makaretu.Globalization.Locale.Locale
+  href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale__ctor_
+  commentId: Overload:Sepia.Globalization.Locale.#ctor
+  fullName: Sepia.Globalization.Locale.Locale
   nameWithType: Locale.Locale
-- uid: Makaretu.Globalization.Locale.Create(Makaretu.Globalization.LocaleIdentifier)
+- uid: Sepia.Globalization.Locale.Create(Sepia.Globalization.LocaleIdentifier)
   name: Create(LocaleIdentifier)
-  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_Create_Makaretu_Globalization_LocaleIdentifier_
-  commentId: M:Makaretu.Globalization.Locale.Create(Makaretu.Globalization.LocaleIdentifier)
-  fullName: Makaretu.Globalization.Locale.Create(Makaretu.Globalization.LocaleIdentifier)
+  href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_Create_Sepia_Globalization_LocaleIdentifier_
+  commentId: M:Sepia.Globalization.Locale.Create(Sepia.Globalization.LocaleIdentifier)
+  fullName: Sepia.Globalization.Locale.Create(Sepia.Globalization.LocaleIdentifier)
   nameWithType: Locale.Create(LocaleIdentifier)
-- uid: Makaretu.Globalization.Locale.Create(System.String)
+- uid: Sepia.Globalization.Locale.Create(System.String)
   name: Create(String)
-  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_Create_System_String_
-  commentId: M:Makaretu.Globalization.Locale.Create(System.String)
-  fullName: Makaretu.Globalization.Locale.Create(System.String)
+  href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_Create_System_String_
+  commentId: M:Sepia.Globalization.Locale.Create(System.String)
+  fullName: Sepia.Globalization.Locale.Create(System.String)
   nameWithType: Locale.Create(String)
-- uid: Makaretu.Globalization.Locale.Create*
+- uid: Sepia.Globalization.Locale.Create*
   name: Create
-  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_Create_
-  commentId: Overload:Makaretu.Globalization.Locale.Create
-  fullName: Makaretu.Globalization.Locale.Create
+  href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_Create_
+  commentId: Overload:Sepia.Globalization.Locale.Create
+  fullName: Sepia.Globalization.Locale.Create
   nameWithType: Locale.Create
-- uid: Makaretu.Globalization.Locale.CurrencyCode
+- uid: Sepia.Globalization.Locale.CurrencyCode
   name: CurrencyCode
-  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_CurrencyCode
-  commentId: P:Makaretu.Globalization.Locale.CurrencyCode
-  fullName: Makaretu.Globalization.Locale.CurrencyCode
+  href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_CurrencyCode
+  commentId: P:Sepia.Globalization.Locale.CurrencyCode
+  fullName: Sepia.Globalization.Locale.CurrencyCode
   nameWithType: Locale.CurrencyCode
-- uid: Makaretu.Globalization.Locale.CurrencyCode*
+- uid: Sepia.Globalization.Locale.CurrencyCode*
   name: CurrencyCode
-  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_CurrencyCode_
-  commentId: Overload:Makaretu.Globalization.Locale.CurrencyCode
-  fullName: Makaretu.Globalization.Locale.CurrencyCode
+  href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_CurrencyCode_
+  commentId: Overload:Sepia.Globalization.Locale.CurrencyCode
+  fullName: Sepia.Globalization.Locale.CurrencyCode
   nameWithType: Locale.CurrencyCode
-- uid: Makaretu.Globalization.Locale.Find(System.String)
+- uid: Sepia.Globalization.Locale.Find(System.String)
   name: Find(String)
-  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_Find_System_String_
-  commentId: M:Makaretu.Globalization.Locale.Find(System.String)
-  fullName: Makaretu.Globalization.Locale.Find(System.String)
+  href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_Find_System_String_
+  commentId: M:Sepia.Globalization.Locale.Find(System.String)
+  fullName: Sepia.Globalization.Locale.Find(System.String)
   nameWithType: Locale.Find(String)
-- uid: Makaretu.Globalization.Locale.Find*
+- uid: Sepia.Globalization.Locale.Find*
   name: Find
-  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_Find_
-  commentId: Overload:Makaretu.Globalization.Locale.Find
-  fullName: Makaretu.Globalization.Locale.Find
+  href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_Find_
+  commentId: Overload:Sepia.Globalization.Locale.Find
+  fullName: Sepia.Globalization.Locale.Find
   nameWithType: Locale.Find
-- uid: Makaretu.Globalization.Locale.FindOrDefault(System.String)
+- uid: Sepia.Globalization.Locale.FindOrDefault(System.String)
   name: FindOrDefault(String)
-  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_FindOrDefault_System_String_
-  commentId: M:Makaretu.Globalization.Locale.FindOrDefault(System.String)
-  fullName: Makaretu.Globalization.Locale.FindOrDefault(System.String)
+  href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_FindOrDefault_System_String_
+  commentId: M:Sepia.Globalization.Locale.FindOrDefault(System.String)
+  fullName: Sepia.Globalization.Locale.FindOrDefault(System.String)
   nameWithType: Locale.FindOrDefault(String)
-- uid: Makaretu.Globalization.Locale.FindOrDefault*
+- uid: Sepia.Globalization.Locale.FindOrDefault*
   name: FindOrDefault
-  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_FindOrDefault_
-  commentId: Overload:Makaretu.Globalization.Locale.FindOrDefault
-  fullName: Makaretu.Globalization.Locale.FindOrDefault
+  href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_FindOrDefault_
+  commentId: Overload:Sepia.Globalization.Locale.FindOrDefault
+  fullName: Sepia.Globalization.Locale.FindOrDefault
   nameWithType: Locale.FindOrDefault
-- uid: Makaretu.Globalization.Locale.Id
+- uid: Sepia.Globalization.Locale.Id
   name: Id
-  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_Id
-  commentId: P:Makaretu.Globalization.Locale.Id
-  fullName: Makaretu.Globalization.Locale.Id
+  href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_Id
+  commentId: P:Sepia.Globalization.Locale.Id
+  fullName: Sepia.Globalization.Locale.Id
   nameWithType: Locale.Id
-- uid: Makaretu.Globalization.Locale.Id*
+- uid: Sepia.Globalization.Locale.Id*
   name: Id
-  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_Id_
-  commentId: Overload:Makaretu.Globalization.Locale.Id
-  fullName: Makaretu.Globalization.Locale.Id
+  href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_Id_
+  commentId: Overload:Sepia.Globalization.Locale.Id
+  fullName: Sepia.Globalization.Locale.Id
   nameWithType: Locale.Id
-- uid: Makaretu.Globalization.Locale.ResourceBundle(System.String,System.String)
+- uid: Sepia.Globalization.Locale.ResourceBundle(System.String,System.String)
   name: ResourceBundle(String, String)
-  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_ResourceBundle_System_String_System_String_
-  commentId: M:Makaretu.Globalization.Locale.ResourceBundle(System.String,System.String)
-  fullName: Makaretu.Globalization.Locale.ResourceBundle(System.String, System.String)
+  href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_ResourceBundle_System_String_System_String_
+  commentId: M:Sepia.Globalization.Locale.ResourceBundle(System.String,System.String)
+  fullName: Sepia.Globalization.Locale.ResourceBundle(System.String, System.String)
   nameWithType: Locale.ResourceBundle(String, String)
-- uid: Makaretu.Globalization.Locale.ResourceBundle*
+- uid: Sepia.Globalization.Locale.ResourceBundle*
   name: ResourceBundle
-  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_ResourceBundle_
-  commentId: Overload:Makaretu.Globalization.Locale.ResourceBundle
-  fullName: Makaretu.Globalization.Locale.ResourceBundle
+  href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_ResourceBundle_
+  commentId: Overload:Sepia.Globalization.Locale.ResourceBundle
+  fullName: Sepia.Globalization.Locale.ResourceBundle
   nameWithType: Locale.ResourceBundle
-- uid: Makaretu.Globalization.Locale.SearchChain
+- uid: Sepia.Globalization.Locale.SearchChain
   name: SearchChain()
-  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_SearchChain
-  commentId: M:Makaretu.Globalization.Locale.SearchChain
-  fullName: Makaretu.Globalization.Locale.SearchChain()
+  href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_SearchChain
+  commentId: M:Sepia.Globalization.Locale.SearchChain
+  fullName: Sepia.Globalization.Locale.SearchChain()
   nameWithType: Locale.SearchChain()
-- uid: Makaretu.Globalization.Locale.SearchChain*
+- uid: Sepia.Globalization.Locale.SearchChain*
   name: SearchChain
-  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_SearchChain_
-  commentId: Overload:Makaretu.Globalization.Locale.SearchChain
-  fullName: Makaretu.Globalization.Locale.SearchChain
+  href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_SearchChain_
+  commentId: Overload:Sepia.Globalization.Locale.SearchChain
+  fullName: Sepia.Globalization.Locale.SearchChain
   nameWithType: Locale.SearchChain
-- uid: Makaretu.Globalization.Locale.ToString
+- uid: Sepia.Globalization.Locale.ToString
   name: ToString()
-  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_ToString
-  commentId: M:Makaretu.Globalization.Locale.ToString
-  fullName: Makaretu.Globalization.Locale.ToString()
+  href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_ToString
+  commentId: M:Sepia.Globalization.Locale.ToString
+  fullName: Sepia.Globalization.Locale.ToString()
   nameWithType: Locale.ToString()
-- uid: Makaretu.Globalization.Locale.ToString*
+- uid: Sepia.Globalization.Locale.ToString*
   name: ToString
-  href: api/Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_ToString_
-  commentId: Overload:Makaretu.Globalization.Locale.ToString
-  fullName: Makaretu.Globalization.Locale.ToString
+  href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_ToString_
+  commentId: Overload:Sepia.Globalization.Locale.ToString
+  fullName: Sepia.Globalization.Locale.ToString
   nameWithType: Locale.ToString
-- uid: Makaretu.Globalization.LocaleExtension
+- uid: Sepia.Globalization.LocaleExtension
   name: LocaleExtension
-  href: api/Makaretu.Globalization.LocaleExtension.html
-  commentId: T:Makaretu.Globalization.LocaleExtension
-  fullName: Makaretu.Globalization.LocaleExtension
+  href: api/Sepia.Globalization.LocaleExtension.html
+  commentId: T:Sepia.Globalization.LocaleExtension
+  fullName: Sepia.Globalization.LocaleExtension
   nameWithType: LocaleExtension
-- uid: Makaretu.Globalization.LocaleExtension.Attributes
+- uid: Sepia.Globalization.LocaleExtension.Attributes
   name: Attributes
-  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_Attributes
-  commentId: P:Makaretu.Globalization.LocaleExtension.Attributes
-  fullName: Makaretu.Globalization.LocaleExtension.Attributes
+  href: api/Sepia.Globalization.LocaleExtension.html#Sepia_Globalization_LocaleExtension_Attributes
+  commentId: P:Sepia.Globalization.LocaleExtension.Attributes
+  fullName: Sepia.Globalization.LocaleExtension.Attributes
   nameWithType: LocaleExtension.Attributes
-- uid: Makaretu.Globalization.LocaleExtension.Attributes*
+- uid: Sepia.Globalization.LocaleExtension.Attributes*
   name: Attributes
-  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_Attributes_
-  commentId: Overload:Makaretu.Globalization.LocaleExtension.Attributes
-  fullName: Makaretu.Globalization.LocaleExtension.Attributes
+  href: api/Sepia.Globalization.LocaleExtension.html#Sepia_Globalization_LocaleExtension_Attributes_
+  commentId: Overload:Sepia.Globalization.LocaleExtension.Attributes
+  fullName: Sepia.Globalization.LocaleExtension.Attributes
   nameWithType: LocaleExtension.Attributes
-- uid: Makaretu.Globalization.LocaleExtension.Empty
+- uid: Sepia.Globalization.LocaleExtension.Empty
   name: Empty
-  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_Empty
-  commentId: F:Makaretu.Globalization.LocaleExtension.Empty
-  fullName: Makaretu.Globalization.LocaleExtension.Empty
+  href: api/Sepia.Globalization.LocaleExtension.html#Sepia_Globalization_LocaleExtension_Empty
+  commentId: F:Sepia.Globalization.LocaleExtension.Empty
+  fullName: Sepia.Globalization.LocaleExtension.Empty
   nameWithType: LocaleExtension.Empty
-- uid: Makaretu.Globalization.LocaleExtension.Keywords
+- uid: Sepia.Globalization.LocaleExtension.Keywords
   name: Keywords
-  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_Keywords
-  commentId: P:Makaretu.Globalization.LocaleExtension.Keywords
-  fullName: Makaretu.Globalization.LocaleExtension.Keywords
+  href: api/Sepia.Globalization.LocaleExtension.html#Sepia_Globalization_LocaleExtension_Keywords
+  commentId: P:Sepia.Globalization.LocaleExtension.Keywords
+  fullName: Sepia.Globalization.LocaleExtension.Keywords
   nameWithType: LocaleExtension.Keywords
-- uid: Makaretu.Globalization.LocaleExtension.Keywords*
+- uid: Sepia.Globalization.LocaleExtension.Keywords*
   name: Keywords
-  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_Keywords_
-  commentId: Overload:Makaretu.Globalization.LocaleExtension.Keywords
-  fullName: Makaretu.Globalization.LocaleExtension.Keywords
+  href: api/Sepia.Globalization.LocaleExtension.html#Sepia_Globalization_LocaleExtension_Keywords_
+  commentId: Overload:Sepia.Globalization.LocaleExtension.Keywords
+  fullName: Sepia.Globalization.LocaleExtension.Keywords
   nameWithType: LocaleExtension.Keywords
-- uid: Makaretu.Globalization.LocaleExtension.Parse(System.String)
+- uid: Sepia.Globalization.LocaleExtension.Parse(System.String)
   name: Parse(String)
-  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_Parse_System_String_
-  commentId: M:Makaretu.Globalization.LocaleExtension.Parse(System.String)
-  fullName: Makaretu.Globalization.LocaleExtension.Parse(System.String)
+  href: api/Sepia.Globalization.LocaleExtension.html#Sepia_Globalization_LocaleExtension_Parse_System_String_
+  commentId: M:Sepia.Globalization.LocaleExtension.Parse(System.String)
+  fullName: Sepia.Globalization.LocaleExtension.Parse(System.String)
   nameWithType: LocaleExtension.Parse(String)
-- uid: Makaretu.Globalization.LocaleExtension.Parse*
+- uid: Sepia.Globalization.LocaleExtension.Parse*
   name: Parse
-  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_Parse_
-  commentId: Overload:Makaretu.Globalization.LocaleExtension.Parse
-  fullName: Makaretu.Globalization.LocaleExtension.Parse
+  href: api/Sepia.Globalization.LocaleExtension.html#Sepia_Globalization_LocaleExtension_Parse_
+  commentId: Overload:Sepia.Globalization.LocaleExtension.Parse
+  fullName: Sepia.Globalization.LocaleExtension.Parse
   nameWithType: LocaleExtension.Parse
-- uid: Makaretu.Globalization.LocaleExtension.ToString
+- uid: Sepia.Globalization.LocaleExtension.ToString
   name: ToString()
-  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_ToString
-  commentId: M:Makaretu.Globalization.LocaleExtension.ToString
-  fullName: Makaretu.Globalization.LocaleExtension.ToString()
+  href: api/Sepia.Globalization.LocaleExtension.html#Sepia_Globalization_LocaleExtension_ToString
+  commentId: M:Sepia.Globalization.LocaleExtension.ToString
+  fullName: Sepia.Globalization.LocaleExtension.ToString()
   nameWithType: LocaleExtension.ToString()
-- uid: Makaretu.Globalization.LocaleExtension.ToString*
+- uid: Sepia.Globalization.LocaleExtension.ToString*
   name: ToString
-  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_ToString_
-  commentId: Overload:Makaretu.Globalization.LocaleExtension.ToString
-  fullName: Makaretu.Globalization.LocaleExtension.ToString
+  href: api/Sepia.Globalization.LocaleExtension.html#Sepia_Globalization_LocaleExtension_ToString_
+  commentId: Overload:Sepia.Globalization.LocaleExtension.ToString
+  fullName: Sepia.Globalization.LocaleExtension.ToString
   nameWithType: LocaleExtension.ToString
-- uid: Makaretu.Globalization.LocaleExtension.TryParse(System.String,Makaretu.Globalization.LocaleExtension@)
+- uid: Sepia.Globalization.LocaleExtension.TryParse(System.String,Sepia.Globalization.LocaleExtension@)
   name: TryParse(String, out LocaleExtension)
-  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_TryParse_System_String_Makaretu_Globalization_LocaleExtension__
-  commentId: M:Makaretu.Globalization.LocaleExtension.TryParse(System.String,Makaretu.Globalization.LocaleExtension@)
+  href: api/Sepia.Globalization.LocaleExtension.html#Sepia_Globalization_LocaleExtension_TryParse_System_String_Sepia_Globalization_LocaleExtension__
+  commentId: M:Sepia.Globalization.LocaleExtension.TryParse(System.String,Sepia.Globalization.LocaleExtension@)
   name.vb: TryParse(String, ByRef LocaleExtension)
-  fullName: Makaretu.Globalization.LocaleExtension.TryParse(System.String, out Makaretu.Globalization.LocaleExtension)
-  fullName.vb: Makaretu.Globalization.LocaleExtension.TryParse(System.String, ByRef Makaretu.Globalization.LocaleExtension)
+  fullName: Sepia.Globalization.LocaleExtension.TryParse(System.String, out Sepia.Globalization.LocaleExtension)
+  fullName.vb: Sepia.Globalization.LocaleExtension.TryParse(System.String, ByRef Sepia.Globalization.LocaleExtension)
   nameWithType: LocaleExtension.TryParse(String, out LocaleExtension)
   nameWithType.vb: LocaleExtension.TryParse(String, ByRef LocaleExtension)
-- uid: Makaretu.Globalization.LocaleExtension.TryParse(System.String,Makaretu.Globalization.LocaleExtension@,System.String@)
+- uid: Sepia.Globalization.LocaleExtension.TryParse(System.String,Sepia.Globalization.LocaleExtension@,System.String@)
   name: TryParse(String, out LocaleExtension, out String)
-  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_TryParse_System_String_Makaretu_Globalization_LocaleExtension__System_String__
-  commentId: M:Makaretu.Globalization.LocaleExtension.TryParse(System.String,Makaretu.Globalization.LocaleExtension@,System.String@)
+  href: api/Sepia.Globalization.LocaleExtension.html#Sepia_Globalization_LocaleExtension_TryParse_System_String_Sepia_Globalization_LocaleExtension__System_String__
+  commentId: M:Sepia.Globalization.LocaleExtension.TryParse(System.String,Sepia.Globalization.LocaleExtension@,System.String@)
   name.vb: TryParse(String, ByRef LocaleExtension, ByRef String)
-  fullName: Makaretu.Globalization.LocaleExtension.TryParse(System.String, out Makaretu.Globalization.LocaleExtension, out System.String)
-  fullName.vb: Makaretu.Globalization.LocaleExtension.TryParse(System.String, ByRef Makaretu.Globalization.LocaleExtension, ByRef System.String)
+  fullName: Sepia.Globalization.LocaleExtension.TryParse(System.String, out Sepia.Globalization.LocaleExtension, out System.String)
+  fullName.vb: Sepia.Globalization.LocaleExtension.TryParse(System.String, ByRef Sepia.Globalization.LocaleExtension, ByRef System.String)
   nameWithType: LocaleExtension.TryParse(String, out LocaleExtension, out String)
   nameWithType.vb: LocaleExtension.TryParse(String, ByRef LocaleExtension, ByRef String)
-- uid: Makaretu.Globalization.LocaleExtension.TryParse*
+- uid: Sepia.Globalization.LocaleExtension.TryParse*
   name: TryParse
-  href: api/Makaretu.Globalization.LocaleExtension.html#Makaretu_Globalization_LocaleExtension_TryParse_
-  commentId: Overload:Makaretu.Globalization.LocaleExtension.TryParse
-  fullName: Makaretu.Globalization.LocaleExtension.TryParse
+  href: api/Sepia.Globalization.LocaleExtension.html#Sepia_Globalization_LocaleExtension_TryParse_
+  commentId: Overload:Sepia.Globalization.LocaleExtension.TryParse
+  fullName: Sepia.Globalization.LocaleExtension.TryParse
   nameWithType: LocaleExtension.TryParse
-- uid: Makaretu.Globalization.LocaleIdentifier
+- uid: Sepia.Globalization.LocaleIdentifier
   name: LocaleIdentifier
-  href: api/Makaretu.Globalization.LocaleIdentifier.html
-  commentId: T:Makaretu.Globalization.LocaleIdentifier
-  fullName: Makaretu.Globalization.LocaleIdentifier
+  href: api/Sepia.Globalization.LocaleIdentifier.html
+  commentId: T:Sepia.Globalization.LocaleIdentifier
+  fullName: Sepia.Globalization.LocaleIdentifier
   nameWithType: LocaleIdentifier
-- uid: Makaretu.Globalization.LocaleIdentifier.CanonicalForm
+- uid: Sepia.Globalization.LocaleIdentifier.CanonicalForm
   name: CanonicalForm()
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_CanonicalForm
-  commentId: M:Makaretu.Globalization.LocaleIdentifier.CanonicalForm
-  fullName: Makaretu.Globalization.LocaleIdentifier.CanonicalForm()
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_CanonicalForm
+  commentId: M:Sepia.Globalization.LocaleIdentifier.CanonicalForm
+  fullName: Sepia.Globalization.LocaleIdentifier.CanonicalForm()
   nameWithType: LocaleIdentifier.CanonicalForm()
-- uid: Makaretu.Globalization.LocaleIdentifier.CanonicalForm*
+- uid: Sepia.Globalization.LocaleIdentifier.CanonicalForm*
   name: CanonicalForm
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_CanonicalForm_
-  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.CanonicalForm
-  fullName: Makaretu.Globalization.LocaleIdentifier.CanonicalForm
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_CanonicalForm_
+  commentId: Overload:Sepia.Globalization.LocaleIdentifier.CanonicalForm
+  fullName: Sepia.Globalization.LocaleIdentifier.CanonicalForm
   nameWithType: LocaleIdentifier.CanonicalForm
-- uid: Makaretu.Globalization.LocaleIdentifier.Extensions
+- uid: Sepia.Globalization.LocaleIdentifier.Extensions
   name: Extensions
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Extensions
-  commentId: P:Makaretu.Globalization.LocaleIdentifier.Extensions
-  fullName: Makaretu.Globalization.LocaleIdentifier.Extensions
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Extensions
+  commentId: P:Sepia.Globalization.LocaleIdentifier.Extensions
+  fullName: Sepia.Globalization.LocaleIdentifier.Extensions
   nameWithType: LocaleIdentifier.Extensions
-- uid: Makaretu.Globalization.LocaleIdentifier.Extensions*
+- uid: Sepia.Globalization.LocaleIdentifier.Extensions*
   name: Extensions
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Extensions_
-  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.Extensions
-  fullName: Makaretu.Globalization.LocaleIdentifier.Extensions
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Extensions_
+  commentId: Overload:Sepia.Globalization.LocaleIdentifier.Extensions
+  fullName: Sepia.Globalization.LocaleIdentifier.Extensions
   nameWithType: LocaleIdentifier.Extensions
-- uid: Makaretu.Globalization.LocaleIdentifier.Language
+- uid: Sepia.Globalization.LocaleIdentifier.Language
   name: Language
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Language
-  commentId: P:Makaretu.Globalization.LocaleIdentifier.Language
-  fullName: Makaretu.Globalization.LocaleIdentifier.Language
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Language
+  commentId: P:Sepia.Globalization.LocaleIdentifier.Language
+  fullName: Sepia.Globalization.LocaleIdentifier.Language
   nameWithType: LocaleIdentifier.Language
-- uid: Makaretu.Globalization.LocaleIdentifier.Language*
+- uid: Sepia.Globalization.LocaleIdentifier.Language*
   name: Language
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Language_
-  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.Language
-  fullName: Makaretu.Globalization.LocaleIdentifier.Language
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Language_
+  commentId: Overload:Sepia.Globalization.LocaleIdentifier.Language
+  fullName: Sepia.Globalization.LocaleIdentifier.Language
   nameWithType: LocaleIdentifier.Language
-- uid: Makaretu.Globalization.LocaleIdentifier.MostLikelySubtags
+- uid: Sepia.Globalization.LocaleIdentifier.MostLikelySubtags
   name: MostLikelySubtags()
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_MostLikelySubtags
-  commentId: M:Makaretu.Globalization.LocaleIdentifier.MostLikelySubtags
-  fullName: Makaretu.Globalization.LocaleIdentifier.MostLikelySubtags()
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_MostLikelySubtags
+  commentId: M:Sepia.Globalization.LocaleIdentifier.MostLikelySubtags
+  fullName: Sepia.Globalization.LocaleIdentifier.MostLikelySubtags()
   nameWithType: LocaleIdentifier.MostLikelySubtags()
-- uid: Makaretu.Globalization.LocaleIdentifier.MostLikelySubtags*
+- uid: Sepia.Globalization.LocaleIdentifier.MostLikelySubtags*
   name: MostLikelySubtags
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_MostLikelySubtags_
-  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.MostLikelySubtags
-  fullName: Makaretu.Globalization.LocaleIdentifier.MostLikelySubtags
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_MostLikelySubtags_
+  commentId: Overload:Sepia.Globalization.LocaleIdentifier.MostLikelySubtags
+  fullName: Sepia.Globalization.LocaleIdentifier.MostLikelySubtags
   nameWithType: LocaleIdentifier.MostLikelySubtags
-- uid: Makaretu.Globalization.LocaleIdentifier.Parse(System.String)
+- uid: Sepia.Globalization.LocaleIdentifier.Parse(System.String)
   name: Parse(String)
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Parse_System_String_
-  commentId: M:Makaretu.Globalization.LocaleIdentifier.Parse(System.String)
-  fullName: Makaretu.Globalization.LocaleIdentifier.Parse(System.String)
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Parse_System_String_
+  commentId: M:Sepia.Globalization.LocaleIdentifier.Parse(System.String)
+  fullName: Sepia.Globalization.LocaleIdentifier.Parse(System.String)
   nameWithType: LocaleIdentifier.Parse(String)
-- uid: Makaretu.Globalization.LocaleIdentifier.Parse*
+- uid: Sepia.Globalization.LocaleIdentifier.Parse*
   name: Parse
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Parse_
-  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.Parse
-  fullName: Makaretu.Globalization.LocaleIdentifier.Parse
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Parse_
+  commentId: Overload:Sepia.Globalization.LocaleIdentifier.Parse
+  fullName: Sepia.Globalization.LocaleIdentifier.Parse
   nameWithType: LocaleIdentifier.Parse
-- uid: Makaretu.Globalization.LocaleIdentifier.ParseBcp47(System.String)
+- uid: Sepia.Globalization.LocaleIdentifier.ParseBcp47(System.String)
   name: ParseBcp47(String)
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_ParseBcp47_System_String_
-  commentId: M:Makaretu.Globalization.LocaleIdentifier.ParseBcp47(System.String)
-  fullName: Makaretu.Globalization.LocaleIdentifier.ParseBcp47(System.String)
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_ParseBcp47_System_String_
+  commentId: M:Sepia.Globalization.LocaleIdentifier.ParseBcp47(System.String)
+  fullName: Sepia.Globalization.LocaleIdentifier.ParseBcp47(System.String)
   nameWithType: LocaleIdentifier.ParseBcp47(String)
-- uid: Makaretu.Globalization.LocaleIdentifier.ParseBcp47*
+- uid: Sepia.Globalization.LocaleIdentifier.ParseBcp47*
   name: ParseBcp47
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_ParseBcp47_
-  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.ParseBcp47
-  fullName: Makaretu.Globalization.LocaleIdentifier.ParseBcp47
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_ParseBcp47_
+  commentId: Overload:Sepia.Globalization.LocaleIdentifier.ParseBcp47
+  fullName: Sepia.Globalization.LocaleIdentifier.ParseBcp47
   nameWithType: LocaleIdentifier.ParseBcp47
-- uid: Makaretu.Globalization.LocaleIdentifier.Region
+- uid: Sepia.Globalization.LocaleIdentifier.Region
   name: Region
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Region
-  commentId: P:Makaretu.Globalization.LocaleIdentifier.Region
-  fullName: Makaretu.Globalization.LocaleIdentifier.Region
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Region
+  commentId: P:Sepia.Globalization.LocaleIdentifier.Region
+  fullName: Sepia.Globalization.LocaleIdentifier.Region
   nameWithType: LocaleIdentifier.Region
-- uid: Makaretu.Globalization.LocaleIdentifier.Region*
+- uid: Sepia.Globalization.LocaleIdentifier.Region*
   name: Region
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Region_
-  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.Region
-  fullName: Makaretu.Globalization.LocaleIdentifier.Region
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Region_
+  commentId: Overload:Sepia.Globalization.LocaleIdentifier.Region
+  fullName: Sepia.Globalization.LocaleIdentifier.Region
   nameWithType: LocaleIdentifier.Region
-- uid: Makaretu.Globalization.LocaleIdentifier.RemoveMostLikelySubtags
+- uid: Sepia.Globalization.LocaleIdentifier.RemoveMostLikelySubtags
   name: RemoveMostLikelySubtags()
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_RemoveMostLikelySubtags
-  commentId: M:Makaretu.Globalization.LocaleIdentifier.RemoveMostLikelySubtags
-  fullName: Makaretu.Globalization.LocaleIdentifier.RemoveMostLikelySubtags()
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_RemoveMostLikelySubtags
+  commentId: M:Sepia.Globalization.LocaleIdentifier.RemoveMostLikelySubtags
+  fullName: Sepia.Globalization.LocaleIdentifier.RemoveMostLikelySubtags()
   nameWithType: LocaleIdentifier.RemoveMostLikelySubtags()
-- uid: Makaretu.Globalization.LocaleIdentifier.RemoveMostLikelySubtags*
+- uid: Sepia.Globalization.LocaleIdentifier.RemoveMostLikelySubtags*
   name: RemoveMostLikelySubtags
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_RemoveMostLikelySubtags_
-  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.RemoveMostLikelySubtags
-  fullName: Makaretu.Globalization.LocaleIdentifier.RemoveMostLikelySubtags
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_RemoveMostLikelySubtags_
+  commentId: Overload:Sepia.Globalization.LocaleIdentifier.RemoveMostLikelySubtags
+  fullName: Sepia.Globalization.LocaleIdentifier.RemoveMostLikelySubtags
   nameWithType: LocaleIdentifier.RemoveMostLikelySubtags
-- uid: Makaretu.Globalization.LocaleIdentifier.Script
+- uid: Sepia.Globalization.LocaleIdentifier.Script
   name: Script
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Script
-  commentId: P:Makaretu.Globalization.LocaleIdentifier.Script
-  fullName: Makaretu.Globalization.LocaleIdentifier.Script
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Script
+  commentId: P:Sepia.Globalization.LocaleIdentifier.Script
+  fullName: Sepia.Globalization.LocaleIdentifier.Script
   nameWithType: LocaleIdentifier.Script
-- uid: Makaretu.Globalization.LocaleIdentifier.Script*
+- uid: Sepia.Globalization.LocaleIdentifier.Script*
   name: Script
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Script_
-  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.Script
-  fullName: Makaretu.Globalization.LocaleIdentifier.Script
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Script_
+  commentId: Overload:Sepia.Globalization.LocaleIdentifier.Script
+  fullName: Sepia.Globalization.LocaleIdentifier.Script
   nameWithType: LocaleIdentifier.Script
-- uid: Makaretu.Globalization.LocaleIdentifier.SearchChain
+- uid: Sepia.Globalization.LocaleIdentifier.SearchChain
   name: SearchChain()
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_SearchChain
-  commentId: M:Makaretu.Globalization.LocaleIdentifier.SearchChain
-  fullName: Makaretu.Globalization.LocaleIdentifier.SearchChain()
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_SearchChain
+  commentId: M:Sepia.Globalization.LocaleIdentifier.SearchChain
+  fullName: Sepia.Globalization.LocaleIdentifier.SearchChain()
   nameWithType: LocaleIdentifier.SearchChain()
-- uid: Makaretu.Globalization.LocaleIdentifier.SearchChain*
+- uid: Sepia.Globalization.LocaleIdentifier.SearchChain*
   name: SearchChain
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_SearchChain_
-  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.SearchChain
-  fullName: Makaretu.Globalization.LocaleIdentifier.SearchChain
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_SearchChain_
+  commentId: Overload:Sepia.Globalization.LocaleIdentifier.SearchChain
+  fullName: Sepia.Globalization.LocaleIdentifier.SearchChain
   nameWithType: LocaleIdentifier.SearchChain
-- uid: Makaretu.Globalization.LocaleIdentifier.ToString
+- uid: Sepia.Globalization.LocaleIdentifier.ToString
   name: ToString()
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_ToString
-  commentId: M:Makaretu.Globalization.LocaleIdentifier.ToString
-  fullName: Makaretu.Globalization.LocaleIdentifier.ToString()
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_ToString
+  commentId: M:Sepia.Globalization.LocaleIdentifier.ToString
+  fullName: Sepia.Globalization.LocaleIdentifier.ToString()
   nameWithType: LocaleIdentifier.ToString()
-- uid: Makaretu.Globalization.LocaleIdentifier.ToString*
+- uid: Sepia.Globalization.LocaleIdentifier.ToString*
   name: ToString
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_ToString_
-  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.ToString
-  fullName: Makaretu.Globalization.LocaleIdentifier.ToString
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_ToString_
+  commentId: Overload:Sepia.Globalization.LocaleIdentifier.ToString
+  fullName: Sepia.Globalization.LocaleIdentifier.ToString
   nameWithType: LocaleIdentifier.ToString
-- uid: Makaretu.Globalization.LocaleIdentifier.ToUnicodeLanguage(System.Boolean)
+- uid: Sepia.Globalization.LocaleIdentifier.ToUnicodeLanguage(System.Boolean)
   name: ToUnicodeLanguage(Boolean)
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_ToUnicodeLanguage_System_Boolean_
-  commentId: M:Makaretu.Globalization.LocaleIdentifier.ToUnicodeLanguage(System.Boolean)
-  fullName: Makaretu.Globalization.LocaleIdentifier.ToUnicodeLanguage(System.Boolean)
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_ToUnicodeLanguage_System_Boolean_
+  commentId: M:Sepia.Globalization.LocaleIdentifier.ToUnicodeLanguage(System.Boolean)
+  fullName: Sepia.Globalization.LocaleIdentifier.ToUnicodeLanguage(System.Boolean)
   nameWithType: LocaleIdentifier.ToUnicodeLanguage(Boolean)
-- uid: Makaretu.Globalization.LocaleIdentifier.ToUnicodeLanguage*
+- uid: Sepia.Globalization.LocaleIdentifier.ToUnicodeLanguage*
   name: ToUnicodeLanguage
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_ToUnicodeLanguage_
-  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.ToUnicodeLanguage
-  fullName: Makaretu.Globalization.LocaleIdentifier.ToUnicodeLanguage
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_ToUnicodeLanguage_
+  commentId: Overload:Sepia.Globalization.LocaleIdentifier.ToUnicodeLanguage
+  fullName: Sepia.Globalization.LocaleIdentifier.ToUnicodeLanguage
   nameWithType: LocaleIdentifier.ToUnicodeLanguage
-- uid: Makaretu.Globalization.LocaleIdentifier.TryParse(System.String,Makaretu.Globalization.LocaleIdentifier@)
+- uid: Sepia.Globalization.LocaleIdentifier.TryParse(System.String,Sepia.Globalization.LocaleIdentifier@)
   name: TryParse(String, out LocaleIdentifier)
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_TryParse_System_String_Makaretu_Globalization_LocaleIdentifier__
-  commentId: M:Makaretu.Globalization.LocaleIdentifier.TryParse(System.String,Makaretu.Globalization.LocaleIdentifier@)
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_TryParse_System_String_Sepia_Globalization_LocaleIdentifier__
+  commentId: M:Sepia.Globalization.LocaleIdentifier.TryParse(System.String,Sepia.Globalization.LocaleIdentifier@)
   name.vb: TryParse(String, ByRef LocaleIdentifier)
-  fullName: Makaretu.Globalization.LocaleIdentifier.TryParse(System.String, out Makaretu.Globalization.LocaleIdentifier)
-  fullName.vb: Makaretu.Globalization.LocaleIdentifier.TryParse(System.String, ByRef Makaretu.Globalization.LocaleIdentifier)
+  fullName: Sepia.Globalization.LocaleIdentifier.TryParse(System.String, out Sepia.Globalization.LocaleIdentifier)
+  fullName.vb: Sepia.Globalization.LocaleIdentifier.TryParse(System.String, ByRef Sepia.Globalization.LocaleIdentifier)
   nameWithType: LocaleIdentifier.TryParse(String, out LocaleIdentifier)
   nameWithType.vb: LocaleIdentifier.TryParse(String, ByRef LocaleIdentifier)
-- uid: Makaretu.Globalization.LocaleIdentifier.TryParse(System.String,Makaretu.Globalization.LocaleIdentifier@,System.String@)
+- uid: Sepia.Globalization.LocaleIdentifier.TryParse(System.String,Sepia.Globalization.LocaleIdentifier@,System.String@)
   name: TryParse(String, out LocaleIdentifier, out String)
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_TryParse_System_String_Makaretu_Globalization_LocaleIdentifier__System_String__
-  commentId: M:Makaretu.Globalization.LocaleIdentifier.TryParse(System.String,Makaretu.Globalization.LocaleIdentifier@,System.String@)
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_TryParse_System_String_Sepia_Globalization_LocaleIdentifier__System_String__
+  commentId: M:Sepia.Globalization.LocaleIdentifier.TryParse(System.String,Sepia.Globalization.LocaleIdentifier@,System.String@)
   name.vb: TryParse(String, ByRef LocaleIdentifier, ByRef String)
-  fullName: Makaretu.Globalization.LocaleIdentifier.TryParse(System.String, out Makaretu.Globalization.LocaleIdentifier, out System.String)
-  fullName.vb: Makaretu.Globalization.LocaleIdentifier.TryParse(System.String, ByRef Makaretu.Globalization.LocaleIdentifier, ByRef System.String)
+  fullName: Sepia.Globalization.LocaleIdentifier.TryParse(System.String, out Sepia.Globalization.LocaleIdentifier, out System.String)
+  fullName.vb: Sepia.Globalization.LocaleIdentifier.TryParse(System.String, ByRef Sepia.Globalization.LocaleIdentifier, ByRef System.String)
   nameWithType: LocaleIdentifier.TryParse(String, out LocaleIdentifier, out String)
   nameWithType.vb: LocaleIdentifier.TryParse(String, ByRef LocaleIdentifier, ByRef String)
-- uid: Makaretu.Globalization.LocaleIdentifier.TryParse*
+- uid: Sepia.Globalization.LocaleIdentifier.TryParse*
   name: TryParse
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_TryParse_
-  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.TryParse
-  fullName: Makaretu.Globalization.LocaleIdentifier.TryParse
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_TryParse_
+  commentId: Overload:Sepia.Globalization.LocaleIdentifier.TryParse
+  fullName: Sepia.Globalization.LocaleIdentifier.TryParse
   nameWithType: LocaleIdentifier.TryParse
-- uid: Makaretu.Globalization.LocaleIdentifier.TryParseBcp47(System.String,Makaretu.Globalization.LocaleIdentifier@,System.String@)
+- uid: Sepia.Globalization.LocaleIdentifier.TryParseBcp47(System.String,Sepia.Globalization.LocaleIdentifier@,System.String@)
   name: TryParseBcp47(String, out LocaleIdentifier, out String)
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_TryParseBcp47_System_String_Makaretu_Globalization_LocaleIdentifier__System_String__
-  commentId: M:Makaretu.Globalization.LocaleIdentifier.TryParseBcp47(System.String,Makaretu.Globalization.LocaleIdentifier@,System.String@)
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_TryParseBcp47_System_String_Sepia_Globalization_LocaleIdentifier__System_String__
+  commentId: M:Sepia.Globalization.LocaleIdentifier.TryParseBcp47(System.String,Sepia.Globalization.LocaleIdentifier@,System.String@)
   name.vb: TryParseBcp47(String, ByRef LocaleIdentifier, ByRef String)
-  fullName: Makaretu.Globalization.LocaleIdentifier.TryParseBcp47(System.String, out Makaretu.Globalization.LocaleIdentifier, out System.String)
-  fullName.vb: Makaretu.Globalization.LocaleIdentifier.TryParseBcp47(System.String, ByRef Makaretu.Globalization.LocaleIdentifier, ByRef System.String)
+  fullName: Sepia.Globalization.LocaleIdentifier.TryParseBcp47(System.String, out Sepia.Globalization.LocaleIdentifier, out System.String)
+  fullName.vb: Sepia.Globalization.LocaleIdentifier.TryParseBcp47(System.String, ByRef Sepia.Globalization.LocaleIdentifier, ByRef System.String)
   nameWithType: LocaleIdentifier.TryParseBcp47(String, out LocaleIdentifier, out String)
   nameWithType.vb: LocaleIdentifier.TryParseBcp47(String, ByRef LocaleIdentifier, ByRef String)
-- uid: Makaretu.Globalization.LocaleIdentifier.TryParseBcp47*
+- uid: Sepia.Globalization.LocaleIdentifier.TryParseBcp47*
   name: TryParseBcp47
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_TryParseBcp47_
-  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.TryParseBcp47
-  fullName: Makaretu.Globalization.LocaleIdentifier.TryParseBcp47
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_TryParseBcp47_
+  commentId: Overload:Sepia.Globalization.LocaleIdentifier.TryParseBcp47
+  fullName: Sepia.Globalization.LocaleIdentifier.TryParseBcp47
   nameWithType: LocaleIdentifier.TryParseBcp47
-- uid: Makaretu.Globalization.LocaleIdentifier.UnicodeExtension
+- uid: Sepia.Globalization.LocaleIdentifier.UnicodeExtension
   name: UnicodeExtension
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_UnicodeExtension
-  commentId: P:Makaretu.Globalization.LocaleIdentifier.UnicodeExtension
-  fullName: Makaretu.Globalization.LocaleIdentifier.UnicodeExtension
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_UnicodeExtension
+  commentId: P:Sepia.Globalization.LocaleIdentifier.UnicodeExtension
+  fullName: Sepia.Globalization.LocaleIdentifier.UnicodeExtension
   nameWithType: LocaleIdentifier.UnicodeExtension
-- uid: Makaretu.Globalization.LocaleIdentifier.UnicodeExtension*
+- uid: Sepia.Globalization.LocaleIdentifier.UnicodeExtension*
   name: UnicodeExtension
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_UnicodeExtension_
-  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.UnicodeExtension
-  fullName: Makaretu.Globalization.LocaleIdentifier.UnicodeExtension
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_UnicodeExtension_
+  commentId: Overload:Sepia.Globalization.LocaleIdentifier.UnicodeExtension
+  fullName: Sepia.Globalization.LocaleIdentifier.UnicodeExtension
   nameWithType: LocaleIdentifier.UnicodeExtension
-- uid: Makaretu.Globalization.LocaleIdentifier.Variants
+- uid: Sepia.Globalization.LocaleIdentifier.Variants
   name: Variants
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Variants
-  commentId: P:Makaretu.Globalization.LocaleIdentifier.Variants
-  fullName: Makaretu.Globalization.LocaleIdentifier.Variants
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Variants
+  commentId: P:Sepia.Globalization.LocaleIdentifier.Variants
+  fullName: Sepia.Globalization.LocaleIdentifier.Variants
   nameWithType: LocaleIdentifier.Variants
-- uid: Makaretu.Globalization.LocaleIdentifier.Variants*
+- uid: Sepia.Globalization.LocaleIdentifier.Variants*
   name: Variants
-  href: api/Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_Variants_
-  commentId: Overload:Makaretu.Globalization.LocaleIdentifier.Variants
-  fullName: Makaretu.Globalization.LocaleIdentifier.Variants
+  href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Variants_
+  commentId: Overload:Sepia.Globalization.LocaleIdentifier.Variants
+  fullName: Sepia.Globalization.LocaleIdentifier.Variants
   nameWithType: LocaleIdentifier.Variants
-- uid: Makaretu.Globalization.Numbers
-  name: Makaretu.Globalization.Numbers
-  href: api/Makaretu.Globalization.Numbers.html
-  commentId: N:Makaretu.Globalization.Numbers
-  fullName: Makaretu.Globalization.Numbers
-  nameWithType: Makaretu.Globalization.Numbers
-- uid: Makaretu.Globalization.Numbers.INumberFormatter
+- uid: Sepia.Globalization.Numbers
+  name: Sepia.Globalization.Numbers
+  href: api/Sepia.Globalization.Numbers.html
+  commentId: N:Sepia.Globalization.Numbers
+  fullName: Sepia.Globalization.Numbers
+  nameWithType: Sepia.Globalization.Numbers
+- uid: Sepia.Globalization.Numbers.INumberFormatter
   name: INumberFormatter
-  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html
-  commentId: T:Makaretu.Globalization.Numbers.INumberFormatter
-  fullName: Makaretu.Globalization.Numbers.INumberFormatter
+  href: api/Sepia.Globalization.Numbers.INumberFormatter.html
+  commentId: T:Sepia.Globalization.Numbers.INumberFormatter
+  fullName: Sepia.Globalization.Numbers.INumberFormatter
   nameWithType: INumberFormatter
-- uid: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Decimal)
+- uid: Sepia.Globalization.Numbers.INumberFormatter.Format(System.Decimal)
   name: Format(Decimal)
-  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_Format_System_Decimal_
-  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Decimal)
-  fullName: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Decimal)
+  href: api/Sepia.Globalization.Numbers.INumberFormatter.html#Sepia_Globalization_Numbers_INumberFormatter_Format_System_Decimal_
+  commentId: M:Sepia.Globalization.Numbers.INumberFormatter.Format(System.Decimal)
+  fullName: Sepia.Globalization.Numbers.INumberFormatter.Format(System.Decimal)
   nameWithType: INumberFormatter.Format(Decimal)
-- uid: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Decimal,System.String)
+- uid: Sepia.Globalization.Numbers.INumberFormatter.Format(System.Decimal,System.String)
   name: Format(Decimal, String)
-  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_Format_System_Decimal_System_String_
-  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Decimal,System.String)
-  fullName: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Decimal, System.String)
+  href: api/Sepia.Globalization.Numbers.INumberFormatter.html#Sepia_Globalization_Numbers_INumberFormatter_Format_System_Decimal_System_String_
+  commentId: M:Sepia.Globalization.Numbers.INumberFormatter.Format(System.Decimal,System.String)
+  fullName: Sepia.Globalization.Numbers.INumberFormatter.Format(System.Decimal, System.String)
   nameWithType: INumberFormatter.Format(Decimal, String)
-- uid: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Double)
+- uid: Sepia.Globalization.Numbers.INumberFormatter.Format(System.Double)
   name: Format(Double)
-  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_Format_System_Double_
-  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Double)
-  fullName: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Double)
+  href: api/Sepia.Globalization.Numbers.INumberFormatter.html#Sepia_Globalization_Numbers_INumberFormatter_Format_System_Double_
+  commentId: M:Sepia.Globalization.Numbers.INumberFormatter.Format(System.Double)
+  fullName: Sepia.Globalization.Numbers.INumberFormatter.Format(System.Double)
   nameWithType: INumberFormatter.Format(Double)
-- uid: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Double,System.String)
+- uid: Sepia.Globalization.Numbers.INumberFormatter.Format(System.Double,System.String)
   name: Format(Double, String)
-  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_Format_System_Double_System_String_
-  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Double,System.String)
-  fullName: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Double, System.String)
+  href: api/Sepia.Globalization.Numbers.INumberFormatter.html#Sepia_Globalization_Numbers_INumberFormatter_Format_System_Double_System_String_
+  commentId: M:Sepia.Globalization.Numbers.INumberFormatter.Format(System.Double,System.String)
+  fullName: Sepia.Globalization.Numbers.INumberFormatter.Format(System.Double, System.String)
   nameWithType: INumberFormatter.Format(Double, String)
-- uid: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Int64)
+- uid: Sepia.Globalization.Numbers.INumberFormatter.Format(System.Int64)
   name: Format(Int64)
-  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_Format_System_Int64_
-  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Int64)
-  fullName: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Int64)
+  href: api/Sepia.Globalization.Numbers.INumberFormatter.html#Sepia_Globalization_Numbers_INumberFormatter_Format_System_Int64_
+  commentId: M:Sepia.Globalization.Numbers.INumberFormatter.Format(System.Int64)
+  fullName: Sepia.Globalization.Numbers.INumberFormatter.Format(System.Int64)
   nameWithType: INumberFormatter.Format(Int64)
-- uid: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Int64,System.String)
+- uid: Sepia.Globalization.Numbers.INumberFormatter.Format(System.Int64,System.String)
   name: Format(Int64, String)
-  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_Format_System_Int64_System_String_
-  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Int64,System.String)
-  fullName: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Int64, System.String)
+  href: api/Sepia.Globalization.Numbers.INumberFormatter.html#Sepia_Globalization_Numbers_INumberFormatter_Format_System_Int64_System_String_
+  commentId: M:Sepia.Globalization.Numbers.INumberFormatter.Format(System.Int64,System.String)
+  fullName: Sepia.Globalization.Numbers.INumberFormatter.Format(System.Int64, System.String)
   nameWithType: INumberFormatter.Format(Int64, String)
-- uid: Makaretu.Globalization.Numbers.INumberFormatter.Format*
+- uid: Sepia.Globalization.Numbers.INumberFormatter.Format*
   name: Format
-  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_Format_
-  commentId: Overload:Makaretu.Globalization.Numbers.INumberFormatter.Format
-  fullName: Makaretu.Globalization.Numbers.INumberFormatter.Format
+  href: api/Sepia.Globalization.Numbers.INumberFormatter.html#Sepia_Globalization_Numbers_INumberFormatter_Format_
+  commentId: Overload:Sepia.Globalization.Numbers.INumberFormatter.Format
+  fullName: Sepia.Globalization.Numbers.INumberFormatter.Format
   nameWithType: INumberFormatter.Format
-- uid: Makaretu.Globalization.Numbers.NumberFormatter
+- uid: Sepia.Globalization.Numbers.NumberFormatter
   name: NumberFormatter
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html
-  commentId: T:Makaretu.Globalization.Numbers.NumberFormatter
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter
+  href: api/Sepia.Globalization.Numbers.NumberFormatter.html
+  commentId: T:Sepia.Globalization.Numbers.NumberFormatter
+  fullName: Sepia.Globalization.Numbers.NumberFormatter
   nameWithType: NumberFormatter
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.Create(Makaretu.Globalization.Locale,Makaretu.Globalization.Numbers.NumberOptions)
+- uid: Sepia.Globalization.Numbers.NumberFormatter.Create(Sepia.Globalization.Locale,Sepia.Globalization.Numbers.NumberOptions)
   name: Create(Locale, NumberOptions)
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Create_Makaretu_Globalization_Locale_Makaretu_Globalization_Numbers_NumberOptions_
-  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.Create(Makaretu.Globalization.Locale,Makaretu.Globalization.Numbers.NumberOptions)
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Create(Makaretu.Globalization.Locale, Makaretu.Globalization.Numbers.NumberOptions)
+  href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Create_Sepia_Globalization_Locale_Sepia_Globalization_Numbers_NumberOptions_
+  commentId: M:Sepia.Globalization.Numbers.NumberFormatter.Create(Sepia.Globalization.Locale,Sepia.Globalization.Numbers.NumberOptions)
+  fullName: Sepia.Globalization.Numbers.NumberFormatter.Create(Sepia.Globalization.Locale, Sepia.Globalization.Numbers.NumberOptions)
   nameWithType: NumberFormatter.Create(Locale, NumberOptions)
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.Create*
+- uid: Sepia.Globalization.Numbers.NumberFormatter.Create*
   name: Create
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Create_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberFormatter.Create
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Create
+  href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Create_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberFormatter.Create
+  fullName: Sepia.Globalization.Numbers.NumberFormatter.Create
   nameWithType: NumberFormatter.Create
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Decimal)
+- uid: Sepia.Globalization.Numbers.NumberFormatter.Format(System.Decimal)
   name: Format(Decimal)
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Format_System_Decimal_
-  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Decimal)
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Decimal)
+  href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Format_System_Decimal_
+  commentId: M:Sepia.Globalization.Numbers.NumberFormatter.Format(System.Decimal)
+  fullName: Sepia.Globalization.Numbers.NumberFormatter.Format(System.Decimal)
   nameWithType: NumberFormatter.Format(Decimal)
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Decimal,System.String)
+- uid: Sepia.Globalization.Numbers.NumberFormatter.Format(System.Decimal,System.String)
   name: Format(Decimal, String)
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Format_System_Decimal_System_String_
-  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Decimal,System.String)
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Decimal, System.String)
+  href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Format_System_Decimal_System_String_
+  commentId: M:Sepia.Globalization.Numbers.NumberFormatter.Format(System.Decimal,System.String)
+  fullName: Sepia.Globalization.Numbers.NumberFormatter.Format(System.Decimal, System.String)
   nameWithType: NumberFormatter.Format(Decimal, String)
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Double)
+- uid: Sepia.Globalization.Numbers.NumberFormatter.Format(System.Double)
   name: Format(Double)
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Format_System_Double_
-  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Double)
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Double)
+  href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Format_System_Double_
+  commentId: M:Sepia.Globalization.Numbers.NumberFormatter.Format(System.Double)
+  fullName: Sepia.Globalization.Numbers.NumberFormatter.Format(System.Double)
   nameWithType: NumberFormatter.Format(Double)
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Double,System.String)
+- uid: Sepia.Globalization.Numbers.NumberFormatter.Format(System.Double,System.String)
   name: Format(Double, String)
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Format_System_Double_System_String_
-  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Double,System.String)
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Double, System.String)
+  href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Format_System_Double_System_String_
+  commentId: M:Sepia.Globalization.Numbers.NumberFormatter.Format(System.Double,System.String)
+  fullName: Sepia.Globalization.Numbers.NumberFormatter.Format(System.Double, System.String)
   nameWithType: NumberFormatter.Format(Double, String)
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Int64)
+- uid: Sepia.Globalization.Numbers.NumberFormatter.Format(System.Int64)
   name: Format(Int64)
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Format_System_Int64_
-  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Int64)
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Int64)
+  href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Format_System_Int64_
+  commentId: M:Sepia.Globalization.Numbers.NumberFormatter.Format(System.Int64)
+  fullName: Sepia.Globalization.Numbers.NumberFormatter.Format(System.Int64)
   nameWithType: NumberFormatter.Format(Int64)
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Int64,System.String)
+- uid: Sepia.Globalization.Numbers.NumberFormatter.Format(System.Int64,System.String)
   name: Format(Int64, String)
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Format_System_Int64_System_String_
-  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Int64,System.String)
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Int64, System.String)
+  href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Format_System_Int64_System_String_
+  commentId: M:Sepia.Globalization.Numbers.NumberFormatter.Format(System.Int64,System.String)
+  fullName: Sepia.Globalization.Numbers.NumberFormatter.Format(System.Int64, System.String)
   nameWithType: NumberFormatter.Format(Int64, String)
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.Format*
+- uid: Sepia.Globalization.Numbers.NumberFormatter.Format*
   name: Format
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Format_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberFormatter.Format
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Format
+  href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Format_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberFormatter.Format
+  fullName: Sepia.Globalization.Numbers.NumberFormatter.Format
   nameWithType: NumberFormatter.Format
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.Locale
+- uid: Sepia.Globalization.Numbers.NumberFormatter.Locale
   name: Locale
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Locale
-  commentId: P:Makaretu.Globalization.Numbers.NumberFormatter.Locale
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Locale
+  href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Locale
+  commentId: P:Sepia.Globalization.Numbers.NumberFormatter.Locale
+  fullName: Sepia.Globalization.Numbers.NumberFormatter.Locale
   nameWithType: NumberFormatter.Locale
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.Locale*
+- uid: Sepia.Globalization.Numbers.NumberFormatter.Locale*
   name: Locale
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Locale_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberFormatter.Locale
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Locale
+  href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Locale_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberFormatter.Locale
+  fullName: Sepia.Globalization.Numbers.NumberFormatter.Locale
   nameWithType: NumberFormatter.Locale
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.NumberingSystem
+- uid: Sepia.Globalization.Numbers.NumberFormatter.NumberingSystem
   name: NumberingSystem
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_NumberingSystem
-  commentId: P:Makaretu.Globalization.Numbers.NumberFormatter.NumberingSystem
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.NumberingSystem
+  href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_NumberingSystem
+  commentId: P:Sepia.Globalization.Numbers.NumberFormatter.NumberingSystem
+  fullName: Sepia.Globalization.Numbers.NumberFormatter.NumberingSystem
   nameWithType: NumberFormatter.NumberingSystem
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.NumberingSystem*
+- uid: Sepia.Globalization.Numbers.NumberFormatter.NumberingSystem*
   name: NumberingSystem
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_NumberingSystem_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberFormatter.NumberingSystem
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.NumberingSystem
+  href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_NumberingSystem_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberFormatter.NumberingSystem
+  fullName: Sepia.Globalization.Numbers.NumberFormatter.NumberingSystem
   nameWithType: NumberFormatter.NumberingSystem
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.Options
+- uid: Sepia.Globalization.Numbers.NumberFormatter.Options
   name: Options
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Options
-  commentId: P:Makaretu.Globalization.Numbers.NumberFormatter.Options
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Options
+  href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Options
+  commentId: P:Sepia.Globalization.Numbers.NumberFormatter.Options
+  fullName: Sepia.Globalization.Numbers.NumberFormatter.Options
   nameWithType: NumberFormatter.Options
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.Options*
+- uid: Sepia.Globalization.Numbers.NumberFormatter.Options*
   name: Options
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Options_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberFormatter.Options
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Options
+  href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Options_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberFormatter.Options
+  fullName: Sepia.Globalization.Numbers.NumberFormatter.Options
   nameWithType: NumberFormatter.Options
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.Symbols
+- uid: Sepia.Globalization.Numbers.NumberFormatter.Symbols
   name: Symbols
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Symbols
-  commentId: P:Makaretu.Globalization.Numbers.NumberFormatter.Symbols
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Symbols
+  href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Symbols
+  commentId: P:Sepia.Globalization.Numbers.NumberFormatter.Symbols
+  fullName: Sepia.Globalization.Numbers.NumberFormatter.Symbols
   nameWithType: NumberFormatter.Symbols
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.Symbols*
+- uid: Sepia.Globalization.Numbers.NumberFormatter.Symbols*
   name: Symbols
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Symbols_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberFormatter.Symbols
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Symbols
+  href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Symbols_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberFormatter.Symbols
+  fullName: Sepia.Globalization.Numbers.NumberFormatter.Symbols
   nameWithType: NumberFormatter.Symbols
-- uid: Makaretu.Globalization.Numbers.NumberingSystem
+- uid: Sepia.Globalization.Numbers.NumberingSystem
   name: NumberingSystem
-  href: api/Makaretu.Globalization.Numbers.NumberingSystem.html
-  commentId: T:Makaretu.Globalization.Numbers.NumberingSystem
-  fullName: Makaretu.Globalization.Numbers.NumberingSystem
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html
+  commentId: T:Sepia.Globalization.Numbers.NumberingSystem
+  fullName: Sepia.Globalization.Numbers.NumberingSystem
   nameWithType: NumberingSystem
-- uid: Makaretu.Globalization.Numbers.NumberingSystem.Create(Makaretu.Globalization.Locale)
+- uid: Sepia.Globalization.Numbers.NumberingSystem.Create(Sepia.Globalization.Locale)
   name: Create(Locale)
-  href: api/Makaretu.Globalization.Numbers.NumberingSystem.html#Makaretu_Globalization_Numbers_NumberingSystem_Create_Makaretu_Globalization_Locale_
-  commentId: M:Makaretu.Globalization.Numbers.NumberingSystem.Create(Makaretu.Globalization.Locale)
-  fullName: Makaretu.Globalization.Numbers.NumberingSystem.Create(Makaretu.Globalization.Locale)
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Create_Sepia_Globalization_Locale_
+  commentId: M:Sepia.Globalization.Numbers.NumberingSystem.Create(Sepia.Globalization.Locale)
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.Create(Sepia.Globalization.Locale)
   nameWithType: NumberingSystem.Create(Locale)
-- uid: Makaretu.Globalization.Numbers.NumberingSystem.Create(System.String)
+- uid: Sepia.Globalization.Numbers.NumberingSystem.Create(System.String)
   name: Create(String)
-  href: api/Makaretu.Globalization.Numbers.NumberingSystem.html#Makaretu_Globalization_Numbers_NumberingSystem_Create_System_String_
-  commentId: M:Makaretu.Globalization.Numbers.NumberingSystem.Create(System.String)
-  fullName: Makaretu.Globalization.Numbers.NumberingSystem.Create(System.String)
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Create_System_String_
+  commentId: M:Sepia.Globalization.Numbers.NumberingSystem.Create(System.String)
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.Create(System.String)
   nameWithType: NumberingSystem.Create(String)
-- uid: Makaretu.Globalization.Numbers.NumberingSystem.Create*
+- uid: Sepia.Globalization.Numbers.NumberingSystem.Create*
   name: Create
-  href: api/Makaretu.Globalization.Numbers.NumberingSystem.html#Makaretu_Globalization_Numbers_NumberingSystem_Create_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberingSystem.Create
-  fullName: Makaretu.Globalization.Numbers.NumberingSystem.Create
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Create_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.Create
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.Create
   nameWithType: NumberingSystem.Create
-- uid: Makaretu.Globalization.Numbers.NumberingSystem.Digits
+- uid: Sepia.Globalization.Numbers.NumberingSystem.Digits
   name: Digits
-  href: api/Makaretu.Globalization.Numbers.NumberingSystem.html#Makaretu_Globalization_Numbers_NumberingSystem_Digits
-  commentId: P:Makaretu.Globalization.Numbers.NumberingSystem.Digits
-  fullName: Makaretu.Globalization.Numbers.NumberingSystem.Digits
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Digits
+  commentId: P:Sepia.Globalization.Numbers.NumberingSystem.Digits
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.Digits
   nameWithType: NumberingSystem.Digits
-- uid: Makaretu.Globalization.Numbers.NumberingSystem.Digits*
+- uid: Sepia.Globalization.Numbers.NumberingSystem.Digits*
   name: Digits
-  href: api/Makaretu.Globalization.Numbers.NumberingSystem.html#Makaretu_Globalization_Numbers_NumberingSystem_Digits_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberingSystem.Digits
-  fullName: Makaretu.Globalization.Numbers.NumberingSystem.Digits
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Digits_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.Digits
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.Digits
   nameWithType: NumberingSystem.Digits
-- uid: Makaretu.Globalization.Numbers.NumberingSystem.Id
+- uid: Sepia.Globalization.Numbers.NumberingSystem.Id
   name: Id
-  href: api/Makaretu.Globalization.Numbers.NumberingSystem.html#Makaretu_Globalization_Numbers_NumberingSystem_Id
-  commentId: P:Makaretu.Globalization.Numbers.NumberingSystem.Id
-  fullName: Makaretu.Globalization.Numbers.NumberingSystem.Id
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Id
+  commentId: P:Sepia.Globalization.Numbers.NumberingSystem.Id
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.Id
   nameWithType: NumberingSystem.Id
-- uid: Makaretu.Globalization.Numbers.NumberingSystem.Id*
+- uid: Sepia.Globalization.Numbers.NumberingSystem.Id*
   name: Id
-  href: api/Makaretu.Globalization.Numbers.NumberingSystem.html#Makaretu_Globalization_Numbers_NumberingSystem_Id_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberingSystem.Id
-  fullName: Makaretu.Globalization.Numbers.NumberingSystem.Id
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Id_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.Id
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.Id
   nameWithType: NumberingSystem.Id
-- uid: Makaretu.Globalization.Numbers.NumberingSystem.IsAlgorithmic
+- uid: Sepia.Globalization.Numbers.NumberingSystem.IsAlgorithmic
   name: IsAlgorithmic
-  href: api/Makaretu.Globalization.Numbers.NumberingSystem.html#Makaretu_Globalization_Numbers_NumberingSystem_IsAlgorithmic
-  commentId: P:Makaretu.Globalization.Numbers.NumberingSystem.IsAlgorithmic
-  fullName: Makaretu.Globalization.Numbers.NumberingSystem.IsAlgorithmic
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_IsAlgorithmic
+  commentId: P:Sepia.Globalization.Numbers.NumberingSystem.IsAlgorithmic
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.IsAlgorithmic
   nameWithType: NumberingSystem.IsAlgorithmic
-- uid: Makaretu.Globalization.Numbers.NumberingSystem.IsAlgorithmic*
+- uid: Sepia.Globalization.Numbers.NumberingSystem.IsAlgorithmic*
   name: IsAlgorithmic
-  href: api/Makaretu.Globalization.Numbers.NumberingSystem.html#Makaretu_Globalization_Numbers_NumberingSystem_IsAlgorithmic_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberingSystem.IsAlgorithmic
-  fullName: Makaretu.Globalization.Numbers.NumberingSystem.IsAlgorithmic
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_IsAlgorithmic_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.IsAlgorithmic
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.IsAlgorithmic
   nameWithType: NumberingSystem.IsAlgorithmic
-- uid: Makaretu.Globalization.Numbers.NumberingSystem.IsNumeric
+- uid: Sepia.Globalization.Numbers.NumberingSystem.IsNumeric
   name: IsNumeric
-  href: api/Makaretu.Globalization.Numbers.NumberingSystem.html#Makaretu_Globalization_Numbers_NumberingSystem_IsNumeric
-  commentId: P:Makaretu.Globalization.Numbers.NumberingSystem.IsNumeric
-  fullName: Makaretu.Globalization.Numbers.NumberingSystem.IsNumeric
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_IsNumeric
+  commentId: P:Sepia.Globalization.Numbers.NumberingSystem.IsNumeric
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.IsNumeric
   nameWithType: NumberingSystem.IsNumeric
-- uid: Makaretu.Globalization.Numbers.NumberingSystem.IsNumeric*
+- uid: Sepia.Globalization.Numbers.NumberingSystem.IsNumeric*
   name: IsNumeric
-  href: api/Makaretu.Globalization.Numbers.NumberingSystem.html#Makaretu_Globalization_Numbers_NumberingSystem_IsNumeric_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberingSystem.IsNumeric
-  fullName: Makaretu.Globalization.Numbers.NumberingSystem.IsNumeric
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_IsNumeric_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.IsNumeric
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.IsNumeric
   nameWithType: NumberingSystem.IsNumeric
-- uid: Makaretu.Globalization.Numbers.NumberingSystem.Rules
+- uid: Sepia.Globalization.Numbers.NumberingSystem.Rules
   name: Rules
-  href: api/Makaretu.Globalization.Numbers.NumberingSystem.html#Makaretu_Globalization_Numbers_NumberingSystem_Rules
-  commentId: P:Makaretu.Globalization.Numbers.NumberingSystem.Rules
-  fullName: Makaretu.Globalization.Numbers.NumberingSystem.Rules
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Rules
+  commentId: P:Sepia.Globalization.Numbers.NumberingSystem.Rules
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.Rules
   nameWithType: NumberingSystem.Rules
-- uid: Makaretu.Globalization.Numbers.NumberingSystem.Rules*
+- uid: Sepia.Globalization.Numbers.NumberingSystem.Rules*
   name: Rules
-  href: api/Makaretu.Globalization.Numbers.NumberingSystem.html#Makaretu_Globalization_Numbers_NumberingSystem_Rules_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberingSystem.Rules
-  fullName: Makaretu.Globalization.Numbers.NumberingSystem.Rules
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Rules_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.Rules
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.Rules
   nameWithType: NumberingSystem.Rules
-- uid: Makaretu.Globalization.Numbers.NumberingSystem.Type
+- uid: Sepia.Globalization.Numbers.NumberingSystem.Type
   name: Type
-  href: api/Makaretu.Globalization.Numbers.NumberingSystem.html#Makaretu_Globalization_Numbers_NumberingSystem_Type
-  commentId: P:Makaretu.Globalization.Numbers.NumberingSystem.Type
-  fullName: Makaretu.Globalization.Numbers.NumberingSystem.Type
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Type
+  commentId: P:Sepia.Globalization.Numbers.NumberingSystem.Type
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.Type
   nameWithType: NumberingSystem.Type
-- uid: Makaretu.Globalization.Numbers.NumberingSystem.Type*
+- uid: Sepia.Globalization.Numbers.NumberingSystem.Type*
   name: Type
-  href: api/Makaretu.Globalization.Numbers.NumberingSystem.html#Makaretu_Globalization_Numbers_NumberingSystem_Type_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberingSystem.Type
-  fullName: Makaretu.Globalization.Numbers.NumberingSystem.Type
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Type_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.Type
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.Type
   nameWithType: NumberingSystem.Type
-- uid: Makaretu.Globalization.Numbers.NumberOptions
+- uid: Sepia.Globalization.Numbers.NumberOptions
   name: NumberOptions
-  href: api/Makaretu.Globalization.Numbers.NumberOptions.html
-  commentId: T:Makaretu.Globalization.Numbers.NumberOptions
-  fullName: Makaretu.Globalization.Numbers.NumberOptions
+  href: api/Sepia.Globalization.Numbers.NumberOptions.html
+  commentId: T:Sepia.Globalization.Numbers.NumberOptions
+  fullName: Sepia.Globalization.Numbers.NumberOptions
   nameWithType: NumberOptions
-- uid: Makaretu.Globalization.Numbers.NumberOptions.Style
+- uid: Sepia.Globalization.Numbers.NumberOptions.Style
   name: Style
-  href: api/Makaretu.Globalization.Numbers.NumberOptions.html#Makaretu_Globalization_Numbers_NumberOptions_Style
-  commentId: P:Makaretu.Globalization.Numbers.NumberOptions.Style
-  fullName: Makaretu.Globalization.Numbers.NumberOptions.Style
+  href: api/Sepia.Globalization.Numbers.NumberOptions.html#Sepia_Globalization_Numbers_NumberOptions_Style
+  commentId: P:Sepia.Globalization.Numbers.NumberOptions.Style
+  fullName: Sepia.Globalization.Numbers.NumberOptions.Style
   nameWithType: NumberOptions.Style
-- uid: Makaretu.Globalization.Numbers.NumberOptions.Style*
+- uid: Sepia.Globalization.Numbers.NumberOptions.Style*
   name: Style
-  href: api/Makaretu.Globalization.Numbers.NumberOptions.html#Makaretu_Globalization_Numbers_NumberOptions_Style_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberOptions.Style
-  fullName: Makaretu.Globalization.Numbers.NumberOptions.Style
+  href: api/Sepia.Globalization.Numbers.NumberOptions.html#Sepia_Globalization_Numbers_NumberOptions_Style_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberOptions.Style
+  fullName: Sepia.Globalization.Numbers.NumberOptions.Style
   nameWithType: NumberOptions.Style
-- uid: Makaretu.Globalization.Numbers.NumberOptions.useGrouping
+- uid: Sepia.Globalization.Numbers.NumberOptions.useGrouping
   name: useGrouping
-  href: api/Makaretu.Globalization.Numbers.NumberOptions.html#Makaretu_Globalization_Numbers_NumberOptions_useGrouping
-  commentId: P:Makaretu.Globalization.Numbers.NumberOptions.useGrouping
-  fullName: Makaretu.Globalization.Numbers.NumberOptions.useGrouping
+  href: api/Sepia.Globalization.Numbers.NumberOptions.html#Sepia_Globalization_Numbers_NumberOptions_useGrouping
+  commentId: P:Sepia.Globalization.Numbers.NumberOptions.useGrouping
+  fullName: Sepia.Globalization.Numbers.NumberOptions.useGrouping
   nameWithType: NumberOptions.useGrouping
-- uid: Makaretu.Globalization.Numbers.NumberOptions.useGrouping*
+- uid: Sepia.Globalization.Numbers.NumberOptions.useGrouping*
   name: useGrouping
-  href: api/Makaretu.Globalization.Numbers.NumberOptions.html#Makaretu_Globalization_Numbers_NumberOptions_useGrouping_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberOptions.useGrouping
-  fullName: Makaretu.Globalization.Numbers.NumberOptions.useGrouping
+  href: api/Sepia.Globalization.Numbers.NumberOptions.html#Sepia_Globalization_Numbers_NumberOptions_useGrouping_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberOptions.useGrouping
+  fullName: Sepia.Globalization.Numbers.NumberOptions.useGrouping
   nameWithType: NumberOptions.useGrouping
-- uid: Makaretu.Globalization.Numbers.NumberStyle
+- uid: Sepia.Globalization.Numbers.NumberStyle
   name: NumberStyle
-  href: api/Makaretu.Globalization.Numbers.NumberStyle.html
-  commentId: T:Makaretu.Globalization.Numbers.NumberStyle
-  fullName: Makaretu.Globalization.Numbers.NumberStyle
+  href: api/Sepia.Globalization.Numbers.NumberStyle.html
+  commentId: T:Sepia.Globalization.Numbers.NumberStyle
+  fullName: Sepia.Globalization.Numbers.NumberStyle
   nameWithType: NumberStyle
-- uid: Makaretu.Globalization.Numbers.NumberStyle.CurrencyAccounting
+- uid: Sepia.Globalization.Numbers.NumberStyle.CurrencyAccounting
   name: CurrencyAccounting
-  href: api/Makaretu.Globalization.Numbers.NumberStyle.html#Makaretu_Globalization_Numbers_NumberStyle_CurrencyAccounting
-  commentId: F:Makaretu.Globalization.Numbers.NumberStyle.CurrencyAccounting
-  fullName: Makaretu.Globalization.Numbers.NumberStyle.CurrencyAccounting
+  href: api/Sepia.Globalization.Numbers.NumberStyle.html#Sepia_Globalization_Numbers_NumberStyle_CurrencyAccounting
+  commentId: F:Sepia.Globalization.Numbers.NumberStyle.CurrencyAccounting
+  fullName: Sepia.Globalization.Numbers.NumberStyle.CurrencyAccounting
   nameWithType: NumberStyle.CurrencyAccounting
-- uid: Makaretu.Globalization.Numbers.NumberStyle.CurrencyStandard
+- uid: Sepia.Globalization.Numbers.NumberStyle.CurrencyStandard
   name: CurrencyStandard
-  href: api/Makaretu.Globalization.Numbers.NumberStyle.html#Makaretu_Globalization_Numbers_NumberStyle_CurrencyStandard
-  commentId: F:Makaretu.Globalization.Numbers.NumberStyle.CurrencyStandard
-  fullName: Makaretu.Globalization.Numbers.NumberStyle.CurrencyStandard
+  href: api/Sepia.Globalization.Numbers.NumberStyle.html#Sepia_Globalization_Numbers_NumberStyle_CurrencyStandard
+  commentId: F:Sepia.Globalization.Numbers.NumberStyle.CurrencyStandard
+  fullName: Sepia.Globalization.Numbers.NumberStyle.CurrencyStandard
   nameWithType: NumberStyle.CurrencyStandard
-- uid: Makaretu.Globalization.Numbers.NumberStyle.Decimal
+- uid: Sepia.Globalization.Numbers.NumberStyle.Decimal
   name: Decimal
-  href: api/Makaretu.Globalization.Numbers.NumberStyle.html#Makaretu_Globalization_Numbers_NumberStyle_Decimal
-  commentId: F:Makaretu.Globalization.Numbers.NumberStyle.Decimal
-  fullName: Makaretu.Globalization.Numbers.NumberStyle.Decimal
+  href: api/Sepia.Globalization.Numbers.NumberStyle.html#Sepia_Globalization_Numbers_NumberStyle_Decimal
+  commentId: F:Sepia.Globalization.Numbers.NumberStyle.Decimal
+  fullName: Sepia.Globalization.Numbers.NumberStyle.Decimal
   nameWithType: NumberStyle.Decimal
-- uid: Makaretu.Globalization.Numbers.NumberStyle.Percent
+- uid: Sepia.Globalization.Numbers.NumberStyle.Percent
   name: Percent
-  href: api/Makaretu.Globalization.Numbers.NumberStyle.html#Makaretu_Globalization_Numbers_NumberStyle_Percent
-  commentId: F:Makaretu.Globalization.Numbers.NumberStyle.Percent
-  fullName: Makaretu.Globalization.Numbers.NumberStyle.Percent
+  href: api/Sepia.Globalization.Numbers.NumberStyle.html#Sepia_Globalization_Numbers_NumberStyle_Percent
+  commentId: F:Sepia.Globalization.Numbers.NumberStyle.Percent
+  fullName: Sepia.Globalization.Numbers.NumberStyle.Percent
   nameWithType: NumberStyle.Percent
-- uid: Makaretu.Globalization.Numbers.NumberStyle.Scientific
+- uid: Sepia.Globalization.Numbers.NumberStyle.Scientific
   name: Scientific
-  href: api/Makaretu.Globalization.Numbers.NumberStyle.html#Makaretu_Globalization_Numbers_NumberStyle_Scientific
-  commentId: F:Makaretu.Globalization.Numbers.NumberStyle.Scientific
-  fullName: Makaretu.Globalization.Numbers.NumberStyle.Scientific
+  href: api/Sepia.Globalization.Numbers.NumberStyle.html#Sepia_Globalization_Numbers_NumberStyle_Scientific
+  commentId: F:Sepia.Globalization.Numbers.NumberStyle.Scientific
+  fullName: Sepia.Globalization.Numbers.NumberStyle.Scientific
   nameWithType: NumberStyle.Scientific
-- uid: Makaretu.Globalization.Numbers.NumberSymbols
+- uid: Sepia.Globalization.Numbers.NumberSymbols
   name: NumberSymbols
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html
-  commentId: T:Makaretu.Globalization.Numbers.NumberSymbols
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html
+  commentId: T:Sepia.Globalization.Numbers.NumberSymbols
+  fullName: Sepia.Globalization.Numbers.NumberSymbols
   nameWithType: NumberSymbols
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.Create(Makaretu.Globalization.Locale)
+- uid: Sepia.Globalization.Numbers.NumberSymbols.Create(Sepia.Globalization.Locale)
   name: Create(Locale)
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_Create_Makaretu_Globalization_Locale_
-  commentId: M:Makaretu.Globalization.Numbers.NumberSymbols.Create(Makaretu.Globalization.Locale)
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.Create(Makaretu.Globalization.Locale)
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_Create_Sepia_Globalization_Locale_
+  commentId: M:Sepia.Globalization.Numbers.NumberSymbols.Create(Sepia.Globalization.Locale)
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.Create(Sepia.Globalization.Locale)
   nameWithType: NumberSymbols.Create(Locale)
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.Create*
+- uid: Sepia.Globalization.Numbers.NumberSymbols.Create*
   name: Create
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_Create_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberSymbols.Create
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.Create
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_Create_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.Create
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.Create
   nameWithType: NumberSymbols.Create
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.CurrencyDecimal
+- uid: Sepia.Globalization.Numbers.NumberSymbols.CurrencyDecimal
   name: CurrencyDecimal
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_CurrencyDecimal
-  commentId: P:Makaretu.Globalization.Numbers.NumberSymbols.CurrencyDecimal
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.CurrencyDecimal
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_CurrencyDecimal
+  commentId: P:Sepia.Globalization.Numbers.NumberSymbols.CurrencyDecimal
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.CurrencyDecimal
   nameWithType: NumberSymbols.CurrencyDecimal
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.CurrencyDecimal*
+- uid: Sepia.Globalization.Numbers.NumberSymbols.CurrencyDecimal*
   name: CurrencyDecimal
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_CurrencyDecimal_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberSymbols.CurrencyDecimal
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.CurrencyDecimal
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_CurrencyDecimal_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.CurrencyDecimal
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.CurrencyDecimal
   nameWithType: NumberSymbols.CurrencyDecimal
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.CurrencyGroup
+- uid: Sepia.Globalization.Numbers.NumberSymbols.CurrencyGroup
   name: CurrencyGroup
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_CurrencyGroup
-  commentId: P:Makaretu.Globalization.Numbers.NumberSymbols.CurrencyGroup
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.CurrencyGroup
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_CurrencyGroup
+  commentId: P:Sepia.Globalization.Numbers.NumberSymbols.CurrencyGroup
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.CurrencyGroup
   nameWithType: NumberSymbols.CurrencyGroup
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.CurrencyGroup*
+- uid: Sepia.Globalization.Numbers.NumberSymbols.CurrencyGroup*
   name: CurrencyGroup
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_CurrencyGroup_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberSymbols.CurrencyGroup
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.CurrencyGroup
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_CurrencyGroup_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.CurrencyGroup
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.CurrencyGroup
   nameWithType: NumberSymbols.CurrencyGroup
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.Decimal
+- uid: Sepia.Globalization.Numbers.NumberSymbols.Decimal
   name: Decimal
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_Decimal
-  commentId: P:Makaretu.Globalization.Numbers.NumberSymbols.Decimal
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.Decimal
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_Decimal
+  commentId: P:Sepia.Globalization.Numbers.NumberSymbols.Decimal
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.Decimal
   nameWithType: NumberSymbols.Decimal
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.Decimal*
+- uid: Sepia.Globalization.Numbers.NumberSymbols.Decimal*
   name: Decimal
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_Decimal_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberSymbols.Decimal
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.Decimal
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_Decimal_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.Decimal
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.Decimal
   nameWithType: NumberSymbols.Decimal
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.Exponential
+- uid: Sepia.Globalization.Numbers.NumberSymbols.Exponential
   name: Exponential
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_Exponential
-  commentId: P:Makaretu.Globalization.Numbers.NumberSymbols.Exponential
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.Exponential
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_Exponential
+  commentId: P:Sepia.Globalization.Numbers.NumberSymbols.Exponential
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.Exponential
   nameWithType: NumberSymbols.Exponential
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.Exponential*
+- uid: Sepia.Globalization.Numbers.NumberSymbols.Exponential*
   name: Exponential
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_Exponential_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberSymbols.Exponential
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.Exponential
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_Exponential_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.Exponential
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.Exponential
   nameWithType: NumberSymbols.Exponential
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.Group
+- uid: Sepia.Globalization.Numbers.NumberSymbols.Group
   name: Group
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_Group
-  commentId: P:Makaretu.Globalization.Numbers.NumberSymbols.Group
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.Group
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_Group
+  commentId: P:Sepia.Globalization.Numbers.NumberSymbols.Group
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.Group
   nameWithType: NumberSymbols.Group
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.Group*
+- uid: Sepia.Globalization.Numbers.NumberSymbols.Group*
   name: Group
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_Group_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberSymbols.Group
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.Group
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_Group_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.Group
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.Group
   nameWithType: NumberSymbols.Group
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.Infinity
+- uid: Sepia.Globalization.Numbers.NumberSymbols.Infinity
   name: Infinity
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_Infinity
-  commentId: P:Makaretu.Globalization.Numbers.NumberSymbols.Infinity
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.Infinity
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_Infinity
+  commentId: P:Sepia.Globalization.Numbers.NumberSymbols.Infinity
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.Infinity
   nameWithType: NumberSymbols.Infinity
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.Infinity*
+- uid: Sepia.Globalization.Numbers.NumberSymbols.Infinity*
   name: Infinity
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_Infinity_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberSymbols.Infinity
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.Infinity
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_Infinity_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.Infinity
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.Infinity
   nameWithType: NumberSymbols.Infinity
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.List
+- uid: Sepia.Globalization.Numbers.NumberSymbols.List
   name: List
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_List
-  commentId: P:Makaretu.Globalization.Numbers.NumberSymbols.List
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.List
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_List
+  commentId: P:Sepia.Globalization.Numbers.NumberSymbols.List
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.List
   nameWithType: NumberSymbols.List
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.List*
+- uid: Sepia.Globalization.Numbers.NumberSymbols.List*
   name: List
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_List_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberSymbols.List
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.List
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_List_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.List
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.List
   nameWithType: NumberSymbols.List
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.MinusSign
+- uid: Sepia.Globalization.Numbers.NumberSymbols.MinusSign
   name: MinusSign
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_MinusSign
-  commentId: P:Makaretu.Globalization.Numbers.NumberSymbols.MinusSign
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.MinusSign
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_MinusSign
+  commentId: P:Sepia.Globalization.Numbers.NumberSymbols.MinusSign
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.MinusSign
   nameWithType: NumberSymbols.MinusSign
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.MinusSign*
+- uid: Sepia.Globalization.Numbers.NumberSymbols.MinusSign*
   name: MinusSign
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_MinusSign_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberSymbols.MinusSign
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.MinusSign
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_MinusSign_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.MinusSign
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.MinusSign
   nameWithType: NumberSymbols.MinusSign
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.NotANumber
+- uid: Sepia.Globalization.Numbers.NumberSymbols.NotANumber
   name: NotANumber
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_NotANumber
-  commentId: P:Makaretu.Globalization.Numbers.NumberSymbols.NotANumber
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.NotANumber
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_NotANumber
+  commentId: P:Sepia.Globalization.Numbers.NumberSymbols.NotANumber
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.NotANumber
   nameWithType: NumberSymbols.NotANumber
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.NotANumber*
+- uid: Sepia.Globalization.Numbers.NumberSymbols.NotANumber*
   name: NotANumber
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_NotANumber_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberSymbols.NotANumber
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.NotANumber
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_NotANumber_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.NotANumber
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.NotANumber
   nameWithType: NumberSymbols.NotANumber
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.PercentSign
+- uid: Sepia.Globalization.Numbers.NumberSymbols.PercentSign
   name: PercentSign
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_PercentSign
-  commentId: P:Makaretu.Globalization.Numbers.NumberSymbols.PercentSign
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.PercentSign
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_PercentSign
+  commentId: P:Sepia.Globalization.Numbers.NumberSymbols.PercentSign
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.PercentSign
   nameWithType: NumberSymbols.PercentSign
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.PercentSign*
+- uid: Sepia.Globalization.Numbers.NumberSymbols.PercentSign*
   name: PercentSign
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_PercentSign_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberSymbols.PercentSign
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.PercentSign
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_PercentSign_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.PercentSign
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.PercentSign
   nameWithType: NumberSymbols.PercentSign
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.PerMille
+- uid: Sepia.Globalization.Numbers.NumberSymbols.PerMille
   name: PerMille
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_PerMille
-  commentId: P:Makaretu.Globalization.Numbers.NumberSymbols.PerMille
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.PerMille
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_PerMille
+  commentId: P:Sepia.Globalization.Numbers.NumberSymbols.PerMille
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.PerMille
   nameWithType: NumberSymbols.PerMille
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.PerMille*
+- uid: Sepia.Globalization.Numbers.NumberSymbols.PerMille*
   name: PerMille
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_PerMille_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberSymbols.PerMille
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.PerMille
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_PerMille_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.PerMille
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.PerMille
   nameWithType: NumberSymbols.PerMille
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.PlusSign
+- uid: Sepia.Globalization.Numbers.NumberSymbols.PlusSign
   name: PlusSign
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_PlusSign
-  commentId: P:Makaretu.Globalization.Numbers.NumberSymbols.PlusSign
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.PlusSign
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_PlusSign
+  commentId: P:Sepia.Globalization.Numbers.NumberSymbols.PlusSign
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.PlusSign
   nameWithType: NumberSymbols.PlusSign
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.PlusSign*
+- uid: Sepia.Globalization.Numbers.NumberSymbols.PlusSign*
   name: PlusSign
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_PlusSign_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberSymbols.PlusSign
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.PlusSign
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_PlusSign_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.PlusSign
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.PlusSign
   nameWithType: NumberSymbols.PlusSign
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.SuperscriptingExponent
+- uid: Sepia.Globalization.Numbers.NumberSymbols.SuperscriptingExponent
   name: SuperscriptingExponent
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_SuperscriptingExponent
-  commentId: P:Makaretu.Globalization.Numbers.NumberSymbols.SuperscriptingExponent
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.SuperscriptingExponent
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_SuperscriptingExponent
+  commentId: P:Sepia.Globalization.Numbers.NumberSymbols.SuperscriptingExponent
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.SuperscriptingExponent
   nameWithType: NumberSymbols.SuperscriptingExponent
-- uid: Makaretu.Globalization.Numbers.NumberSymbols.SuperscriptingExponent*
+- uid: Sepia.Globalization.Numbers.NumberSymbols.SuperscriptingExponent*
   name: SuperscriptingExponent
-  href: api/Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_SuperscriptingExponent_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberSymbols.SuperscriptingExponent
-  fullName: Makaretu.Globalization.Numbers.NumberSymbols.SuperscriptingExponent
+  href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_SuperscriptingExponent_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.SuperscriptingExponent
+  fullName: Sepia.Globalization.Numbers.NumberSymbols.SuperscriptingExponent
   nameWithType: NumberSymbols.SuperscriptingExponent
-- uid: Makaretu.Globalization.StringRange
+- uid: Sepia.Globalization.StringRange
   name: StringRange
-  href: api/Makaretu.Globalization.StringRange.html
-  commentId: T:Makaretu.Globalization.StringRange
-  fullName: Makaretu.Globalization.StringRange
+  href: api/Sepia.Globalization.StringRange.html
+  commentId: T:Sepia.Globalization.StringRange
+  fullName: Sepia.Globalization.StringRange
   nameWithType: StringRange
-- uid: Makaretu.Globalization.StringRange.Enumerate(System.String,System.String)
+- uid: Sepia.Globalization.StringRange.Enumerate(System.String,System.String)
   name: Enumerate(String, String)
-  href: api/Makaretu.Globalization.StringRange.html#Makaretu_Globalization_StringRange_Enumerate_System_String_System_String_
-  commentId: M:Makaretu.Globalization.StringRange.Enumerate(System.String,System.String)
-  fullName: Makaretu.Globalization.StringRange.Enumerate(System.String, System.String)
+  href: api/Sepia.Globalization.StringRange.html#Sepia_Globalization_StringRange_Enumerate_System_String_System_String_
+  commentId: M:Sepia.Globalization.StringRange.Enumerate(System.String,System.String)
+  fullName: Sepia.Globalization.StringRange.Enumerate(System.String, System.String)
   nameWithType: StringRange.Enumerate(String, String)
-- uid: Makaretu.Globalization.StringRange.Enumerate*
+- uid: Sepia.Globalization.StringRange.Enumerate*
   name: Enumerate
-  href: api/Makaretu.Globalization.StringRange.html#Makaretu_Globalization_StringRange_Enumerate_
-  commentId: Overload:Makaretu.Globalization.StringRange.Enumerate
-  fullName: Makaretu.Globalization.StringRange.Enumerate
+  href: api/Sepia.Globalization.StringRange.html#Sepia_Globalization_StringRange_Enumerate_
+  commentId: Overload:Sepia.Globalization.StringRange.Enumerate
+  fullName: Sepia.Globalization.StringRange.Enumerate
   nameWithType: StringRange.Enumerate

@@ -5,11 +5,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class NumberOptions
-   | Makaretu Globalization </title>
+    <title>Class StringRange
+   | Sepia Globalization </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class NumberOptions
-   | Makaretu Globalization ">
+    <meta name="title" content="Class StringRange
+   | Sepia Globalization ">
     <meta name="generator" content="docfx 2.12.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -69,15 +69,15 @@
             <article class="content wrap" id="_content">
               
               
-              <h1 id="Makaretu_Globalization_Numbers_NumberOptions" data-uid="Makaretu.Globalization.Numbers.NumberOptions">Class NumberOptions
+              <h1 id="Sepia_Globalization_StringRange" data-uid="Sepia.Globalization.StringRange">Class StringRange
               </h1>
-              <div class="markdown level0 summary"><p>The options to apply when formating a number.</p>
+              <div class="markdown level0 summary"><p>A compact form for specifying a list of strings.</p>
 </div>
               <div class="markdown level0 conceptual"></div>
               <div class="inheritance">
                 <h5>Inheritance</h5>
                   <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
-                  <div class="level1"><span class="xref">NumberOptions</span></div>
+                  <div class="level1"><span class="xref">StringRange</span></div>
               </div>
               <div class="inheritedMembers">
                 <h5>Inherited Members</h5>
@@ -103,31 +103,55 @@
                   <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
                 </div>
               </div>
-              <h6><strong>Namespace</strong>:Makaretu.Globalization.Numbers</h6>
+              <h6><strong>Namespace</strong>:Sepia.Globalization</h6>
               <h6><strong>Assembly</strong>:Makaretu.Globalization.dll</h6>
-              <h5 id="Makaretu_Globalization_Numbers_NumberOptions_syntax">Syntax</h5>
+              <h5 id="Sepia_Globalization_StringRange_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public class NumberOptions</code></pre>
+                <pre><code class="lang-csharp hljs">public static class StringRange</code></pre>
               </div>
-              <h3 id="properties">Properties
+              <h3 id="methods">Methods
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Numbers_NumberOptions_Style.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Numbers.NumberOptions.Style%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Sepia_Globalization_StringRange_Enumerate_System_String_System_String_.md&amp;value=---%0Auid%3A%20Sepia.Globalization.StringRange.Enumerate(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Numbers/NumberOptions.cs/#L18">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/StringRange.cs/#L24">View Source</a>
               </span>
-              <a id="Makaretu_Globalization_Numbers_NumberOptions_Style_" data-uid="Makaretu.Globalization.Numbers.NumberOptions.Style*"></a>
-              <h4 id="Makaretu_Globalization_Numbers_NumberOptions_Style" data-uid="Makaretu.Globalization.Numbers.NumberOptions.Style">Style</h4>
-              <div class="markdown level1 summary"><p>The rules for formatting numeric quantities.</p>
+              <a id="Sepia_Globalization_StringRange_Enumerate_" data-uid="Sepia.Globalization.StringRange.Enumerate*"></a>
+              <h4 id="Sepia_Globalization_StringRange_Enumerate_System_String_System_String_" data-uid="Sepia.Globalization.StringRange.Enumerate(System.String,System.String)">Enumerate(String, String)</h4>
+              <div class="markdown level1 summary"><p>List the strings between X and Y.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public NumberStyle Style { get; set; }</code></pre>
+                <pre><code class="lang-csharp hljs">public static IEnumerable&lt;string&gt; Enumerate(string x, string y)</code></pre>
               </div>
-              <h5 class="propertyValue">Property Value</h5>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><span class="parametername">x</span></td>
+                    <td><p>The starting string, inclusive.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
+                    <td><span class="parametername">y</span></td>
+                    <td><p>The ending string, inclusive.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
               <table class="table table-bordered table-striped table-condensed">
                 <thead>
                   <tr>
@@ -137,48 +161,17 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="Makaretu.Globalization.Numbers.NumberStyle.html">NumberStyle</a></td>
-                    <td><p>Default value is <a class="xref" href="Makaretu.Globalization.Numbers.NumberStyle.html#Makaretu_Globalization_Numbers_NumberStyle_Decimal">Decimal</a>.</p>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">IEnumerable</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a>&gt;</td>
+                    <td><p>An inclusive sequence of strings between <span class="paramref">x</span>
+and <span class="paramref">y</span>.</p>
 </td>
                   </tr>
                 </tbody>
               </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Numbers_NumberOptions_useGrouping.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Numbers.NumberOptions.useGrouping%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Numbers/NumberOptions.cs/#L28">View Source</a>
-              </span>
-              <a id="Makaretu_Globalization_Numbers_NumberOptions_useGrouping_" data-uid="Makaretu.Globalization.Numbers.NumberOptions.useGrouping*"></a>
-              <h4 id="Makaretu_Globalization_Numbers_NumberOptions_useGrouping" data-uid="Makaretu.Globalization.Numbers.NumberOptions.useGrouping">useGrouping</h4>
-              <div class="markdown level1 summary"><p>Determines if grouping seperators should be used.</p>
-</div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public bool useGrouping { get; set; }</code></pre>
+              <h3 id="seealso">See Also</h3>
+              <div class="seealso">
+                  <div><span><a href="http://www.unicode.org/reports/tr35/tr35.html#String_Range">TR #35</a></span></div>
               </div>
-              <h5 class="propertyValue">Property Value</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.boolean(v=vs.110).aspx">Boolean</a></td>
-                    <td><p>Defaults to <strong>true</strong>.</p>
-</td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 id="Makaretu_Globalization_Numbers_NumberOptions_useGrouping_remarks">Remarks</h5>
-              <div class="markdown level1 remarks"><p>When <strong>true</strong>, clusters of integer digits are 
-seperated with the <a class="xref" href="Makaretu.Globalization.Numbers.NumberSymbols.html#Makaretu_Globalization_Numbers_NumberSymbols_Group">Group</a>.</p>
-</div>
                         </article>
           </div>
           
@@ -187,10 +180,10 @@ seperated with the <a class="xref" href="Makaretu.Globalization.Numbers.NumberSy
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Numbers_NumberOptions.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Numbers.NumberOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Sepia_Globalization_StringRange.md&amp;value=---%0Auid%3A%20Sepia.Globalization.StringRange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Numbers/NumberOptions.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/richardschneider/net-cldr/blob/master/src/StringRange.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
