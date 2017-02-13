@@ -106,6 +106,20 @@ namespace Sepia.Globalization.Numbers
         }
 
         [TestMethod]
+        public void Currency_Multiple_Grouping()
+        {
+            var locale = Locale.Create("en-IN");
+            var formatter = NumberFormatter.Create(locale, new NumberOptions { Style = NumberStyle.CurrencyStandard });
+            Assert.AreEqual("₹ 12,34,56,789.00", formatter.Format(123456789.00, "INR"));
+            Assert.AreEqual("-₹ 12,34,56,789.00", formatter.Format(-123456789.00, "INR"));
+
+            locale = Locale.Create("en-NZ");
+            formatter = NumberFormatter.Create(locale, new NumberOptions { Style = NumberStyle.CurrencyStandard });
+            Assert.AreEqual("₹123,456,789.00", formatter.Format(123456789.00, "INR"));
+            Assert.AreEqual("-₹123,456,789.00", formatter.Format(-123456789.00, "INR"));
+        }
+
+        [TestMethod]
         public void Currency_Code_Defaults_to_Locale()
         {
             var locale = Locale.Create("zh");
