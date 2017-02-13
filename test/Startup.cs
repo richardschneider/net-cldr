@@ -3,7 +3,7 @@ using System.Text;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Makaretu.Globalization
+namespace Sepia.Globalization
 {
     [TestClass]
     public class Startup
