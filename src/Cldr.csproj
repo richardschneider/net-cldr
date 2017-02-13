@@ -7,8 +7,8 @@
     <ProjectGuid>{2D49B151-35B7-4723-80CF-3E26F5DA4AB5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Makaretu.Globalization</RootNamespace>
-    <AssemblyName>Makaretu.Globalization</AssemblyName>
+    <RootNamespace>Sepia.Globalization</RootNamespace>
+    <AssemblyName>Sepia.Globalization</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -21,7 +21,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <DocumentationFile>bin\Debug\Makaretu.Globalization.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\Sepia.Globalization.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,7 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\Makaretu.Globalization.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\Sepia.Globalization.xml</DocumentationFile>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
