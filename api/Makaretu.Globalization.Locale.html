@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Locale
    | Makaretu Globalization ">
-    <meta name="generator" content="docfx 2.11.3.0">
+    <meta name="generator" content="docfx 2.12.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -223,7 +223,7 @@ identifier.</p>
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Locale_Create_Makaretu_Globalization_LocaleIdentifier_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Locale.Create(Makaretu.Globalization.LocaleIdentifier)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Locale.cs/#L241">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Locale.cs/#L249">View Source</a>
               </span>
               <a id="Makaretu_Globalization_Locale_Create_" data-uid="Makaretu.Globalization.Locale.Create*"></a>
               <h4 id="Makaretu_Globalization_Locale_Create_Makaretu_Globalization_LocaleIdentifier_" data-uid="Makaretu.Globalization.Locale.Create(Makaretu.Globalization.LocaleIdentifier)">Create(LocaleIdentifier)</h4>
@@ -268,12 +268,16 @@ identifier.</p>
                   </tr>
                 </tbody>
               </table>
+              <h5 id="Makaretu_Globalization_Locale_Create_Makaretu_Globalization_LocaleIdentifier__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Uses the <a class="xref" href="Makaretu.Globalization.LocaleIdentifier.html#Makaretu_Globalization_LocaleIdentifier_CanonicalForm">CanonicalForm()</a> of the
+<span class="paramref">id</span>.</p>
+</div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Locale_Create_System_String_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Locale.Create(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Locale.cs/#L227">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Locale.cs/#L231">View Source</a>
               </span>
               <a id="Makaretu_Globalization_Locale_Create_" data-uid="Makaretu.Globalization.Locale.Create*"></a>
               <h4 id="Makaretu_Globalization_Locale_Create_System_String_" data-uid="Makaretu.Globalization.Locale.Create(System.String)">Create(String)</h4>
@@ -343,7 +347,7 @@ identifier.</p>
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Locale_Find_System_String_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Locale.Find(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Locale.cs/#L152">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Locale.cs/#L155">View Source</a>
               </span>
               <a id="Makaretu_Globalization_Locale_Find_" data-uid="Makaretu.Globalization.Locale.Find*"></a>
               <h4 id="Makaretu_Globalization_Locale_Find_System_String_" data-uid="Makaretu.Globalization.Locale.Find(System.String)">Find(String)</h4>
@@ -391,11 +395,12 @@ in the <a class="xref" href="Makaretu.Globalization.Locale.html#Makaretu_Globali
               </table>
               <h5 id="Makaretu_Globalization_Locale_Find_System_String__remarks">Remarks</h5>
               <div class="markdown level1 remarks"><p>If the <span class="paramref">predicate</span> cannot be matched, then it is recursively
-modified with the &quot;root aliases&quot; and retried.</p>
-<p>
+modified with the &quot;root aliases&quot; and retried.
 Lateral inheritance is also implemented. <code>[@count=&#39;x&#39;]&lt;/code&gt; becomes
-<code>[@count=&#39;x&#39; or @count=&#39;other&#39;]&lt;/code&gt;.
+<code>[@count=&#39;x&#39; or @count=&#39;other&#39;]&lt;/code&gt;.<p>
 <p>
+The <span class="paramref">predicate</span> is cached to improve performance.
+</p>
 </code></code></div>
               <h5 class="exceptions">Exceptions</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -418,7 +423,7 @@ Lateral inheritance is also implemented. <code>[@count=&#39;x&#39;]&lt;/code&gt;
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Locale_FindOrDefault_System_String_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Locale.FindOrDefault(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Locale.cs/#L178">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Locale.cs/#L182">View Source</a>
               </span>
               <a id="Makaretu_Globalization_Locale_FindOrDefault_" data-uid="Makaretu.Globalization.Locale.FindOrDefault*"></a>
               <h4 id="Makaretu_Globalization_Locale_FindOrDefault_System_String_" data-uid="Makaretu.Globalization.Locale.FindOrDefault(System.String)">FindOrDefault(String)</h4>
@@ -466,18 +471,19 @@ in the <a class="xref" href="Makaretu.Globalization.Locale.html#Makaretu_Globali
               </table>
               <h5 id="Makaretu_Globalization_Locale_FindOrDefault_System_String__remarks">Remarks</h5>
               <div class="markdown level1 remarks"><p>If the <span class="paramref">predicate</span> cannot be matched, then it is recursively
-modified with the &quot;root aliases&quot; and retried.</p>
-<p>
+modified with the &quot;root aliases&quot; and retried.
 Lateral inheritance is also implemented. <code>[@count=&#39;x&#39;]&lt;/code&gt; becomes
-<code>[@count=&#39;x&#39; or @count=&#39;other&#39;]&lt;/code&gt;.
+<code>[@count=&#39;x&#39; or @count=&#39;other&#39;]&lt;/code&gt;.<p>
 <p>
+The <span class="paramref">predicate</span> is cached to improve performance.
+</p>
 </code></code></div>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Locale_ResourceBundle_System_String_System_String_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Locale.ResourceBundle(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Locale.cs/#L92">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Locale.cs/#L94">View Source</a>
               </span>
               <a id="Makaretu_Globalization_Locale_ResourceBundle_" data-uid="Makaretu.Globalization.Locale.ResourceBundle*"></a>
               <h4 id="Makaretu_Globalization_Locale_ResourceBundle_System_String_System_String_" data-uid="Makaretu.Globalization.Locale.ResourceBundle(System.String,System.String)">ResourceBundle(String, String)</h4>
@@ -523,7 +529,8 @@ Lateral inheritance is also implemented. <code>[@count=&#39;x&#39;]&lt;/code&gt;
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">IEnumerable</a>&lt;<span class="xref">System.Xml.XPath.XPathDocument</span>&gt;</td>
-                    <td></td>
+                    <td><p>All the documents that are named by the <a class="xref" href="Makaretu.Globalization.Locale.html#Makaretu_Globalization_Locale_SearchChain">SearchChain()</a>.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -532,7 +539,7 @@ Lateral inheritance is also implemented. <code>[@count=&#39;x&#39;]&lt;/code&gt;
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Locale_SearchChain.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Locale.SearchChain%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Locale.cs/#L109">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Locale.cs/#L111">View Source</a>
               </span>
               <a id="Makaretu_Globalization_Locale_SearchChain_" data-uid="Makaretu.Globalization.Locale.SearchChain*"></a>
               <h4 id="Makaretu_Globalization_Locale_SearchChain" data-uid="Makaretu.Globalization.Locale.SearchChain">SearchChain()</h4>
@@ -554,7 +561,7 @@ Lateral inheritance is also implemented. <code>[@count=&#39;x&#39;]&lt;/code&gt;
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">IEnumerable</a>&lt;<a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a>&gt;</td>
-                    <td><p>A sequence of &quot;languages&quot; that should be searched.</p>
+                    <td><p>A sequence of &quot;files&quot; that should be searched.</p>
 </td>
                   </tr>
                 </tbody>
