@@ -10,6 +10,7 @@ namespace Makaretu.Globalization
     /// <summary>
     ///   Represents a Unicode BCP 47 U Extension.
     /// </summary>
+    /// <seealso href="http://unicode.org/reports/tr35/tr35.html#u_Extension"/>
     public class LocaleExtension
     {
         const string sepP = @"[-_]";
@@ -40,6 +41,9 @@ namespace Makaretu.Globalization
         /// <summary>
         ///   The attributes.
         /// </summary>
+        /// <returns>
+        ///   A sequence of attributes.
+        /// </returns>
         /// <remarks>
         ///   Currently, no attributes are defined by Unicode.
         /// </remarks>
@@ -48,6 +52,9 @@ namespace Makaretu.Globalization
         /// <summary>
         ///   The two character keyword and type.
         /// </summary>
+        /// <value>
+        ///   A dictionary whose key is a keyword (such as 'nu' or 'va').
+        /// </value>
         /// <remarks>
         ///   If the type is not specified then it is "true".
         /// </remarks>

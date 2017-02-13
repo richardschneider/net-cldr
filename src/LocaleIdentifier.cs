@@ -85,13 +85,13 @@ namespace Makaretu.Globalization
         public IEnumerable<string> Variants { get; private set; }
 
         /// <summary>
-        ///   Locale extensions.
+        ///   Language extension subtag(s).
         /// </summary>
         /// <value>
         ///   A sequence of extension subtags.
         /// </value>
         /// <remarks>
-        ///   Extensions provide a mechanism for extending language tags for 
+        ///   Extensions provide a mechanism for extending the <see cref="Language"/>subtag for 
         ///   use in various applications.
         ///   
         ///   All subtags are case insensitive but stored in the lower-case form.

@@ -88,7 +88,9 @@ namespace Makaretu.Globalization
         /// <param name="suffix">
         ///   The file extension.  Defaults to ".xml".
         /// </param>
-        /// <returns></returns>
+        /// <returns>
+        ///   All the documents that are named by the <see cref="SearchChain"/>.
+        /// </returns>
         public IEnumerable<XPathDocument> ResourceBundle(string prefix = "common/main/", string suffix = ".xml")
         {
             return SearchChain()
@@ -100,7 +102,7 @@ namespace Makaretu.Globalization
         ///   The search chain for a locale resource.
         /// </summary>
         /// <returns>
-        ///   A sequence of "languages" that should be searched.
+        ///   A sequence of "files" that should be searched.
         /// </returns>
         /// <remarks>
         ///   Same as <see cref="LocaleIdentifier.SearchChain"/> but applies
@@ -144,9 +146,10 @@ namespace Makaretu.Globalization
         /// <remarks>
         ///   If the <paramref name="predicate"/> cannot be matched, then it is recursively
         ///   modified with the "root aliases" and retried.
-        ///   <para>
         ///   Lateral inheritance is also implemented. <c>[@count='x']</c> becomes
         ///   <c>[@count='x' or @count='other']</c>.
+        ///   <para>
+        ///   The <paramref name="predicate"/> is cached to improve performance.
         ///   </para>
         /// </remarks>
         public XPathNavigator Find(string predicate)
@@ -170,9 +173,10 @@ namespace Makaretu.Globalization
         /// <remarks>
         ///   If the <paramref name="predicate"/> cannot be matched, then it is recursively
         ///   modified with the "root aliases" and retried.
-        ///   <para>
         ///   Lateral inheritance is also implemented. <c>[@count='x']</c> becomes
         ///   <c>[@count='x' or @count='other']</c>.
+        ///   <para>
+        ///   The <paramref name="predicate"/> is cached to improve performance.
         ///   </para>
         /// </remarks>
         public XPathNavigator FindOrDefault(string predicate)
@@ -238,6 +242,10 @@ namespace Makaretu.Globalization
         /// <returns>
         ///   A locale for the specified <paramref name="id"/>.
         /// </returns>
+        /// <remarks>
+        ///   Uses the <see cref="LocaleIdentifier.CanonicalForm"/> of the
+        ///   <paramref name="id"/>.
+        /// </remarks>
         public static Locale Create(LocaleIdentifier id)
         {
             var cid = id.CanonicalForm();

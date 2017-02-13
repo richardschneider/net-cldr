@@ -33,7 +33,7 @@ namespace Makaretu.Globalization.Numbers
         CurrencyStandard,
 
         /// <summary>
-        ///  Accounting currncy formatting.
+        ///  Accounting currency formatting.
         /// </summary>
         CurrencyAccounting
     }
