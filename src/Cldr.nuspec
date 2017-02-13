@@ -11,6 +11,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
       Provides locale content for internationalisation (i18n) software using the Unicode Common Local Data Repository (CLDR).
+
+      This is DEPRECATED! It is now part of the Sepia project. Please use
+      [Sepia.Globalization](https://www.nuget.org/packages/Sepia.Globalization).
     </description>
     <summary>Locale data for internationalisation software</summary>
     <copyright>© 2017 Richard Schneider</copyright>
