@@ -79,19 +79,19 @@ namespace Makaretu.Globalization.Numbers
         {
             if (Options.Style == NumberStyle.Decimal)
             {
-                var path = $"ldml/numbers/decimalFormats[@numberSystem='{NumberingSystem.Id}']/decimalFormatLength/decimalFormat/pattern";
+                var path = $"ldml/numbers/decimalFormats[@numberSystem='{NumberingSystem.Id}']/decimalFormatLength[not(@type)]/decimalFormat/pattern";
                 return Locale.Find(path).Value;
             }
 
             if (Options.Style == NumberStyle.Percent)
             {
-                var path = $"ldml/numbers/percentFormats[@numberSystem='{NumberingSystem.Id}']/percentFormatLength/percentFormat/pattern";
+                var path = $"ldml/numbers/percentFormats[@numberSystem='{NumberingSystem.Id}']/percentFormatLength[not(@type)]/percentFormat/pattern";
                 return Locale.Find(path).Value;
             }
 
             if (Options.Style == NumberStyle.Scientific)
             {
-                var path = $"ldml/numbers/scientificFormats[@numberSystem='{NumberingSystem.Id}']/scientificFormatLength/scientificFormat/pattern";
+                var path = $"ldml/numbers/scientificFormats[@numberSystem='{NumberingSystem.Id}']/scientificFormatLength[not(@type)]/scientificFormat/pattern";
                 var pattern = Locale.Find(path).Value;
                 return pattern == "#E0" ? "0.0######E0" : pattern;
             }

@@ -129,8 +129,35 @@ namespace Makaretu.Globalization.Numbers
         }
 
         [TestMethod, Ignore]
-        public void Minimum_Grouping_Digits() // TODO
+        public void Minimum_Grouping_Digits()
         {
+            var locale = Locale.Create("es_419");
+            var formatter = NumberFormatter.Create(locale);
+            Assert.AreEqual("1", formatter.ToString(1));
+            Assert.AreEqual("12", formatter.ToString(12));
+            Assert.AreEqual("123", formatter.ToString(123));
+            Assert.AreEqual("123", formatter.ToString(123));
+            Assert.AreEqual("1234", formatter.ToString(1234));
+            Assert.AreEqual("12,345", formatter.ToString(12345));
+            Assert.AreEqual("123,456", formatter.ToString(123456));
+            Assert.AreEqual("1,234,567", formatter.ToString(1234567));
+            Assert.AreEqual("12,345,678", formatter.ToString(12345678));
+            Assert.AreEqual("123,456,789", formatter.ToString(12345679));
+            Assert.AreEqual("1,234,567,890", formatter.ToString(123456790));
+
+            locale = Locale.Create("es");
+            formatter = NumberFormatter.Create(locale);
+            Assert.AreEqual("1", formatter.ToString(1));
+            Assert.AreEqual("12", formatter.ToString(12));
+            Assert.AreEqual("123", formatter.ToString(123));
+            Assert.AreEqual("123", formatter.ToString(123));
+            Assert.AreEqual("1234", formatter.ToString(1234));
+            Assert.AreEqual("12345", formatter.ToString(12345));
+            Assert.AreEqual("123,456", formatter.ToString(123456));
+            Assert.AreEqual("1,234,567", formatter.ToString(1234567));
+            Assert.AreEqual("12,345,678", formatter.ToString(12345678));
+            Assert.AreEqual("123,456,789", formatter.ToString(12345679));
+            Assert.AreEqual("1,234,567,890", formatter.ToString(123456790));
         }
 
         [TestMethod, Ignore]
