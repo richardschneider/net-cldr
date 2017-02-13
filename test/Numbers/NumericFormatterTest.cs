@@ -118,14 +118,14 @@ namespace Makaretu.Globalization.Numbers
         {
         }
 
-        [TestMethod, Ignore]
+        [TestMethod]
         public void Currency_Decimal_Places()
         {
             var locale = Locale.Create("ja");
             var formatter = NumberFormatter.Create(locale, new NumberOptions { Style = NumberStyle.CurrencyAccounting });
             Assert.AreEqual("￥0", formatter.ToString(0));
-            Assert.AreEqual("￥124.00", formatter.ToString(123.78));
-            Assert.AreEqual("(￥124.00)", formatter.ToString(-123.78));
+            Assert.AreEqual("￥124", formatter.ToString(123.78));
+            Assert.AreEqual("(￥124)", formatter.ToString(-123.78));
         }
 
     }

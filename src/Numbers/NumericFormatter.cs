@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Makaretu.Globalization.Numbers
@@ -10,6 +11,7 @@ namespace Makaretu.Globalization.Numbers
     class NumericFormatter : NumberFormatter
     {
         static string[] digits = new NumberFormatInfo().NativeDigits;
+        static Regex significantDigitsPattern = new Regex(@"\.0+", RegexOptions.Compiled | RegexOptions.CultureInvariant);
 
         public override string ToString(long value)
         {
@@ -72,7 +74,8 @@ namespace Makaretu.Globalization.Numbers
             nfi.NumberGroupSeparator = Symbols.CurrencyGroup;
             return nfi;
         }
-        string Pattern()
+
+        string Pattern(string currencyCode = null)
         {
             if (Options.Style == NumberStyle.Decimal)
             {
@@ -93,16 +96,28 @@ namespace Makaretu.Globalization.Numbers
                 return pattern == "#E0" ? "0.0######E0" : pattern;
             }
 
-            if (Options.Style == NumberStyle.CurrencyStandard)
+            if (Options.Style == NumberStyle.CurrencyStandard || Options.Style == NumberStyle.CurrencyAccounting)
             {
-                var path = $"ldml/numbers/currencyFormats[@numberSystem='{NumberingSystem.Id}']/currencyFormatLength/currencyFormat[@type='standard']/pattern";
-                return Locale.Find(path).Value;
-            }
+                string path = null;
+                if (Options.Style == NumberStyle.CurrencyStandard)
+                    path = $"ldml/numbers/currencyFormats[@numberSystem='{NumberingSystem.Id}']/currencyFormatLength/currencyFormat[@type='standard']/pattern";
+                else if (Options.Style == NumberStyle.CurrencyAccounting)
+                    path = $"ldml/numbers/currencyFormats[@numberSystem='{NumberingSystem.Id}']/currencyFormatLength/currencyFormat[@type='accounting']/pattern";
+                var pattern = Locale.Find(path).Value;
 
-            if (Options.Style == NumberStyle.CurrencyAccounting)
-            {
-                var path = $"ldml/numbers/currencyFormats[@numberSystem='{NumberingSystem.Id}']/currencyFormatLength/currencyFormat[@type='accounting']/pattern";
-                return Locale.Find(path).Value;
+                // Apply currency decimal places
+                if (currencyCode == null)
+                    currencyCode = Locale.CurrencyCode;
+                var digits = Cldr.Instance
+                    .GetDocuments("common/supplemental/supplementalData.xml")
+                    .FirstElementOrDefault($"supplementalData/currencyData/fractions/info[@iso4217='{currencyCode}']/@digits");
+                if (digits != null)
+                {
+                    int significantDigits = Int32.Parse(digits.Value);
+                    pattern = significantDigitsPattern.Replace(pattern, "." + new String('0', significantDigits));
+                }
+
+                return pattern;
             }
 
             throw new NotImplementedException();
