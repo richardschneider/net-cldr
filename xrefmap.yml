@@ -793,48 +793,48 @@ references:
   commentId: T:Makaretu.Globalization.Numbers.INumberFormatter
   fullName: Makaretu.Globalization.Numbers.INumberFormatter
   nameWithType: INumberFormatter
-- uid: Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Decimal)
-  name: ToString(Decimal)
-  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Decimal_
-  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Decimal)
-  fullName: Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Decimal)
-  nameWithType: INumberFormatter.ToString(Decimal)
-- uid: Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Decimal,System.String)
-  name: ToString(Decimal, String)
-  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Decimal_System_String_
-  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Decimal,System.String)
-  fullName: Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Decimal, System.String)
-  nameWithType: INumberFormatter.ToString(Decimal, String)
-- uid: Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Double)
-  name: ToString(Double)
-  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Double_
-  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Double)
-  fullName: Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Double)
-  nameWithType: INumberFormatter.ToString(Double)
-- uid: Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Double,System.String)
-  name: ToString(Double, String)
-  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Double_System_String_
-  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Double,System.String)
-  fullName: Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Double, System.String)
-  nameWithType: INumberFormatter.ToString(Double, String)
-- uid: Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Int64)
-  name: ToString(Int64)
-  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Int64_
-  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Int64)
-  fullName: Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Int64)
-  nameWithType: INumberFormatter.ToString(Int64)
-- uid: Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Int64,System.String)
-  name: ToString(Int64, String)
-  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Int64_System_String_
-  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Int64,System.String)
-  fullName: Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Int64, System.String)
-  nameWithType: INumberFormatter.ToString(Int64, String)
-- uid: Makaretu.Globalization.Numbers.INumberFormatter.ToString*
-  name: ToString
-  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_ToString_
-  commentId: Overload:Makaretu.Globalization.Numbers.INumberFormatter.ToString
-  fullName: Makaretu.Globalization.Numbers.INumberFormatter.ToString
-  nameWithType: INumberFormatter.ToString
+- uid: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Decimal)
+  name: Format(Decimal)
+  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_Format_System_Decimal_
+  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Decimal)
+  fullName: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Decimal)
+  nameWithType: INumberFormatter.Format(Decimal)
+- uid: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Decimal,System.String)
+  name: Format(Decimal, String)
+  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_Format_System_Decimal_System_String_
+  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Decimal,System.String)
+  fullName: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Decimal, System.String)
+  nameWithType: INumberFormatter.Format(Decimal, String)
+- uid: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Double)
+  name: Format(Double)
+  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_Format_System_Double_
+  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Double)
+  fullName: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Double)
+  nameWithType: INumberFormatter.Format(Double)
+- uid: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Double,System.String)
+  name: Format(Double, String)
+  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_Format_System_Double_System_String_
+  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Double,System.String)
+  fullName: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Double, System.String)
+  nameWithType: INumberFormatter.Format(Double, String)
+- uid: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Int64)
+  name: Format(Int64)
+  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_Format_System_Int64_
+  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Int64)
+  fullName: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Int64)
+  nameWithType: INumberFormatter.Format(Int64)
+- uid: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Int64,System.String)
+  name: Format(Int64, String)
+  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_Format_System_Int64_System_String_
+  commentId: M:Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Int64,System.String)
+  fullName: Makaretu.Globalization.Numbers.INumberFormatter.Format(System.Int64, System.String)
+  nameWithType: INumberFormatter.Format(Int64, String)
+- uid: Makaretu.Globalization.Numbers.INumberFormatter.Format*
+  name: Format
+  href: api/Makaretu.Globalization.Numbers.INumberFormatter.html#Makaretu_Globalization_Numbers_INumberFormatter_Format_
+  commentId: Overload:Makaretu.Globalization.Numbers.INumberFormatter.Format
+  fullName: Makaretu.Globalization.Numbers.INumberFormatter.Format
+  nameWithType: INumberFormatter.Format
 - uid: Makaretu.Globalization.Numbers.NumberFormatter
   name: NumberFormatter
   href: api/Makaretu.Globalization.Numbers.NumberFormatter.html
@@ -853,6 +853,48 @@ references:
   commentId: Overload:Makaretu.Globalization.Numbers.NumberFormatter.Create
   fullName: Makaretu.Globalization.Numbers.NumberFormatter.Create
   nameWithType: NumberFormatter.Create
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Decimal)
+  name: Format(Decimal)
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Format_System_Decimal_
+  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Decimal)
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Decimal)
+  nameWithType: NumberFormatter.Format(Decimal)
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Decimal,System.String)
+  name: Format(Decimal, String)
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Format_System_Decimal_System_String_
+  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Decimal,System.String)
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Decimal, System.String)
+  nameWithType: NumberFormatter.Format(Decimal, String)
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Double)
+  name: Format(Double)
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Format_System_Double_
+  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Double)
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Double)
+  nameWithType: NumberFormatter.Format(Double)
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Double,System.String)
+  name: Format(Double, String)
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Format_System_Double_System_String_
+  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Double,System.String)
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Double, System.String)
+  nameWithType: NumberFormatter.Format(Double, String)
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Int64)
+  name: Format(Int64)
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Format_System_Int64_
+  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Int64)
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Int64)
+  nameWithType: NumberFormatter.Format(Int64)
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Int64,System.String)
+  name: Format(Int64, String)
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Format_System_Int64_System_String_
+  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Int64,System.String)
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Format(System.Int64, System.String)
+  nameWithType: NumberFormatter.Format(Int64, String)
+- uid: Makaretu.Globalization.Numbers.NumberFormatter.Format*
+  name: Format
+  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Format_
+  commentId: Overload:Makaretu.Globalization.Numbers.NumberFormatter.Format
+  fullName: Makaretu.Globalization.Numbers.NumberFormatter.Format
+  nameWithType: NumberFormatter.Format
 - uid: Makaretu.Globalization.Numbers.NumberFormatter.Locale
   name: Locale
   href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_Locale
@@ -901,48 +943,6 @@ references:
   commentId: Overload:Makaretu.Globalization.Numbers.NumberFormatter.Symbols
   fullName: Makaretu.Globalization.Numbers.NumberFormatter.Symbols
   nameWithType: NumberFormatter.Symbols
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Decimal)
-  name: ToString(Decimal)
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_ToString_System_Decimal_
-  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Decimal)
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Decimal)
-  nameWithType: NumberFormatter.ToString(Decimal)
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Decimal,System.String)
-  name: ToString(Decimal, String)
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_ToString_System_Decimal_System_String_
-  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Decimal,System.String)
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Decimal, System.String)
-  nameWithType: NumberFormatter.ToString(Decimal, String)
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Double)
-  name: ToString(Double)
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_ToString_System_Double_
-  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Double)
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Double)
-  nameWithType: NumberFormatter.ToString(Double)
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Double,System.String)
-  name: ToString(Double, String)
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_ToString_System_Double_System_String_
-  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Double,System.String)
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Double, System.String)
-  nameWithType: NumberFormatter.ToString(Double, String)
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Int64)
-  name: ToString(Int64)
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_ToString_System_Int64_
-  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Int64)
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Int64)
-  nameWithType: NumberFormatter.ToString(Int64)
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Int64,System.String)
-  name: ToString(Int64, String)
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_ToString_System_Int64_System_String_
-  commentId: M:Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Int64,System.String)
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.ToString(System.Int64, System.String)
-  nameWithType: NumberFormatter.ToString(Int64, String)
-- uid: Makaretu.Globalization.Numbers.NumberFormatter.ToString*
-  name: ToString
-  href: api/Makaretu.Globalization.Numbers.NumberFormatter.html#Makaretu_Globalization_Numbers_NumberFormatter_ToString_
-  commentId: Overload:Makaretu.Globalization.Numbers.NumberFormatter.ToString
-  fullName: Makaretu.Globalization.Numbers.NumberFormatter.ToString
-  nameWithType: NumberFormatter.ToString
 - uid: Makaretu.Globalization.Numbers.NumberingSystem
   name: NumberingSystem
   href: api/Makaretu.Globalization.Numbers.NumberingSystem.html
