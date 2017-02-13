@@ -87,11 +87,12 @@
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Decimal_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Decimal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Numbers/INumberFormatter.cs/#L26">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Numbers/INumberFormatter.cs/#L38">View Source</a>
               </span>
               <a id="Makaretu_Globalization_Numbers_INumberFormatter_ToString_" data-uid="Makaretu.Globalization.Numbers.INumberFormatter.ToString*"></a>
               <h4 id="Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Decimal_" data-uid="Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Decimal)">ToString(Decimal)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Localises a <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.decimal(v=vs.110).aspx">Decimal</a>.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -110,7 +111,8 @@
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.decimal(v=vs.110).aspx">Decimal</a></td>
                     <td><span class="parametername">value</span></td>
-                    <td></td>
+                    <td><p>The number to localise.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -125,7 +127,10 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td></td>
+                    <td><p>The localised string representation of the <span class="paramref">value</span>
+according to the <a class="xref" href="Makaretu.Globalization.Locale.html">Locale</a> and 
+<a class="xref" href="Makaretu.Globalization.Numbers.NumberOptions.html">NumberOptions</a>.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -134,11 +139,12 @@
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Decimal_System_String_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Decimal%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Numbers/INumberFormatter.cs/#L55">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Numbers/INumberFormatter.cs/#L111">View Source</a>
               </span>
               <a id="Makaretu_Globalization_Numbers_INumberFormatter_ToString_" data-uid="Makaretu.Globalization.Numbers.INumberFormatter.ToString*"></a>
               <h4 id="Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Decimal_System_String_" data-uid="Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Decimal,System.String)">ToString(Decimal, String)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Localises a <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.decimal(v=vs.110).aspx">Decimal</a> currency.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -157,12 +163,14 @@
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.decimal(v=vs.110).aspx">Decimal</a></td>
                     <td><span class="parametername">value</span></td>
-                    <td></td>
+                    <td><p>The number to localise.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">currencyCode</span></td>
-                    <td></td>
+                    <td><p>An <a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a> currency code.  For example: &quot;CNY&quot;, &quot;NZD&quot; or &quot;JPY&quot;.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -177,7 +185,14 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td></td>
+                    <td><p>The localised string representation of the <span class="paramref">value</span> and
+<span class="paramref">currencyCode</span>
+according to the <a class="xref" href="Makaretu.Globalization.Locale.html">Locale</a> and 
+<a class="xref" href="Makaretu.Globalization.Numbers.NumberOptions.html">NumberOptions</a>.</p>
+<p>
+The number of significant digits is controlled by currency definition.
+</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -186,11 +201,12 @@
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Double_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Numbers/INumberFormatter.cs/#L33">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Numbers/INumberFormatter.cs/#L51">View Source</a>
               </span>
               <a id="Makaretu_Globalization_Numbers_INumberFormatter_ToString_" data-uid="Makaretu.Globalization.Numbers.INumberFormatter.ToString*"></a>
               <h4 id="Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Double_" data-uid="Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Double)">ToString(Double)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Localises a <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a>.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -209,7 +225,8 @@
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
                     <td><span class="parametername">value</span></td>
-                    <td></td>
+                    <td><p>The number to localise.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -224,7 +241,10 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td></td>
+                    <td><p>The localised string representation of the <span class="paramref">value</span>
+according to the <a class="xref" href="Makaretu.Globalization.Locale.html">Locale</a> and 
+<a class="xref" href="Makaretu.Globalization.Numbers.NumberOptions.html">NumberOptions</a>.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -233,11 +253,12 @@
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Double_System_String_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Double%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Numbers/INumberFormatter.cs/#L48">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Numbers/INumberFormatter.cs/#L91">View Source</a>
               </span>
               <a id="Makaretu_Globalization_Numbers_INumberFormatter_ToString_" data-uid="Makaretu.Globalization.Numbers.INumberFormatter.ToString*"></a>
               <h4 id="Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Double_System_String_" data-uid="Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Double,System.String)">ToString(Double, String)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Localises a <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a> currency.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -256,12 +277,14 @@
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.double(v=vs.110).aspx">Double</a></td>
                     <td><span class="parametername">value</span></td>
-                    <td></td>
+                    <td><p>The number to localise.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">currencyCode</span></td>
-                    <td></td>
+                    <td><p>An <a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a> currency code.  For example: &quot;CNY&quot;, &quot;NZD&quot; or &quot;JPY&quot;.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -276,7 +299,14 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td></td>
+                    <td><p>The localised string representation of the <span class="paramref">value</span> and
+<span class="paramref">currencyCode</span>
+according to the <a class="xref" href="Makaretu.Globalization.Locale.html">Locale</a> and 
+<a class="xref" href="Makaretu.Globalization.Numbers.NumberOptions.html">NumberOptions</a>.</p>
+<p>
+The number of significant digits is controlled by currency definition.
+</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -285,11 +315,12 @@
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Int64_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Numbers/INumberFormatter.cs/#L19">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Numbers/INumberFormatter.cs/#L25">View Source</a>
               </span>
               <a id="Makaretu_Globalization_Numbers_INumberFormatter_ToString_" data-uid="Makaretu.Globalization.Numbers.INumberFormatter.ToString*"></a>
               <h4 id="Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Int64_" data-uid="Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Int64)">ToString(Int64)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Localises a <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a>.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -308,7 +339,8 @@
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
                     <td><span class="parametername">value</span></td>
-                    <td></td>
+                    <td><p>The number to localise.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -323,7 +355,10 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td></td>
+                    <td><p>The localised string representation of the <span class="paramref">value</span>
+according to the <a class="xref" href="Makaretu.Globalization.Locale.html">Locale</a> and 
+<a class="xref" href="Makaretu.Globalization.Numbers.NumberOptions.html">NumberOptions</a>.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -332,11 +367,12 @@
                 <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Int64%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Numbers/INumberFormatter.cs/#L41">View Source</a>
+                <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Numbers/INumberFormatter.cs/#L71">View Source</a>
               </span>
               <a id="Makaretu_Globalization_Numbers_INumberFormatter_ToString_" data-uid="Makaretu.Globalization.Numbers.INumberFormatter.ToString*"></a>
               <h4 id="Makaretu_Globalization_Numbers_INumberFormatter_ToString_System_Int64_System_String_" data-uid="Makaretu.Globalization.Numbers.INumberFormatter.ToString(System.Int64,System.String)">ToString(Int64, String)</h4>
-              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 summary"><p>Localises a <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a> currency.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
@@ -355,12 +391,14 @@
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.int64(v=vs.110).aspx">Int64</a></td>
                     <td><span class="parametername">value</span></td>
-                    <td></td>
+                    <td><p>The number to localise.</p>
+</td>
                   </tr>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
                     <td><span class="parametername">currencyCode</span></td>
-                    <td></td>
+                    <td><p>An <a href="https://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a> currency code.  For example: &quot;CNY&quot;, &quot;NZD&quot; or &quot;JPY&quot;.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -375,7 +413,14 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.string(v=vs.110).aspx">String</a></td>
-                    <td></td>
+                    <td><p>The localised string representation of the <span class="paramref">value</span> and
+<span class="paramref">currencyCode</span>
+according to the <a class="xref" href="Makaretu.Globalization.Locale.html">Locale</a> and 
+<a class="xref" href="Makaretu.Globalization.Numbers.NumberOptions.html">NumberOptions</a>.</p>
+<p>
+The number of significant digits is controlled by currency definition.
+</p>
+</td>
                   </tr>
                 </tbody>
               </table>
