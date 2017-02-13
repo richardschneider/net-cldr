@@ -128,5 +128,46 @@ namespace Makaretu.Globalization.Numbers
             Assert.AreEqual("(￥124)", formatter.ToString(-123.78));
         }
 
+        [TestMethod, Ignore]
+        public void Minimum_Grouping_Digits() // TODO
+        {
+        }
+
+        [TestMethod, Ignore]
+        public void Compact_Short() // TODO
+        {
+
+        }
+
+        [TestMethod, Ignore]
+        public void Compact_Long() // TODO
+        {
+        }
+
+        [TestMethod]
+        public void Infinity()
+        {
+            var locale = Locale.Create("en");
+            var formatter = NumberFormatter.Create(locale);
+            Assert.AreEqual("∞", formatter.ToString(Double.PositiveInfinity));
+            Assert.AreEqual("-∞", formatter.ToString(Double.NegativeInfinity));
+
+            locale = Locale.Create("en-u-va-posix");
+            formatter = NumberFormatter.Create(locale);
+            Assert.AreEqual("INF", formatter.ToString(Double.PositiveInfinity));
+            Assert.AreEqual("-INF", formatter.ToString(Double.NegativeInfinity));
+        }
+
+        [TestMethod]
+        public void Not_A_Number()
+        {
+            var locale = Locale.Create("en");
+            var formatter = NumberFormatter.Create(locale);
+            Assert.AreEqual("NaN", formatter.ToString(Double.NaN));
+
+            locale = Locale.Create("fi");
+            formatter = NumberFormatter.Create(locale);
+            Assert.AreEqual("epäluku", formatter.ToString(Double.NaN));
+        }
     }
 }

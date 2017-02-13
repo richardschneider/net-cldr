@@ -60,7 +60,7 @@ namespace Makaretu.Globalization.Numbers
                 PercentGroupSeparator = Symbols.Group,
                 PercentSymbol = Symbols.PercentSign,
                 PerMilleSymbol = Symbols.PerMille,
-                PositiveInfinitySymbol = Symbols.PlusSign + Symbols.Infinity,
+                PositiveInfinitySymbol = Symbols.Infinity,
                 PositiveSign = Symbols.PlusSign
             };
 
