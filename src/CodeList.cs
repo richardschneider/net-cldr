@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Makaretu.Globalization
+namespace Sepia.Globalization
 {
     /// <summary>
     ///   A list of defined codes.

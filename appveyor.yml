@@ -52,9 +52,9 @@ after_test:
   - if defined git_token gh-pages -d doc\_site -m "new docs %GitVersion_FullSemVer%"
 # Build the nuget package
   - nuget pack src\Cldr.nuspec -version "%GitVersion_NuGetVersion%" -prop "target=%CONFIGURATION%"
-  - appveyor PushArtifact "Makaretu.Globalization.%GitVersion_NuGetVersion%.nupkg"
+  - appveyor PushArtifact "Sepia.Globalization.%GitVersion_NuGetVersion%.nupkg"
 # Generate coverage report
-  - packages\OpenCover.4.6.210-rc\tools\OpenCover.Console.exe -register:user -filter:"+[Makaretu.Globalization*]* -[*Tests]*" -target:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\MSTest.exe" -targetargs:"/testcontainer:test//bin/Release/Makaretu.Globalization.Tests.dll" -output:coverage.xml
+  - packages\OpenCover.4.6.210-rc\tools\OpenCover.Console.exe -register:user -filter:"+[Sepia.Globalization*]* -[*Tests]*" -target:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\MSTest.exe" -targetargs:"/testcontainer:test//bin/Release/Sepia.Globalization.Tests.dll" -output:coverage.xml
   - if defined COVERALLS_REPO_TOKEN packages\coveralls.net.0.6.0\tools\csmacnz.coveralls.exe --opencover -i ./coverage.xml --serviceName appveyor --jobId %APPVEYOR_BUILD_NUMBER%
 
 # publish NuGet package on tag build

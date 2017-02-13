@@ -9,7 +9,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Xml.XPath;
 
-namespace Makaretu.Globalization
+namespace Sepia.Globalization
 {
     /// <summary>
     ///   Provides access to the Unicode Common Local Data Repository

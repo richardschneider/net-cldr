@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Xml.XPath;
 
-namespace Makaretu.Globalization
+namespace Sepia.Globalization
 {
     /// <summary>
     ///   Extensions to make CLDR access easier.

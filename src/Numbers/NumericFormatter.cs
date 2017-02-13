@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace Makaretu.Globalization.Numbers
+namespace Sepia.Globalization.Numbers
 {
     class NumericFormatter : NumberFormatter
     {

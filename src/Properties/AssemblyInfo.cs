@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Access to Unicode CLDR")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Richard Schneider (makaretu@gmail.com)")]
-[assembly: AssemblyProduct("Makaretu.Globalization")]
+[assembly: AssemblyProduct("Sepia")]
 [assembly: AssemblyCopyright("Copyright © 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

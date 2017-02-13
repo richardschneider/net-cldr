@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
 using System.Collections.Generic;
 
-namespace Makaretu.Globalization.Numbers
+namespace Sepia.Globalization.Numbers
 {
 
     [TestClass]

@@ -1,12 +1,12 @@
-# Makaretu.Globalization
+# Sepia.Globalization
 
 
 Provides locale content for internationalisation software using the Unicode Common Local Data Repository (CLDR).
 The source code is on [GitHub](https://github.com/richardschneider/net-cldr) and the 
-package on [NuGet](https://www.nuget.org/packages/Makaretu.Globalization).
+package on [NuGet](https://www.nuget.org/packages/Sepia.Globalization).
 
 - [Articles](articles/intro.md) on using the globalisation objects
-- [API Documentation](api/Makaretu.Globalization.yml) describes the globalisation objects in detail  
+- [API Documentation](api/Sepia.Globalization.yml) describes the globalisation objects in detail  
 
 ## Features
 

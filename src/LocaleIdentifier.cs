@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml.XPath;
 
-namespace Makaretu.Globalization
+namespace Sepia.Globalization
 {
     /// <summary>
     ///   Identifies a set of preferences that tend to be shared across significant swaths of the world.

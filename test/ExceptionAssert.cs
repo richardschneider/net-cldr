@@ -2,7 +2,7 @@
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Makaretu.Globalization
+namespace Sepia.Globalization
 {
     /// <summary>
     ///   Asserting an <see cref="Exception"/>.

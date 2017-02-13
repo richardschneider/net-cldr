@@ -5,7 +5,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.Xml.XPath;
 
-namespace Makaretu.Globalization
+namespace Sepia.Globalization
 {
 
     [TestClass]

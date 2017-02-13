@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Makaretu.Globalization.Numbers
+namespace Sepia.Globalization.Numbers
 {
     /// <summary>
     ///   The localised symbols that are commonly used when formatting numbers in a given locale. 

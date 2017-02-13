@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Makaretu.Globalization.Numbers
+namespace Sepia.Globalization.Numbers
 {
     /// <summary>
     ///   The options to apply when formating a number.

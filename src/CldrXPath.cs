@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Xml.XPath;
 using System.Xml.Xsl;
 
-namespace Makaretu.Globalization
+namespace Sepia.Globalization
 {
     /// <summary>
     ///   The execution context for XPath.
