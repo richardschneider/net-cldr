@@ -62,21 +62,21 @@ namespace Makaretu.Globalization.Numbers
        }
 
         /// <inheritdoc />
-        public abstract string ToString(long value);
+        public abstract string Format(long value);
 
         /// <inheritdoc />
-        public abstract string ToString(decimal value);
+        public abstract string Format(decimal value);
 
         /// <inheritdoc />
-        public abstract string ToString(double value);
+        public abstract string Format(double value);
 
         /// <inheritdoc />
-        public abstract string ToString(long value, string currencyCode);
+        public abstract string Format(long value, string currencyCode);
 
         /// <inheritdoc />
-        public abstract string ToString(decimal value, string currencyCode);
+        public abstract string Format(decimal value, string currencyCode);
 
         /// <inheritdoc />
-        public abstract string ToString(double value, string currencyCode);
+        public abstract string Format(double value, string currencyCode);
     }
 }

@@ -22,7 +22,7 @@ namespace Makaretu.Globalization.Numbers
         ///   according to the <see cref="Locale"/> and 
         ///   <see cref="NumberOptions">formatting options</see>.
         /// </returns>
-        string ToString(long value);
+        string Format(long value);
 
         /// <summary>
         ///   Localises a <see cref="decimal"/>.
@@ -35,7 +35,7 @@ namespace Makaretu.Globalization.Numbers
         ///   according to the <see cref="Locale"/> and 
         ///   <see cref="NumberOptions">formatting options</see>.
         /// </returns>
-        string ToString(decimal value);
+        string Format(decimal value);
 
         /// <summary>
         ///   Localises a <see cref="double"/>.
@@ -48,7 +48,7 @@ namespace Makaretu.Globalization.Numbers
         ///   according to the <see cref="Locale"/> and 
         ///   <see cref="NumberOptions">formatting options</see>.
         /// </returns>
-        string ToString(double value);
+        string Format(double value);
 
         /// <summary>
         ///   Localises a <see cref="long"/> currency.
@@ -68,7 +68,7 @@ namespace Makaretu.Globalization.Numbers
         ///   The number of significant digits is controlled by currency definition.
         ///   </para>
         /// </returns>
-        string ToString(long value, string currencyCode);
+        string Format(long value, string currencyCode);
 
         /// <summary>
         ///   Localises a <see cref="double"/> currency.
@@ -88,7 +88,7 @@ namespace Makaretu.Globalization.Numbers
         ///   The number of significant digits is controlled by currency definition.
         ///   </para>
         /// </returns>
-        string ToString(double value, string currencyCode);
+        string Format(double value, string currencyCode);
 
         /// <summary>
         ///   Localises a <see cref="decimal"/> currency.
@@ -108,6 +108,6 @@ namespace Makaretu.Globalization.Numbers
         ///   The number of significant digits is controlled by currency definition.
         ///   </para>
         /// </returns>
-        string ToString(decimal value, string currencyCode);
+        string Format(decimal value, string currencyCode);
     }
 }

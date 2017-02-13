@@ -13,32 +13,32 @@ namespace Makaretu.Globalization.Numbers
         static string[] digits = new NumberFormatInfo().NativeDigits;
         static Regex significantDigitsPattern = new Regex(@"\.0+", RegexOptions.Compiled | RegexOptions.CultureInvariant);
 
-        public override string ToString(long value)
+        public override string Format(long value)
         {
             return Transform(value.ToString(Pattern(), NumberFormatInfo()));
         }
 
-        public override string ToString(decimal value)
+        public override string Format(decimal value)
         {
             return Transform(value.ToString(Pattern(), NumberFormatInfo()));
         }
 
-        public override string ToString(double value)
+        public override string Format(double value)
         {
             return Transform(value.ToString(Pattern(), NumberFormatInfo()));
         }
 
-        public override string ToString(long value, string currencyCode)
+        public override string Format(long value, string currencyCode)
         {
             return Transform(value.ToString(Pattern(), CurrencyFormatInfo(currencyCode)), currencyCode);
         }
 
-        public override string ToString(decimal value, string currencyCode)
+        public override string Format(decimal value, string currencyCode)
         {
             return Transform(value.ToString(Pattern(), CurrencyFormatInfo(currencyCode)), currencyCode);
         }
 
-        public override string ToString(double value, string currencyCode)
+        public override string Format(double value, string currencyCode)
         {
             return Transform(value.ToString(Pattern(), CurrencyFormatInfo(currencyCode)), currencyCode);
         }

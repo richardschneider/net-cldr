@@ -8,32 +8,32 @@ namespace Makaretu.Globalization.Numbers
 {
     class AlgorithmicFormatter : NumberFormatter
     {
-        public override string ToString(long value)
+        public override string Format(long value)
         {
             throw new NotImplementedException();
         }
 
-        public override string ToString(decimal value)
+        public override string Format(decimal value)
         {
             throw new NotImplementedException();
         }
 
-        public override string ToString(double value)
+        public override string Format(double value)
         {
             throw new NotImplementedException();
         }
 
-        public override string ToString(long value, string currencyCode)
+        public override string Format(long value, string currencyCode)
         {
             throw new NotImplementedException();
         }
 
-        public override string ToString(decimal value, string currencyCode)
+        public override string Format(decimal value, string currencyCode)
         {
             throw new NotImplementedException();
         }
 
-        public override string ToString(double value, string currencyCode)
+        public override string Format(double value, string currencyCode)
         {
             throw new NotImplementedException();
         }
