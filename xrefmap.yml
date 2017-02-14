@@ -1285,12 +1285,84 @@ references:
   commentId: N:Sepia.Globalization.Numbers.Rules
   fullName: Sepia.Globalization.Numbers.Rules
   nameWithType: Sepia.Globalization.Numbers.Rules
+- uid: Sepia.Globalization.Numbers.Rules.IRule
+  name: IRule
+  href: api/Sepia.Globalization.Numbers.Rules.IRule.html
+  commentId: T:Sepia.Globalization.Numbers.Rules.IRule
+  fullName: Sepia.Globalization.Numbers.Rules.IRule
+  nameWithType: IRule
+- uid: Sepia.Globalization.Numbers.Rules.IRule.Fire(Sepia.Globalization.Numbers.Rules.RbnfContext)
+  name: Fire(RbnfContext)
+  href: api/Sepia.Globalization.Numbers.Rules.IRule.html#Sepia_Globalization_Numbers_Rules_IRule_Fire_Sepia_Globalization_Numbers_Rules_RbnfContext_
+  commentId: M:Sepia.Globalization.Numbers.Rules.IRule.Fire(Sepia.Globalization.Numbers.Rules.RbnfContext)
+  fullName: Sepia.Globalization.Numbers.Rules.IRule.Fire(Sepia.Globalization.Numbers.Rules.RbnfContext)
+  nameWithType: IRule.Fire(RbnfContext)
+- uid: Sepia.Globalization.Numbers.Rules.IRule.Fire*
+  name: Fire
+  href: api/Sepia.Globalization.Numbers.Rules.IRule.html#Sepia_Globalization_Numbers_Rules_IRule_Fire_
+  commentId: Overload:Sepia.Globalization.Numbers.Rules.IRule.Fire
+  fullName: Sepia.Globalization.Numbers.Rules.IRule.Fire
+  nameWithType: IRule.Fire
+- uid: Sepia.Globalization.Numbers.Rules.IRule.Matches(Sepia.Globalization.Numbers.Rules.RbnfContext)
+  name: Matches(RbnfContext)
+  href: api/Sepia.Globalization.Numbers.Rules.IRule.html#Sepia_Globalization_Numbers_Rules_IRule_Matches_Sepia_Globalization_Numbers_Rules_RbnfContext_
+  commentId: M:Sepia.Globalization.Numbers.Rules.IRule.Matches(Sepia.Globalization.Numbers.Rules.RbnfContext)
+  fullName: Sepia.Globalization.Numbers.Rules.IRule.Matches(Sepia.Globalization.Numbers.Rules.RbnfContext)
+  nameWithType: IRule.Matches(RbnfContext)
+- uid: Sepia.Globalization.Numbers.Rules.IRule.Matches*
+  name: Matches
+  href: api/Sepia.Globalization.Numbers.Rules.IRule.html#Sepia_Globalization_Numbers_Rules_IRule_Matches_
+  commentId: Overload:Sepia.Globalization.Numbers.Rules.IRule.Matches
+  fullName: Sepia.Globalization.Numbers.Rules.IRule.Matches
+  nameWithType: IRule.Matches
+- uid: Sepia.Globalization.Numbers.Rules.RbnfContext
+  name: RbnfContext
+  href: api/Sepia.Globalization.Numbers.Rules.RbnfContext.html
+  commentId: T:Sepia.Globalization.Numbers.Rules.RbnfContext
+  fullName: Sepia.Globalization.Numbers.Rules.RbnfContext
+  nameWithType: RbnfContext
 - uid: Sepia.Globalization.Numbers.Rules.Rule
   name: Rule
   href: api/Sepia.Globalization.Numbers.Rules.Rule.html
   commentId: T:Sepia.Globalization.Numbers.Rules.Rule
   fullName: Sepia.Globalization.Numbers.Rules.Rule
   nameWithType: Rule
+- uid: Sepia.Globalization.Numbers.Rules.Rule.Fire(Sepia.Globalization.Numbers.Rules.RbnfContext)
+  name: Fire(RbnfContext)
+  href: api/Sepia.Globalization.Numbers.Rules.Rule.html#Sepia_Globalization_Numbers_Rules_Rule_Fire_Sepia_Globalization_Numbers_Rules_RbnfContext_
+  commentId: M:Sepia.Globalization.Numbers.Rules.Rule.Fire(Sepia.Globalization.Numbers.Rules.RbnfContext)
+  fullName: Sepia.Globalization.Numbers.Rules.Rule.Fire(Sepia.Globalization.Numbers.Rules.RbnfContext)
+  nameWithType: Rule.Fire(RbnfContext)
+- uid: Sepia.Globalization.Numbers.Rules.Rule.Fire*
+  name: Fire
+  href: api/Sepia.Globalization.Numbers.Rules.Rule.html#Sepia_Globalization_Numbers_Rules_Rule_Fire_
+  commentId: Overload:Sepia.Globalization.Numbers.Rules.Rule.Fire
+  fullName: Sepia.Globalization.Numbers.Rules.Rule.Fire
+  nameWithType: Rule.Fire
+- uid: Sepia.Globalization.Numbers.Rules.Rule.Matches(Sepia.Globalization.Numbers.Rules.RbnfContext)
+  name: Matches(RbnfContext)
+  href: api/Sepia.Globalization.Numbers.Rules.Rule.html#Sepia_Globalization_Numbers_Rules_Rule_Matches_Sepia_Globalization_Numbers_Rules_RbnfContext_
+  commentId: M:Sepia.Globalization.Numbers.Rules.Rule.Matches(Sepia.Globalization.Numbers.Rules.RbnfContext)
+  fullName: Sepia.Globalization.Numbers.Rules.Rule.Matches(Sepia.Globalization.Numbers.Rules.RbnfContext)
+  nameWithType: Rule.Matches(RbnfContext)
+- uid: Sepia.Globalization.Numbers.Rules.Rule.Matches*
+  name: Matches
+  href: api/Sepia.Globalization.Numbers.Rules.Rule.html#Sepia_Globalization_Numbers_Rules_Rule_Matches_
+  commentId: Overload:Sepia.Globalization.Numbers.Rules.Rule.Matches
+  fullName: Sepia.Globalization.Numbers.Rules.Rule.Matches
+  nameWithType: Rule.Matches
+- uid: Sepia.Globalization.Numbers.Rules.Rule.Parse(System.Xml.XPath.XPathNavigator)
+  name: Parse(XPathNavigator)
+  href: api/Sepia.Globalization.Numbers.Rules.Rule.html#Sepia_Globalization_Numbers_Rules_Rule_Parse_System_Xml_XPath_XPathNavigator_
+  commentId: M:Sepia.Globalization.Numbers.Rules.Rule.Parse(System.Xml.XPath.XPathNavigator)
+  fullName: Sepia.Globalization.Numbers.Rules.Rule.Parse(System.Xml.XPath.XPathNavigator)
+  nameWithType: Rule.Parse(XPathNavigator)
+- uid: Sepia.Globalization.Numbers.Rules.Rule.Parse*
+  name: Parse
+  href: api/Sepia.Globalization.Numbers.Rules.Rule.html#Sepia_Globalization_Numbers_Rules_Rule_Parse_
+  commentId: Overload:Sepia.Globalization.Numbers.Rules.Rule.Parse
+  fullName: Sepia.Globalization.Numbers.Rules.Rule.Parse
+  nameWithType: Rule.Parse
 - uid: Sepia.Globalization.Numbers.Rules.Ruleset
   name: Ruleset
   href: api/Sepia.Globalization.Numbers.Rules.Ruleset.html
@@ -1321,6 +1393,30 @@ references:
   commentId: Overload:Sepia.Globalization.Numbers.Rules.Ruleset.IsPublic
   fullName: Sepia.Globalization.Numbers.Rules.Ruleset.IsPublic
   nameWithType: Ruleset.IsPublic
+- uid: Sepia.Globalization.Numbers.Rules.Ruleset.Parse(System.Xml.XPath.XPathNavigator)
+  name: Parse(XPathNavigator)
+  href: api/Sepia.Globalization.Numbers.Rules.Ruleset.html#Sepia_Globalization_Numbers_Rules_Ruleset_Parse_System_Xml_XPath_XPathNavigator_
+  commentId: M:Sepia.Globalization.Numbers.Rules.Ruleset.Parse(System.Xml.XPath.XPathNavigator)
+  fullName: Sepia.Globalization.Numbers.Rules.Ruleset.Parse(System.Xml.XPath.XPathNavigator)
+  nameWithType: Ruleset.Parse(XPathNavigator)
+- uid: Sepia.Globalization.Numbers.Rules.Ruleset.Parse*
+  name: Parse
+  href: api/Sepia.Globalization.Numbers.Rules.Ruleset.html#Sepia_Globalization_Numbers_Rules_Ruleset_Parse_
+  commentId: Overload:Sepia.Globalization.Numbers.Rules.Ruleset.Parse
+  fullName: Sepia.Globalization.Numbers.Rules.Ruleset.Parse
+  nameWithType: Ruleset.Parse
+- uid: Sepia.Globalization.Numbers.Rules.Ruleset.Rules
+  name: Rules
+  href: api/Sepia.Globalization.Numbers.Rules.Ruleset.html#Sepia_Globalization_Numbers_Rules_Ruleset_Rules
+  commentId: P:Sepia.Globalization.Numbers.Rules.Ruleset.Rules
+  fullName: Sepia.Globalization.Numbers.Rules.Ruleset.Rules
+  nameWithType: Ruleset.Rules
+- uid: Sepia.Globalization.Numbers.Rules.Ruleset.Rules*
+  name: Rules
+  href: api/Sepia.Globalization.Numbers.Rules.Ruleset.html#Sepia_Globalization_Numbers_Rules_Ruleset_Rules_
+  commentId: Overload:Sepia.Globalization.Numbers.Rules.Ruleset.Rules
+  fullName: Sepia.Globalization.Numbers.Rules.Ruleset.Rules
+  nameWithType: Ruleset.Rules
 - uid: Sepia.Globalization.Numbers.Rules.Ruleset.Type
   name: Type
   href: api/Sepia.Globalization.Numbers.Rules.Ruleset.html#Sepia_Globalization_Numbers_Rules_Ruleset_Type
@@ -1339,6 +1435,18 @@ references:
   commentId: T:Sepia.Globalization.Numbers.Rules.RulesetGroup
   fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup
   nameWithType: RulesetGroup
+- uid: Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse(System.Xml.XPath.XPathNavigator)
+  name: Parse(XPathNavigator)
+  href: api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html#Sepia_Globalization_Numbers_Rules_RulesetGroup_Parse_System_Xml_XPath_XPathNavigator_
+  commentId: M:Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse(System.Xml.XPath.XPathNavigator)
+  fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse(System.Xml.XPath.XPathNavigator)
+  nameWithType: RulesetGroup.Parse(XPathNavigator)
+- uid: Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse*
+  name: Parse
+  href: api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html#Sepia_Globalization_Numbers_Rules_RulesetGroup_Parse_
+  commentId: Overload:Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse
+  fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse
+  nameWithType: RulesetGroup.Parse
 - uid: Sepia.Globalization.Numbers.Rules.RulesetGroup.Rulesets
   name: Rulesets
   href: api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html#Sepia_Globalization_Numbers_Rules_RulesetGroup_Rulesets
