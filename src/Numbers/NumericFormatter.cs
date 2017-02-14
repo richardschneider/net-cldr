@@ -16,54 +16,60 @@ namespace Sepia.Globalization.Numbers
 
         public override string Format(long value)
         {
+            int nDigits = (value == 0) ? 1 : ((int)Math.Floor(Math.Log10(Math.Abs(value))) + 1);
             string pattern;
             NumberFormatInfo nfi;
-            NumberInfo(null, out pattern, out nfi);
-            return Transform(value.ToString(pattern, nfi));
+            NumberInfo(null, nDigits, out pattern, out nfi);
+            return Transform(value.ToString(pattern, nfi), null, pattern, nfi);
         }
 
         public override string Format(decimal value)
         {
+            int nDigits = (value == 0) ? 1 : ((int)Math.Floor(Math.Log10((double)Math.Abs(value))) + 1);
             string pattern;
             NumberFormatInfo nfi;
-            NumberInfo(null, out pattern, out nfi);
-            return Transform(value.ToString(pattern, nfi));
+            NumberInfo(null, nDigits, out pattern, out nfi);
+            return Transform(value.ToString(pattern, nfi), null, pattern, nfi);
         }
 
         public override string Format(double value)
         {
+            int nDigits = (value == 0) ? 1 : ((int)Math.Floor(Math.Log10(Math.Abs(value))) + 1);
             string pattern;
             NumberFormatInfo nfi;
-            NumberInfo(null, out pattern, out nfi);
-            return Transform(value.ToString(pattern, nfi));
+            NumberInfo(null, nDigits, out pattern, out nfi);
+            return Transform(value.ToString(pattern, nfi), null, pattern, nfi);
         }
 
         public override string Format(long value, string currencyCode)
         {
+            int nDigits = (value == 0) ? 1 : ((int)Math.Floor(Math.Log10(Math.Abs(value))) + 1);
             string pattern;
             NumberFormatInfo nfi;
-            NumberInfo(currencyCode, out pattern, out nfi);
-            return Transform(value.ToString(pattern, nfi), currencyCode);
+            NumberInfo(currencyCode, nDigits, out pattern, out nfi);
+            return Transform(value.ToString(pattern, nfi), currencyCode, pattern, nfi);
         }
 
         public override string Format(decimal value, string currencyCode)
         {
+            int nDigits = (value == 0) ? 1 : ((int)Math.Floor(Math.Log10((double)Math.Abs(value))) + 1);
             string pattern;
             NumberFormatInfo nfi;
-            NumberInfo(currencyCode, out pattern, out nfi);
-            return Transform(value.ToString(pattern, nfi), currencyCode);
+            NumberInfo(currencyCode, nDigits, out pattern, out nfi);
+            return Transform(value.ToString(pattern, nfi), currencyCode, pattern, nfi);
         }
 
         public override string Format(double value, string currencyCode)
         {
+            int nDigits = (value == 0) ? 1 : ((int)Math.Floor(Math.Log10(Math.Abs(value))) + 1);
             string pattern;
             NumberFormatInfo nfi;
-            NumberInfo(currencyCode, out pattern, out nfi);
-            return Transform(value.ToString(pattern, nfi), currencyCode);
+            NumberInfo(currencyCode, nDigits, out pattern, out nfi);
+            return Transform(value.ToString(pattern, nfi), currencyCode, pattern, nfi);
         }
 
 
-        void NumberInfo(string currencyCode, out string pattern, out NumberFormatInfo nfi)
+        void NumberInfo(string currencyCode, int nDigits, out string pattern, out NumberFormatInfo nfi)
         {
             nfi = new NumberFormatInfo
             {
@@ -75,7 +81,6 @@ namespace Sepia.Globalization.Numbers
                 // NativeDigits is NOT used the formatter!!
                 //NativeDigits = NumberingSystem.Digits,
                 PercentDecimalSeparator = Symbols.Decimal,
-                PercentGroupSeparator = Symbols.Group,
                 PercentSymbol = Symbols.PercentSign,
                 PerMilleSymbol = Symbols.PerMille,
                 PositiveInfinitySymbol = Symbols.Infinity,
@@ -132,19 +137,39 @@ namespace Sepia.Globalization.Numbers
                 throw new NotImplementedException();
             }
 
-            // Grouping digits, "#,##,##0" => [3, 2, 1]
-            var parts = pattern.Split(';');
-            nfi.NumberGroupSizes = groupingPattern
-                .Matches(parts[0])
-                .Cast<Match>()
-                .Skip(1)
-                .Reverse()
-                .Select(m => m.Length - 1)
-                .ToArray();
+            // Grouping of digits.
+            var useGrouping = Options.UseGrouping;
+            if (useGrouping)
+            {
+                // Grouping digits, "#,##,##0" => [3, 2, 1]
+                var parts = pattern.Split(';');
+                nfi.NumberGroupSizes = groupingPattern
+                    .Matches(parts[0])
+                    .Cast<Match>()
+                    .Skip(1)
+                    .Reverse()
+                    .Select(m => m.Length - 1)
+                    .DefaultIfEmpty(3)
+                    .ToArray();
+
+                // Don't group if min grouping digits is not met.
+                var minElement = Locale.FindOrDefault("ldml/numbers/minimumGroupingDigits");
+                if (minElement != null)
+                {
+                    var minDigits = Int32.Parse(minElement.Value) + nfi.NumberGroupSizes[0];
+                    useGrouping = nDigits > minDigits;
+                }
+            }
+
+            if (!useGrouping)
+            {
+                nfi.NumberGroupSeparator = "";
+            }
             nfi.PercentGroupSizes = nfi.NumberGroupSizes;
+            nfi.PercentGroupSeparator = nfi.NumberGroupSeparator;
         }
 
-        string Transform(string s, string currencyCode = null)
+        string Transform(string s, string currencyCode, string pattern, NumberFormatInfo nfi)
         {
             var sb = new StringBuilder(s);
 

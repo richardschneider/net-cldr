@@ -25,6 +25,6 @@ namespace Sepia.Globalization.Numbers
         ///   When <b>true</b>, clusters of integer digits are 
         ///   seperated with the <see cref="NumberSymbols.Group">group symbol</see>.
         /// </remarks>
-        public bool useGrouping { get; set; } = true;
+        public bool UseGrouping { get; set; } = true;
     }
 }

@@ -18,14 +18,18 @@ namespace Sepia.Globalization.Numbers
             Assert.AreEqual("-123", formatter.Format(-123));
             Assert.AreEqual("0", formatter.Format(0));
             Assert.AreEqual("123", formatter.Format(123));
-            Assert.AreEqual("1,234", formatter.Format(1234));
-            Assert.AreEqual("1,234.568", formatter.Format(1234.56789));
+            Assert.AreEqual("1234", formatter.Format(1234));
+            Assert.AreEqual("1234.568", formatter.Format(1234.56789));
+            Assert.AreEqual("12,345", formatter.Format(12345));
+            Assert.AreEqual("12,345.679", formatter.Format(12345.6789));
 
             locale = Locale.Create("fr");
             formatter = NumberFormatter.Create(locale);
             Assert.AreEqual("123", formatter.Format(123));
-            Assert.AreEqual("1\u00A0234", formatter.Format(1234));
-            Assert.AreEqual("1\u00A0234,568", formatter.Format(1234.56789));
+            Assert.AreEqual("1234", formatter.Format(1234));
+            Assert.AreEqual("1234,568", formatter.Format(1234.56789));
+            Assert.AreEqual("12\u00A0345", formatter.Format(12345));
+            Assert.AreEqual("12\u00A0345,679", formatter.Format(12345.6789));
         }
 
         [TestMethod]
@@ -33,7 +37,7 @@ namespace Sepia.Globalization.Numbers
         {
             var locale = Locale.Create("zh-u-nu-native");
             var formatter = NumberFormatter.Create(locale);
-            Assert.AreEqual("一,二三四.五六八", formatter.Format(1234.56789m));
+            Assert.AreEqual("一二,三四五.六七九", formatter.Format(12345.6789m));
         }
 
         [TestMethod]
@@ -142,7 +146,7 @@ namespace Sepia.Globalization.Numbers
             Assert.AreEqual("(￥124)", formatter.Format(-123.78));
         }
 
-        [TestMethod, Ignore]
+        [TestMethod]
         public void Minimum_Grouping_Digits()
         {
             var locale = Locale.Create("es_419");
@@ -156,8 +160,8 @@ namespace Sepia.Globalization.Numbers
             Assert.AreEqual("123,456", formatter.Format(123456));
             Assert.AreEqual("1,234,567", formatter.Format(1234567));
             Assert.AreEqual("12,345,678", formatter.Format(12345678));
-            Assert.AreEqual("123,456,789", formatter.Format(12345679));
-            Assert.AreEqual("1,234,567,890", formatter.Format(123456790));
+            Assert.AreEqual("123,456,789", formatter.Format(123456789));
+            Assert.AreEqual("1,234,567,890", formatter.Format(1234567890));
 
             locale = Locale.Create("es");
             formatter = NumberFormatter.Create(locale);
@@ -167,11 +171,11 @@ namespace Sepia.Globalization.Numbers
             Assert.AreEqual("123", formatter.Format(123));
             Assert.AreEqual("1234", formatter.Format(1234));
             Assert.AreEqual("12345", formatter.Format(12345));
-            Assert.AreEqual("123,456", formatter.Format(123456));
-            Assert.AreEqual("1,234,567", formatter.Format(1234567));
-            Assert.AreEqual("12,345,678", formatter.Format(12345678));
-            Assert.AreEqual("123,456,789", formatter.Format(12345679));
-            Assert.AreEqual("1,234,567,890", formatter.Format(123456790));
+            Assert.AreEqual("123.456", formatter.Format(123456));
+            Assert.AreEqual("1.234.567", formatter.Format(1234567));
+            Assert.AreEqual("12.345.678", formatter.Format(12345678));
+            Assert.AreEqual("123.456.789", formatter.Format(123456789));
+            Assert.AreEqual("1.234.567.890", formatter.Format(1234567890));
         }
 
         [TestMethod, Ignore]
