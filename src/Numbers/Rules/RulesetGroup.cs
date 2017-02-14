@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Common.Logging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.XPath;
 
 namespace Sepia.Globalization.Numbers.Rules
 {
@@ -11,6 +13,8 @@ namespace Sepia.Globalization.Numbers.Rules
     /// </summary>
     public class RulesetGroup
     {
+        static ILog log = LogManager.GetLogger(typeof(RulesetGroup));
+
         /// <summary>
         ///   The type name of the group.
         /// </summary>
@@ -26,5 +30,39 @@ namespace Sepia.Globalization.Numbers.Rules
         ///   A dictionary whose key is the rule set type name.
         /// </value>
         public IDictionary<string, Ruleset> Rulesets = new Dictionary<string, Ruleset>();
+
+        /// <summary>
+        ///   Create a rule set group from the specified <see cref="XPathNavigator"/>.
+        /// </summary>
+        /// <param name="xml">
+        ///   The XML representation of a rule set group.
+        /// </param>
+        /// <returns>
+        ///   A new rule set group.
+        /// </returns>
+        /// <remarks>
+        ///   The <paramref name="xml"/> must be on an "rulesetGrouping" element.
+        /// </remarks>
+        public static RulesetGroup Parse(XPathNavigator xml)
+        {
+            if (log.IsDebugEnabled)
+                log.Debug("Parsing RBFN from " + xml.BaseURI);
+
+            var group = new RulesetGroup
+            {
+                Type = xml.GetAttribute("type", ""),
+            };
+
+            var rulesets = new Dictionary<string, Ruleset>();
+            var children = xml.SelectChildren("ruleset", "");
+            while (children.MoveNext())
+            {
+                var ruleset = Ruleset.Parse(children.Current);
+                rulesets.Add(ruleset.Type, ruleset);
+            }
+            group.Rulesets = rulesets;
+
+            return group;
+        }
     }
 }

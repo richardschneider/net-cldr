@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.XPath;
 
 namespace Sepia.Globalization.Numbers.Rules
 {
@@ -40,5 +41,46 @@ namespace Sepia.Globalization.Numbers.Rules
                 return Access == "public" || string.IsNullOrEmpty(Access);
             }
         }
+
+        /// <summary>
+        ///   Formatting rules.
+        /// </summary>
+        /// <value>
+        ///   A sequence of formatting rules.
+        /// </value>
+        public ICollection<Rule> Rules { get; set; }
+
+        /// <summary>
+        ///   Create a rule set from the specified <see cref="XPathNavigator"/>.
+        /// </summary>
+        /// <param name="xml">
+        ///   The XML representation of a rule set.
+        /// </param>
+        /// <returns>
+        ///   A new rule set.
+        /// </returns>
+        /// <remarks>
+        ///   The <paramref name="xml"/> must be on an "ruleset" element.
+        /// </remarks>
+        public static Ruleset Parse(XPathNavigator xml)
+        {
+            var ruleset = new Ruleset
+            {
+                Type = xml.GetAttribute("type", ""),
+                Access = xml.GetAttribute("access", ""),
+            };
+
+            var rules = new List<Rule>();
+            var children = xml.SelectChildren("rbnfrule", "");
+            while (children.MoveNext())
+            {
+                var rule = Rule.Parse(children.Current);
+                rules.Add(rule);
+            }
+            ruleset.Rules = rules;
+
+            return ruleset;
+        }
+
     }
 }
