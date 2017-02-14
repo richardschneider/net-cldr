@@ -69,6 +69,7 @@
     <Compile Include="Numbers\NumberSymbolsTest.cs" />
     <Compile Include="Numbers\NumberFormatterTest.cs" />
     <Compile Include="Numbers\NumberingSystemTest.cs" />
+    <Compile Include="Numbers\Rules\RulesetTest.cs" />
     <Compile Include="StringRangeTest.cs" />
     <Compile Include="LocaleIdentifierTest.cs" />
     <Compile Include="CldrTest.cs" />
