@@ -1057,18 +1057,18 @@ references:
   commentId: Overload:Sepia.Globalization.Numbers.NumberOptions.Style
   fullName: Sepia.Globalization.Numbers.NumberOptions.Style
   nameWithType: NumberOptions.Style
-- uid: Sepia.Globalization.Numbers.NumberOptions.useGrouping
-  name: useGrouping
-  href: api/Sepia.Globalization.Numbers.NumberOptions.html#Sepia_Globalization_Numbers_NumberOptions_useGrouping
-  commentId: P:Sepia.Globalization.Numbers.NumberOptions.useGrouping
-  fullName: Sepia.Globalization.Numbers.NumberOptions.useGrouping
-  nameWithType: NumberOptions.useGrouping
-- uid: Sepia.Globalization.Numbers.NumberOptions.useGrouping*
-  name: useGrouping
-  href: api/Sepia.Globalization.Numbers.NumberOptions.html#Sepia_Globalization_Numbers_NumberOptions_useGrouping_
-  commentId: Overload:Sepia.Globalization.Numbers.NumberOptions.useGrouping
-  fullName: Sepia.Globalization.Numbers.NumberOptions.useGrouping
-  nameWithType: NumberOptions.useGrouping
+- uid: Sepia.Globalization.Numbers.NumberOptions.UseGrouping
+  name: UseGrouping
+  href: api/Sepia.Globalization.Numbers.NumberOptions.html#Sepia_Globalization_Numbers_NumberOptions_UseGrouping
+  commentId: P:Sepia.Globalization.Numbers.NumberOptions.UseGrouping
+  fullName: Sepia.Globalization.Numbers.NumberOptions.UseGrouping
+  nameWithType: NumberOptions.UseGrouping
+- uid: Sepia.Globalization.Numbers.NumberOptions.UseGrouping*
+  name: UseGrouping
+  href: api/Sepia.Globalization.Numbers.NumberOptions.html#Sepia_Globalization_Numbers_NumberOptions_UseGrouping_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberOptions.UseGrouping
+  fullName: Sepia.Globalization.Numbers.NumberOptions.UseGrouping
+  nameWithType: NumberOptions.UseGrouping
 - uid: Sepia.Globalization.Numbers.NumberStyle
   name: NumberStyle
   href: api/Sepia.Globalization.Numbers.NumberStyle.html
