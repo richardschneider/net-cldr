@@ -48,7 +48,7 @@ namespace Sepia.Globalization.Numbers.Rules
         /// <value>
         ///   A sequence of formatting rules.
         /// </value>
-        public ICollection<Rule> Rules { get; set; }
+        public ICollection<IRule> Rules { get; set; }
 
         /// <summary>
         ///   Create a rule set from the specified <see cref="XPathNavigator"/>.
@@ -70,7 +70,7 @@ namespace Sepia.Globalization.Numbers.Rules
                 Access = xml.GetAttribute("access", ""),
             };
 
-            var rules = new List<Rule>();
+            var rules = new List<IRule>();
             var children = xml.SelectChildren("rbnfrule", "");
             while (children.MoveNext())
             {

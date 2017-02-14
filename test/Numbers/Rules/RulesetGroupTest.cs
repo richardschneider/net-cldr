@@ -10,7 +10,7 @@ namespace Sepia.Globalization.Numbers.Rules
     public class RulesetGroupTest
     {
         [TestMethod]
-        public void Parsing()
+        public void Loading()
         {
             var xml = Cldr.Instance
                 .GetDocuments("common/rbnf/en.xml")

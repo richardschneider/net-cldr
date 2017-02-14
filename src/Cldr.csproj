@@ -58,6 +58,15 @@
     <Compile Include="LocaleIdentifier.cs" />
     <Compile Include="Numbers\NumberOptions.cs" />
     <Compile Include="Numbers\NumberStyle.cs" />
+    <Compile Include="Numbers\Rules\BaseValueRule.cs" />
+    <Compile Include="Numbers\Rules\MasterRule.cs" />
+    <Compile Include="Numbers\Rules\ProperFractionRule .cs" />
+    <Compile Include="Numbers\Rules\NanRule.cs" />
+    <Compile Include="Numbers\Rules\InfinityRule.cs" />
+    <Compile Include="Numbers\Rules\IRule.cs" />
+    <Compile Include="Numbers\Rules\NegativeNumberRule .cs" />
+    <Compile Include="Numbers\Rules\ImproperFractionRule.cs" />
+    <Compile Include="Numbers\Rules\RbnfContext.cs" />
     <Compile Include="Numbers\Rules\Rule.cs" />
     <Compile Include="Numbers\Rules\Ruleset.cs" />
     <Compile Include="Numbers\Rules\RulesetGroup.cs" />

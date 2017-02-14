@@ -46,7 +46,7 @@ namespace Sepia.Globalization.Numbers.Rules
         public static RulesetGroup Parse(XPathNavigator xml)
         {
             if (log.IsDebugEnabled)
-                log.Debug("Parsing RBFN from " + xml.BaseURI);
+                log.Debug("Parsing RBNF from " + xml.BaseURI);
 
             var group = new RulesetGroup
             {
