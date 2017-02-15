@@ -931,6 +931,18 @@ references:
   commentId: Overload:Sepia.Globalization.Numbers.NumberFormatter.Options
   fullName: Sepia.Globalization.Numbers.NumberFormatter.Options
   nameWithType: NumberFormatter.Options
+- uid: Sepia.Globalization.Numbers.NumberFormatter.Resolve
+  name: Resolve()
+  href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Resolve
+  commentId: M:Sepia.Globalization.Numbers.NumberFormatter.Resolve
+  fullName: Sepia.Globalization.Numbers.NumberFormatter.Resolve()
+  nameWithType: NumberFormatter.Resolve()
+- uid: Sepia.Globalization.Numbers.NumberFormatter.Resolve*
+  name: Resolve
+  href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Resolve_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberFormatter.Resolve
+  fullName: Sepia.Globalization.Numbers.NumberFormatter.Resolve
+  nameWithType: NumberFormatter.Resolve
 - uid: Sepia.Globalization.Numbers.NumberFormatter.Symbols
   name: Symbols
   href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Symbols
@@ -1015,18 +1027,42 @@ references:
   commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.IsNumeric
   fullName: Sepia.Globalization.Numbers.NumberingSystem.IsNumeric
   nameWithType: NumberingSystem.IsNumeric
-- uid: Sepia.Globalization.Numbers.NumberingSystem.Rules
-  name: Rules
-  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Rules
-  commentId: P:Sepia.Globalization.Numbers.NumberingSystem.Rules
-  fullName: Sepia.Globalization.Numbers.NumberingSystem.Rules
-  nameWithType: NumberingSystem.Rules
-- uid: Sepia.Globalization.Numbers.NumberingSystem.Rules*
-  name: Rules
-  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Rules_
-  commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.Rules
-  fullName: Sepia.Globalization.Numbers.NumberingSystem.Rules
-  nameWithType: NumberingSystem.Rules
+- uid: Sepia.Globalization.Numbers.NumberingSystem.RuleName
+  name: RuleName
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_RuleName
+  commentId: P:Sepia.Globalization.Numbers.NumberingSystem.RuleName
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.RuleName
+  nameWithType: NumberingSystem.RuleName
+- uid: Sepia.Globalization.Numbers.NumberingSystem.RuleName*
+  name: RuleName
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_RuleName_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.RuleName
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.RuleName
+  nameWithType: NumberingSystem.RuleName
+- uid: Sepia.Globalization.Numbers.NumberingSystem.Ruleset
+  name: Ruleset
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Ruleset
+  commentId: P:Sepia.Globalization.Numbers.NumberingSystem.Ruleset
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.Ruleset
+  nameWithType: NumberingSystem.Ruleset
+- uid: Sepia.Globalization.Numbers.NumberingSystem.Ruleset*
+  name: Ruleset
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Ruleset_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.Ruleset
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.Ruleset
+  nameWithType: NumberingSystem.Ruleset
+- uid: Sepia.Globalization.Numbers.NumberingSystem.RulesetGroup
+  name: RulesetGroup
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_RulesetGroup
+  commentId: P:Sepia.Globalization.Numbers.NumberingSystem.RulesetGroup
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.RulesetGroup
+  nameWithType: NumberingSystem.RulesetGroup
+- uid: Sepia.Globalization.Numbers.NumberingSystem.RulesetGroup*
+  name: RulesetGroup
+  href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_RulesetGroup_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.RulesetGroup
+  fullName: Sepia.Globalization.Numbers.NumberingSystem.RulesetGroup
+  nameWithType: NumberingSystem.RulesetGroup
 - uid: Sepia.Globalization.Numbers.NumberingSystem.Type
   name: Type
   href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Type
@@ -1321,6 +1357,54 @@ references:
   commentId: T:Sepia.Globalization.Numbers.Rules.RbnfContext
   fullName: Sepia.Globalization.Numbers.Rules.RbnfContext
   nameWithType: RbnfContext
+- uid: Sepia.Globalization.Numbers.Rules.RbnfContext.Number
+  name: Number
+  href: api/Sepia.Globalization.Numbers.Rules.RbnfContext.html#Sepia_Globalization_Numbers_Rules_RbnfContext_Number
+  commentId: P:Sepia.Globalization.Numbers.Rules.RbnfContext.Number
+  fullName: Sepia.Globalization.Numbers.Rules.RbnfContext.Number
+  nameWithType: RbnfContext.Number
+- uid: Sepia.Globalization.Numbers.Rules.RbnfContext.Number*
+  name: Number
+  href: api/Sepia.Globalization.Numbers.Rules.RbnfContext.html#Sepia_Globalization_Numbers_Rules_RbnfContext_Number_
+  commentId: Overload:Sepia.Globalization.Numbers.Rules.RbnfContext.Number
+  fullName: Sepia.Globalization.Numbers.Rules.RbnfContext.Number
+  nameWithType: RbnfContext.Number
+- uid: Sepia.Globalization.Numbers.Rules.RbnfContext.Ruleset
+  name: Ruleset
+  href: api/Sepia.Globalization.Numbers.Rules.RbnfContext.html#Sepia_Globalization_Numbers_Rules_RbnfContext_Ruleset
+  commentId: P:Sepia.Globalization.Numbers.Rules.RbnfContext.Ruleset
+  fullName: Sepia.Globalization.Numbers.Rules.RbnfContext.Ruleset
+  nameWithType: RbnfContext.Ruleset
+- uid: Sepia.Globalization.Numbers.Rules.RbnfContext.Ruleset*
+  name: Ruleset
+  href: api/Sepia.Globalization.Numbers.Rules.RbnfContext.html#Sepia_Globalization_Numbers_Rules_RbnfContext_Ruleset_
+  commentId: Overload:Sepia.Globalization.Numbers.Rules.RbnfContext.Ruleset
+  fullName: Sepia.Globalization.Numbers.Rules.RbnfContext.Ruleset
+  nameWithType: RbnfContext.Ruleset
+- uid: Sepia.Globalization.Numbers.Rules.RbnfContext.RulesetGroup
+  name: RulesetGroup
+  href: api/Sepia.Globalization.Numbers.Rules.RbnfContext.html#Sepia_Globalization_Numbers_Rules_RbnfContext_RulesetGroup
+  commentId: P:Sepia.Globalization.Numbers.Rules.RbnfContext.RulesetGroup
+  fullName: Sepia.Globalization.Numbers.Rules.RbnfContext.RulesetGroup
+  nameWithType: RbnfContext.RulesetGroup
+- uid: Sepia.Globalization.Numbers.Rules.RbnfContext.RulesetGroup*
+  name: RulesetGroup
+  href: api/Sepia.Globalization.Numbers.Rules.RbnfContext.html#Sepia_Globalization_Numbers_Rules_RbnfContext_RulesetGroup_
+  commentId: Overload:Sepia.Globalization.Numbers.Rules.RbnfContext.RulesetGroup
+  fullName: Sepia.Globalization.Numbers.Rules.RbnfContext.RulesetGroup
+  nameWithType: RbnfContext.RulesetGroup
+- uid: Sepia.Globalization.Numbers.Rules.RbnfContext.Text
+  name: Text
+  href: api/Sepia.Globalization.Numbers.Rules.RbnfContext.html#Sepia_Globalization_Numbers_Rules_RbnfContext_Text
+  commentId: P:Sepia.Globalization.Numbers.Rules.RbnfContext.Text
+  fullName: Sepia.Globalization.Numbers.Rules.RbnfContext.Text
+  nameWithType: RbnfContext.Text
+- uid: Sepia.Globalization.Numbers.Rules.RbnfContext.Text*
+  name: Text
+  href: api/Sepia.Globalization.Numbers.Rules.RbnfContext.html#Sepia_Globalization_Numbers_Rules_RbnfContext_Text_
+  commentId: Overload:Sepia.Globalization.Numbers.Rules.RbnfContext.Text
+  fullName: Sepia.Globalization.Numbers.Rules.RbnfContext.Text
+  nameWithType: RbnfContext.Text
 - uid: Sepia.Globalization.Numbers.Rules.Rule
   name: Rule
   href: api/Sepia.Globalization.Numbers.Rules.Rule.html
@@ -1381,6 +1465,18 @@ references:
   commentId: Overload:Sepia.Globalization.Numbers.Rules.Ruleset.Access
   fullName: Sepia.Globalization.Numbers.Rules.Ruleset.Access
   nameWithType: Ruleset.Access
+- uid: Sepia.Globalization.Numbers.Rules.Ruleset.ApplyRules(Sepia.Globalization.Numbers.Rules.RbnfContext)
+  name: ApplyRules(RbnfContext)
+  href: api/Sepia.Globalization.Numbers.Rules.Ruleset.html#Sepia_Globalization_Numbers_Rules_Ruleset_ApplyRules_Sepia_Globalization_Numbers_Rules_RbnfContext_
+  commentId: M:Sepia.Globalization.Numbers.Rules.Ruleset.ApplyRules(Sepia.Globalization.Numbers.Rules.RbnfContext)
+  fullName: Sepia.Globalization.Numbers.Rules.Ruleset.ApplyRules(Sepia.Globalization.Numbers.Rules.RbnfContext)
+  nameWithType: Ruleset.ApplyRules(RbnfContext)
+- uid: Sepia.Globalization.Numbers.Rules.Ruleset.ApplyRules*
+  name: ApplyRules
+  href: api/Sepia.Globalization.Numbers.Rules.Ruleset.html#Sepia_Globalization_Numbers_Rules_Ruleset_ApplyRules_
+  commentId: Overload:Sepia.Globalization.Numbers.Rules.Ruleset.ApplyRules
+  fullName: Sepia.Globalization.Numbers.Rules.Ruleset.ApplyRules
+  nameWithType: Ruleset.ApplyRules
 - uid: Sepia.Globalization.Numbers.Rules.Ruleset.IsPublic
   name: IsPublic
   href: api/Sepia.Globalization.Numbers.Rules.Ruleset.html#Sepia_Globalization_Numbers_Rules_Ruleset_IsPublic
@@ -1435,6 +1531,18 @@ references:
   commentId: T:Sepia.Globalization.Numbers.Rules.RulesetGroup
   fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup
   nameWithType: RulesetGroup
+- uid: Sepia.Globalization.Numbers.Rules.RulesetGroup.Format(System.Decimal,System.String)
+  name: Format(Decimal, String)
+  href: api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html#Sepia_Globalization_Numbers_Rules_RulesetGroup_Format_System_Decimal_System_String_
+  commentId: M:Sepia.Globalization.Numbers.Rules.RulesetGroup.Format(System.Decimal,System.String)
+  fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup.Format(System.Decimal, System.String)
+  nameWithType: RulesetGroup.Format(Decimal, String)
+- uid: Sepia.Globalization.Numbers.Rules.RulesetGroup.Format*
+  name: Format
+  href: api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html#Sepia_Globalization_Numbers_Rules_RulesetGroup_Format_
+  commentId: Overload:Sepia.Globalization.Numbers.Rules.RulesetGroup.Format
+  fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup.Format
+  nameWithType: RulesetGroup.Format
 - uid: Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse(System.Xml.XPath.XPathNavigator)
   name: Parse(XPathNavigator)
   href: api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html#Sepia_Globalization_Numbers_Rules_RulesetGroup_Parse_System_Xml_XPath_XPathNavigator_
