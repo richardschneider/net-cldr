@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,8 +36,18 @@ namespace Sepia.Globalization.Numbers.Rules
                     context.Ruleset.ApplyRules(context);
                     break;
                 case "=":
-                    var ruleset = context.RulesetGroup.Rulesets[sub.Descriptor];
-                    ruleset.ApplyRules(context);
+                    // Fallback number formating?
+                    if (sub.Descriptor.StartsWith("#") || sub.Descriptor.StartsWith("0"))
+                    {
+                        context.Text.Append(context.Number.ToString(sub.Descriptor, CultureInfo.InvariantCulture));
+                    }
+
+                    // Else goto the ruleset.
+                    else
+                    {
+                        var ruleset = context.RulesetGroup.Rulesets[sub.Descriptor];
+                        ruleset.ApplyRules(context);
+                    }
                     break;
                 case "":
                     break;

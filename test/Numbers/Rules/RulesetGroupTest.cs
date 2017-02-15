@@ -43,13 +43,13 @@ namespace Sepia.Globalization.Numbers.Rules
         [TestMethod]
         public void Formatting_Max_Value()
         {
-            Assert.AreEqual("one thousand two hundred thirty-four", spelloutRules.Format(decimal.MaxValue, "spellout-numbering"));
+            Assert.AreEqual("79,228,162,514,264,337,593,543,950,335", spelloutRules.Format(decimal.MaxValue, "spellout-numbering"));
         }
 
         [TestMethod]
         public void Formatting_Min_Value()
         {
-            Assert.AreEqual("one thousand two hundred thirty-four", spelloutRules.Format(decimal.MaxValue, "spellout-numbering"));
+            Assert.AreEqual("minus 79,228,162,514,264,337,593,543,950,335", spelloutRules.Format(decimal.MinValue, "spellout-numbering"));
         }
 
     }

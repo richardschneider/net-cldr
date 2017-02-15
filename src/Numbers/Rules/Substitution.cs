@@ -9,7 +9,7 @@ namespace Sepia.Globalization.Numbers.Rules
 {
     internal class Substitution
     {
-        static Regex SubstitutionRegex = new Regex(@"(?<text>[^\[=→←]*)?(?<token>=|→→|←←)?(%+(?<desc>.+)=)?(\[(?<opt>.*)\])?", RegexOptions.Compiled | RegexOptions.CultureInvariant);
+        static Regex SubstitutionRegex = new Regex(@"(?<text>[^\[=→←]*)?(?<token>=|→→|←←)?(%*(?<desc>.+)=)?(\[(?<opt>.*)\])?", RegexOptions.Compiled | RegexOptions.CultureInvariant);
 
         public string Token;
         public string Text;
