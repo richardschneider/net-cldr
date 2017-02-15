@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sepia.Globalization.Numbers.Rules;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,14 +9,34 @@ namespace Sepia.Globalization.Numbers
 {
     class AlgorithmicFormatter : NumberFormatter
     {
+        static object safe = new Object();
+        static RulesetGroup rulesetGroup;
+
+        public override void Resolve()
+        {
+            if (rulesetGroup == null)
+            {
+                lock (safe)
+                {
+                    if (rulesetGroup == null)
+                    {
+                        var xml = Cldr.Instance
+                            .GetDocuments("common/rbnf/root.xml")
+                            .FirstElement("ldml/rbnf/rulesetGrouping[@type='NumberingSystemRules']");
+                        rulesetGroup = RulesetGroup.Parse(xml);
+                    }
+                }
+            }
+        }
+
         public override string Format(long value)
         {
-            throw new NotImplementedException();
+            return Format((decimal)value);
         }
 
         public override string Format(decimal value)
         {
-            throw new NotImplementedException();
+            return rulesetGroup.Format(value, (string)NumberingSystem.Rules);
         }
 
         public override string Format(double value)

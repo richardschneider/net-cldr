@@ -11,10 +11,11 @@ namespace Sepia.Globalization.Numbers
     public class NumberFormatterTest
     {
         [TestMethod]
-        public void Algorithmic_Systems_Are_NYI()
+        public void Algorithmic_Systems_Are_Supported()
         {
             var locale = Locale.Create("zh-u-nu-cyrl");
-            ExceptionAssert.Throws<NotImplementedException>(() => NumberFormatter.Create(locale));
+            var formatter = NumberFormatter.Create(locale);
+            Assert.IsNotNull(formatter);
         }
 
         [TestMethod]

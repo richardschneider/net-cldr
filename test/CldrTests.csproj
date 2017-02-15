@@ -65,6 +65,7 @@
     <Compile Include="CodeListTest.cs" />
     <Compile Include="LocaleExtensionTest.cs" />
     <Compile Include="LocaleTest.cs" />
+    <Compile Include="Numbers\AlgorithmicFormatterTest.cs" />
     <Compile Include="Numbers\NumericFormatterTest.cs" />
     <Compile Include="Numbers\NumberSymbolsTest.cs" />
     <Compile Include="Numbers\NumberFormatterTest.cs" />

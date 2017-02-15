@@ -32,6 +32,17 @@ namespace Sepia.Globalization.Numbers
         public NumberSymbols Symbols { get; set; }
 
         /// <summary>
+        ///   Resolve any bindings.
+        /// </summary>
+        /// <remarks>
+        ///   This called when all the properties are set for the formatter.  Derived classes
+        ///   can then load any extra data that is required.
+        /// </remarks>
+        public virtual void Resolve()
+        {
+        }
+
+        /// <summary>
         ///   Creates or reuses a number formatter for the specified <see cref="Locale"/>.
         /// </summary>
         /// <param name="locale">
@@ -46,9 +57,10 @@ namespace Sepia.Globalization.Numbers
         public static INumberFormatter Create(Locale locale, NumberOptions options = null)
         {
             var numberingSystem = NumberingSystem.Create(locale);
+            NumberFormatter formatter;
             if (numberingSystem.IsNumeric)
             {
-                return new NumericFormatter
+                formatter = new NumericFormatter
                 {
                     Locale = locale,
                     NumberingSystem = numberingSystem,
@@ -58,7 +70,17 @@ namespace Sepia.Globalization.Numbers
             }
 
             else // Must be Algorithmic
-                throw new NotImplementedException($"Algorithmic number systems, such as '{numberingSystem.Id}', are not yet implemented.");
+            {
+                formatter = new AlgorithmicFormatter
+                {
+                    Locale = locale,
+                    NumberingSystem = numberingSystem,
+                    Options = options ?? new NumberOptions()
+                };
+            }
+
+            formatter.Resolve();
+            return formatter;
        }
 
         /// <inheritdoc />
