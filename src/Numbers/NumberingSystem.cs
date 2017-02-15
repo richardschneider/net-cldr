@@ -1,4 +1,5 @@
 ﻿using Common.Logging;
+using Sepia.Globalization.Numbers.Rules;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -17,6 +18,33 @@ namespace Sepia.Globalization.Numbers
         static ILog log = LogManager.GetLogger(typeof(NumberingSystem));
         static ConcurrentDictionary<string, NumberingSystem> Cache = new ConcurrentDictionary<string, NumberingSystem>();
         static string[] Others = new[] { "native", "finance", "traditio" };
+        static object safe = new Object();
+
+        static RulesetGroup numberingSystemRules;
+        static RulesetGroup NumberingSystemRules
+        {
+            get
+            {
+                if (numberingSystemRules == null)
+                {
+                    lock (safe)
+                    {
+                        if (numberingSystemRules == null)
+                        {
+                            var xml = Cldr.Instance
+                                .GetDocuments("common/rbnf/root.xml")
+                                .FirstElement("ldml/rbnf/rulesetGrouping[@type='NumberingSystemRules']");
+                            numberingSystemRules = RulesetGroup.Parse(xml);
+                        }
+                    }
+                }
+
+                return numberingSystemRules;
+            }
+        }
+
+        RulesetGroup rulesetGroup;
+        Ruleset ruleset;
 
         /// <summary>
         ///   Unique identifier of the numbering system.
@@ -46,13 +74,83 @@ namespace Sepia.Globalization.Numbers
         public string[] Digits { get; set; }
 
         /// <summary>
-        ///  The RBNF ruleset to be used for formatting numbers
+        ///  The RBNF ruleset name used for formatting numbers.
         /// </summary>
         /// <value>
         ///   Only valid when <see cref="Type"/> equals "algorithmic".
         /// </value>
+        /// <remarks>
+        ///   The rules specifier can contain simply a ruleset name, in which case the ruleset is 
+        ///   assumed to be found in the rule set grouping "NumberingSystemRules". Alternatively, 
+        ///   the specifier can denote a specific locale, ruleset grouping, and ruleset name, 
+        ///   separated by slashes.
+        /// </remarks>
         /// <seealso cref="IsAlgorithmic"/>
-        public object Rules { get; set; }
+        public string RuleName { get; set; }
+
+        /// <summary>
+        ///   Gets the grouping of rules for the numbering systems.
+        /// </summary>
+        /// <value>
+        ///   Only valid when <see cref="Type"/> equals "algorithmic".
+        /// </value>
+        public RulesetGroup RulesetGroup
+        {
+            get
+            {
+                if (rulesetGroup == null)
+                {
+                    lock (safe)
+                    {
+                        if (rulesetGroup == null)
+                        {
+                            if (RuleName.Contains('/'))
+                            {
+                                var parts = RuleName.Split('/');
+                                var locale = Locale.Create(parts[0]);
+                                var xml = locale
+                                    .ResourceBundle("common/rbnf/")
+                                    .FirstElement($"ldml/rbnf/rulesetGrouping[@type='{parts[1]}']");
+                                rulesetGroup = RulesetGroup.Parse(xml);
+                                ruleset = rulesetGroup.Rulesets[parts[2]];
+                            }
+                            else
+                            {
+                                rulesetGroup = NumberingSystemRules;
+                            }
+                        }
+                    }
+                }
+
+                return rulesetGroup;
+            }
+        }
+
+        /// <summary>
+        ///   A set of rules for the numbering system.
+        /// </summary>
+        /// <value>
+        ///   Only valid when <see cref="Type"/> equals "algorithmic".
+        /// </value>
+        public Ruleset Ruleset
+        {
+            get
+            {
+                if (ruleset == null)
+                {
+                    lock (safe)
+                    {
+                        var group = RulesetGroup;
+                        if (ruleset == null)
+                        {
+                            ruleset = group.Rulesets[RuleName];
+                        }
+                    }
+                }
+
+                return ruleset;
+            }
+        }
 
         /// <summary>
         ///   Determines if the <see cref="Type"/> is numeric.
@@ -74,7 +172,7 @@ namespace Sepia.Globalization.Numbers
         /// </value>
         /// <remarks>
         ///   Algorithmic systems are complex in nature, since the proper formatting and presentation
-        ///   of a numeric quantity is based on some algorithm or set of <see cref="Rules"/>. 
+        ///   of a numeric quantity is based on some algorithm or set of <see cref="RuleName"/>. 
         /// </remarks>
         public bool IsAlgorithmic { get { return Type == "algorithmic"; } }
 
@@ -105,7 +203,7 @@ namespace Sepia.Globalization.Numbers
                     Id = xml.GetAttribute("id", ""),
                     Type = xml.GetAttribute("type", ""),
                     Digits = GetTextElements(xml.GetAttribute("digits", "")).ToArray(),
-                    Rules = xml.GetAttribute("rules", "")
+                    RuleName = xml.GetAttribute("rules", "")
                 };
             });
         }

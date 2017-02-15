@@ -9,26 +9,6 @@ namespace Sepia.Globalization.Numbers
 {
     class AlgorithmicFormatter : NumberFormatter
     {
-        static object safe = new Object();
-        static RulesetGroup rulesetGroup;
-
-        public override void Resolve()
-        {
-            if (rulesetGroup == null)
-            {
-                lock (safe)
-                {
-                    if (rulesetGroup == null)
-                    {
-                        var xml = Cldr.Instance
-                            .GetDocuments("common/rbnf/root.xml")
-                            .FirstElement("ldml/rbnf/rulesetGrouping[@type='NumberingSystemRules']");
-                        rulesetGroup = RulesetGroup.Parse(xml);
-                    }
-                }
-            }
-        }
-
         public override string Format(long value)
         {
             return Format((decimal)value);
@@ -36,7 +16,7 @@ namespace Sepia.Globalization.Numbers
 
         public override string Format(decimal value)
         {
-            return rulesetGroup.Format(value, (string)NumberingSystem.Rules);
+            return NumberingSystem.RulesetGroup.Format(value, NumberingSystem.Ruleset.Type);
         }
 
         public override string Format(double value)

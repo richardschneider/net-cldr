@@ -44,7 +44,7 @@ namespace Sepia.Globalization.Numbers.Rules
                     throw new NotSupportedException($"Substitution token '{sub.Token}' is not allowed.");
             }
 
-            if (sub.Optional != null && (number % this.LowerLimit) != 0)
+            if (sub.Optional != null && (number % Divisor()) != 0)
             {
                 Apply(sub.Optional, context);
             }
