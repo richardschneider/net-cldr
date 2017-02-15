@@ -43,6 +43,18 @@ namespace Sepia.Globalization.Numbers.Rules
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="context"></param>
+        public void ApplyRules(RbnfContext context)
+        {
+            context.Ruleset = this;
+            var rule = Rules.FirstOrDefault(r => r.Matches(context));
+            if (rule != null)
+                rule.Fire(context);
+        }
+
+        /// <summary>
         ///   Formatting rules.
         /// </summary>
         /// <value>
@@ -79,6 +91,12 @@ namespace Sepia.Globalization.Numbers.Rules
             }
             ruleset.Rules = rules;
 
+            // Need to set upper limit of a base value rule.
+            var bvrs = rules.OfType<BaseValueRule>().ToArray();
+            for (int i = 1; i < bvrs.Length; ++i)
+            {
+                bvrs[i - 1].UpperLimit = bvrs[i].LowerLimit - 1;
+            }
             return ruleset;
         }
 

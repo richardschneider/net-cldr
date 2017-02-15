@@ -32,6 +32,24 @@ namespace Sepia.Globalization.Numbers.Rules
         public IDictionary<string, Ruleset> Rulesets = new Dictionary<string, Ruleset>();
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="style"></param>
+        /// <returns></returns>
+        public string Format(decimal value, string style)
+        {
+            var ctx = new RbnfContext
+            {
+                Number = value,
+                RulesetGroup = this
+            };
+            Rulesets[style].ApplyRules(ctx);
+
+            return ctx.Text.ToString();
+        }
+
+        /// <summary>
         ///   Create a rule set group from the specified <see cref="XPathNavigator"/>.
         /// </summary>
         /// <param name="xml">

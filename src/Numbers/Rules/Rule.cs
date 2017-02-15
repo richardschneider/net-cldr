@@ -12,6 +12,11 @@ namespace Sepia.Globalization.Numbers.Rules
     /// </summary>
     public abstract class Rule : IRule
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        internal Substitution[] Substitutions { get; set; }
+
         /// <inheritdoc />
         public abstract void Fire(RbnfContext context);
 
@@ -32,7 +37,7 @@ namespace Sepia.Globalization.Numbers.Rules
         /// </remarks>
         public static IRule Parse(XPathNavigator xml)
         {
-            IRule rule = null;
+            Rule rule = null;
             var value = xml.GetAttribute("value", "");
             switch (value)
             {
@@ -57,11 +62,19 @@ namespace Sepia.Globalization.Numbers.Rules
                 default:
                     var c = value[0];
                     if ('0' <= c && c <= '9')
-                        rule = new BaseValueRule();
+                    {
+                        rule = new BaseValueRule
+                        {
+                            LowerLimit = decimal.Parse(value)
+                        };
+                    }
                     else
                         throw new FormatException($"Unknown rule value '{value}'.");
                     break;
             }
+
+            var body = xml.Value;
+            rule.Substitutions = Substitution.Parse(body.TrimEnd(';')).ToArray();
 
             return rule;
         }
