@@ -48,10 +48,12 @@ namespace Sepia.Globalization.Numbers.Rules
         /// <param name="context"></param>
         public void ApplyRules(RbnfContext context)
         {
+            var previous = context.Ruleset;
             context.Ruleset = this;
             var rule = Rules.FirstOrDefault(r => r.Matches(context));
             if (rule != null)
                 rule.Fire(context);
+            context.Ruleset = previous;
         }
 
         /// <summary>

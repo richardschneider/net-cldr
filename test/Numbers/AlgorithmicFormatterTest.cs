@@ -36,5 +36,14 @@ namespace Sepia.Globalization.Numbers
             Assert.AreEqual("伍仟", formatter.Format(5000m));
         }
 
+        [TestMethod]
+        public void Fraction()
+        {
+            var locale = Locale.Create("en-u-nu-grek");
+            var formatter = NumberFormatter.Create(locale);
+            Assert.AreEqual("𐆊´.Α´Β´Β´", formatter.Format(0.122m));
+           
+        }
+
     }
 }

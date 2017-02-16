@@ -52,5 +52,12 @@ namespace Sepia.Globalization.Numbers.Rules
             Assert.AreEqual("minus 79,228,162,514,264,337,593,543,950,335", spelloutRules.Format(decimal.MinValue, "spellout-numbering"));
         }
 
+        [TestMethod]
+        public void Formatting_Fractions()
+        {
+            Assert.AreEqual("one point two", spelloutRules.Format(1.2m, "spellout-numbering"));
+            Assert.AreEqual("one point zero two", spelloutRules.Format(1.02m, "spellout-numbering"));
+            Assert.AreEqual("one point zero zero zero zero two", spelloutRules.Format(1.00002m, "spellout-numbering"));
+        }
     }
 }
