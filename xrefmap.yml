@@ -1537,6 +1537,12 @@ references:
   commentId: M:Sepia.Globalization.Numbers.Rules.RulesetGroup.Format(System.Decimal,System.String)
   fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup.Format(System.Decimal, System.String)
   nameWithType: RulesetGroup.Format(Decimal, String)
+- uid: Sepia.Globalization.Numbers.Rules.RulesetGroup.Format(System.Double,System.String)
+  name: Format(Double, String)
+  href: api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html#Sepia_Globalization_Numbers_Rules_RulesetGroup_Format_System_Double_System_String_
+  commentId: M:Sepia.Globalization.Numbers.Rules.RulesetGroup.Format(System.Double,System.String)
+  fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup.Format(System.Double, System.String)
+  nameWithType: RulesetGroup.Format(Double, String)
 - uid: Sepia.Globalization.Numbers.Rules.RulesetGroup.Format*
   name: Format
   href: api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html#Sepia_Globalization_Numbers_Rules_RulesetGroup_Format_
