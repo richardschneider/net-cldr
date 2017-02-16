@@ -17,6 +17,13 @@ namespace Sepia.Globalization.Numbers.Rules
                 {
                     case "→→":
                         context.Number = Math.Abs(context.Number);
+                        if (context.DoubleNumber.HasValue)
+                        {
+                            if (double.IsNegativeInfinity(context.DoubleNumber.Value))
+                                context.DoubleNumber = double.PositiveInfinity;
+                            else
+                                context.DoubleNumber = Math.Abs(context.DoubleNumber.Value);
+                        }
                         context.Ruleset.ApplyRules(context);
                         break;
                     case "":
@@ -29,7 +36,7 @@ namespace Sepia.Globalization.Numbers.Rules
 
         public override bool Matches(RbnfContext context)
         {
-            return context.Number < 0;
+            return context.Number < 0 || (context.DoubleNumber.HasValue && double.IsNegativeInfinity(context.DoubleNumber.Value));
         }
     }
 }

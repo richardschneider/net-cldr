@@ -32,19 +32,52 @@ namespace Sepia.Globalization.Numbers.Rules
         public IDictionary<string, Ruleset> Rulesets = new Dictionary<string, Ruleset>();
 
         /// <summary>
-        /// 
+        ///   Formats a <see cref="decimal"/> using the specified rule set name.
         /// </summary>
-        /// <param name="value"></param>
-        /// <param name="style"></param>
-        /// <returns></returns>
-        public string Format(decimal value, string style)
+        /// <param name="value">
+        ///   The number to format.
+        /// </param>
+        /// <param name="type">
+        ///   The rule set name, such as "spellout-numbering" or "spellout-cardinal".
+        /// </param>
+        /// <returns>
+        ///   The string representation of the <paramref name="value"/>.
+        /// </returns>
+        public string Format(decimal value, string type)
         {
             var ctx = new RbnfContext
             {
                 Number = value,
                 RulesetGroup = this
             };
-            Rulesets[style].ApplyRules(ctx);
+            Rulesets[type].ApplyRules(ctx);
+
+            return ctx.Text.ToString();
+        }
+
+        /// <summary>
+        ///   Formats a <see cref="double"/> using the specified rule set name.
+        /// </summary>
+        /// <param name="value">
+        ///   The number to format.
+        /// </param>
+        /// <param name="type">
+        ///   The rule set name, such as "spellout-numbering" or "spellout-cardinal".
+        /// </param>
+        /// <returns>
+        ///   The string representation of the <paramref name="value"/>.
+        /// </returns>
+        public string Format(double value, string type)
+        {
+            var ctx = new RbnfContext
+            {
+                DoubleNumber = value,
+                RulesetGroup = this
+            };
+            if (!double.IsInfinity(value) && !double.IsNaN(value))
+                ctx.Number = (decimal)value;
+
+            Rulesets[type].ApplyRules(ctx);
 
             return ctx.Text.ToString();
         }

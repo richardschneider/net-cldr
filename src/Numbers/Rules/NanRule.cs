@@ -10,11 +10,15 @@ namespace Sepia.Globalization.Numbers.Rules
     {
         public override void Fire(RbnfContext context)
         {
+            foreach (var sub in Substitutions)
+            {
+                context.Text.Append(sub.Text);
+            }
         }
 
         public override bool Matches(RbnfContext context)
         {
-            return false;
+            return context.DoubleNumber.HasValue && double.IsNaN(context.DoubleNumber.Value);
         }
     }
 }

@@ -58,6 +58,24 @@ namespace Sepia.Globalization.Numbers.Rules
             Assert.AreEqual("one point two", spelloutRules.Format(1.2m, "spellout-numbering"));
             Assert.AreEqual("one point zero two", spelloutRules.Format(1.02m, "spellout-numbering"));
             Assert.AreEqual("one point zero zero zero zero two", spelloutRules.Format(1.00002m, "spellout-numbering"));
+
+            Assert.AreEqual("one point two", spelloutRules.Format(1.2, "spellout-numbering"));
+            Assert.AreEqual("one point zero two", spelloutRules.Format(1.02, "spellout-numbering"));
+            Assert.AreEqual("one point zero zero zero zero two", spelloutRules.Format(1.00002, "spellout-numbering"));
         }
+
+        [TestMethod]
+        public void Formatting_Infinity()
+        {
+            Assert.AreEqual("infinity", spelloutRules.Format(double.PositiveInfinity, "spellout-numbering"));
+            Assert.AreEqual("minus infinity", spelloutRules.Format(double.NegativeInfinity, "spellout-numbering"));
+        }
+
+        [TestMethod]
+        public void Formatting_NaN()
+        {
+            Assert.AreEqual("not a number", spelloutRules.Format(double.NaN, "spellout-numbering"));
+        }
+
     }
 }
