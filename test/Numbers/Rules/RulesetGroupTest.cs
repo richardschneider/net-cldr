@@ -38,6 +38,7 @@ namespace Sepia.Globalization.Numbers.Rules
             Assert.AreEqual("three hundred twenty-one", spelloutRules.Format(321m, "spellout-numbering"));
             Assert.AreEqual("one thousand two hundred thirty-four", spelloutRules.Format(1234m, "spellout-numbering"));
             Assert.AreEqual("minus one thousand two hundred thirty-four", spelloutRules.Format(-1234m, "spellout-numbering"));
+            Assert.AreEqual("twenty quadrillion", spelloutRules.Format(20000000000000000m, "spellout-numbering"));
         }
 
         [TestMethod]

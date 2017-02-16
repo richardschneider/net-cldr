@@ -14,7 +14,7 @@ namespace Sepia.Globalization.Numbers.Rules
 
         public override bool Matches(RbnfContext context)
         {
-            return false;
+            throw new NotImplementedException();
         }
     }
 }

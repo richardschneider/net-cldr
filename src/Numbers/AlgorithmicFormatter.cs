@@ -21,7 +21,7 @@ namespace Sepia.Globalization.Numbers
 
         public override string Format(double value)
         {
-            throw new NotImplementedException();
+            return NumberingSystem.RulesetGroup.Format(value, NumberingSystem.Ruleset.Type);
         }
 
         public override string Format(long value, string currencyCode)
