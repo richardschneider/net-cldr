@@ -1,1 +1,409 @@
-{"homepages":[],"source_base_path":"C:/projects/net-cldr/doc","xrefmap":"xrefmap.yml","files":[{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.Numbers.NumberFormatter.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.Numbers.NumberFormatter.html","hash":"H1xHu3WWQGePGzyb8ympAw=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.Numbers.NumberOptions.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.Numbers.NumberOptions.html","hash":"6vkBuAg/YtdlQDUzE52p9w=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.Numbers.Rules.Ruleset.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.Numbers.Rules.Ruleset.html","hash":"F/ig3dV7Jn1Jz1ySgqMQ3w=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.Numbers.Rules.RulesetGroup.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html","hash":"W3F06nKs0YzBLecx1RDGXA=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.Numbers.Rules.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.Numbers.Rules.html","hash":"419ibWaenHRuBTy69QTT6g=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.Numbers.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.Numbers.html","hash":"j67qhFqIyURzDHfvMr0e9Q=="}},"is_incremental":false},{"type":"Resource","source_relative_path":"images/docs-latest-green.svg","output":{"resource":{"relative_path":"images/docs-latest-green.svg"}},"is_incremental":false},{"type":"Toc","source_relative_path":"toc.yml","output":{".html":{"relative_path":"toc.html","hash":"f4qz0t1AGZ1khJ7jWqNLHQ=="}},"is_incremental":false},{"type":"Toc","source_relative_path":"api/toc.yml","output":{".html":{"relative_path":"api/toc.html","hash":"3FJxUUoA4WCWpy7kiMgIVQ=="}},"is_incremental":false},{"type":"Toc","source_relative_path":"articles/toc.yml","output":{".html":{"relative_path":"articles/toc.html","hash":"dsfYf/xjrWq6mnqKHgnW9g=="}},"is_incremental":false},{"type":"Conceptual","source_relative_path":"index.md","output":{".html":{"relative_path":"index.html","hash":"lQIuWsk0rxtC5IJN1r/reA=="}},"is_incremental":false},{"type":"Conceptual","source_relative_path":"articles/query.md","output":{".html":{"relative_path":"articles/query.html","hash":"dQBsWkVi0F/zNLBtfcQAXA=="}},"is_incremental":false},{"type":"Conceptual","source_relative_path":"articles/intro.md","output":{".html":{"relative_path":"articles/intro.html","hash":"syD6Y1AxsWF8wZpnrud7PQ=="}},"is_incremental":false},{"type":"Conceptual","source_relative_path":"articles/usage.md","output":{".html":{"relative_path":"articles/usage.html","hash":"aBLKXOLdugtp2xuEKX7XNg=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.Numbers.Rules.IRule.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.Numbers.Rules.IRule.html","hash":"7o9TfYbNm04VO/NgcolgoA=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.Numbers.Rules.RbnfContext.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.Numbers.Rules.RbnfContext.html","hash":"Dzd2jZ5Sd/SH7osxaNyRyg=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.Numbers.Rules.Rule.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.Numbers.Rules.Rule.html","hash":"F5+ayFzd4EkSJunKjzLXLQ=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.StringRange.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.StringRange.html","hash":"Hsomnxma6cldM5s/+yEIEA=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.html","hash":"AqZV63mZI1YkS9HL/pm6/A=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.CldrContext.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.CldrContext.html","hash":"fn91TPcqhKnFTU/G3gDTrg=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.CldrExentsions.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.CldrExentsions.html","hash":"1JvOxooxYvX35FQrkkD8qw=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.Locale.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.Locale.html","hash":"+Y0Vtd/Ifs5aCzFhvwvmZQ=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.Cldr.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.Cldr.html","hash":"zZVh1gALXEw9/buOsSg9rQ=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.CodeList.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.CodeList.html","hash":"hE/d0GMzFiY0RgW8hhzByg=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.LocaleExtension.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.LocaleExtension.html","hash":"H+VRA7UXMIsjWwmi+gxHJg=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.Numbers.INumberFormatter.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.Numbers.INumberFormatter.html","hash":"CMzbQQ0K09zWJ7hLA/Ddng=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.Numbers.NumberingSystem.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.Numbers.NumberingSystem.html","hash":"pRal00L9yu/fcC7gJ85Zlw=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.Numbers.NumberStyle.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.Numbers.NumberStyle.html","hash":"vURRkEJm+fxC+CnJpGxpiQ=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.Numbers.NumberSymbols.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.Numbers.NumberSymbols.html","hash":"Ite4fau1Z6/1P6ymrUdkYA=="}},"is_incremental":false},{"type":"ManagedReference","source_relative_path":"api/Sepia.Globalization.LocaleIdentifier.yml","output":{".html":{"relative_path":"api/Sepia.Globalization.LocaleIdentifier.html","hash":"h33OkF1Vu5jvrn+h+E7x3A=="}},"is_incremental":false}]}
+{
+  "homepages": [],
+  "source_base_path": "C:/projects/net-cldr/doc",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Cldr.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Cldr.html",
+          "hash": "eTBh0a7kuVSqzqFMTUK24w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.CldrContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.CldrContext.html",
+          "hash": "aeoLVZ/YYDIsyFg2HH4i3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.CldrExentsions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.CldrExentsions.html",
+          "hash": "6/4RcDdV+nle6M/N6YEyOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.CodeList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.CodeList.html",
+          "hash": "Yt70fSq5qMzEZOQNNVXijw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Locale.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Locale.html",
+          "hash": "Ut6ss+7DKMXdX/OMJYWUqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.LocaleExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.LocaleExtension.html",
+          "hash": "KTcn4H4brGtjgCND9vMqIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.LocaleIdentifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.LocaleIdentifier.html",
+          "hash": "HEgU70M90LDieLdphKgC2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Numbers.INumberFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Numbers.INumberFormatter.html",
+          "hash": "jIIwudbgjFj9ot4SBzGVyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Numbers.NumberFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Numbers.NumberFormatter.html",
+          "hash": "FeQ7KETZhjZfdAEeE+S0Mw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Numbers.NumberOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Numbers.NumberOptions.html",
+          "hash": "xkCsgHbXtts5HzLHU1DotQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Numbers.NumberStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Numbers.NumberStyle.html",
+          "hash": "d01X3evtJgWjpJ5gOigMug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Numbers.NumberSymbols.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Numbers.NumberSymbols.html",
+          "hash": "mpjso2FIU20TOxjeI8rPmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Numbers.NumberingSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Numbers.NumberingSystem.html",
+          "hash": "R+0g5+GQbVlPoLf7iO5gNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Numbers.Rules.IRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Numbers.Rules.IRule.html",
+          "hash": "syXu6B5jh7jRVDx8j9+XpQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Numbers.Rules.RbnfContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Numbers.Rules.RbnfContext.html",
+          "hash": "1Oc9Gw2psMcGnbTsuuwNhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Numbers.Rules.Rule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Numbers.Rules.Rule.html",
+          "hash": "oDXbJiiW57PSus/SuOG70w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Numbers.Rules.Ruleset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Numbers.Rules.Ruleset.html",
+          "hash": "aeRnZxfxT1TgMAshqJrNrg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Numbers.Rules.RulesetGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html",
+          "hash": "rtdXSSK3oecQVLprf6011w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Numbers.Rules.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Numbers.Rules.html",
+          "hash": "vNUdCFoXVlc2fL94Wf0Wgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Numbers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Numbers.html",
+          "hash": "rt2n/yRZMLYHJ2frV4XezA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.StringRange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.StringRange.html",
+          "hash": "AJknm4FIRMyviNbawJZgRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.html",
+          "hash": "wVtCnLkWJbGxCgoa2AEf1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "yKWu9lUdPEPIFDa2XFtDlg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "9lforettacZwe3S/NDaahw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/query.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/query.html",
+          "hash": "lDEy2daTomiaTh2fm5i3AA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "t7iiFrmuYmrKWisdq+lN6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/usage.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/usage.html",
+          "hash": "bujCfr0HVwWqNOM+v+3phw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/docs-latest-green.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/docs-latest-green.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "lKOKoDuCil2kIxNnAYPAhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "V9liO+2j8J72Qgcyu0RLDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

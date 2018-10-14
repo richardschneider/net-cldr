@@ -8,7 +8,7 @@
     <title>Usage | Sepia Globalization </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Usage | Sepia Globalization ">
-    <meta name="generator" content="docfx 2.12.1.0">
+    <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -17,8 +17,10 @@
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
+    
+    
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -65,16 +67,15 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-              <h1 id="usage">Usage</h1>
-              
+<h1 id="usage">Usage</h1>
+
 <pre><code>using Makaretu.Globalization;
 </code></pre><p>The CLDR uses the singleton pattern.  To access the repository, use <code>Cldr.Instance</code>.</p>
 <h2 id="download-cldr">Download CLDR</h2>
 <p>Ensure that the latest version of the  CLDR is installed.  This will download the latest published release from <a href="http://www.unicode.org/Public/cldr/latest">unicode.org</a>, if required.</p>
 <pre><code>var version = Cldr.Instance.DownloadLatestAsync().Result;
 Console.WriteLine($&quot;Using CLDR {version}&quot;);
-</code></pre>
-            </article>
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

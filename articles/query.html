@@ -8,7 +8,7 @@
     <title>Query | Sepia Globalization </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Query | Sepia Globalization ">
-    <meta name="generator" content="docfx 2.12.1.0">
+    <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -17,8 +17,10 @@
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
+    
+    
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -65,15 +67,14 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-              <h1 id="query">Query</h1>
-              
+<h1 id="query">Query</h1>
+
 <p>Query the CLDR for the fractional digits of the Japanese Yen (JPY)</p>
 <pre><code>var jpy = Cldr.Instance
     .GetDocuments(&quot;common/supplemental/supplementalData.xml&quot;)
     .FirstElement(&quot;supplementalData/currencyData/fractions/info[@iso4217=&#39;JPY&#39;]&quot;);
 Assert.AreEqual(&quot;0&quot;, jpy.Attribute(&quot;digits&quot;).Value);
-</code></pre>
-            </article>
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

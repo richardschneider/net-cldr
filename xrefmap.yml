@@ -23,6 +23,7 @@ references:
   name: Cldr
   href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr__ctor_
   commentId: Overload:Sepia.Globalization.Cldr.#ctor
+  isSpec: "True"
   fullName: Sepia.Globalization.Cldr.Cldr
   nameWithType: Cldr.Cldr
 - uid: Sepia.Globalization.Cldr.CurrentVersion
@@ -35,18 +36,20 @@ references:
   name: CurrentVersion
   href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_CurrentVersion_
   commentId: Overload:Sepia.Globalization.Cldr.CurrentVersion
+  isSpec: "True"
   fullName: Sepia.Globalization.Cldr.CurrentVersion
   nameWithType: Cldr.CurrentVersion
-- uid: Sepia.Globalization.Cldr.DownloadAsync(System.Version)
+- uid: Sepia.Globalization.Cldr.DownloadAsync(Version)
   name: DownloadAsync(Version)
-  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_DownloadAsync_System_Version_
-  commentId: M:Sepia.Globalization.Cldr.DownloadAsync(System.Version)
-  fullName: Sepia.Globalization.Cldr.DownloadAsync(System.Version)
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_DownloadAsync_Version_
+  commentId: M:Sepia.Globalization.Cldr.DownloadAsync(Version)
+  fullName: Sepia.Globalization.Cldr.DownloadAsync(Version)
   nameWithType: Cldr.DownloadAsync(Version)
 - uid: Sepia.Globalization.Cldr.DownloadAsync*
   name: DownloadAsync
   href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_DownloadAsync_
   commentId: Overload:Sepia.Globalization.Cldr.DownloadAsync
+  isSpec: "True"
   fullName: Sepia.Globalization.Cldr.DownloadAsync
   nameWithType: Cldr.DownloadAsync
 - uid: Sepia.Globalization.Cldr.DownloadLatestAsync
@@ -59,6 +62,7 @@ references:
   name: DownloadLatestAsync
   href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_DownloadLatestAsync_
   commentId: Overload:Sepia.Globalization.Cldr.DownloadLatestAsync
+  isSpec: "True"
   fullName: Sepia.Globalization.Cldr.DownloadLatestAsync
   nameWithType: Cldr.DownloadLatestAsync
 - uid: Sepia.Globalization.Cldr.GetAllDocuments(System.String)
@@ -71,6 +75,7 @@ references:
   name: GetAllDocuments
   href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_GetAllDocuments_
   commentId: Overload:Sepia.Globalization.Cldr.GetAllDocuments
+  isSpec: "True"
   fullName: Sepia.Globalization.Cldr.GetAllDocuments
   nameWithType: Cldr.GetAllDocuments
 - uid: Sepia.Globalization.Cldr.GetDocuments(System.String)
@@ -83,6 +88,7 @@ references:
   name: GetDocuments
   href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_GetDocuments_
   commentId: Overload:Sepia.Globalization.Cldr.GetDocuments
+  isSpec: "True"
   fullName: Sepia.Globalization.Cldr.GetDocuments
   nameWithType: Cldr.GetDocuments
 - uid: Sepia.Globalization.Cldr.GetTextDocuments(System.String)
@@ -95,6 +101,7 @@ references:
   name: GetTextDocuments
   href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_GetTextDocuments_
   commentId: Overload:Sepia.Globalization.Cldr.GetTextDocuments
+  isSpec: "True"
   fullName: Sepia.Globalization.Cldr.GetTextDocuments
   nameWithType: Cldr.GetTextDocuments
 - uid: Sepia.Globalization.Cldr.Instance
@@ -113,6 +120,7 @@ references:
   name: IsCurrencyDefined
   href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_IsCurrencyDefined_
   commentId: Overload:Sepia.Globalization.Cldr.IsCurrencyDefined
+  isSpec: "True"
   fullName: Sepia.Globalization.Cldr.IsCurrencyDefined
   nameWithType: Cldr.IsCurrencyDefined
 - uid: Sepia.Globalization.Cldr.IsLanguageDefined(System.String)
@@ -125,6 +133,7 @@ references:
   name: IsLanguageDefined
   href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_IsLanguageDefined_
   commentId: Overload:Sepia.Globalization.Cldr.IsLanguageDefined
+  isSpec: "True"
   fullName: Sepia.Globalization.Cldr.IsLanguageDefined
   nameWithType: Cldr.IsLanguageDefined
 - uid: Sepia.Globalization.Cldr.IsRegionDefined(System.String)
@@ -137,6 +146,7 @@ references:
   name: IsRegionDefined
   href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_IsRegionDefined_
   commentId: Overload:Sepia.Globalization.Cldr.IsRegionDefined
+  isSpec: "True"
   fullName: Sepia.Globalization.Cldr.IsRegionDefined
   nameWithType: Cldr.IsRegionDefined
 - uid: Sepia.Globalization.Cldr.IsScriptDefined(System.String)
@@ -149,6 +159,7 @@ references:
   name: IsScriptDefined
   href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_IsScriptDefined_
   commentId: Overload:Sepia.Globalization.Cldr.IsScriptDefined
+  isSpec: "True"
   fullName: Sepia.Globalization.Cldr.IsScriptDefined
   nameWithType: Cldr.IsScriptDefined
 - uid: Sepia.Globalization.Cldr.IsVariantDefined(System.String)
@@ -161,6 +172,7 @@ references:
   name: IsVariantDefined
   href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_IsVariantDefined_
   commentId: Overload:Sepia.Globalization.Cldr.IsVariantDefined
+  isSpec: "True"
   fullName: Sepia.Globalization.Cldr.IsVariantDefined
   nameWithType: Cldr.IsVariantDefined
 - uid: Sepia.Globalization.Cldr.LatestVersionAsync
@@ -173,6 +185,7 @@ references:
   name: LatestVersionAsync
   href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_LatestVersionAsync_
   commentId: Overload:Sepia.Globalization.Cldr.LatestVersionAsync
+  isSpec: "True"
   fullName: Sepia.Globalization.Cldr.LatestVersionAsync
   nameWithType: Cldr.LatestVersionAsync
 - uid: Sepia.Globalization.Cldr.OriginUrl
@@ -203,6 +216,7 @@ references:
   name: CompareDocument
   href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_CompareDocument_
   commentId: Overload:Sepia.Globalization.CldrContext.CompareDocument
+  isSpec: "True"
   fullName: Sepia.Globalization.CldrContext.CompareDocument
   nameWithType: CldrContext.CompareDocument
 - uid: Sepia.Globalization.CldrContext.Default
@@ -211,31 +225,33 @@ references:
   commentId: F:Sepia.Globalization.CldrContext.Default
   fullName: Sepia.Globalization.CldrContext.Default
   nameWithType: CldrContext.Default
-- uid: Sepia.Globalization.CldrContext.PreserveWhitespace(System.Xml.XPath.XPathNavigator)
+- uid: Sepia.Globalization.CldrContext.PreserveWhitespace(XPathNavigator)
   name: PreserveWhitespace(XPathNavigator)
-  href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_PreserveWhitespace_System_Xml_XPath_XPathNavigator_
-  commentId: M:Sepia.Globalization.CldrContext.PreserveWhitespace(System.Xml.XPath.XPathNavigator)
-  fullName: Sepia.Globalization.CldrContext.PreserveWhitespace(System.Xml.XPath.XPathNavigator)
+  href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_PreserveWhitespace_XPathNavigator_
+  commentId: M:Sepia.Globalization.CldrContext.PreserveWhitespace(XPathNavigator)
+  fullName: Sepia.Globalization.CldrContext.PreserveWhitespace(XPathNavigator)
   nameWithType: CldrContext.PreserveWhitespace(XPathNavigator)
 - uid: Sepia.Globalization.CldrContext.PreserveWhitespace*
   name: PreserveWhitespace
   href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_PreserveWhitespace_
   commentId: Overload:Sepia.Globalization.CldrContext.PreserveWhitespace
+  isSpec: "True"
   fullName: Sepia.Globalization.CldrContext.PreserveWhitespace
   nameWithType: CldrContext.PreserveWhitespace
-- uid: Sepia.Globalization.CldrContext.ResolveFunction(System.String,System.String,System.Xml.XPath.XPathResultType[])
+- uid: Sepia.Globalization.CldrContext.ResolveFunction(System.String,System.String,XPathResultType[])
   name: ResolveFunction(String, String, XPathResultType[])
-  href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_ResolveFunction_System_String_System_String_System_Xml_XPath_XPathResultType___
-  commentId: M:Sepia.Globalization.CldrContext.ResolveFunction(System.String,System.String,System.Xml.XPath.XPathResultType[])
+  href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_ResolveFunction_System_String_System_String_XPathResultType___
+  commentId: M:Sepia.Globalization.CldrContext.ResolveFunction(System.String,System.String,XPathResultType[])
   name.vb: ResolveFunction(String, String, XPathResultType())
-  fullName: Sepia.Globalization.CldrContext.ResolveFunction(System.String, System.String, System.Xml.XPath.XPathResultType[])
-  fullName.vb: Sepia.Globalization.CldrContext.ResolveFunction(System.String, System.String, System.Xml.XPath.XPathResultType())
+  fullName: Sepia.Globalization.CldrContext.ResolveFunction(System.String, System.String, XPathResultType[])
+  fullName.vb: Sepia.Globalization.CldrContext.ResolveFunction(System.String, System.String, XPathResultType())
   nameWithType: CldrContext.ResolveFunction(String, String, XPathResultType[])
   nameWithType.vb: CldrContext.ResolveFunction(String, String, XPathResultType())
 - uid: Sepia.Globalization.CldrContext.ResolveFunction*
   name: ResolveFunction
   href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_ResolveFunction_
   commentId: Overload:Sepia.Globalization.CldrContext.ResolveFunction
+  isSpec: "True"
   fullName: Sepia.Globalization.CldrContext.ResolveFunction
   nameWithType: CldrContext.ResolveFunction
 - uid: Sepia.Globalization.CldrContext.ResolveVariable(System.String,System.String)
@@ -248,6 +264,7 @@ references:
   name: ResolveVariable
   href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_ResolveVariable_
   commentId: Overload:Sepia.Globalization.CldrContext.ResolveVariable
+  isSpec: "True"
   fullName: Sepia.Globalization.CldrContext.ResolveVariable
   nameWithType: CldrContext.ResolveVariable
 - uid: Sepia.Globalization.CldrContext.Whitespace
@@ -260,6 +277,7 @@ references:
   name: Whitespace
   href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_Whitespace_
   commentId: Overload:Sepia.Globalization.CldrContext.Whitespace
+  isSpec: "True"
   fullName: Sepia.Globalization.CldrContext.Whitespace
   nameWithType: CldrContext.Whitespace
 - uid: Sepia.Globalization.CldrExentsions
@@ -268,58 +286,61 @@ references:
   commentId: T:Sepia.Globalization.CldrExentsions
   fullName: Sepia.Globalization.CldrExentsions
   nameWithType: CldrExentsions
-- uid: Sepia.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
+- uid: Sepia.Globalization.CldrExentsions.Elements(IEnumerable{XPathDocument},System.String)
   name: Elements(IEnumerable<XPathDocument>, String)
-  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_Elements_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_
-  commentId: M:Sepia.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
+  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_Elements_IEnumerable_XPathDocument__System_String_
+  commentId: M:Sepia.Globalization.CldrExentsions.Elements(IEnumerable{XPathDocument},System.String)
   name.vb: Elements(IEnumerable(Of XPathDocument), String)
-  fullName: Sepia.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.String)
-  fullName.vb: Sepia.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.String)
+  fullName: Sepia.Globalization.CldrExentsions.Elements(IEnumerable<XPathDocument>, System.String)
+  fullName.vb: Sepia.Globalization.CldrExentsions.Elements(IEnumerable(Of XPathDocument), System.String)
   nameWithType: CldrExentsions.Elements(IEnumerable<XPathDocument>, String)
   nameWithType.vb: CldrExentsions.Elements(IEnumerable(Of XPathDocument), String)
 - uid: Sepia.Globalization.CldrExentsions.Elements*
   name: Elements
   href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_Elements_
   commentId: Overload:Sepia.Globalization.CldrExentsions.Elements
+  isSpec: "True"
   fullName: Sepia.Globalization.CldrExentsions.Elements
   nameWithType: CldrExentsions.Elements
-- uid: Sepia.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
+- uid: Sepia.Globalization.CldrExentsions.FirstElement(IEnumerable{XPathDocument},System.String)
   name: FirstElement(IEnumerable<XPathDocument>, String)
-  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_FirstElement_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_
-  commentId: M:Sepia.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
+  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_FirstElement_IEnumerable_XPathDocument__System_String_
+  commentId: M:Sepia.Globalization.CldrExentsions.FirstElement(IEnumerable{XPathDocument},System.String)
   name.vb: FirstElement(IEnumerable(Of XPathDocument), String)
-  fullName: Sepia.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.String)
-  fullName.vb: Sepia.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.String)
+  fullName: Sepia.Globalization.CldrExentsions.FirstElement(IEnumerable<XPathDocument>, System.String)
+  fullName.vb: Sepia.Globalization.CldrExentsions.FirstElement(IEnumerable(Of XPathDocument), System.String)
   nameWithType: CldrExentsions.FirstElement(IEnumerable<XPathDocument>, String)
   nameWithType.vb: CldrExentsions.FirstElement(IEnumerable(Of XPathDocument), String)
 - uid: Sepia.Globalization.CldrExentsions.FirstElement*
   name: FirstElement
   href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_FirstElement_
   commentId: Overload:Sepia.Globalization.CldrExentsions.FirstElement
+  isSpec: "True"
   fullName: Sepia.Globalization.CldrExentsions.FirstElement
   nameWithType: CldrExentsions.FirstElement
-- uid: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
+- uid: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(IEnumerable{XPathDocument},System.String)
   name: FirstElementOrDefault(IEnumerable<XPathDocument>, String)
-  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_FirstElementOrDefault_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_
-  commentId: M:Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
+  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_FirstElementOrDefault_IEnumerable_XPathDocument__System_String_
+  commentId: M:Sepia.Globalization.CldrExentsions.FirstElementOrDefault(IEnumerable{XPathDocument},System.String)
   name.vb: FirstElementOrDefault(IEnumerable(Of XPathDocument), String)
-  fullName: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.String)
-  fullName.vb: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.String)
+  fullName: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(IEnumerable<XPathDocument>, System.String)
+  fullName.vb: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(IEnumerable(Of XPathDocument), System.String)
   nameWithType: CldrExentsions.FirstElementOrDefault(IEnumerable<XPathDocument>, String)
   nameWithType.vb: CldrExentsions.FirstElementOrDefault(IEnumerable(Of XPathDocument), String)
-- uid: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String,System.Func{System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.Xml.XPath.XPathNavigator})
+- uid: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(IEnumerable{XPathDocument},System.String,Func{IEnumerable{XPathDocument},XPathNavigator})
   name: FirstElementOrDefault(IEnumerable<XPathDocument>, String, Func<IEnumerable<XPathDocument>, XPathNavigator>)
-  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_FirstElementOrDefault_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_System_Func_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_Xml_XPath_XPathNavigator__
-  commentId: M:Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String,System.Func{System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.Xml.XPath.XPathNavigator})
+  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_FirstElementOrDefault_IEnumerable_XPathDocument__System_String_Func_IEnumerable_XPathDocument__XPathNavigator__
+  commentId: M:Sepia.Globalization.CldrExentsions.FirstElementOrDefault(IEnumerable{XPathDocument},System.String,Func{IEnumerable{XPathDocument},XPathNavigator})
   name.vb: FirstElementOrDefault(IEnumerable(Of XPathDocument), String, Func(Of IEnumerable(Of XPathDocument), XPathNavigator))
-  fullName: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.String, System.Func<System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.Xml.XPath.XPathNavigator>)
-  fullName.vb: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.String, System.Func(Of System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.Xml.XPath.XPathNavigator))
+  fullName: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(IEnumerable<XPathDocument>, System.String, Func<IEnumerable<XPathDocument>, XPathNavigator>)
+  fullName.vb: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(IEnumerable(Of XPathDocument), System.String, Func(Of IEnumerable(Of XPathDocument), XPathNavigator))
   nameWithType: CldrExentsions.FirstElementOrDefault(IEnumerable<XPathDocument>, String, Func<IEnumerable<XPathDocument>, XPathNavigator>)
   nameWithType.vb: CldrExentsions.FirstElementOrDefault(IEnumerable(Of XPathDocument), String, Func(Of IEnumerable(Of XPathDocument), XPathNavigator))
 - uid: Sepia.Globalization.CldrExentsions.FirstElementOrDefault*
   name: FirstElementOrDefault
   href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_FirstElementOrDefault_
   commentId: Overload:Sepia.Globalization.CldrExentsions.FirstElementOrDefault
+  isSpec: "True"
   fullName: Sepia.Globalization.CldrExentsions.FirstElementOrDefault
   nameWithType: CldrExentsions.FirstElementOrDefault
 - uid: Sepia.Globalization.CodeList
@@ -338,6 +359,7 @@ references:
   name: CodeList
   href: api/Sepia.Globalization.CodeList.html#Sepia_Globalization_CodeList__ctor_
   commentId: Overload:Sepia.Globalization.CodeList.#ctor
+  isSpec: "True"
   fullName: Sepia.Globalization.CodeList.CodeList
   nameWithType: CodeList.CodeList
 - uid: Sepia.Globalization.CodeList.Contains(System.String)
@@ -350,6 +372,7 @@ references:
   name: Contains
   href: api/Sepia.Globalization.CodeList.html#Sepia_Globalization_CodeList_Contains_
   commentId: Overload:Sepia.Globalization.CodeList.Contains
+  isSpec: "True"
   fullName: Sepia.Globalization.CodeList.Contains
   nameWithType: CodeList.Contains
 - uid: Sepia.Globalization.CodeList.Separator
@@ -362,6 +385,7 @@ references:
   name: Separator
   href: api/Sepia.Globalization.CodeList.html#Sepia_Globalization_CodeList_Separator_
   commentId: Overload:Sepia.Globalization.CodeList.Separator
+  isSpec: "True"
   fullName: Sepia.Globalization.CodeList.Separator
   nameWithType: CodeList.Separator
 - uid: Sepia.Globalization.Locale
@@ -380,6 +404,7 @@ references:
   name: Locale
   href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale__ctor_
   commentId: Overload:Sepia.Globalization.Locale.#ctor
+  isSpec: "True"
   fullName: Sepia.Globalization.Locale.Locale
   nameWithType: Locale.Locale
 - uid: Sepia.Globalization.Locale.Create(Sepia.Globalization.LocaleIdentifier)
@@ -398,6 +423,7 @@ references:
   name: Create
   href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_Create_
   commentId: Overload:Sepia.Globalization.Locale.Create
+  isSpec: "True"
   fullName: Sepia.Globalization.Locale.Create
   nameWithType: Locale.Create
 - uid: Sepia.Globalization.Locale.CurrencyCode
@@ -410,6 +436,7 @@ references:
   name: CurrencyCode
   href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_CurrencyCode_
   commentId: Overload:Sepia.Globalization.Locale.CurrencyCode
+  isSpec: "True"
   fullName: Sepia.Globalization.Locale.CurrencyCode
   nameWithType: Locale.CurrencyCode
 - uid: Sepia.Globalization.Locale.Find(System.String)
@@ -422,6 +449,7 @@ references:
   name: Find
   href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_Find_
   commentId: Overload:Sepia.Globalization.Locale.Find
+  isSpec: "True"
   fullName: Sepia.Globalization.Locale.Find
   nameWithType: Locale.Find
 - uid: Sepia.Globalization.Locale.FindOrDefault(System.String)
@@ -434,6 +462,7 @@ references:
   name: FindOrDefault
   href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_FindOrDefault_
   commentId: Overload:Sepia.Globalization.Locale.FindOrDefault
+  isSpec: "True"
   fullName: Sepia.Globalization.Locale.FindOrDefault
   nameWithType: Locale.FindOrDefault
 - uid: Sepia.Globalization.Locale.Id
@@ -446,6 +475,7 @@ references:
   name: Id
   href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_Id_
   commentId: Overload:Sepia.Globalization.Locale.Id
+  isSpec: "True"
   fullName: Sepia.Globalization.Locale.Id
   nameWithType: Locale.Id
 - uid: Sepia.Globalization.Locale.ResourceBundle(System.String,System.String)
@@ -458,6 +488,7 @@ references:
   name: ResourceBundle
   href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_ResourceBundle_
   commentId: Overload:Sepia.Globalization.Locale.ResourceBundle
+  isSpec: "True"
   fullName: Sepia.Globalization.Locale.ResourceBundle
   nameWithType: Locale.ResourceBundle
 - uid: Sepia.Globalization.Locale.SearchChain
@@ -470,6 +501,7 @@ references:
   name: SearchChain
   href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_SearchChain_
   commentId: Overload:Sepia.Globalization.Locale.SearchChain
+  isSpec: "True"
   fullName: Sepia.Globalization.Locale.SearchChain
   nameWithType: Locale.SearchChain
 - uid: Sepia.Globalization.Locale.ToString
@@ -482,6 +514,7 @@ references:
   name: ToString
   href: api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_ToString_
   commentId: Overload:Sepia.Globalization.Locale.ToString
+  isSpec: "True"
   fullName: Sepia.Globalization.Locale.ToString
   nameWithType: Locale.ToString
 - uid: Sepia.Globalization.LocaleExtension
@@ -500,6 +533,7 @@ references:
   name: Attributes
   href: api/Sepia.Globalization.LocaleExtension.html#Sepia_Globalization_LocaleExtension_Attributes_
   commentId: Overload:Sepia.Globalization.LocaleExtension.Attributes
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleExtension.Attributes
   nameWithType: LocaleExtension.Attributes
 - uid: Sepia.Globalization.LocaleExtension.Empty
@@ -518,6 +552,7 @@ references:
   name: Keywords
   href: api/Sepia.Globalization.LocaleExtension.html#Sepia_Globalization_LocaleExtension_Keywords_
   commentId: Overload:Sepia.Globalization.LocaleExtension.Keywords
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleExtension.Keywords
   nameWithType: LocaleExtension.Keywords
 - uid: Sepia.Globalization.LocaleExtension.Parse(System.String)
@@ -530,6 +565,7 @@ references:
   name: Parse
   href: api/Sepia.Globalization.LocaleExtension.html#Sepia_Globalization_LocaleExtension_Parse_
   commentId: Overload:Sepia.Globalization.LocaleExtension.Parse
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleExtension.Parse
   nameWithType: LocaleExtension.Parse
 - uid: Sepia.Globalization.LocaleExtension.ToString
@@ -542,6 +578,7 @@ references:
   name: ToString
   href: api/Sepia.Globalization.LocaleExtension.html#Sepia_Globalization_LocaleExtension_ToString_
   commentId: Overload:Sepia.Globalization.LocaleExtension.ToString
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleExtension.ToString
   nameWithType: LocaleExtension.ToString
 - uid: Sepia.Globalization.LocaleExtension.TryParse(System.String,Sepia.Globalization.LocaleExtension@)
@@ -566,6 +603,7 @@ references:
   name: TryParse
   href: api/Sepia.Globalization.LocaleExtension.html#Sepia_Globalization_LocaleExtension_TryParse_
   commentId: Overload:Sepia.Globalization.LocaleExtension.TryParse
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleExtension.TryParse
   nameWithType: LocaleExtension.TryParse
 - uid: Sepia.Globalization.LocaleIdentifier
@@ -584,6 +622,7 @@ references:
   name: CanonicalForm
   href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_CanonicalForm_
   commentId: Overload:Sepia.Globalization.LocaleIdentifier.CanonicalForm
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleIdentifier.CanonicalForm
   nameWithType: LocaleIdentifier.CanonicalForm
 - uid: Sepia.Globalization.LocaleIdentifier.Extensions
@@ -596,6 +635,7 @@ references:
   name: Extensions
   href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Extensions_
   commentId: Overload:Sepia.Globalization.LocaleIdentifier.Extensions
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleIdentifier.Extensions
   nameWithType: LocaleIdentifier.Extensions
 - uid: Sepia.Globalization.LocaleIdentifier.Language
@@ -608,6 +648,7 @@ references:
   name: Language
   href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Language_
   commentId: Overload:Sepia.Globalization.LocaleIdentifier.Language
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleIdentifier.Language
   nameWithType: LocaleIdentifier.Language
 - uid: Sepia.Globalization.LocaleIdentifier.MostLikelySubtags
@@ -620,6 +661,7 @@ references:
   name: MostLikelySubtags
   href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_MostLikelySubtags_
   commentId: Overload:Sepia.Globalization.LocaleIdentifier.MostLikelySubtags
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleIdentifier.MostLikelySubtags
   nameWithType: LocaleIdentifier.MostLikelySubtags
 - uid: Sepia.Globalization.LocaleIdentifier.Parse(System.String)
@@ -632,6 +674,7 @@ references:
   name: Parse
   href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Parse_
   commentId: Overload:Sepia.Globalization.LocaleIdentifier.Parse
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleIdentifier.Parse
   nameWithType: LocaleIdentifier.Parse
 - uid: Sepia.Globalization.LocaleIdentifier.ParseBcp47(System.String)
@@ -644,6 +687,7 @@ references:
   name: ParseBcp47
   href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_ParseBcp47_
   commentId: Overload:Sepia.Globalization.LocaleIdentifier.ParseBcp47
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleIdentifier.ParseBcp47
   nameWithType: LocaleIdentifier.ParseBcp47
 - uid: Sepia.Globalization.LocaleIdentifier.Region
@@ -656,6 +700,7 @@ references:
   name: Region
   href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Region_
   commentId: Overload:Sepia.Globalization.LocaleIdentifier.Region
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleIdentifier.Region
   nameWithType: LocaleIdentifier.Region
 - uid: Sepia.Globalization.LocaleIdentifier.RemoveMostLikelySubtags
@@ -668,6 +713,7 @@ references:
   name: RemoveMostLikelySubtags
   href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_RemoveMostLikelySubtags_
   commentId: Overload:Sepia.Globalization.LocaleIdentifier.RemoveMostLikelySubtags
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleIdentifier.RemoveMostLikelySubtags
   nameWithType: LocaleIdentifier.RemoveMostLikelySubtags
 - uid: Sepia.Globalization.LocaleIdentifier.Script
@@ -680,6 +726,7 @@ references:
   name: Script
   href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Script_
   commentId: Overload:Sepia.Globalization.LocaleIdentifier.Script
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleIdentifier.Script
   nameWithType: LocaleIdentifier.Script
 - uid: Sepia.Globalization.LocaleIdentifier.SearchChain
@@ -692,6 +739,7 @@ references:
   name: SearchChain
   href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_SearchChain_
   commentId: Overload:Sepia.Globalization.LocaleIdentifier.SearchChain
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleIdentifier.SearchChain
   nameWithType: LocaleIdentifier.SearchChain
 - uid: Sepia.Globalization.LocaleIdentifier.ToString
@@ -704,6 +752,7 @@ references:
   name: ToString
   href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_ToString_
   commentId: Overload:Sepia.Globalization.LocaleIdentifier.ToString
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleIdentifier.ToString
   nameWithType: LocaleIdentifier.ToString
 - uid: Sepia.Globalization.LocaleIdentifier.ToUnicodeLanguage(System.Boolean)
@@ -716,6 +765,7 @@ references:
   name: ToUnicodeLanguage
   href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_ToUnicodeLanguage_
   commentId: Overload:Sepia.Globalization.LocaleIdentifier.ToUnicodeLanguage
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleIdentifier.ToUnicodeLanguage
   nameWithType: LocaleIdentifier.ToUnicodeLanguage
 - uid: Sepia.Globalization.LocaleIdentifier.TryParse(System.String,Sepia.Globalization.LocaleIdentifier@)
@@ -740,6 +790,7 @@ references:
   name: TryParse
   href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_TryParse_
   commentId: Overload:Sepia.Globalization.LocaleIdentifier.TryParse
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleIdentifier.TryParse
   nameWithType: LocaleIdentifier.TryParse
 - uid: Sepia.Globalization.LocaleIdentifier.TryParseBcp47(System.String,Sepia.Globalization.LocaleIdentifier@,System.String@)
@@ -755,6 +806,7 @@ references:
   name: TryParseBcp47
   href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_TryParseBcp47_
   commentId: Overload:Sepia.Globalization.LocaleIdentifier.TryParseBcp47
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleIdentifier.TryParseBcp47
   nameWithType: LocaleIdentifier.TryParseBcp47
 - uid: Sepia.Globalization.LocaleIdentifier.UnicodeExtension
@@ -767,6 +819,7 @@ references:
   name: UnicodeExtension
   href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_UnicodeExtension_
   commentId: Overload:Sepia.Globalization.LocaleIdentifier.UnicodeExtension
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleIdentifier.UnicodeExtension
   nameWithType: LocaleIdentifier.UnicodeExtension
 - uid: Sepia.Globalization.LocaleIdentifier.Variants
@@ -779,6 +832,7 @@ references:
   name: Variants
   href: api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Variants_
   commentId: Overload:Sepia.Globalization.LocaleIdentifier.Variants
+  isSpec: "True"
   fullName: Sepia.Globalization.LocaleIdentifier.Variants
   nameWithType: LocaleIdentifier.Variants
 - uid: Sepia.Globalization.Numbers
@@ -833,6 +887,7 @@ references:
   name: Format
   href: api/Sepia.Globalization.Numbers.INumberFormatter.html#Sepia_Globalization_Numbers_INumberFormatter_Format_
   commentId: Overload:Sepia.Globalization.Numbers.INumberFormatter.Format
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.INumberFormatter.Format
   nameWithType: INumberFormatter.Format
 - uid: Sepia.Globalization.Numbers.NumberFormatter
@@ -851,6 +906,7 @@ references:
   name: Create
   href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Create_
   commentId: Overload:Sepia.Globalization.Numbers.NumberFormatter.Create
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberFormatter.Create
   nameWithType: NumberFormatter.Create
 - uid: Sepia.Globalization.Numbers.NumberFormatter.Format(System.Decimal)
@@ -893,6 +949,7 @@ references:
   name: Format
   href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Format_
   commentId: Overload:Sepia.Globalization.Numbers.NumberFormatter.Format
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberFormatter.Format
   nameWithType: NumberFormatter.Format
 - uid: Sepia.Globalization.Numbers.NumberFormatter.Locale
@@ -905,6 +962,7 @@ references:
   name: Locale
   href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Locale_
   commentId: Overload:Sepia.Globalization.Numbers.NumberFormatter.Locale
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberFormatter.Locale
   nameWithType: NumberFormatter.Locale
 - uid: Sepia.Globalization.Numbers.NumberFormatter.NumberingSystem
@@ -917,6 +975,7 @@ references:
   name: NumberingSystem
   href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_NumberingSystem_
   commentId: Overload:Sepia.Globalization.Numbers.NumberFormatter.NumberingSystem
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberFormatter.NumberingSystem
   nameWithType: NumberFormatter.NumberingSystem
 - uid: Sepia.Globalization.Numbers.NumberFormatter.Options
@@ -929,6 +988,7 @@ references:
   name: Options
   href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Options_
   commentId: Overload:Sepia.Globalization.Numbers.NumberFormatter.Options
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberFormatter.Options
   nameWithType: NumberFormatter.Options
 - uid: Sepia.Globalization.Numbers.NumberFormatter.Resolve
@@ -941,6 +1001,7 @@ references:
   name: Resolve
   href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Resolve_
   commentId: Overload:Sepia.Globalization.Numbers.NumberFormatter.Resolve
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberFormatter.Resolve
   nameWithType: NumberFormatter.Resolve
 - uid: Sepia.Globalization.Numbers.NumberFormatter.Symbols
@@ -953,6 +1014,7 @@ references:
   name: Symbols
   href: api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Symbols_
   commentId: Overload:Sepia.Globalization.Numbers.NumberFormatter.Symbols
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberFormatter.Symbols
   nameWithType: NumberFormatter.Symbols
 - uid: Sepia.Globalization.Numbers.NumberingSystem
@@ -977,6 +1039,7 @@ references:
   name: Create
   href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Create_
   commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.Create
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberingSystem.Create
   nameWithType: NumberingSystem.Create
 - uid: Sepia.Globalization.Numbers.NumberingSystem.Digits
@@ -989,6 +1052,7 @@ references:
   name: Digits
   href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Digits_
   commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.Digits
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberingSystem.Digits
   nameWithType: NumberingSystem.Digits
 - uid: Sepia.Globalization.Numbers.NumberingSystem.Id
@@ -1001,6 +1065,7 @@ references:
   name: Id
   href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Id_
   commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.Id
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberingSystem.Id
   nameWithType: NumberingSystem.Id
 - uid: Sepia.Globalization.Numbers.NumberingSystem.IsAlgorithmic
@@ -1013,6 +1078,7 @@ references:
   name: IsAlgorithmic
   href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_IsAlgorithmic_
   commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.IsAlgorithmic
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberingSystem.IsAlgorithmic
   nameWithType: NumberingSystem.IsAlgorithmic
 - uid: Sepia.Globalization.Numbers.NumberingSystem.IsNumeric
@@ -1025,6 +1091,7 @@ references:
   name: IsNumeric
   href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_IsNumeric_
   commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.IsNumeric
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberingSystem.IsNumeric
   nameWithType: NumberingSystem.IsNumeric
 - uid: Sepia.Globalization.Numbers.NumberingSystem.RuleName
@@ -1037,6 +1104,7 @@ references:
   name: RuleName
   href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_RuleName_
   commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.RuleName
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberingSystem.RuleName
   nameWithType: NumberingSystem.RuleName
 - uid: Sepia.Globalization.Numbers.NumberingSystem.Ruleset
@@ -1049,6 +1117,7 @@ references:
   name: Ruleset
   href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Ruleset_
   commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.Ruleset
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberingSystem.Ruleset
   nameWithType: NumberingSystem.Ruleset
 - uid: Sepia.Globalization.Numbers.NumberingSystem.RulesetGroup
@@ -1061,6 +1130,7 @@ references:
   name: RulesetGroup
   href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_RulesetGroup_
   commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.RulesetGroup
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberingSystem.RulesetGroup
   nameWithType: NumberingSystem.RulesetGroup
 - uid: Sepia.Globalization.Numbers.NumberingSystem.Type
@@ -1073,6 +1143,7 @@ references:
   name: Type
   href: api/Sepia.Globalization.Numbers.NumberingSystem.html#Sepia_Globalization_Numbers_NumberingSystem_Type_
   commentId: Overload:Sepia.Globalization.Numbers.NumberingSystem.Type
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberingSystem.Type
   nameWithType: NumberingSystem.Type
 - uid: Sepia.Globalization.Numbers.NumberOptions
@@ -1091,6 +1162,7 @@ references:
   name: Style
   href: api/Sepia.Globalization.Numbers.NumberOptions.html#Sepia_Globalization_Numbers_NumberOptions_Style_
   commentId: Overload:Sepia.Globalization.Numbers.NumberOptions.Style
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberOptions.Style
   nameWithType: NumberOptions.Style
 - uid: Sepia.Globalization.Numbers.NumberOptions.UseGrouping
@@ -1103,6 +1175,7 @@ references:
   name: UseGrouping
   href: api/Sepia.Globalization.Numbers.NumberOptions.html#Sepia_Globalization_Numbers_NumberOptions_UseGrouping_
   commentId: Overload:Sepia.Globalization.Numbers.NumberOptions.UseGrouping
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberOptions.UseGrouping
   nameWithType: NumberOptions.UseGrouping
 - uid: Sepia.Globalization.Numbers.NumberStyle
@@ -1157,6 +1230,7 @@ references:
   name: Create
   href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_Create_
   commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.Create
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberSymbols.Create
   nameWithType: NumberSymbols.Create
 - uid: Sepia.Globalization.Numbers.NumberSymbols.CurrencyDecimal
@@ -1169,6 +1243,7 @@ references:
   name: CurrencyDecimal
   href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_CurrencyDecimal_
   commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.CurrencyDecimal
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberSymbols.CurrencyDecimal
   nameWithType: NumberSymbols.CurrencyDecimal
 - uid: Sepia.Globalization.Numbers.NumberSymbols.CurrencyGroup
@@ -1181,6 +1256,7 @@ references:
   name: CurrencyGroup
   href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_CurrencyGroup_
   commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.CurrencyGroup
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberSymbols.CurrencyGroup
   nameWithType: NumberSymbols.CurrencyGroup
 - uid: Sepia.Globalization.Numbers.NumberSymbols.Decimal
@@ -1193,6 +1269,7 @@ references:
   name: Decimal
   href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_Decimal_
   commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.Decimal
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberSymbols.Decimal
   nameWithType: NumberSymbols.Decimal
 - uid: Sepia.Globalization.Numbers.NumberSymbols.Exponential
@@ -1205,6 +1282,7 @@ references:
   name: Exponential
   href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_Exponential_
   commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.Exponential
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberSymbols.Exponential
   nameWithType: NumberSymbols.Exponential
 - uid: Sepia.Globalization.Numbers.NumberSymbols.Group
@@ -1217,6 +1295,7 @@ references:
   name: Group
   href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_Group_
   commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.Group
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberSymbols.Group
   nameWithType: NumberSymbols.Group
 - uid: Sepia.Globalization.Numbers.NumberSymbols.Infinity
@@ -1229,6 +1308,7 @@ references:
   name: Infinity
   href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_Infinity_
   commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.Infinity
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberSymbols.Infinity
   nameWithType: NumberSymbols.Infinity
 - uid: Sepia.Globalization.Numbers.NumberSymbols.List
@@ -1241,6 +1321,7 @@ references:
   name: List
   href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_List_
   commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.List
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberSymbols.List
   nameWithType: NumberSymbols.List
 - uid: Sepia.Globalization.Numbers.NumberSymbols.MinusSign
@@ -1253,6 +1334,7 @@ references:
   name: MinusSign
   href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_MinusSign_
   commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.MinusSign
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberSymbols.MinusSign
   nameWithType: NumberSymbols.MinusSign
 - uid: Sepia.Globalization.Numbers.NumberSymbols.NotANumber
@@ -1265,6 +1347,7 @@ references:
   name: NotANumber
   href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_NotANumber_
   commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.NotANumber
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberSymbols.NotANumber
   nameWithType: NumberSymbols.NotANumber
 - uid: Sepia.Globalization.Numbers.NumberSymbols.PercentSign
@@ -1277,6 +1360,7 @@ references:
   name: PercentSign
   href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_PercentSign_
   commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.PercentSign
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberSymbols.PercentSign
   nameWithType: NumberSymbols.PercentSign
 - uid: Sepia.Globalization.Numbers.NumberSymbols.PerMille
@@ -1289,6 +1373,7 @@ references:
   name: PerMille
   href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_PerMille_
   commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.PerMille
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberSymbols.PerMille
   nameWithType: NumberSymbols.PerMille
 - uid: Sepia.Globalization.Numbers.NumberSymbols.PlusSign
@@ -1301,6 +1386,7 @@ references:
   name: PlusSign
   href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_PlusSign_
   commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.PlusSign
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberSymbols.PlusSign
   nameWithType: NumberSymbols.PlusSign
 - uid: Sepia.Globalization.Numbers.NumberSymbols.SuperscriptingExponent
@@ -1313,6 +1399,7 @@ references:
   name: SuperscriptingExponent
   href: api/Sepia.Globalization.Numbers.NumberSymbols.html#Sepia_Globalization_Numbers_NumberSymbols_SuperscriptingExponent_
   commentId: Overload:Sepia.Globalization.Numbers.NumberSymbols.SuperscriptingExponent
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberSymbols.SuperscriptingExponent
   nameWithType: NumberSymbols.SuperscriptingExponent
 - uid: Sepia.Globalization.Numbers.Rules
@@ -1337,6 +1424,7 @@ references:
   name: Fire
   href: api/Sepia.Globalization.Numbers.Rules.IRule.html#Sepia_Globalization_Numbers_Rules_IRule_Fire_
   commentId: Overload:Sepia.Globalization.Numbers.Rules.IRule.Fire
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.IRule.Fire
   nameWithType: IRule.Fire
 - uid: Sepia.Globalization.Numbers.Rules.IRule.Matches(Sepia.Globalization.Numbers.Rules.RbnfContext)
@@ -1349,6 +1437,7 @@ references:
   name: Matches
   href: api/Sepia.Globalization.Numbers.Rules.IRule.html#Sepia_Globalization_Numbers_Rules_IRule_Matches_
   commentId: Overload:Sepia.Globalization.Numbers.Rules.IRule.Matches
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.IRule.Matches
   nameWithType: IRule.Matches
 - uid: Sepia.Globalization.Numbers.Rules.RbnfContext
@@ -1367,6 +1456,7 @@ references:
   name: Number
   href: api/Sepia.Globalization.Numbers.Rules.RbnfContext.html#Sepia_Globalization_Numbers_Rules_RbnfContext_Number_
   commentId: Overload:Sepia.Globalization.Numbers.Rules.RbnfContext.Number
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.RbnfContext.Number
   nameWithType: RbnfContext.Number
 - uid: Sepia.Globalization.Numbers.Rules.RbnfContext.Ruleset
@@ -1379,6 +1469,7 @@ references:
   name: Ruleset
   href: api/Sepia.Globalization.Numbers.Rules.RbnfContext.html#Sepia_Globalization_Numbers_Rules_RbnfContext_Ruleset_
   commentId: Overload:Sepia.Globalization.Numbers.Rules.RbnfContext.Ruleset
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.RbnfContext.Ruleset
   nameWithType: RbnfContext.Ruleset
 - uid: Sepia.Globalization.Numbers.Rules.RbnfContext.RulesetGroup
@@ -1391,6 +1482,7 @@ references:
   name: RulesetGroup
   href: api/Sepia.Globalization.Numbers.Rules.RbnfContext.html#Sepia_Globalization_Numbers_Rules_RbnfContext_RulesetGroup_
   commentId: Overload:Sepia.Globalization.Numbers.Rules.RbnfContext.RulesetGroup
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.RbnfContext.RulesetGroup
   nameWithType: RbnfContext.RulesetGroup
 - uid: Sepia.Globalization.Numbers.Rules.RbnfContext.Text
@@ -1403,6 +1495,7 @@ references:
   name: Text
   href: api/Sepia.Globalization.Numbers.Rules.RbnfContext.html#Sepia_Globalization_Numbers_Rules_RbnfContext_Text_
   commentId: Overload:Sepia.Globalization.Numbers.Rules.RbnfContext.Text
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.RbnfContext.Text
   nameWithType: RbnfContext.Text
 - uid: Sepia.Globalization.Numbers.Rules.Rule
@@ -1421,6 +1514,7 @@ references:
   name: Fire
   href: api/Sepia.Globalization.Numbers.Rules.Rule.html#Sepia_Globalization_Numbers_Rules_Rule_Fire_
   commentId: Overload:Sepia.Globalization.Numbers.Rules.Rule.Fire
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.Rule.Fire
   nameWithType: Rule.Fire
 - uid: Sepia.Globalization.Numbers.Rules.Rule.Matches(Sepia.Globalization.Numbers.Rules.RbnfContext)
@@ -1433,18 +1527,20 @@ references:
   name: Matches
   href: api/Sepia.Globalization.Numbers.Rules.Rule.html#Sepia_Globalization_Numbers_Rules_Rule_Matches_
   commentId: Overload:Sepia.Globalization.Numbers.Rules.Rule.Matches
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.Rule.Matches
   nameWithType: Rule.Matches
-- uid: Sepia.Globalization.Numbers.Rules.Rule.Parse(System.Xml.XPath.XPathNavigator)
+- uid: Sepia.Globalization.Numbers.Rules.Rule.Parse(XPathNavigator)
   name: Parse(XPathNavigator)
-  href: api/Sepia.Globalization.Numbers.Rules.Rule.html#Sepia_Globalization_Numbers_Rules_Rule_Parse_System_Xml_XPath_XPathNavigator_
-  commentId: M:Sepia.Globalization.Numbers.Rules.Rule.Parse(System.Xml.XPath.XPathNavigator)
-  fullName: Sepia.Globalization.Numbers.Rules.Rule.Parse(System.Xml.XPath.XPathNavigator)
+  href: api/Sepia.Globalization.Numbers.Rules.Rule.html#Sepia_Globalization_Numbers_Rules_Rule_Parse_XPathNavigator_
+  commentId: M:Sepia.Globalization.Numbers.Rules.Rule.Parse(XPathNavigator)
+  fullName: Sepia.Globalization.Numbers.Rules.Rule.Parse(XPathNavigator)
   nameWithType: Rule.Parse(XPathNavigator)
 - uid: Sepia.Globalization.Numbers.Rules.Rule.Parse*
   name: Parse
   href: api/Sepia.Globalization.Numbers.Rules.Rule.html#Sepia_Globalization_Numbers_Rules_Rule_Parse_
   commentId: Overload:Sepia.Globalization.Numbers.Rules.Rule.Parse
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.Rule.Parse
   nameWithType: Rule.Parse
 - uid: Sepia.Globalization.Numbers.Rules.Ruleset
@@ -1463,6 +1559,7 @@ references:
   name: Access
   href: api/Sepia.Globalization.Numbers.Rules.Ruleset.html#Sepia_Globalization_Numbers_Rules_Ruleset_Access_
   commentId: Overload:Sepia.Globalization.Numbers.Rules.Ruleset.Access
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.Ruleset.Access
   nameWithType: Ruleset.Access
 - uid: Sepia.Globalization.Numbers.Rules.Ruleset.ApplyRules(Sepia.Globalization.Numbers.Rules.RbnfContext)
@@ -1475,6 +1572,7 @@ references:
   name: ApplyRules
   href: api/Sepia.Globalization.Numbers.Rules.Ruleset.html#Sepia_Globalization_Numbers_Rules_Ruleset_ApplyRules_
   commentId: Overload:Sepia.Globalization.Numbers.Rules.Ruleset.ApplyRules
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.Ruleset.ApplyRules
   nameWithType: Ruleset.ApplyRules
 - uid: Sepia.Globalization.Numbers.Rules.Ruleset.IsPublic
@@ -1487,18 +1585,20 @@ references:
   name: IsPublic
   href: api/Sepia.Globalization.Numbers.Rules.Ruleset.html#Sepia_Globalization_Numbers_Rules_Ruleset_IsPublic_
   commentId: Overload:Sepia.Globalization.Numbers.Rules.Ruleset.IsPublic
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.Ruleset.IsPublic
   nameWithType: Ruleset.IsPublic
-- uid: Sepia.Globalization.Numbers.Rules.Ruleset.Parse(System.Xml.XPath.XPathNavigator)
+- uid: Sepia.Globalization.Numbers.Rules.Ruleset.Parse(XPathNavigator)
   name: Parse(XPathNavigator)
-  href: api/Sepia.Globalization.Numbers.Rules.Ruleset.html#Sepia_Globalization_Numbers_Rules_Ruleset_Parse_System_Xml_XPath_XPathNavigator_
-  commentId: M:Sepia.Globalization.Numbers.Rules.Ruleset.Parse(System.Xml.XPath.XPathNavigator)
-  fullName: Sepia.Globalization.Numbers.Rules.Ruleset.Parse(System.Xml.XPath.XPathNavigator)
+  href: api/Sepia.Globalization.Numbers.Rules.Ruleset.html#Sepia_Globalization_Numbers_Rules_Ruleset_Parse_XPathNavigator_
+  commentId: M:Sepia.Globalization.Numbers.Rules.Ruleset.Parse(XPathNavigator)
+  fullName: Sepia.Globalization.Numbers.Rules.Ruleset.Parse(XPathNavigator)
   nameWithType: Ruleset.Parse(XPathNavigator)
 - uid: Sepia.Globalization.Numbers.Rules.Ruleset.Parse*
   name: Parse
   href: api/Sepia.Globalization.Numbers.Rules.Ruleset.html#Sepia_Globalization_Numbers_Rules_Ruleset_Parse_
   commentId: Overload:Sepia.Globalization.Numbers.Rules.Ruleset.Parse
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.Ruleset.Parse
   nameWithType: Ruleset.Parse
 - uid: Sepia.Globalization.Numbers.Rules.Ruleset.Rules
@@ -1511,6 +1611,7 @@ references:
   name: Rules
   href: api/Sepia.Globalization.Numbers.Rules.Ruleset.html#Sepia_Globalization_Numbers_Rules_Ruleset_Rules_
   commentId: Overload:Sepia.Globalization.Numbers.Rules.Ruleset.Rules
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.Ruleset.Rules
   nameWithType: Ruleset.Rules
 - uid: Sepia.Globalization.Numbers.Rules.Ruleset.Type
@@ -1523,6 +1624,7 @@ references:
   name: Type
   href: api/Sepia.Globalization.Numbers.Rules.Ruleset.html#Sepia_Globalization_Numbers_Rules_Ruleset_Type_
   commentId: Overload:Sepia.Globalization.Numbers.Rules.Ruleset.Type
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.Ruleset.Type
   nameWithType: Ruleset.Type
 - uid: Sepia.Globalization.Numbers.Rules.RulesetGroup
@@ -1547,18 +1649,20 @@ references:
   name: Format
   href: api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html#Sepia_Globalization_Numbers_Rules_RulesetGroup_Format_
   commentId: Overload:Sepia.Globalization.Numbers.Rules.RulesetGroup.Format
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup.Format
   nameWithType: RulesetGroup.Format
-- uid: Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse(System.Xml.XPath.XPathNavigator)
+- uid: Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse(XPathNavigator)
   name: Parse(XPathNavigator)
-  href: api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html#Sepia_Globalization_Numbers_Rules_RulesetGroup_Parse_System_Xml_XPath_XPathNavigator_
-  commentId: M:Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse(System.Xml.XPath.XPathNavigator)
-  fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse(System.Xml.XPath.XPathNavigator)
+  href: api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html#Sepia_Globalization_Numbers_Rules_RulesetGroup_Parse_XPathNavigator_
+  commentId: M:Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse(XPathNavigator)
+  fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse(XPathNavigator)
   nameWithType: RulesetGroup.Parse(XPathNavigator)
 - uid: Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse*
   name: Parse
   href: api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html#Sepia_Globalization_Numbers_Rules_RulesetGroup_Parse_
   commentId: Overload:Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse
   nameWithType: RulesetGroup.Parse
 - uid: Sepia.Globalization.Numbers.Rules.RulesetGroup.Rulesets
@@ -1577,6 +1681,7 @@ references:
   name: Type
   href: api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html#Sepia_Globalization_Numbers_Rules_RulesetGroup_Type_
   commentId: Overload:Sepia.Globalization.Numbers.Rules.RulesetGroup.Type
+  isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup.Type
   nameWithType: RulesetGroup.Type
 - uid: Sepia.Globalization.StringRange
@@ -1595,5 +1700,6 @@ references:
   name: Enumerate
   href: api/Sepia.Globalization.StringRange.html#Sepia_Globalization_StringRange_Enumerate_
   commentId: Overload:Sepia.Globalization.StringRange.Enumerate
+  isSpec: "True"
   fullName: Sepia.Globalization.StringRange.Enumerate
   nameWithType: StringRange.Enumerate
