@@ -39,11 +39,11 @@ references:
   isSpec: "True"
   fullName: Sepia.Globalization.Cldr.CurrentVersion
   nameWithType: Cldr.CurrentVersion
-- uid: Sepia.Globalization.Cldr.DownloadAsync(Version)
+- uid: Sepia.Globalization.Cldr.DownloadAsync(System.Version)
   name: DownloadAsync(Version)
-  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_DownloadAsync_Version_
-  commentId: M:Sepia.Globalization.Cldr.DownloadAsync(Version)
-  fullName: Sepia.Globalization.Cldr.DownloadAsync(Version)
+  href: api/Sepia.Globalization.Cldr.html#Sepia_Globalization_Cldr_DownloadAsync_System_Version_
+  commentId: M:Sepia.Globalization.Cldr.DownloadAsync(System.Version)
+  fullName: Sepia.Globalization.Cldr.DownloadAsync(System.Version)
   nameWithType: Cldr.DownloadAsync(Version)
 - uid: Sepia.Globalization.Cldr.DownloadAsync*
   name: DownloadAsync
@@ -225,11 +225,11 @@ references:
   commentId: F:Sepia.Globalization.CldrContext.Default
   fullName: Sepia.Globalization.CldrContext.Default
   nameWithType: CldrContext.Default
-- uid: Sepia.Globalization.CldrContext.PreserveWhitespace(XPathNavigator)
+- uid: Sepia.Globalization.CldrContext.PreserveWhitespace(System.Xml.XPath.XPathNavigator)
   name: PreserveWhitespace(XPathNavigator)
-  href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_PreserveWhitespace_XPathNavigator_
-  commentId: M:Sepia.Globalization.CldrContext.PreserveWhitespace(XPathNavigator)
-  fullName: Sepia.Globalization.CldrContext.PreserveWhitespace(XPathNavigator)
+  href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_PreserveWhitespace_System_Xml_XPath_XPathNavigator_
+  commentId: M:Sepia.Globalization.CldrContext.PreserveWhitespace(System.Xml.XPath.XPathNavigator)
+  fullName: Sepia.Globalization.CldrContext.PreserveWhitespace(System.Xml.XPath.XPathNavigator)
   nameWithType: CldrContext.PreserveWhitespace(XPathNavigator)
 - uid: Sepia.Globalization.CldrContext.PreserveWhitespace*
   name: PreserveWhitespace
@@ -238,13 +238,13 @@ references:
   isSpec: "True"
   fullName: Sepia.Globalization.CldrContext.PreserveWhitespace
   nameWithType: CldrContext.PreserveWhitespace
-- uid: Sepia.Globalization.CldrContext.ResolveFunction(System.String,System.String,XPathResultType[])
+- uid: Sepia.Globalization.CldrContext.ResolveFunction(System.String,System.String,System.Xml.XPath.XPathResultType[])
   name: ResolveFunction(String, String, XPathResultType[])
-  href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_ResolveFunction_System_String_System_String_XPathResultType___
-  commentId: M:Sepia.Globalization.CldrContext.ResolveFunction(System.String,System.String,XPathResultType[])
+  href: api/Sepia.Globalization.CldrContext.html#Sepia_Globalization_CldrContext_ResolveFunction_System_String_System_String_System_Xml_XPath_XPathResultType___
+  commentId: M:Sepia.Globalization.CldrContext.ResolveFunction(System.String,System.String,System.Xml.XPath.XPathResultType[])
   name.vb: ResolveFunction(String, String, XPathResultType())
-  fullName: Sepia.Globalization.CldrContext.ResolveFunction(System.String, System.String, XPathResultType[])
-  fullName.vb: Sepia.Globalization.CldrContext.ResolveFunction(System.String, System.String, XPathResultType())
+  fullName: Sepia.Globalization.CldrContext.ResolveFunction(System.String, System.String, System.Xml.XPath.XPathResultType[])
+  fullName.vb: Sepia.Globalization.CldrContext.ResolveFunction(System.String, System.String, System.Xml.XPath.XPathResultType())
   nameWithType: CldrContext.ResolveFunction(String, String, XPathResultType[])
   nameWithType.vb: CldrContext.ResolveFunction(String, String, XPathResultType())
 - uid: Sepia.Globalization.CldrContext.ResolveFunction*
@@ -286,13 +286,13 @@ references:
   commentId: T:Sepia.Globalization.CldrExentsions
   fullName: Sepia.Globalization.CldrExentsions
   nameWithType: CldrExentsions
-- uid: Sepia.Globalization.CldrExentsions.Elements(IEnumerable{XPathDocument},System.String)
+- uid: Sepia.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
   name: Elements(IEnumerable<XPathDocument>, String)
-  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_Elements_IEnumerable_XPathDocument__System_String_
-  commentId: M:Sepia.Globalization.CldrExentsions.Elements(IEnumerable{XPathDocument},System.String)
+  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_Elements_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_
+  commentId: M:Sepia.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
   name.vb: Elements(IEnumerable(Of XPathDocument), String)
-  fullName: Sepia.Globalization.CldrExentsions.Elements(IEnumerable<XPathDocument>, System.String)
-  fullName.vb: Sepia.Globalization.CldrExentsions.Elements(IEnumerable(Of XPathDocument), System.String)
+  fullName: Sepia.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.String)
+  fullName.vb: Sepia.Globalization.CldrExentsions.Elements(System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.String)
   nameWithType: CldrExentsions.Elements(IEnumerable<XPathDocument>, String)
   nameWithType.vb: CldrExentsions.Elements(IEnumerable(Of XPathDocument), String)
 - uid: Sepia.Globalization.CldrExentsions.Elements*
@@ -302,13 +302,13 @@ references:
   isSpec: "True"
   fullName: Sepia.Globalization.CldrExentsions.Elements
   nameWithType: CldrExentsions.Elements
-- uid: Sepia.Globalization.CldrExentsions.FirstElement(IEnumerable{XPathDocument},System.String)
+- uid: Sepia.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
   name: FirstElement(IEnumerable<XPathDocument>, String)
-  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_FirstElement_IEnumerable_XPathDocument__System_String_
-  commentId: M:Sepia.Globalization.CldrExentsions.FirstElement(IEnumerable{XPathDocument},System.String)
+  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_FirstElement_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_
+  commentId: M:Sepia.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
   name.vb: FirstElement(IEnumerable(Of XPathDocument), String)
-  fullName: Sepia.Globalization.CldrExentsions.FirstElement(IEnumerable<XPathDocument>, System.String)
-  fullName.vb: Sepia.Globalization.CldrExentsions.FirstElement(IEnumerable(Of XPathDocument), System.String)
+  fullName: Sepia.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.String)
+  fullName.vb: Sepia.Globalization.CldrExentsions.FirstElement(System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.String)
   nameWithType: CldrExentsions.FirstElement(IEnumerable<XPathDocument>, String)
   nameWithType.vb: CldrExentsions.FirstElement(IEnumerable(Of XPathDocument), String)
 - uid: Sepia.Globalization.CldrExentsions.FirstElement*
@@ -318,22 +318,22 @@ references:
   isSpec: "True"
   fullName: Sepia.Globalization.CldrExentsions.FirstElement
   nameWithType: CldrExentsions.FirstElement
-- uid: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(IEnumerable{XPathDocument},System.String)
+- uid: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
   name: FirstElementOrDefault(IEnumerable<XPathDocument>, String)
-  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_FirstElementOrDefault_IEnumerable_XPathDocument__System_String_
-  commentId: M:Sepia.Globalization.CldrExentsions.FirstElementOrDefault(IEnumerable{XPathDocument},System.String)
+  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_FirstElementOrDefault_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_
+  commentId: M:Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String)
   name.vb: FirstElementOrDefault(IEnumerable(Of XPathDocument), String)
-  fullName: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(IEnumerable<XPathDocument>, System.String)
-  fullName.vb: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(IEnumerable(Of XPathDocument), System.String)
+  fullName: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.String)
+  fullName.vb: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.String)
   nameWithType: CldrExentsions.FirstElementOrDefault(IEnumerable<XPathDocument>, String)
   nameWithType.vb: CldrExentsions.FirstElementOrDefault(IEnumerable(Of XPathDocument), String)
-- uid: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(IEnumerable{XPathDocument},System.String,Func{IEnumerable{XPathDocument},XPathNavigator})
+- uid: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String,System.Func{System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.Xml.XPath.XPathNavigator})
   name: FirstElementOrDefault(IEnumerable<XPathDocument>, String, Func<IEnumerable<XPathDocument>, XPathNavigator>)
-  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_FirstElementOrDefault_IEnumerable_XPathDocument__System_String_Func_IEnumerable_XPathDocument__XPathNavigator__
-  commentId: M:Sepia.Globalization.CldrExentsions.FirstElementOrDefault(IEnumerable{XPathDocument},System.String,Func{IEnumerable{XPathDocument},XPathNavigator})
+  href: api/Sepia.Globalization.CldrExentsions.html#Sepia_Globalization_CldrExentsions_FirstElementOrDefault_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_String_System_Func_System_Collections_Generic_IEnumerable_System_Xml_XPath_XPathDocument__System_Xml_XPath_XPathNavigator__
+  commentId: M:Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.String,System.Func{System.Collections.Generic.IEnumerable{System.Xml.XPath.XPathDocument},System.Xml.XPath.XPathNavigator})
   name.vb: FirstElementOrDefault(IEnumerable(Of XPathDocument), String, Func(Of IEnumerable(Of XPathDocument), XPathNavigator))
-  fullName: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(IEnumerable<XPathDocument>, System.String, Func<IEnumerable<XPathDocument>, XPathNavigator>)
-  fullName.vb: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(IEnumerable(Of XPathDocument), System.String, Func(Of IEnumerable(Of XPathDocument), XPathNavigator))
+  fullName: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.String, System.Func<System.Collections.Generic.IEnumerable<System.Xml.XPath.XPathDocument>, System.Xml.XPath.XPathNavigator>)
+  fullName.vb: Sepia.Globalization.CldrExentsions.FirstElementOrDefault(System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.String, System.Func(Of System.Collections.Generic.IEnumerable(Of System.Xml.XPath.XPathDocument), System.Xml.XPath.XPathNavigator))
   nameWithType: CldrExentsions.FirstElementOrDefault(IEnumerable<XPathDocument>, String, Func<IEnumerable<XPathDocument>, XPathNavigator>)
   nameWithType.vb: CldrExentsions.FirstElementOrDefault(IEnumerable(Of XPathDocument), String, Func(Of IEnumerable(Of XPathDocument), XPathNavigator))
 - uid: Sepia.Globalization.CldrExentsions.FirstElementOrDefault*
@@ -1530,11 +1530,11 @@ references:
   isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.Rule.Matches
   nameWithType: Rule.Matches
-- uid: Sepia.Globalization.Numbers.Rules.Rule.Parse(XPathNavigator)
+- uid: Sepia.Globalization.Numbers.Rules.Rule.Parse(System.Xml.XPath.XPathNavigator)
   name: Parse(XPathNavigator)
-  href: api/Sepia.Globalization.Numbers.Rules.Rule.html#Sepia_Globalization_Numbers_Rules_Rule_Parse_XPathNavigator_
-  commentId: M:Sepia.Globalization.Numbers.Rules.Rule.Parse(XPathNavigator)
-  fullName: Sepia.Globalization.Numbers.Rules.Rule.Parse(XPathNavigator)
+  href: api/Sepia.Globalization.Numbers.Rules.Rule.html#Sepia_Globalization_Numbers_Rules_Rule_Parse_System_Xml_XPath_XPathNavigator_
+  commentId: M:Sepia.Globalization.Numbers.Rules.Rule.Parse(System.Xml.XPath.XPathNavigator)
+  fullName: Sepia.Globalization.Numbers.Rules.Rule.Parse(System.Xml.XPath.XPathNavigator)
   nameWithType: Rule.Parse(XPathNavigator)
 - uid: Sepia.Globalization.Numbers.Rules.Rule.Parse*
   name: Parse
@@ -1588,11 +1588,11 @@ references:
   isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.Ruleset.IsPublic
   nameWithType: Ruleset.IsPublic
-- uid: Sepia.Globalization.Numbers.Rules.Ruleset.Parse(XPathNavigator)
+- uid: Sepia.Globalization.Numbers.Rules.Ruleset.Parse(System.Xml.XPath.XPathNavigator)
   name: Parse(XPathNavigator)
-  href: api/Sepia.Globalization.Numbers.Rules.Ruleset.html#Sepia_Globalization_Numbers_Rules_Ruleset_Parse_XPathNavigator_
-  commentId: M:Sepia.Globalization.Numbers.Rules.Ruleset.Parse(XPathNavigator)
-  fullName: Sepia.Globalization.Numbers.Rules.Ruleset.Parse(XPathNavigator)
+  href: api/Sepia.Globalization.Numbers.Rules.Ruleset.html#Sepia_Globalization_Numbers_Rules_Ruleset_Parse_System_Xml_XPath_XPathNavigator_
+  commentId: M:Sepia.Globalization.Numbers.Rules.Ruleset.Parse(System.Xml.XPath.XPathNavigator)
+  fullName: Sepia.Globalization.Numbers.Rules.Ruleset.Parse(System.Xml.XPath.XPathNavigator)
   nameWithType: Ruleset.Parse(XPathNavigator)
 - uid: Sepia.Globalization.Numbers.Rules.Ruleset.Parse*
   name: Parse
@@ -1652,11 +1652,11 @@ references:
   isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup.Format
   nameWithType: RulesetGroup.Format
-- uid: Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse(XPathNavigator)
+- uid: Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse(System.Xml.XPath.XPathNavigator)
   name: Parse(XPathNavigator)
-  href: api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html#Sepia_Globalization_Numbers_Rules_RulesetGroup_Parse_XPathNavigator_
-  commentId: M:Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse(XPathNavigator)
-  fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse(XPathNavigator)
+  href: api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html#Sepia_Globalization_Numbers_Rules_RulesetGroup_Parse_System_Xml_XPath_XPathNavigator_
+  commentId: M:Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse(System.Xml.XPath.XPathNavigator)
+  fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse(System.Xml.XPath.XPathNavigator)
   nameWithType: RulesetGroup.Parse(XPathNavigator)
 - uid: Sepia.Globalization.Numbers.Rules.RulesetGroup.Parse*
   name: Parse

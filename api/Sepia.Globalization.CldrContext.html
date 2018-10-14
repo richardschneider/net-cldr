@@ -79,13 +79,77 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
-    <div class="level1"><span class="xref">CldrContext</span></div>
+    <div class="level1"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.xml.xmlnamespacemanager(v=vs.110).aspx">XmlNamespaceManager</a></div>
+    <div class="level2"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.xml.xsl.xsltcontext(v=vs.110).aspx">XsltContext</a></div>
+    <div class="level3"><span class="xref">CldrContext</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.xml.ixmlnamespaceresolver(v=vs.110).aspx">IXmlNamespaceResolver</a></div>
+    <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.collections.ienumerable(v=vs.110).aspx">IEnumerable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/s5b7h2cx(v=vs.110).aspx">XmlNamespaceManager.PushScope()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/xa6ash8c(v=vs.110).aspx">XmlNamespaceManager.PopScope()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/d9811h4h(v=vs.110).aspx">XmlNamespaceManager.AddNamespace(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/7y5xxby9(v=vs.110).aspx">XmlNamespaceManager.RemoveNamespace(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/kyhaa2af(v=vs.110).aspx">XmlNamespaceManager.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/xtw0x4w6(v=vs.110).aspx">XmlNamespaceManager.GetNamespacesInScope(XmlNamespaceScope)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/k8d7xf84(v=vs.110).aspx">XmlNamespaceManager.LookupNamespace(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/dtw1ehhw(v=vs.110).aspx">XmlNamespaceManager.LookupPrefix(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/x1b2k9tt(v=vs.110).aspx">XmlNamespaceManager.HasNamespace(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/yk9ahd39(v=vs.110).aspx">XmlNamespaceManager.NameTable</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/kcdfa0bk(v=vs.110).aspx">XmlNamespaceManager.DefaultNamespace</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Sepia.Globalization.html">Sepia.Globalization</a></h6>
   <h6><strong>Assembly</strong>: Sepia.Globalization.dll</h6>
   <h5 id="Sepia_Globalization_CldrContext_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CldrContext : XsltContext</code></pre>
+    <pre><code class="lang-csharp hljs">public class CldrContext : XsltContext, IXmlNamespaceResolver, IEnumerable</code></pre>
   </div>
   <h5 id="Sepia_Globalization_CldrContext_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>Allows XPath to resolve functions, parameters, and namespaces within 
@@ -96,10 +160,10 @@ XPath expressions.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Sepia_Globalization_CldrContext_Default.md&amp;value=---%0Auid%3A%20Sepia.Globalization.CldrContext.Default%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/richardschneider/net-cldr/new/dotnet/apiSpec/new?filename=Sepia_Globalization_CldrContext_Default.md&amp;value=---%0Auid%3A%20Sepia.Globalization.CldrContext.Default%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/richardschneider/net-cldr/blob/master/src/CldrXPath.cs/#L34">View Source</a>
+    <a href="https://github.com/richardschneider/net-cldr/blob/dotnet/src/CldrXPath.cs/#L34">View Source</a>
   </span>
   <h4 id="Sepia_Globalization_CldrContext_Default" data-uid="Sepia.Globalization.CldrContext.Default">Default</h4>
   <div class="markdown level1 summary"><p>The default XPath context.</p>
@@ -128,10 +192,10 @@ XPath expressions.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Sepia_Globalization_CldrContext_Whitespace.md&amp;value=---%0Auid%3A%20Sepia.Globalization.CldrContext.Whitespace%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/richardschneider/net-cldr/new/dotnet/apiSpec/new?filename=Sepia_Globalization_CldrContext_Whitespace.md&amp;value=---%0Auid%3A%20Sepia.Globalization.CldrContext.Whitespace%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/richardschneider/net-cldr/blob/master/src/CldrXPath.cs/#L52">View Source</a>
+    <a href="https://github.com/richardschneider/net-cldr/blob/dotnet/src/CldrXPath.cs/#L52">View Source</a>
   </span>
   <a id="Sepia_Globalization_CldrContext_Whitespace_" data-uid="Sepia.Globalization.CldrContext.Whitespace*"></a>
   <h4 id="Sepia_Globalization_CldrContext_Whitespace" data-uid="Sepia.Globalization.CldrContext.Whitespace">Whitespace</h4>
@@ -156,14 +220,16 @@ XPath expressions.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/c94xwy2d(v=vs.110).aspx">XsltContext.Whitespace</a></div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Sepia_Globalization_CldrContext_CompareDocument_System_String_System_String_.md&amp;value=---%0Auid%3A%20Sepia.Globalization.CldrContext.CompareDocument(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/richardschneider/net-cldr/new/dotnet/apiSpec/new?filename=Sepia_Globalization_CldrContext_CompareDocument_System_String_System_String_.md&amp;value=---%0Auid%3A%20Sepia.Globalization.CldrContext.CompareDocument(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/richardschneider/net-cldr/blob/master/src/CldrXPath.cs/#L61">View Source</a>
+    <a href="https://github.com/richardschneider/net-cldr/blob/dotnet/src/CldrXPath.cs/#L61">View Source</a>
   </span>
   <a id="Sepia_Globalization_CldrContext_CompareDocument_" data-uid="Sepia.Globalization.CldrContext.CompareDocument*"></a>
   <h4 id="Sepia_Globalization_CldrContext_CompareDocument_System_String_System_String_" data-uid="Sepia.Globalization.CldrContext.CompareDocument(System.String,System.String)">CompareDocument(String, String)</h4>
@@ -210,15 +276,17 @@ XPath expressions.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/ezw0k263(v=vs.110).aspx">XsltContext.CompareDocument(String, String)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Sepia_Globalization_CldrContext_PreserveWhitespace_XPathNavigator_.md&amp;value=---%0Auid%3A%20Sepia.Globalization.CldrContext.PreserveWhitespace(XPathNavigator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/richardschneider/net-cldr/new/dotnet/apiSpec/new?filename=Sepia_Globalization_CldrContext_PreserveWhitespace_System_Xml_XPath_XPathNavigator_.md&amp;value=---%0Auid%3A%20Sepia.Globalization.CldrContext.PreserveWhitespace(System.Xml.XPath.XPathNavigator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/richardschneider/net-cldr/blob/master/src/CldrXPath.cs/#L67">View Source</a>
+    <a href="https://github.com/richardschneider/net-cldr/blob/dotnet/src/CldrXPath.cs/#L67">View Source</a>
   </span>
   <a id="Sepia_Globalization_CldrContext_PreserveWhitespace_" data-uid="Sepia.Globalization.CldrContext.PreserveWhitespace*"></a>
-  <h4 id="Sepia_Globalization_CldrContext_PreserveWhitespace_XPathNavigator_" data-uid="Sepia.Globalization.CldrContext.PreserveWhitespace(XPathNavigator)">PreserveWhitespace(XPathNavigator)</h4>
+  <h4 id="Sepia_Globalization_CldrContext_PreserveWhitespace_System_Xml_XPath_XPathNavigator_" data-uid="Sepia.Globalization.CldrContext.PreserveWhitespace(System.Xml.XPath.XPathNavigator)">PreserveWhitespace(XPathNavigator)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -236,7 +304,7 @@ XPath expressions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">XPathNavigator</span></td>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.xml.xpath.xpathnavigator(v=vs.110).aspx">XPathNavigator</a></td>
         <td><span class="parametername">node</span></td>
         <td></td>
       </tr>
@@ -257,15 +325,17 @@ XPath expressions.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/3s7s0y1d(v=vs.110).aspx">XsltContext.PreserveWhitespace(XPathNavigator)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Sepia_Globalization_CldrContext_ResolveFunction_System_String_System_String_XPathResultType___.md&amp;value=---%0Auid%3A%20Sepia.Globalization.CldrContext.ResolveFunction(System.String%2CSystem.String%2CXPathResultType%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/richardschneider/net-cldr/new/dotnet/apiSpec/new?filename=Sepia_Globalization_CldrContext_ResolveFunction_System_String_System_String_System_Xml_XPath_XPathResultType___.md&amp;value=---%0Auid%3A%20Sepia.Globalization.CldrContext.ResolveFunction(System.String%2CSystem.String%2CSystem.Xml.XPath.XPathResultType%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/richardschneider/net-cldr/blob/master/src/CldrXPath.cs/#L42">View Source</a>
+    <a href="https://github.com/richardschneider/net-cldr/blob/dotnet/src/CldrXPath.cs/#L42">View Source</a>
   </span>
   <a id="Sepia_Globalization_CldrContext_ResolveFunction_" data-uid="Sepia.Globalization.CldrContext.ResolveFunction*"></a>
-  <h4 id="Sepia_Globalization_CldrContext_ResolveFunction_System_String_System_String_XPathResultType___" data-uid="Sepia.Globalization.CldrContext.ResolveFunction(System.String,System.String,XPathResultType[])">ResolveFunction(String, String, XPathResultType[])</h4>
+  <h4 id="Sepia_Globalization_CldrContext_ResolveFunction_System_String_System_String_System_Xml_XPath_XPathResultType___" data-uid="Sepia.Globalization.CldrContext.ResolveFunction(System.String,System.String,System.Xml.XPath.XPathResultType[])">ResolveFunction(String, String, XPathResultType[])</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -293,7 +363,7 @@ XPath expressions.</p>
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">XPathResultType</span>[]</td>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.xml.xpath.xpathresulttype(v=vs.110).aspx">XPathResultType</a>[]</td>
         <td><span class="parametername">argTypes</span></td>
         <td></td>
       </tr>
@@ -309,17 +379,19 @@ XPath expressions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IXsltContextFunction</span></td>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.xml.xsl.ixsltcontextfunction(v=vs.110).aspx">IXsltContextFunction</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/k8xf7bex(v=vs.110).aspx">XsltContext.ResolveFunction(String, String, XPathResultType[])</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Sepia_Globalization_CldrContext_ResolveVariable_System_String_System_String_.md&amp;value=---%0Auid%3A%20Sepia.Globalization.CldrContext.ResolveVariable(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/richardschneider/net-cldr/new/dotnet/apiSpec/new?filename=Sepia_Globalization_CldrContext_ResolveVariable_System_String_System_String_.md&amp;value=---%0Auid%3A%20Sepia.Globalization.CldrContext.ResolveVariable(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/richardschneider/net-cldr/blob/master/src/CldrXPath.cs/#L73">View Source</a>
+    <a href="https://github.com/richardschneider/net-cldr/blob/dotnet/src/CldrXPath.cs/#L73">View Source</a>
   </span>
   <a id="Sepia_Globalization_CldrContext_ResolveVariable_" data-uid="Sepia.Globalization.CldrContext.ResolveVariable*"></a>
   <h4 id="Sepia_Globalization_CldrContext_ResolveVariable_System_String_System_String_" data-uid="Sepia.Globalization.CldrContext.ResolveVariable(System.String,System.String)">ResolveVariable(String, String)</h4>
@@ -361,11 +433,20 @@ XPath expressions.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IXsltContextVariable</span></td>
+        <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.xml.xsl.ixsltcontextvariable(v=vs.110).aspx">IXsltContextVariable</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://msdn.microsoft.com/en-us/library/zh8k2zkt(v=vs.110).aspx">XsltContext.ResolveVariable(String, String)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.xml.ixmlnamespaceresolver(v=vs.110).aspx">IXmlNamespaceResolver</a>
+  </div>
+  <div>
+      <a class="xref" href="https://msdn.microsoft.com/en-us/library/system.collections.ienumerable(v=vs.110).aspx">IEnumerable</a>
+  </div>
 </article>
           </div>
           
@@ -374,10 +455,10 @@ XPath expressions.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Sepia_Globalization_CldrContext.md&amp;value=---%0Auid%3A%20Sepia.Globalization.CldrContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/richardschneider/net-cldr/new/dotnet/apiSpec/new?filename=Sepia_Globalization_CldrContext.md&amp;value=---%0Auid%3A%20Sepia.Globalization.CldrContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/richardschneider/net-cldr/blob/master/src/CldrXPath.cs/#L29" class="contribution-link">View Source</a>
+                    <a href="https://github.com/richardschneider/net-cldr/blob/dotnet/src/CldrXPath.cs/#L29" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
