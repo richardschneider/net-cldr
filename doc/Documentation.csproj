@@ -22,6 +22,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -62,7 +63,6 @@
   <ItemGroup>
     <Content Include="articles\toc.yml" />
     <Content Include="images\docs-latest-green.svg" />
-    <Content Include="images\ipfs-logo.svg" />
     <Content Include="packages.config" />
     <Content Include="toc.yml" />
     <Content Include="index.md" />

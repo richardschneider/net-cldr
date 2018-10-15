@@ -1,6 +1,7 @@
 # Sepia.Globalization
 
 [![build status](https://ci.appveyor.com/api/projects/status/github/richardschneider/net-cldr?branch=master&svg=true)](https://ci.appveyor.com/project/richardschneider/net-cldr) 
+[![travis build](https://travis-ci.org/richardschneider/net-cldr.svg?branch=master)](https://travis-ci.org/richardschneider/net-cldr)
 [![Coverage Status](https://coveralls.io/repos/richardschneider/net-cldr/badge.svg?branch=master&service=github)](https://coveralls.io/github/richardschneider/net-cldr?branch=master)
 [![NuGet](https://img.shields.io/nuget/v/Sepia.Globalization.svg)](https://www.nuget.org/packages/Sepia.Globalization)
 [![docs](https://cdn.rawgit.com/richardschneider/net-cldr/master/doc/images/docs-latest-green.svg)](https://richardschneider.github.io/net-cldr)
