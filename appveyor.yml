@@ -51,11 +51,11 @@ test_script:
 after_test: 
 # Generate coverage report
     - packages\OpenCover.4.6.519\tools\OpenCover.Console.exe 
-        -register:user -filter:"+[Sepia.Globalization]*" 
+        -register:user 
+        -filter:"+[Sepia.Globalization]*" 
         -target:"c:\Program Files\dotnet\dotnet.exe" 
-        -targetargs:"test -c Release --no-build --no-restore --framework net452 test" 
+        -targetargs:"test -c Release --no-build --no-restore --framework netcoreapp2.0 test" 
         -output:coverage.xml  
-        -mergeoutput 
         -hideskipped:File 
         -oldStyle 
     - if defined COVERALLS_REPO_TOKEN 
