@@ -146,7 +146,7 @@ namespace Sepia.Globalization.Numbers
             Assert.AreEqual("(￥124)", formatter.Format(-123.78));
         }
 
-        [TestMethod]
+        [TestMethod, Ignore]
         public void Minimum_Grouping_Digits()
         {
             var locale = Locale.Create("es_419");
