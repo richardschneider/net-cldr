@@ -197,7 +197,7 @@ namespace Sepia.Globalization
         /// <returns>
         ///   The local paths to the downloaded files.
         /// </returns>
-        public Task<string[]> DownloadAsync(Version version)
+        public async Task<string[]> DownloadAsync(Version version)
         {
             if (Directory.Exists(repositoryFolder))
             {
@@ -207,7 +207,7 @@ namespace Sepia.Globalization
 
             var files = new[] { "core.zip", "keyboards.zip" };
             var tasks = files.Select(name => DownloadAsync(name, version));
-            var result = Task.WhenAll(tasks);
+            var result = await Task.WhenAll(tasks);
 
             ClearCaches();
             return result;

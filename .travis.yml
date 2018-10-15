@@ -11,5 +11,5 @@ install:
   - dotnet restore
 
 script:
-  - dotnet build -c Release --no-restore --framework netstandard2 ./src
-  - dotnet test  -c Release --no-restore --framework netcoreapp2 ./test
+  - dotnet build -c Release --no-restore --framework netstandard20 ./src
+  - dotnet test  -c Release --no-restore --framework netcoreapp2.0 ./test
