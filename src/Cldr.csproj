@@ -5,6 +5,7 @@
     <AssemblyName>Sepia.Globalization</AssemblyName>
     <RootNamespace>Sepia.Globalization</RootNamespace>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+    <DebugType>full</DebugType>
 
     <!-- developer build is always 0.42 -->
     <AssemblyVersion>0.42</AssemblyVersion>
