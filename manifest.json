@@ -4,282 +4,6 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.Cldr.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.Cldr.html",
-          "hash": "yshFhDnmrGZUydsn4kr9og=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.CldrContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.CldrContext.html",
-          "hash": "kAPh511ssIgZ/nVfWxfdbA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.CldrExentsions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.CldrExentsions.html",
-          "hash": "EU0MvfAbzsQxu991Zyttng=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.CodeList.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.CodeList.html",
-          "hash": "XasQJsaH052lGCIvpusAZA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.Locale.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.Locale.html",
-          "hash": "15DyGou0jqa1dR3fvBdeIQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.LocaleExtension.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.LocaleExtension.html",
-          "hash": "ubyPYbIbqycQw2OmMVxY9g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.LocaleIdentifier.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.LocaleIdentifier.html",
-          "hash": "sDDgJMw2/ef05njSDw2VSQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.Numbers.INumberFormatter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.Numbers.INumberFormatter.html",
-          "hash": "Xl4cAcw9fPYbCtvw7KEnkw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.Numbers.NumberFormatter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.Numbers.NumberFormatter.html",
-          "hash": "ViS5rAcB7o5O2rKYtMkdPw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.Numbers.NumberOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.Numbers.NumberOptions.html",
-          "hash": "62CaFPWGHy6vdj5JzkNm0g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.Numbers.NumberStyle.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.Numbers.NumberStyle.html",
-          "hash": "wS/7ohCH8TPp1mskW8NNpw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.Numbers.NumberSymbols.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.Numbers.NumberSymbols.html",
-          "hash": "czUnLDAJfcr+x7fpwH3pCw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.Numbers.NumberingSystem.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.Numbers.NumberingSystem.html",
-          "hash": "kQj56HDO5Wmv+3+lv1GcgA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.Numbers.Rules.IRule.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.Numbers.Rules.IRule.html",
-          "hash": "jIa9g3NEJBZjgo6v7rIQaA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.Numbers.Rules.RbnfContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.Numbers.Rules.RbnfContext.html",
-          "hash": "D9aXTmmG4O4GD37bwRCC+w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.Numbers.Rules.Rule.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.Numbers.Rules.Rule.html",
-          "hash": "mk8EN//rC1X+9BbdpZ+o6Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.Numbers.Rules.Ruleset.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.Numbers.Rules.Ruleset.html",
-          "hash": "0MVg+dpEntIDauSoAvFTNw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.Numbers.Rules.RulesetGroup.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html",
-          "hash": "3Zu8nH/fRRF878HZ8XtX4A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.Numbers.Rules.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.Numbers.Rules.html",
-          "hash": "vNUdCFoXVlc2fL94Wf0Wgw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.Numbers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.Numbers.html",
-          "hash": "rt2n/yRZMLYHJ2frV4XezA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.StringRange.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.StringRange.html",
-          "hash": "zXqrsoIwM7dljSFQgTzoHw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Sepia.Globalization.html",
-          "hash": "wVtCnLkWJbGxCgoa2AEf1Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "yKWu9lUdPEPIFDa2XFtDlg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "articles/intro.md",
       "output": {
@@ -339,12 +63,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "GGpoI0hysUcksNx9JUe86Q=="
+          "hash": "DU0yj8G+xiXQOVbLFKi12A=="
         }
       },
       "is_incremental": false,
@@ -356,7 +83,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "V9liO+2j8J72Qgcyu0RLDw=="
+          "hash": "z2Zx7yezrt6JjTsNkN6e+Q=="
         }
       },
       "is_incremental": false,
@@ -377,10 +104,6 @@
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
