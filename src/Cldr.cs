@@ -139,7 +139,7 @@ namespace Sepia.Globalization
         public static async Task<Version> LatestVersionAsync()
         {
             // Hack for https://github.com/richardschneider/net-cldr/issues/1
-            if (Environment.GetEnvironmentVariable("APPVEYOR") == "True")
+            if (Environment.GetEnvironmentVariable("CI")?.ToLowerInvariant() == "true")
             {
                 OriginUrl = "http://ftp.lanet.lv/ftp/mirror/unicode/cldr/";
                 return new Version("30.0.2");
@@ -197,7 +197,7 @@ namespace Sepia.Globalization
         /// <returns>
         ///   The local paths to the downloaded files.
         /// </returns>
-        public Task<string[]> DownloadAsync(Version version)
+        public async Task<string[]> DownloadAsync(Version version)
         {
             if (Directory.Exists(repositoryFolder))
             {
@@ -207,7 +207,7 @@ namespace Sepia.Globalization
 
             var files = new[] { "core.zip", "keyboards.zip" };
             var tasks = files.Select(name => DownloadAsync(name, version));
-            var result = Task.WhenAll(tasks);
+            var result = await Task.WhenAll(tasks);
 
             ClearCaches();
             return result;
