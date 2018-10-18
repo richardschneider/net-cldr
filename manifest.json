@@ -29,11 +29,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Sepia.Globalization.CldrExentsions.yml",
+      "source_relative_path": "api/Sepia.Globalization.CldrExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Sepia.Globalization.CldrExentsions.html",
-          "hash": "fWkhOOBKMrWinxspgKFDqg=="
+          "relative_path": "api/Sepia.Globalization.CldrExtensions.html",
+          "hash": "6watRcb+fPfR38VwpOyNEQ=="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.LocaleIdentifier.html",
-          "hash": "OpLKJoiv4/XxjJVEIx2FIw=="
+          "hash": "oOFGZoOz+8s4qy/ufNXaeQ=="
         }
       },
       "is_incremental": false,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.html",
-          "hash": "wVtCnLkWJbGxCgoa2AEf1Q=="
+          "hash": "DH8PIwhKbhE1/jWQY8Y/DQ=="
         }
       },
       "is_incremental": false,
@@ -273,7 +273,67 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "yKWu9lUdPEPIFDa2XFtDlg=="
+          "hash": "y8uNoSHkyXAKlB7LVrmKsg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cldr.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cldr.html",
+          "hash": "oWno3SctqmqyWGbTroNx3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cldr/downloading.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cldr/downloading.html",
+          "hash": "pc+h1yHuZSfsuXTz7rNGnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cldr/extending.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cldr/extending.html",
+          "hash": "XWtEtfr+DfJH9w8JD/0TKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cldr/get-docs.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cldr/get-docs.html",
+          "hash": "s7xHXyRBPQviMvkkzPhu9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/cldr/searching.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/cldr/searching.html",
+          "hash": "Qhbh2IzEVJqdUsvGGdxOcw=="
         }
       },
       "is_incremental": false,
@@ -293,11 +353,23 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/query.md",
+      "source_relative_path": "articles/locale-id.md",
       "output": {
         ".html": {
-          "relative_path": "articles/query.html",
-          "hash": "lDEy2daTomiaTh2fm5i3AA=="
+          "relative_path": "articles/locale-id.html",
+          "hash": "TXOE11RAW4ofjG45WCsD+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/locale.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/locale.html",
+          "hash": "mJHas2sETqWEDp6FQdtstQ=="
         }
       },
       "is_incremental": false,
@@ -309,7 +381,19 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "t7iiFrmuYmrKWisdq+lN6Q=="
+          "hash": "qMSxj4rV54JItWhVhlBPOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/u-ext.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/u-ext.html",
+          "hash": "GdXIQhrnaeDCFYYowDenpQ=="
         }
       },
       "is_incremental": false,
@@ -376,17 +460,17 @@
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ResourceDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

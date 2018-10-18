@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Query | Sepia Globalization </title>
+    <title>Locale ID | Sepia Globalization </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Query | Sepia Globalization ">
+    <meta name="title" content="Locale ID | Sepia Globalization ">
     <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -67,14 +67,60 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="query">Query</h1>
+<h1 id="locale-id">Locale ID</h1>
 
-<p>Query the CLDR for the fractional digits of the Japanese Yen (JPY)</p>
-<pre><code>var jpy = Cldr.Instance
-    .GetDocuments(&quot;common/supplemental/supplementalData.xml&quot;)
-    .FirstElement(&quot;supplementalData/currencyData/fractions/info[@iso4217=&#39;JPY&#39;]&quot;);
-Assert.AreEqual(&quot;0&quot;, jpy.Attribute(&quot;digits&quot;).Value);
-</code></pre></article>
+<p>A <a class="xref" href="../api/Sepia.Globalization.LocaleIdentifier.html">locale ID</a> is used to name a set preferences for a
+<a href="locale.html">locale</a>.  The identifier is based on 
+<a href="https://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP47</a> and 
+<a href="http://www.unicode.org/reports/tr35/#Unicode_locale_identifier">Unicode TR 35</a> 
+for distinguishing among languages, country/region, currencies, 
+time zones, transforms, and so on.</p>
+<p>Typically, the ID is a <a href="https://en.wikipedia.org/wiki/ISO_639">language code</a> or 
+a language and <a href="https://en.wikipedia.org/wiki/ISO_3166-1">region code</a>; 
+such as <code>en</code> and <code>en-NZ</code>, respectively. However, ID&#39;s can also contain 
+a <a class="xref" href="../api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Script">script</a>, 
+<a class="xref" href="../api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Extensions">extensions</a> and
+<a class="xref" href="../api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Variants">variants</a>.</p>
+<h2 id="parsing">Parsing</h2>
+<p>The <a class="xref" href="../api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Parse_">Parse</a> and 
+<a class="xref" href="../api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_TryParse_">TryParse</a> methods are used to convert the 
+string representation of the ID into the various subtags. 
+<a class="xref" href="../api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_MostLikelySubtags_">MostLikelySubtags</a> returns 
+a new ID with the <a class="xref" href="../api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Language">language</a>, 
+<a class="xref" href="../api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Script">script</a> and 
+<a class="xref" href="../api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Region">region</a> filled in with a likely value.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Most Likely</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>en</code></td>
+<td>en-Latn-US</td>
+<td>English</td>
+</tr>
+<tr>
+<td><code>en-NZ</code></td>
+<td>en-Latn-NZ</td>
+<td>English in New Zealand</td>
+</tr>
+<tr>
+<td><code>zh</code></td>
+<td>zh-Hans-CN</td>
+<td>Simplified Chinese</td>
+</tr>
+<tr>
+<td><code>zh-TW</code></td>
+<td>zh-Hant-TW</td>
+<td>Traditional Chinese in Taiwan</td>
+</tr>
+</tbody>
+</table>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -82,7 +128,7 @@ Assert.AreEqual(&quot;0&quot;, jpy.Attribute(&quot;digits&quot;).Value);
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/richardschneider/net-cldr/blob/master/doc/articles/query.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/richardschneider/net-cldr/blob/master/doc/articles/locale-id.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
