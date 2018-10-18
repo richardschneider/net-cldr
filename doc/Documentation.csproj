@@ -68,8 +68,15 @@
     <Content Include="index.md" />
     <Content Include="docfx.json" />
     <Content Include="articles\intro.md" />
-    <Content Include="articles\toc.md" />
     <Content Include="api\index.md" />
+    <Content Include="articles\locale.md" />
+    <Content Include="articles\locale-id.md" />
+    <Content Include="articles\u-ext.md" />
+    <Content Include="articles\cldr.md" />
+    <Content Include="articles\cldr\downloading.md" />
+    <Content Include="articles\cldr\extending.md" />
+    <Content Include="articles\cldr\get-docs.md" />
+    <Content Include="articles\cldr\searching.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

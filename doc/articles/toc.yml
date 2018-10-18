@@ -1,2 +1,22 @@
 - name: Introduction
   href: intro.md
+- name: Unicode CLDR
+  href: cldr.md
+  items:
+    - name: Downloading
+      href: cldr/Downloading.md
+    - name: Extending
+      href: cldr/extending.md
+    - name: Getting documents
+      href: cldr/get-docs.md
+    - name: Searching
+      href: cldr/searching.md
+- name: Locale
+  href: locale.md
+  items:
+    - name: Locale ID
+      href: locale-id.md
+    - name: Unicode BCP 47 U Extension
+      href: u-ext.md
+- name: Class Reference
+  href: ../api/Sepia.Globalization.yml

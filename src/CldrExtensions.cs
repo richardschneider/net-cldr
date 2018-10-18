@@ -15,9 +15,9 @@ namespace Sepia.Globalization
     ///    The <see cref="CldrContext"/> is used to provide extra XPath varaibles and functions.
     ///    </para>
     /// </remarks>
-    public static class CldrExentsions
+    public static class CldrExtensions
     {
-        static ILog log = LogManager.GetLogger(typeof(CldrExentsions));
+        static ILog log = LogManager.GetLogger(typeof(CldrExtensions));
 
         /// <summary>
         ///   Find the first element that matches the XPATH expression
@@ -114,7 +114,7 @@ namespace Sepia.Globalization
         }
 
         /// <summary>
-        ///   Find all the elements that matche the XPATH expression
+        ///   Find all the elements that match the XPATH expression
         ///   in the sequence of documents.
         /// </summary>
         /// <param name="docs">

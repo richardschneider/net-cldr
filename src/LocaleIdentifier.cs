@@ -40,7 +40,7 @@ namespace Sepia.Globalization
         ///   The language subtag.
         /// </summary>
         /// <value>
-        ///   ISO 639 code or the empty string.
+        ///   <see href="https://en.wikipedia.org/wiki/ISO_639">ISO 639 code</see> or the empty string.
         /// </value>
         /// <remarks>
         ///   The language subtag is case insensitive but stored in the lower-case form.
@@ -51,7 +51,7 @@ namespace Sepia.Globalization
         ///   The script (writing system) subtag.
         /// </summary>
         /// <value>
-        ///   ISO 15924 code or the empty string.
+        ///   <see href="https://en.wikipedia.org/wiki/ISO_15924">ISO 15924 code</see> or the empty string.
         /// </value>
         /// <remarks>
         ///   The script subtag is case insensitive but stored in the title-case form.
@@ -62,7 +62,8 @@ namespace Sepia.Globalization
         ///   The region subtag.
         /// </summary>
         /// <value>
-        ///   ISO 3166-1 or UN M.49 code or the empty string.
+        ///   <see href="https://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1</see> 
+        ///   or UN M.49 code or the empty string.
         /// </value>
         /// <remarks>
         ///   The region subtag is case insensitive but stored in the upper-case form.
