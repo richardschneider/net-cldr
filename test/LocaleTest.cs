@@ -3,6 +3,7 @@ using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
 using System.Collections.Generic;
+using System.Text;
 
 namespace Sepia.Globalization
 {
@@ -56,6 +57,23 @@ namespace Sepia.Globalization
             Assert.AreEqual("sl_SI_NEDIS", chain[1]);
             Assert.AreEqual("sl", chain[7]);
             Assert.AreEqual("root", chain[8]);
+        }
+
+        [TestMethod]
+        public void SearchChain_Example()
+        {
+            var sb = new StringBuilder();
+            foreach (var id in new[] { "en", "en-NZ", "az-Cyrl", "es-AR", "zh-MO" })
+            {
+                sb.Append($"{id} => ");
+                var locale = Locale.Create(id);
+                foreach (var x in locale.SearchChain())
+                {
+                    sb.Append($"{x} ");
+                }
+                sb.AppendLine();
+            }
+            Console.Write(sb.ToString());
         }
 
         [TestMethod]

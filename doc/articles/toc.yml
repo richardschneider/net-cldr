@@ -18,5 +18,7 @@
       href: locale-id.md
     - name: Unicode BCP 47 U Extension
       href: u-ext.md
+    - name: Finding Data
+      href: locale-data.md
 - name: Class Reference
   href: ../api/Sepia.Globalization.yml
