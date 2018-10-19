@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cldr/searching.html",
-          "hash": "Qhbh2IzEVJqdUsvGGdxOcw=="
+          "hash": "q9E88EVAu6SloZnRuHC9JQ=="
         }
       },
       "is_incremental": false,
@@ -346,6 +346,18 @@
         ".html": {
           "relative_path": "articles/intro.html",
           "hash": "9lforettacZwe3S/NDaahw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/locale-data.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/locale-data.html",
+          "hash": "ZPSflnp5V5dqfzQu0U9KtA=="
         }
       },
       "is_incremental": false,
@@ -381,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "qMSxj4rV54JItWhVhlBPOA=="
+          "hash": "B2aAaxabiRvqgDZYVqOP1g=="
         }
       },
       "is_incremental": false,
