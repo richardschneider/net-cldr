@@ -20,5 +20,12 @@
       href: u-ext.md
     - name: Finding Data
       href: locale-data.md
+- name: Numbers
+  items:
+     - name: Formatting
+       href: numbers/formatting.md
+     - name: Currency
+       href: numbers/currency.md
+     - name: Spelling out
 - name: Class Reference
   href: ../api/Sepia.Globalization.yml

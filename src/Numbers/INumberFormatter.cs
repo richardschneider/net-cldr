@@ -64,9 +64,7 @@ namespace Sepia.Globalization.Numbers
         ///   <paramref name="currencyCode"/>
         ///   according to the <see cref="Locale"/> and 
         ///   <see cref="NumberOptions">formatting options</see>.
-        ///   <para>
         ///   The number of significant digits is controlled by currency definition.
-        ///   </para>
         /// </returns>
         string Format(long value, string currencyCode);
 
@@ -84,9 +82,7 @@ namespace Sepia.Globalization.Numbers
         ///   <paramref name="currencyCode"/>
         ///   according to the <see cref="Locale"/> and 
         ///   <see cref="NumberOptions">formatting options</see>.
-        ///   <para>
         ///   The number of significant digits is controlled by currency definition.
-        ///   </para>
         /// </returns>
         string Format(double value, string currencyCode);
 
@@ -104,9 +100,7 @@ namespace Sepia.Globalization.Numbers
         ///   <paramref name="currencyCode"/>
         ///   according to the <see cref="Locale"/> and 
         ///   <see cref="NumberOptions">formatting options</see>.
-        ///   <para>
         ///   The number of significant digits is controlled by currency definition.
-        ///   </para>
         /// </returns>
         string Format(decimal value, string currencyCode);
     }

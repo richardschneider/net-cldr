@@ -78,6 +78,8 @@
     <Content Include="articles\cldr\get-docs.md" />
     <Content Include="articles\cldr\searching.md" />
     <Content Include="articles\locale-data.md" />
+    <Content Include="articles\numbers\formatting.md" />
+    <Content Include="articles\numbers\currency.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
