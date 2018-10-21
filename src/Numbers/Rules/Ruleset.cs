@@ -50,7 +50,11 @@ namespace Sepia.Globalization.Numbers.Rules
         {
             var previous = context.Ruleset;
             context.Ruleset = this;
-            var rule = Rules.FirstOrDefault(r => r.Matches(context));
+
+            // If only one rule, then always fire it.
+            var rule = (Rules.Count == 1)
+                ? Rules.First()
+                : Rules.FirstOrDefault(r => r.Matches(context));
             if (rule != null)
                 rule.Fire(context);
             context.Ruleset = previous;

@@ -27,18 +27,23 @@ namespace Sepia.Globalization.Numbers.Rules
             context.Text.Append(sub.Text);
             switch (sub.Token)
             {
+                // Divide the number by the rule's divisor and format the remainder.
                 case "→→":
                     context.Number = Decimal.Remainder(number, Divisor());
                     context.Ruleset.ApplyRules(context);
                     break;
+
+                // Divide the number by the rule's divisor and format the quotient.
                 case "←←":
                     context.Number = Math.Floor(number / Divisor());
                     context.Ruleset.ApplyRules(context);
                     break;
+
                 case "=":
                     // Fallback number formating?
                     if (sub.Descriptor.StartsWith("#") || sub.Descriptor.StartsWith("0"))
                     {
+                        // TODO: Should use locale specific number formatting
                         context.Text.Append(context.Number.ToString(sub.Descriptor, CultureInfo.InvariantCulture));
                     }
 
@@ -49,15 +54,32 @@ namespace Sepia.Globalization.Numbers.Rules
                         ruleset.ApplyRules(context);
                     }
                     break;
+                case "→":
+                    context.Number = Decimal.Remainder(number, Divisor());
+                    context.RulesetGroup
+                        .Rulesets[sub.Descriptor]
+                        .ApplyRules(context);
+                    break;
+
+                case "←":
+                    context.Number = Math.Floor(number / Divisor());
+                    context.RulesetGroup
+                        .Rulesets[sub.Descriptor]
+                        .ApplyRules(context);
+                    break;
+
                 case "":
                     break;
                 default:
                     throw new NotSupportedException($"Substitution token '{sub.Token}' is not allowed.");
             }
 
-            if (sub.Optional != null && (number % Divisor()) != 0)
+            if (sub.Optionals != null && (number % Divisor()) != 0)
             {
-                Apply(sub.Optional, context);
+                foreach (var optional in sub.Optionals)
+                {
+                    Apply(optional, context);
+                }
             }
 
             context.Number = number;
