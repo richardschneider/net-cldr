@@ -45,5 +45,19 @@ namespace Sepia.Globalization
             CollectionAssert.Contains(strings, "cc");
             CollectionAssert.Contains(strings, "cd");
         }
+
+        [TestMethod]
+        public void Errors()
+        {
+            ExceptionAssert.Throws<ArgumentOutOfRangeException>(() =>
+                StringRange.Enumerate("", "a").ToArray());
+            ExceptionAssert.Throws<ArgumentOutOfRangeException>(() =>
+                StringRange.Enumerate("ab", "ddx").ToArray());
+
+            // NYI
+            ExceptionAssert.Throws<ArgumentOutOfRangeException>(() =>
+                StringRange.Enumerate("ab", "cd").ToArray());
+
+        }
     }
 }
