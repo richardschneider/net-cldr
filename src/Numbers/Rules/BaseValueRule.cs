@@ -11,6 +11,7 @@ namespace Sepia.Globalization.Numbers.Rules
     {
         public decimal LowerLimit;
         public decimal UpperLimit = decimal.MaxValue;
+        public int radix = 10;
 
         public override void Fire(RbnfContext context)
         {
@@ -90,8 +91,20 @@ namespace Sepia.Globalization.Numbers.Rules
         /// </summary>
         decimal Divisor()
         {
-            int pow = (LowerLimit == 0) ? 0 : ((int)Math.Floor(Math.Log10((double) LowerLimit)));
-            return (decimal) Math.Pow(10, pow);
+            int pow;
+            if (radix == 10)
+            {
+                pow = (LowerLimit == 0)
+                    ? 0
+                    : ((int)Math.Floor(Math.Log10((double)LowerLimit)));
+            }
+            else
+            {
+                pow = (LowerLimit == 0)
+                    ? 0
+                    : ((int)Math.Floor(Math.Log((double)LowerLimit, radix)));
+            }
+            return (decimal) Math.Pow(radix, pow);
         }
 
         public override bool Matches(RbnfContext context)

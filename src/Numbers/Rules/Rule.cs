@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,6 +40,11 @@ namespace Sepia.Globalization.Numbers.Rules
         {
             Rule rule = null;
             var value = xml.GetAttribute("value", "");
+            var radix = xml.GetAttribute("radix", "");
+            int radixNumber = radix.Length == 0
+                ? 10
+                : Int32.Parse(radix, CultureInfo.InvariantCulture);
+
             switch (value)
             {
                 case "-x":
@@ -65,7 +71,8 @@ namespace Sepia.Globalization.Numbers.Rules
                     {
                         rule = new BaseValueRule
                         {
-                            LowerLimit = decimal.Parse(value)
+                            LowerLimit = decimal.Parse(value),
+                            radix = radixNumber
                         };
                     }
                     else
