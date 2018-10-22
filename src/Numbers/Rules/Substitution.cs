@@ -53,6 +53,12 @@ namespace Sepia.Globalization.Numbers.Rules
         /// </returns>
         public static IEnumerable<Substitution> Parse(string s)
         {
+            // If a rule body begins with an apostrophe, the apostrophe is ignored, 
+            // but all text after it becomes significant (this is how you can
+            // have a rule's rule text begin with whitespace).
+            if (s.StartsWith("'"))
+                s = s.Substring(1);
+
             for (var match = SubstitutionRegex.Match(s); match.Success; match = match.NextMatch())
             {
                 var substitution = new Substitution
