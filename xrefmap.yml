@@ -1446,6 +1446,19 @@ references:
   commentId: T:Sepia.Globalization.Numbers.Rules.RbnfContext
   fullName: Sepia.Globalization.Numbers.Rules.RbnfContext
   nameWithType: RbnfContext
+- uid: Sepia.Globalization.Numbers.Rules.RbnfContext.Locale
+  name: Locale
+  href: api/Sepia.Globalization.Numbers.Rules.RbnfContext.html#Sepia_Globalization_Numbers_Rules_RbnfContext_Locale
+  commentId: P:Sepia.Globalization.Numbers.Rules.RbnfContext.Locale
+  fullName: Sepia.Globalization.Numbers.Rules.RbnfContext.Locale
+  nameWithType: RbnfContext.Locale
+- uid: Sepia.Globalization.Numbers.Rules.RbnfContext.Locale*
+  name: Locale
+  href: api/Sepia.Globalization.Numbers.Rules.RbnfContext.html#Sepia_Globalization_Numbers_Rules_RbnfContext_Locale_
+  commentId: Overload:Sepia.Globalization.Numbers.Rules.RbnfContext.Locale
+  isSpec: "True"
+  fullName: Sepia.Globalization.Numbers.Rules.RbnfContext.Locale
+  nameWithType: RbnfContext.Locale
 - uid: Sepia.Globalization.Numbers.Rules.RbnfContext.Number
   name: Number
   href: api/Sepia.Globalization.Numbers.Rules.RbnfContext.html#Sepia_Globalization_Numbers_Rules_RbnfContext_Number
@@ -1633,18 +1646,18 @@ references:
   commentId: T:Sepia.Globalization.Numbers.Rules.RulesetGroup
   fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup
   nameWithType: RulesetGroup
-- uid: Sepia.Globalization.Numbers.Rules.RulesetGroup.Format(System.Decimal,System.String)
-  name: Format(Decimal, String)
-  href: api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html#Sepia_Globalization_Numbers_Rules_RulesetGroup_Format_System_Decimal_System_String_
-  commentId: M:Sepia.Globalization.Numbers.Rules.RulesetGroup.Format(System.Decimal,System.String)
-  fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup.Format(System.Decimal, System.String)
-  nameWithType: RulesetGroup.Format(Decimal, String)
-- uid: Sepia.Globalization.Numbers.Rules.RulesetGroup.Format(System.Double,System.String)
-  name: Format(Double, String)
-  href: api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html#Sepia_Globalization_Numbers_Rules_RulesetGroup_Format_System_Double_System_String_
-  commentId: M:Sepia.Globalization.Numbers.Rules.RulesetGroup.Format(System.Double,System.String)
-  fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup.Format(System.Double, System.String)
-  nameWithType: RulesetGroup.Format(Double, String)
+- uid: Sepia.Globalization.Numbers.Rules.RulesetGroup.Format(System.Decimal,System.String,Sepia.Globalization.Locale)
+  name: Format(Decimal, String, Locale)
+  href: api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html#Sepia_Globalization_Numbers_Rules_RulesetGroup_Format_System_Decimal_System_String_Sepia_Globalization_Locale_
+  commentId: M:Sepia.Globalization.Numbers.Rules.RulesetGroup.Format(System.Decimal,System.String,Sepia.Globalization.Locale)
+  fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup.Format(System.Decimal, System.String, Sepia.Globalization.Locale)
+  nameWithType: RulesetGroup.Format(Decimal, String, Locale)
+- uid: Sepia.Globalization.Numbers.Rules.RulesetGroup.Format(System.Double,System.String,Sepia.Globalization.Locale)
+  name: Format(Double, String, Locale)
+  href: api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html#Sepia_Globalization_Numbers_Rules_RulesetGroup_Format_System_Double_System_String_Sepia_Globalization_Locale_
+  commentId: M:Sepia.Globalization.Numbers.Rules.RulesetGroup.Format(System.Double,System.String,Sepia.Globalization.Locale)
+  fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup.Format(System.Double, System.String, Sepia.Globalization.Locale)
+  nameWithType: RulesetGroup.Format(Double, String, Locale)
 - uid: Sepia.Globalization.Numbers.Rules.RulesetGroup.Format*
   name: Format
   href: api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html#Sepia_Globalization_Numbers_Rules_RulesetGroup_Format_
@@ -1684,6 +1697,106 @@ references:
   isSpec: "True"
   fullName: Sepia.Globalization.Numbers.Rules.RulesetGroup.Type
   nameWithType: RulesetGroup.Type
+- uid: Sepia.Globalization.Numbers.Rules.Substitution
+  name: Substitution
+  href: api/Sepia.Globalization.Numbers.Rules.Substitution.html
+  commentId: T:Sepia.Globalization.Numbers.Rules.Substitution
+  fullName: Sepia.Globalization.Numbers.Rules.Substitution
+  nameWithType: Substitution
+- uid: Sepia.Globalization.Numbers.Rules.Substitution.Descriptor
+  name: Descriptor
+  href: api/Sepia.Globalization.Numbers.Rules.Substitution.html#Sepia_Globalization_Numbers_Rules_Substitution_Descriptor
+  commentId: F:Sepia.Globalization.Numbers.Rules.Substitution.Descriptor
+  fullName: Sepia.Globalization.Numbers.Rules.Substitution.Descriptor
+  nameWithType: Substitution.Descriptor
+- uid: Sepia.Globalization.Numbers.Rules.Substitution.Optionals
+  name: Optionals
+  href: api/Sepia.Globalization.Numbers.Rules.Substitution.html#Sepia_Globalization_Numbers_Rules_Substitution_Optionals
+  commentId: F:Sepia.Globalization.Numbers.Rules.Substitution.Optionals
+  fullName: Sepia.Globalization.Numbers.Rules.Substitution.Optionals
+  nameWithType: Substitution.Optionals
+- uid: Sepia.Globalization.Numbers.Rules.Substitution.Parse(System.String)
+  name: Parse(String)
+  href: api/Sepia.Globalization.Numbers.Rules.Substitution.html#Sepia_Globalization_Numbers_Rules_Substitution_Parse_System_String_
+  commentId: M:Sepia.Globalization.Numbers.Rules.Substitution.Parse(System.String)
+  fullName: Sepia.Globalization.Numbers.Rules.Substitution.Parse(System.String)
+  nameWithType: Substitution.Parse(String)
+- uid: Sepia.Globalization.Numbers.Rules.Substitution.Parse*
+  name: Parse
+  href: api/Sepia.Globalization.Numbers.Rules.Substitution.html#Sepia_Globalization_Numbers_Rules_Substitution_Parse_
+  commentId: Overload:Sepia.Globalization.Numbers.Rules.Substitution.Parse
+  isSpec: "True"
+  fullName: Sepia.Globalization.Numbers.Rules.Substitution.Parse
+  nameWithType: Substitution.Parse
+- uid: Sepia.Globalization.Numbers.Rules.Substitution.Text
+  name: Text
+  href: api/Sepia.Globalization.Numbers.Rules.Substitution.html#Sepia_Globalization_Numbers_Rules_Substitution_Text
+  commentId: F:Sepia.Globalization.Numbers.Rules.Substitution.Text
+  fullName: Sepia.Globalization.Numbers.Rules.Substitution.Text
+  nameWithType: Substitution.Text
+- uid: Sepia.Globalization.Numbers.Rules.Substitution.Token
+  name: Token
+  href: api/Sepia.Globalization.Numbers.Rules.Substitution.html#Sepia_Globalization_Numbers_Rules_Substitution_Token
+  commentId: F:Sepia.Globalization.Numbers.Rules.Substitution.Token
+  fullName: Sepia.Globalization.Numbers.Rules.Substitution.Token
+  nameWithType: Substitution.Token
+- uid: Sepia.Globalization.Numbers.SpellingFormatter
+  name: SpellingFormatter
+  href: api/Sepia.Globalization.Numbers.SpellingFormatter.html
+  commentId: T:Sepia.Globalization.Numbers.SpellingFormatter
+  fullName: Sepia.Globalization.Numbers.SpellingFormatter
+  nameWithType: SpellingFormatter
+- uid: Sepia.Globalization.Numbers.SpellingFormatter.Create(Sepia.Globalization.Locale)
+  name: Create(Locale)
+  href: api/Sepia.Globalization.Numbers.SpellingFormatter.html#Sepia_Globalization_Numbers_SpellingFormatter_Create_Sepia_Globalization_Locale_
+  commentId: M:Sepia.Globalization.Numbers.SpellingFormatter.Create(Sepia.Globalization.Locale)
+  fullName: Sepia.Globalization.Numbers.SpellingFormatter.Create(Sepia.Globalization.Locale)
+  nameWithType: SpellingFormatter.Create(Locale)
+- uid: Sepia.Globalization.Numbers.SpellingFormatter.Create*
+  name: Create
+  href: api/Sepia.Globalization.Numbers.SpellingFormatter.html#Sepia_Globalization_Numbers_SpellingFormatter_Create_
+  commentId: Overload:Sepia.Globalization.Numbers.SpellingFormatter.Create
+  isSpec: "True"
+  fullName: Sepia.Globalization.Numbers.SpellingFormatter.Create
+  nameWithType: SpellingFormatter.Create
+- uid: Sepia.Globalization.Numbers.SpellingFormatter.Format(System.Decimal)
+  name: Format(Decimal)
+  href: api/Sepia.Globalization.Numbers.SpellingFormatter.html#Sepia_Globalization_Numbers_SpellingFormatter_Format_System_Decimal_
+  commentId: M:Sepia.Globalization.Numbers.SpellingFormatter.Format(System.Decimal)
+  fullName: Sepia.Globalization.Numbers.SpellingFormatter.Format(System.Decimal)
+  nameWithType: SpellingFormatter.Format(Decimal)
+- uid: Sepia.Globalization.Numbers.SpellingFormatter.Format(System.Double)
+  name: Format(Double)
+  href: api/Sepia.Globalization.Numbers.SpellingFormatter.html#Sepia_Globalization_Numbers_SpellingFormatter_Format_System_Double_
+  commentId: M:Sepia.Globalization.Numbers.SpellingFormatter.Format(System.Double)
+  fullName: Sepia.Globalization.Numbers.SpellingFormatter.Format(System.Double)
+  nameWithType: SpellingFormatter.Format(Double)
+- uid: Sepia.Globalization.Numbers.SpellingFormatter.Format(System.Int64)
+  name: Format(Int64)
+  href: api/Sepia.Globalization.Numbers.SpellingFormatter.html#Sepia_Globalization_Numbers_SpellingFormatter_Format_System_Int64_
+  commentId: M:Sepia.Globalization.Numbers.SpellingFormatter.Format(System.Int64)
+  fullName: Sepia.Globalization.Numbers.SpellingFormatter.Format(System.Int64)
+  nameWithType: SpellingFormatter.Format(Int64)
+- uid: Sepia.Globalization.Numbers.SpellingFormatter.Format*
+  name: Format
+  href: api/Sepia.Globalization.Numbers.SpellingFormatter.html#Sepia_Globalization_Numbers_SpellingFormatter_Format_
+  commentId: Overload:Sepia.Globalization.Numbers.SpellingFormatter.Format
+  isSpec: "True"
+  fullName: Sepia.Globalization.Numbers.SpellingFormatter.Format
+  nameWithType: SpellingFormatter.Format
+- uid: Sepia.Globalization.Numbers.SpellingFormatter.Locale
+  name: Locale
+  href: api/Sepia.Globalization.Numbers.SpellingFormatter.html#Sepia_Globalization_Numbers_SpellingFormatter_Locale
+  commentId: P:Sepia.Globalization.Numbers.SpellingFormatter.Locale
+  fullName: Sepia.Globalization.Numbers.SpellingFormatter.Locale
+  nameWithType: SpellingFormatter.Locale
+- uid: Sepia.Globalization.Numbers.SpellingFormatter.Locale*
+  name: Locale
+  href: api/Sepia.Globalization.Numbers.SpellingFormatter.html#Sepia_Globalization_Numbers_SpellingFormatter_Locale_
+  commentId: Overload:Sepia.Globalization.Numbers.SpellingFormatter.Locale
+  isSpec: "True"
+  fullName: Sepia.Globalization.Numbers.SpellingFormatter.Locale
+  nameWithType: SpellingFormatter.Locale
 - uid: Sepia.Globalization.StringRange
   name: StringRange
   href: api/Sepia.Globalization.StringRange.html

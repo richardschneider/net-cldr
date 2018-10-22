@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.Rules.RbnfContext.html",
-          "hash": "zhGBN89fzXNs+xDahd4mSA=="
+          "hash": "OHnmXvgDkY8BPqQjlAKuXw=="
         }
       },
       "is_incremental": false,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.Rules.Rule.html",
-          "hash": "bY9ATsDMD7/qZFZ5f2WlTQ=="
+          "hash": "FxLLy762Qq1onURIHkGKFg=="
         }
       },
       "is_incremental": false,
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.Rules.Ruleset.html",
-          "hash": "G5BrJ8ElcBogYG2GEVpQyw=="
+          "hash": "wwb6dyKck15qCcqEmSW9eQ=="
         }
       },
       "is_incremental": false,
@@ -213,7 +213,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html",
-          "hash": "+oiSl7QdmzDC6HYoDVu00Q=="
+          "hash": "oY9prt0OqLY/iFz4508VAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Numbers.Rules.Substitution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Numbers.Rules.Substitution.html",
+          "hash": "UPrM4uPZaoQZoxeB37RYGA=="
         }
       },
       "is_incremental": false,
@@ -225,7 +237,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.Rules.html",
-          "hash": "vNUdCFoXVlc2fL94Wf0Wgw=="
+          "hash": "6r/Jy0pqrUMeIB87jTTK/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Numbers.SpellingFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Numbers.SpellingFormatter.html",
+          "hash": "HwcYy8wZ37ikp5vC/beUDw=="
         }
       },
       "is_incremental": false,
@@ -237,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.html",
-          "hash": "rt2n/yRZMLYHJ2frV4XezA=="
+          "hash": "QEhzRhfXqG9Fl/wjzsCl5w=="
         }
       },
       "is_incremental": false,
@@ -273,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "y8uNoSHkyXAKlB7LVrmKsg=="
+          "hash": "RzJuZs5QxJjT01CcZH9FBA=="
         }
       },
       "is_incremental": false,
