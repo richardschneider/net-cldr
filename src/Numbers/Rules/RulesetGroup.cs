@@ -40,15 +40,19 @@ namespace Sepia.Globalization.Numbers.Rules
         /// <param name="type">
         ///   The rule set name, such as "spellout-numbering" or "spellout-cardinal".
         /// </param>
+        /// <param name="locale">
+        ///   The fall-back <see cref="Locale"/>.
+        /// </param>
         /// <returns>
         ///   The string representation of the <paramref name="value"/>.
         /// </returns>
-        public string Format(decimal value, string type)
+        public string Format(decimal value, string type, Locale locale = null)
         {
             var ctx = new RbnfContext
             {
                 Number = value,
-                RulesetGroup = this
+                RulesetGroup = this,
+                Locale = locale ?? Locale.Create("root")
             };
             Rulesets[type].ApplyRules(ctx);
 
@@ -64,15 +68,19 @@ namespace Sepia.Globalization.Numbers.Rules
         /// <param name="type">
         ///   The rule set name, such as "spellout-numbering" or "spellout-cardinal".
         /// </param>
+        /// <param name="locale">
+        ///   The fall-back <see cref="Locale"/>.
+        /// </param>
         /// <returns>
         ///   The string representation of the <paramref name="value"/>.
         /// </returns>
-        public string Format(double value, string type)
+        public string Format(double value, string type, Locale locale = null)
         {
             var ctx = new RbnfContext
             {
                 DoubleNumber = value,
-                RulesetGroup = this
+                RulesetGroup = this,
+                Locale = locale ?? Locale.Create("root")
             };
             if (!double.IsInfinity(value) && !double.IsNaN(value))
                 ctx.Number = (decimal)value;

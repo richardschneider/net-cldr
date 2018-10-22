@@ -11,7 +11,7 @@ namespace Sepia.Globalization.Numbers
     public class AlgorithmicFormatterTest
     {
         [TestMethod]
-        public void Decimal()
+        public void RomanNumerals()
         {
             var locale = Locale.Create("it-u-nu-roman");
             var formatter = NumberFormatter.Create(locale);
@@ -24,6 +24,8 @@ namespace Sepia.Globalization.Numbers
             Assert.AreEqual("XX", formatter.Format(20));
             Assert.AreEqual("CXXIII", formatter.Format(123));
             Assert.AreEqual("MCCXXXIV", formatter.Format(1234));
+
+            Assert.AreEqual("9,223,372,036,854,775,807", formatter.Format(long.MaxValue));
         }
 
         [TestMethod]

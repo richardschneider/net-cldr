@@ -44,8 +44,8 @@ namespace Sepia.Globalization.Numbers.Rules
                     // Fallback number formating?
                     if (sub.Descriptor.StartsWith("#") || sub.Descriptor.StartsWith("0"))
                     {
-                        // TODO: Should use locale specific number formatting
-                        context.Text.Append(context.Number.ToString(sub.Descriptor, CultureInfo.InvariantCulture));
+                        var formatter = NumberFormatter.Create(context.Locale);
+                        context.Text.Append(formatter.Format(context.Number));
                     }
 
                     // Else goto the ruleset.
@@ -55,6 +55,9 @@ namespace Sepia.Globalization.Numbers.Rules
                         ruleset.ApplyRules(context);
                     }
                     break;
+
+                // Divide the number by the rule's divisor and format the remainder
+                // with the specified ruleset.
                 case "→":
                     context.Number = Decimal.Remainder(number, Divisor());
                     context.RulesetGroup
@@ -62,6 +65,8 @@ namespace Sepia.Globalization.Numbers.Rules
                         .ApplyRules(context);
                     break;
 
+                // Divide the number by the rule's divisor and format the quotient
+                // with the specified ruleset.
                 case "←":
                     context.Number = Math.Floor(number / Divisor());
                     context.RulesetGroup
@@ -71,6 +76,7 @@ namespace Sepia.Globalization.Numbers.Rules
 
                 case "":
                     break;
+
                 default:
                     throw new NotSupportedException($"Substitution token '{sub.Token}' is not allowed.");
             }

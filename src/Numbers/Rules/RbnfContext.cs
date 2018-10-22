@@ -12,6 +12,11 @@ namespace Sepia.Globalization.Numbers.Rules
     public class RbnfContext
     {
         /// <summary>
+        ///   The fall-back <see cref="Locale"/>.
+        /// </summary>
+        public Locale Locale { get; set; }
+
+        /// <summary>
         ///   The group of rule sets to use.
         /// </summary>
         public RulesetGroup RulesetGroup { get; set; }
