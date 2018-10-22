@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.NumberOptions.html",
-          "hash": "kGmxX3Fv9bs8ikfkbWnfQg=="
+          "hash": "21R4XoZu+2DYK1bqDUpwhg=="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.NumberStyle.html",
-          "hash": "rfeltAMlEhop+cbzcC5Q1A=="
+          "hash": "x2VIJscT4UOqRZSYtSt4lQ=="
         }
       },
       "is_incremental": false,
@@ -249,7 +249,31 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.SpellingFormatter.html",
-          "hash": "HwcYy8wZ37ikp5vC/beUDw=="
+          "hash": "Kg9OmPbQzD6bX65I3eOwSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Numbers.SpellingOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Numbers.SpellingOptions.html",
+          "hash": "/xxPvOz1IkDx2bRisuWPBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Numbers.SpellingStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Numbers.SpellingStyle.html",
+          "hash": "o4rE4OAxkYzjr0EL1E1N4g=="
         }
       },
       "is_incremental": false,
@@ -261,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.html",
-          "hash": "QEhzRhfXqG9Fl/wjzsCl5w=="
+          "hash": "92MXplft3iqVVwEBXuZLNw=="
         }
       },
       "is_incremental": false,
@@ -297,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "RzJuZs5QxJjT01CcZH9FBA=="
+          "hash": "wZNRnMPGPYj9W5NV3Npcyw=="
         }
       },
       "is_incremental": false,
