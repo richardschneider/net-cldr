@@ -80,6 +80,7 @@
     <Content Include="articles\locale-data.md" />
     <Content Include="articles\numbers\formatting.md" />
     <Content Include="articles\numbers\currency.md" />
+    <Content Include="articles\numbers\spelling.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

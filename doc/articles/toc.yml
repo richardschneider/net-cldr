@@ -27,5 +27,6 @@
      - name: Currency
        href: numbers/currency.md
      - name: Spelling out
+       href: numbers/spelling.md
 - name: Class Reference
   href: ../api/Sepia.Globalization.yml
