@@ -39,5 +39,31 @@ namespace Sepia.Globalization
             Assert.IsNull(Match(xml, "codes/some[cldr:contains-code(., 'ad')]"));
             Assert.IsNull(Match(xml, "codes/some[cldr:contains-code(., 'ax')]"));
         }
+
+        [TestMethod]
+        public void WhiteSpace()
+        {
+            Assert.IsTrue(CldrContext.Default.Whitespace);
+            Assert.IsTrue(CldrContext.Default.PreserveWhitespace(null));
+        }
+
+        [TestMethod]
+        public void ResolveVariables()
+        {
+            // No variables.
+            Assert.IsNull(CldrContext.Default.ResolveVariable("cldr", "foo"));
+        }
+
+        [TestMethod]
+        public void Resolve_ContainsCode()
+        {
+            var func = CldrContext.Default.ResolveFunction("cldr", "contains-code", null);
+            Assert.IsNotNull(func);
+
+            Assert.AreEqual(2, func.Maxargs);
+            Assert.AreEqual(2, func.Minargs);
+            Assert.AreEqual(XPathResultType.Boolean, func.ReturnType);
+            CollectionAssert.AreEqual(new[] { XPathResultType.NodeSet, XPathResultType.String }, func.ArgTypes);
+        }
     }
 }
