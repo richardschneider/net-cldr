@@ -7,10 +7,15 @@ using System.Threading.Tasks;
 namespace Sepia.Globalization.Numbers
 {
     /// <summary>
-    ///   The options to apply when formating a number.
+    ///   The options to apply when <see cref="NumberFormatter">formatting</see> a number.
     /// </summary>
     public class NumberOptions
     {
+        /// <summary>
+        ///   The default number options.
+        /// </summary>
+        public static readonly NumberOptions Default = new NumberOptions();
+
         /// <summary>
         ///    The rules for formatting numeric quantities.
         /// </summary>

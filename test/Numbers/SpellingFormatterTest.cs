@@ -12,7 +12,7 @@ namespace Sepia.Globalization.Numbers
     public class SpellingFormatterTest
     {
         [TestMethod]
-        public void Formatting_en_NZ_long()
+        public void Cardinal_Formatting_en_NZ_long()
         {
             var formatter = SpellingFormatter.Create(Locale.Create("en-NZ"));
             Assert.AreEqual("minus one", formatter.Format(-1));
@@ -32,7 +32,7 @@ namespace Sepia.Globalization.Numbers
         }
 
         [TestMethod]
-        public void Formatting_en_NZ_decimal()
+        public void Cardinal_Formatting_en_NZ_decimal()
         {
             var formatter = SpellingFormatter.Create(Locale.Create("en-NZ"));
             Assert.AreEqual("minus one", formatter.Format(-1m));
@@ -59,7 +59,7 @@ namespace Sepia.Globalization.Numbers
         }
 
         [TestMethod]
-        public void Formatting_fr_FR_decimal()
+        public void Cardinal_Formatting_fr_FR_decimal()
         {
             var formatter = SpellingFormatter.Create(Locale.Create("fr-FR"));
             Assert.AreEqual("moins un", formatter.Format(-1m));
@@ -85,6 +85,33 @@ namespace Sepia.Globalization.Numbers
             Assert.AreEqual("un virgule deux", formatter.Format(1.2m));
             Assert.AreEqual("un virgule zéro deux", formatter.Format(1.02m));
             Assert.AreEqual("un virgule zéro zéro zéro zéro deux", formatter.Format(1.00002m));
+        }
+
+        [TestMethod]
+        public void Ordinal_Formatting_en_NZ()
+        {
+            var formatter = SpellingFormatter.Create(
+                Locale.Create("en-NZ"),
+                new SpellingOptions { Style = SpellingStyle.Ordinal} );
+            Assert.AreEqual("first", formatter.Format(1));
+            Assert.AreEqual("second", formatter.Format(2));
+            Assert.AreEqual("third", formatter.Format(3));
+            Assert.AreEqual("fourth", formatter.Format(4));
+            Assert.AreEqual("fifth", formatter.Format(5));
+            Assert.AreEqual("fourteenth", formatter.Format(14));
+            Assert.AreEqual("twentieth", formatter.Format(20));
+            Assert.AreEqual("twenty-first", formatter.Format(21));
+        }
+
+        [TestMethod]
+        public void Ordinal_Formatting_fr_FR()
+        {
+            var formatter = SpellingFormatter.Create(
+                Locale.Create("fr-FR"),
+                new SpellingOptions { Style = SpellingStyle.Ordinal });
+            Assert.AreEqual("unième", formatter.Format(1));
+            Assert.AreEqual("dix-huitième", formatter.Format(18));
+            Assert.AreEqual("soixante-dix-neuvième", formatter.Format(79));
         }
     }
 }

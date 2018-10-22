@@ -65,7 +65,7 @@ namespace Sepia.Globalization.Numbers
                     Locale = locale,
                     NumberingSystem = numberingSystem,
                     Symbols = NumberSymbols.Create(locale),
-                    Options = options ?? new NumberOptions()
+                    Options = options ?? NumberOptions.Default
                 };
             }
 
@@ -75,7 +75,7 @@ namespace Sepia.Globalization.Numbers
                 {
                     Locale = locale,
                     NumberingSystem = numberingSystem,
-                    Options = options ?? new NumberOptions()
+                    Options = options ?? NumberOptions.Default
                 };
             }
 

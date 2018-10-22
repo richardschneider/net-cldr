@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 namespace Sepia.Globalization.Numbers
 {
     /// <summary>
-    ///   Determines the rules for formatting numeric quantities.
+    ///   Determines the rules for <see cref="NumberFormatter">formatting</see> numeric quantities.
     /// </summary>
     /// <seealso cref="NumberOptions"/>
+    /// <seealso cref="NumberFormatter"/>
     public enum NumberStyle
     {
         /// <summary>
