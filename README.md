@@ -20,8 +20,10 @@ Provides locale content for internationalisation software using the Unicode Comm
   - [parent locale](http://unicode.org/reports/tr35/tr35.html#Parent_Locales)
   - [root alias](http://unicode.org/reports/tr35/tr35.html#Alias_Elements)
   - [lateral](http://unicode.org/reports/tr35/tr35.html#Lateral_Inheritance)
-- Formatting and "spelling out" of [numbers](https://richardschneider.github.io/net-cldr/articles/numbers/formatting.html) 
-  and [currency](https://richardschneider.github.io/net-cldr/articles/numbers/formatting.html)
+- Formatting 
+  of [numbers](https://richardschneider.github.io/net-cldr/articles/numbers/formatting.html) 
+  and [currency](https://richardschneider.github.io/net-cldr/articles/numbers/currency.html)
+- [spelling out](https://richardschneider.github.io/net-cldr/articles/numbers/spelling.html) cardinal and ordinal numbers
 
 ## Getting started
 
