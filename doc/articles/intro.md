@@ -9,4 +9,6 @@ package on [NuGet](https://www.nuget.org/packages/Sepia.Globalization).
 - Uses the official [Unicode CLDR XML](http://www.unicode.org/Public/cldr/) without any "build steps"
 - Can [download](cldr/downloading.md) the latest CLDR anytime
 - Uses [XPath expressions](https://msdn.microsoft.com/en-us/library/ms256471(v=vs.110).aspx) to [query](cldr/searching.md) the CLDR
-- [Locale](locale.md) specific [formatting](numbers/formatting.md) of numbers
+- [Formatting](numbers/formatting.md) of numbers
+- [Spelling out](https://richardschneider.github.io/net-cldr/articles/numbers/spelling.html) cardinal and ordinal numbers
+

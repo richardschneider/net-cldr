@@ -23,7 +23,7 @@ Provides locale content for internationalisation software using the Unicode Comm
 - Formatting 
   of [numbers](https://richardschneider.github.io/net-cldr/articles/numbers/formatting.html) 
   and [currency](https://richardschneider.github.io/net-cldr/articles/numbers/currency.html)
-- [spelling out](https://richardschneider.github.io/net-cldr/articles/numbers/spelling.html) cardinal and ordinal numbers
+- [Spelling out](https://richardschneider.github.io/net-cldr/articles/numbers/spelling.html) cardinal and ordinal numbers
 
 ## Getting started
 
