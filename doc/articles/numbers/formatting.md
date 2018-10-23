@@ -14,6 +14,7 @@ Assert.AreEqual("123", formatter.Format(123));
 Assert.AreEqual("1234", formatter.Format(1234));
 Assert.AreEqual("1234,568", formatter.Format(1234.56789));
 ```
+
 ## Options
 
 [NumberOptions](xref:Sepia.Globalization.Numbers.NumberOptions) is used to 

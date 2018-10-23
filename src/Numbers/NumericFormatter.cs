@@ -197,14 +197,17 @@ namespace Sepia.Globalization.Numbers
                 }
                 else if (s.Contains("¤¤¤"))
                 {
+                    // Currency display name
                     throw new NotImplementedException();
                 }
                 else if (s.Contains("¤¤"))
                 {
+                    // ISO currency symbol
                     sb.Replace("¤¤", currencyCode);
                 }
                 else if (s.Contains("¤"))
                 {
+                    // Standard currency symbol
                     var symbol = $"ldml/numbers/currencies/currency[@type='{currencyCode}']/symbol";
                     sb.Replace("¤", Locale.Find(symbol).Value);
                 }

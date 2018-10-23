@@ -4,7 +4,7 @@
 [![travis build](https://travis-ci.org/richardschneider/net-cldr.svg?branch=master)](https://travis-ci.org/richardschneider/net-cldr)
 [![Coverage Status](https://coveralls.io/repos/richardschneider/net-cldr/badge.svg?branch=master&service=github)](https://coveralls.io/github/richardschneider/net-cldr?branch=master)
 [![NuGet](https://img.shields.io/nuget/v/Sepia.Globalization.svg)](https://www.nuget.org/packages/Sepia.Globalization)
-[![docs](https://cdn.rawgit.com/richardschneider/net-cldr/master/doc/images/docs-latest-green.svg)](https://richardschneider.github.io/net-cldr)
+[![docs](https://cdn.rawgit.com/richardschneider/net-cldr/master/doc/images/docs-latest-green.svg)](https://richardschneider.github.io/net-cldr/articles/intro.html)
 
 Provides locale content for internationalisation software using the Unicode Common Local Data Repository (CLDR).
 
@@ -20,6 +20,8 @@ Provides locale content for internationalisation software using the Unicode Comm
   - [parent locale](http://unicode.org/reports/tr35/tr35.html#Parent_Locales)
   - [root alias](http://unicode.org/reports/tr35/tr35.html#Alias_Elements)
   - [lateral](http://unicode.org/reports/tr35/tr35.html#Lateral_Inheritance)
+- Formatting and "spelling out" of [numbers](https://richardschneider.github.io/net-cldr/articles/numbers/formatting.html) 
+  and [currency](https://richardschneider.github.io/net-cldr/articles/numbers/formatting.html)
 
 ## Getting started
 
@@ -29,20 +31,35 @@ Published releases of the package are available on [NuGet](https://www.nuget.org
 
 ### Usage
 
-    using Sepia.Globalization;
+```csharp
+using Sepia.Globalization;
+```
 
 The CLDR uses the singleton pattern.  To access the repository, use `Cldr.Instance`.
 
 Ensure that the latest version of the  CLDR is installed.  This will download the latest published release from [unicode.org](http://www.unicode.org/Public/cldr/latest), if required.
 
-    var version = Cldr.Instance.DownloadLatestAsync().Result;
-    Console.WriteLine($"Using CLDR {version}");
+```csharp
+var version = Cldr.Instance.DownloadLatestAsync().Result;
+Console.WriteLine($"Using CLDR {version}");
+```
+
+#### Query
 
 Query the CLDR for the fractional digits of the Japanese Yen (JPY)
 
-    var jpy = Cldr.Instance
-        .GetDocuments("common/supplemental/supplementalData.xml")
-        .FirstElement("supplementalData/currencyData/fractions/info[@iso4217='JPY']");
-    Assert.AreEqual("0", jpy.Attribute("digits").Value);
+```csharp
+var jpy = Cldr.Instance
+    .GetDocuments("common/supplemental/supplementalData.xml")
+    .FirstElement("supplementalData/currencyData/fractions/info[@iso4217='JPY']");
+Assert.AreEqual("0", jpy.Attribute("digits").Value);
+```
 
+#### Format
 
+```csharp
+var locale = Locale.Create("fr");
+var formatter = NumberFormatter.Create(locale);
+
+Assert.AreEqual("1234,568", formatter.Format(1234.56789));
+```
