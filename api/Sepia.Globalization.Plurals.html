@@ -5,17 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Formatting a number | Sepia Globalization </title>
+    <title>Namespace Sepia.Globalization.Plurals
+   | Sepia Globalization </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Formatting a number | Sepia Globalization ">
+    <meta name="title" content="Namespace Sepia.Globalization.Plurals
+   | Sepia Globalization ">
     <meta name="generator" content="docfx 2.40.0.0">
     
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
     
     
     
@@ -34,8 +36,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -66,54 +68,24 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="formatting-a-number">Formatting a number</h1>
-
-<p>An <a class="xref" href="../../api/Sepia.Globalization.Numbers.INumberFormatter.html">INumberFormatter</a> is used to 
-<a class="xref" href="../../api/Sepia.Globalization.Numbers.INumberFormatter.html#Sepia_Globalization_Numbers_INumberFormatter_Format_">Format</a> a number (long, decimal or double) in a 
-<a href="../locale.html">locale</a> specific manner. <a class="xref" href="../../api/Sepia.Globalization.Numbers.NumberFormatter.html#Sepia_Globalization_Numbers_NumberFormatter_Create_">NumberFormatter.Create</a> 
-is used to create a formatter for a specific locale and a set of 
-<a class="xref" href="../../api/Sepia.Globalization.Numbers.NumberOptions.html">options</a>.</p>
-<pre><code class="lang-csharp">var locale = Locale.Create(&quot;fr&quot;);
-var formatter = NumberFormatter.Create(locale);
-
-Assert.AreEqual(&quot;123&quot;, formatter.Format(123));
-Assert.AreEqual(&quot;1234&quot;, formatter.Format(1234));
-Assert.AreEqual(&quot;1234,568&quot;, formatter.Format(1234.56789));
-</code></pre><h2 id="options">Options</h2>
-<p><a class="xref" href="../../api/Sepia.Globalization.Numbers.NumberOptions.html">NumberOptions</a> is used to 
-determine the <a class="xref" href="../../api/Sepia.Globalization.Numbers.NumberStyle.html">style</a> for formatting numeric quantities
-and if digit grouping seperators should be used.</p>
-<table>
-<thead>
-<tr>
-<th>Style</th>
-<th>Format (en-GB)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Decimal</td>
-<td>-12,345</td>
-</tr>
-<tr>
-<td>CurrencyAccounting</td>
-<td>(£12,345.00)</td>
-</tr>
-<tr>
-<td>CurrencyStandard</td>
-<td>-£12,345.00</td>
-</tr>
-<tr>
-<td>Percent</td>
-<td>-1,234,500%</td>
-</tr>
-<tr>
-<td>Scientific</td>
-<td>-1.2345E4</td>
-</tr>
-</tbody>
-</table>
+            <article class="content wrap" id="_content" data-uid="Sepia.Globalization.Plurals">
+  
+  <h1 id="Sepia_Globalization_Plurals" data-uid="Sepia.Globalization.Plurals" class="text-break">Namespace Sepia.Globalization.Plurals
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Sepia.Globalization.Plurals.Plural.html">Plural</a></h4>
+      <section><p>Manages the plural informaton.</p>
+</section>
+      <h4><a class="xref" href="Sepia.Globalization.Plurals.Rule.html">Rule</a></h4>
+      <section><p>A plural rule.</p>
+</section>
+      <h4><a class="xref" href="Sepia.Globalization.Plurals.RuleContext.html">RuleContext</a></h4>
+      <section><p>The context to an evaulate a <a class="xref" href="Sepia.Globalization.Plurals.Rule.html">Rule</a>.</p>
+</section>
 </article>
           </div>
           
@@ -121,9 +93,6 @@ and if digit grouping seperators should be used.</p>
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/richardschneider/net-cldr/blob/plurals/doc/articles/numbers/formatting.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
@@ -148,8 +117,8 @@ and if digit grouping seperators should be used.</p>
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>
