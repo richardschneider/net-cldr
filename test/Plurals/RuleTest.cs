@@ -4,6 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
 using System.Collections.Generic;
 using System.Text;
+using System.Globalization;
 
 namespace Sepia.Globalization.Plurals
 {
@@ -70,5 +71,32 @@ namespace Sepia.Globalization.Plurals
         {
             Assert.AreEqual("n % 10 = 1 or n % 10 = 2", Rule.ConvertExpression("n % 10 = 1..2"));
         }
+
+        [TestMethod]
+        public void Check_Samples()
+        {
+            var rules = Cldr.Instance
+                .GetDocuments("common/supplemental/plurals.xml")
+                .Elements($"supplementalData/plurals[@type='cardinal']/pluralRules/pluralRule")
+                .Select(e => Rule.Parse(e))
+                .Where(r => r.Category != "other")
+                .OrderBy(r => r.Text)
+                .ToList();
+
+            foreach (var rule in rules)
+            {
+                foreach (var sample in rule.Samples.Split(' ', ',', '~'))
+                {
+                    if (sample.StartsWith("@"))
+                        continue;
+                    if (decimal.TryParse(sample, NumberStyles.Any, CultureInfo.InvariantCulture, out decimal value))
+                    {
+                        var context = RuleContext.Create(value);
+                        Assert.IsTrue(rule.Matches(context), $"{sample} for {rule.Text}");
+                    }
+                }
+            }
+        }
+
     }
 }
