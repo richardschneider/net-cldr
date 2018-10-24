@@ -1929,6 +1929,19 @@ references:
   isSpec: "True"
   fullName: Sepia.Globalization.Plurals.Rule.Category
   nameWithType: Rule.Category
+- uid: Sepia.Globalization.Plurals.Rule.ConvertExpression(System.String)
+  name: ConvertExpression(String)
+  href: api/Sepia.Globalization.Plurals.Rule.html#Sepia_Globalization_Plurals_Rule_ConvertExpression_System_String_
+  commentId: M:Sepia.Globalization.Plurals.Rule.ConvertExpression(System.String)
+  fullName: Sepia.Globalization.Plurals.Rule.ConvertExpression(System.String)
+  nameWithType: Rule.ConvertExpression(String)
+- uid: Sepia.Globalization.Plurals.Rule.ConvertExpression*
+  name: ConvertExpression
+  href: api/Sepia.Globalization.Plurals.Rule.html#Sepia_Globalization_Plurals_Rule_ConvertExpression_
+  commentId: Overload:Sepia.Globalization.Plurals.Rule.ConvertExpression
+  isSpec: "True"
+  fullName: Sepia.Globalization.Plurals.Rule.ConvertExpression
+  nameWithType: Rule.ConvertExpression
 - uid: Sepia.Globalization.Plurals.Rule.Matches(Sepia.Globalization.Plurals.RuleContext)
   name: Matches(RuleContext)
   href: api/Sepia.Globalization.Plurals.Rule.html#Sepia_Globalization_Plurals_Rule_Matches_Sepia_Globalization_Plurals_RuleContext_
