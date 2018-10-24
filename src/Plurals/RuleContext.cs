@@ -21,7 +21,7 @@ namespace Sepia.Globalization.Plurals
         /// <summary>
         ///   Integer digits of n.
         /// </summary>
-        public decimal i;
+        public int i;
 
         /// <summary>
         ///   Number of visible fraction digits in n, with trailing zeros.
@@ -59,7 +59,7 @@ namespace Sepia.Globalization.Plurals
             var context = new RuleContext
             {
                 n = Math.Abs(value),
-                i = Math.Floor(value),
+                i = (int) Math.Floor(value),
             };
             if (dot >= 0)
             {

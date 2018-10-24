@@ -1,8 +1,10 @@
 ﻿using NCalc;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml.XPath;
 
@@ -14,6 +16,9 @@ namespace Sepia.Globalization.Plurals
     /// <seealso href="http://unicode.org/reports/tr35/tr35-numbers.html#Plural_rules_syntax"/>
     public class Rule
     {
+        static Regex rangePattern = new Regex(@"(\d+)\s*\.\.\s*(\d+)", RegexOptions.Compiled | RegexOptions.CultureInvariant);
+        static Regex relationPattern = new Regex(@"(\w)\s*(\!\=|\=)\s*((\d+(\s*,\s*\d+)+))", RegexOptions.Compiled | RegexOptions.CultureInvariant);
+
         Func<RuleContext, bool> expression;
 
         /// <summary>
@@ -50,10 +55,10 @@ namespace Sepia.Globalization.Plurals
 
             if (expression == null)
             {
-                expression = new Expression(Text).ToLambda<RuleContext, bool>();
+                expression = new Expression(ConvertExpression(Text))
+                    .ToLambda<RuleContext, bool>();
             }
-            var x = expression(context);
-            return x;
+            return expression(context);
         }
 
         /// <summary>
@@ -103,6 +108,43 @@ namespace Sepia.Globalization.Plurals
             rule.Text = s.Trim();
 
             return rule;
+        }
+
+        /// <summary>
+        ///   Convert a Unicode plural rule expression into
+        ///   a NCalc expression.
+        /// </summary>
+        /// <param name="s">
+        ///   A plural rule expression.
+        /// </param>
+        /// <returns>
+        ///   The NCalc equivalent.
+        /// </returns>
+        /// <remarks>
+        ///   Internal method.
+        /// </remarks>
+        public static string ConvertExpression(string s)
+        {
+            // Transform value'..'value to a comma seperated list
+            // of values.
+            s = rangePattern.Replace(s, (match) =>
+            {
+                var start = Int32.Parse(match.Groups[1].Value, CultureInfo.InvariantCulture);
+                var end = Int32.Parse(match.Groups[2].Value, CultureInfo.InvariantCulture);
+                var values = Enumerable
+                    .Range(start, end - start + 1)
+                    .Select(i => i.ToString(CultureInfo.InvariantCulture));
+                return String.Join(", ", values);
+            });
+
+            // Transform equal range to an `in` call.
+            s = relationPattern.Replace(s, (match) =>
+            {
+                var op = match.Groups[2].Value == "=" ? "in" : "not in";
+                return $"{op}({match.Groups[1].Value}, {match.Groups[3].Value})";
+            });
+
+            return s;
         }
     }
 }
