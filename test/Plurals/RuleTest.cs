@@ -59,17 +59,16 @@ namespace Sepia.Globalization.Plurals
         }
 
         [TestMethod]
-        public void Conversion_Equal_List_To_InFunction()
+        public void Relations()
         {
-            Assert.AreEqual("in(x, 1, 2, 3)", Rule.ConvertExpression("x = 1, 2, 3"));
-            Assert.AreEqual("in(x, 1, 2, 3)", Rule.ConvertExpression("x = 1..3"));
+            Assert.AreEqual("x = 2 or x = 3 or x = 4 or x = 15", Rule.ConvertExpression("x = 2..4, 15"));
+            Assert.AreEqual("not (x = 2 or x = 3 or x = 4 or x = 15)", Rule.ConvertExpression("x != 2..4, 15"));
         }
 
         [TestMethod]
-        public void Conversion_NotEqual_List_To_NotInFunction()
+        public void Conversion_Mod_List_To_InFunction()
         {
-            Assert.AreEqual("not in(x, 1, 2, 3) and foo = 1", Rule.ConvertExpression("x != 1, 2, 3 and foo = 1"));
-            Assert.AreEqual("not in(x, 1, 2, 3) and foo = 1", Rule.ConvertExpression("x != 1..3 and foo = 1"));
+            Assert.AreEqual("n % 10 = 1 or n % 10 = 2", Rule.ConvertExpression("n % 10 = 1..2"));
         }
     }
 }

@@ -17,7 +17,7 @@ namespace Sepia.Globalization.Plurals
     public class Rule
     {
         static Regex rangePattern = new Regex(@"(\d+)\s*\.\.\s*(\d+)", RegexOptions.Compiled | RegexOptions.CultureInvariant);
-        static Regex relationPattern = new Regex(@"(\w)\s*(\!\=|\=)\s*((\d+(\s*,\s*\d+)+))", RegexOptions.Compiled | RegexOptions.CultureInvariant);
+        static Regex relationPattern = new Regex(@"((\w+\s*%\s*)?\w+)\s*(\!\=|\=)\s*((\d+(\s*,\s*\d+)+))", RegexOptions.Compiled | RegexOptions.CultureInvariant);
 
         Func<RuleContext, bool> expression;
 
@@ -137,13 +137,38 @@ namespace Sepia.Globalization.Plurals
                 return String.Join(", ", values);
             });
 
-            // Transform equal range to an `in` call.
+            // Transform range check to an `in` call.
+            // Note: NCalc does not allow different types, such as 'n = 0,1'.
+            //       So tranform to a group of 'or's.
+#if false
             s = relationPattern.Replace(s, (match) =>
             {
-                var op = match.Groups[2].Value == "=" ? "in" : "not in";
-                return $"{op}({match.Groups[1].Value}, {match.Groups[3].Value})";
+                var op = match.Groups[3].Value == "=" ? "in" : "not in";
+                return $"{op}({match.Groups[1].Value}, {match.Groups[4].Value})";
             });
-
+#else
+            s = relationPattern.Replace(s, (match) =>
+            {
+                var or = " or ";
+                var x = match.Groups[1].Value;
+                var op = match.Groups[3].Value;
+                var ys = match.Groups[4].Value.Split(',');
+                var sb = new StringBuilder();
+                if (op == "!=")
+                    sb.Append("not (");
+                foreach (var y in ys)
+                {
+                    sb.Append(x);
+                    sb.Append(" = ");
+                    sb.Append(y.Trim());
+                    sb.Append(or);
+                }
+                sb.Length -= or.Length;
+                if (op == "!=")
+                    sb.Append(")");
+                return sb.ToString(); ;
+            });
+#endif
             return s;
         }
     }
