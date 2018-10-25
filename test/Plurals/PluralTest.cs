@@ -44,5 +44,12 @@ namespace Sepia.Globalization.Plurals
             Assert.AreEqual("other", plural.Category(1));
         }
 
+        [TestMethod]
+        public void Language_Cache()
+        {
+            var a = Plural.Create(Locale.Create("en-US"));
+            var b = Plural.Create(Locale.Create("en-NZ"));
+            Assert.AreSame(a, b);
+        }
     }
 }

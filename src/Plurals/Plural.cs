@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,12 @@ namespace Sepia.Globalization.Plurals
     /// </summary>
     public class Plural
     {
+        /// <summary>
+        ///   A cache of Plural.  The key is the language code, NOT the
+        ///   locale ID.
+        /// </summary>
+        static ConcurrentDictionary<string, Plural> Cache = new ConcurrentDictionary<string, Plural>();
+
         List<Rule> Rules;
 
         /// <summary>
@@ -47,13 +54,17 @@ namespace Sepia.Globalization.Plurals
         /// </returns>
         public static Plural Create(Locale locale)
         {
-            var plural = new Plural
+            var lang = locale.Id.Language.ToLowerInvariant();
+            return Cache.GetOrAdd(lang, key =>
             {
-                Locale = locale
-            };
-            plural.LoadRules();
+                var plural = new Plural
+                {
+                    Locale = locale
+                };
+                plural.LoadRules();
 
-            return plural;
+                return plural;
+            });
         }
 
         void LoadRules()

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Sepia.Globalization.Plurals
 {
     /// <summary>
-    ///   The context to an evaulate a <see cref="Rule"/>.
+    ///   The context to evaulate a <see cref="Rule"/>.
     /// </summary>
     /// <seealso href="http://unicode.org/reports/tr35/tr35-numbers.html#Operands"/>
     public class RuleContext
