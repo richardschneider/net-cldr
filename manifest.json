@@ -297,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Plurals.Plural.html",
-          "hash": "Fnvjm38ySinnKADul08Qmg=="
+          "hash": "g6y8vBRrw/oSJUhLTp1yCQ=="
         }
       },
       "is_incremental": false,
@@ -309,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Plurals.Rule.html",
-          "hash": "MZemj/CdwmPd+/dwp4a85w=="
+          "hash": "kbwGiLSwWBIDpex+i/w0XA=="
         }
       },
       "is_incremental": false,
@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Plurals.html",
-          "hash": "socHDj7nCDjpN9txAZb6Kw=="
+          "hash": "OhERINbQxVgLKguztWQnDg=="
         }
       },
       "is_incremental": false,
@@ -520,12 +520,24 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "articles/plurals/category.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/plurals/category.html",
+          "hash": "jTNVsTN2YtG6/A0sgfOtjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "foQZGz4NEWniEhFbPsFLBQ=="
+          "hash": "dxYMYJqVpzJ9gcGz0H6SiA=="
         }
       },
       "is_incremental": false,

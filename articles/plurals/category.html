@@ -5,19 +5,17 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace Sepia.Globalization.Plurals
-   | Sepia Globalization </title>
+    <title>Category | Sepia Globalization </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace Sepia.Globalization.Plurals
-   | Sepia Globalization ">
+    <meta name="title" content="Category | Sepia Globalization ">
     <meta name="generator" content="docfx 2.40.0.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     
     
@@ -36,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -68,24 +66,82 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Sepia.Globalization.Plurals">
-  
-  <h1 id="Sepia_Globalization_Plurals" data-uid="Sepia.Globalization.Plurals" class="text-break">Namespace Sepia.Globalization.Plurals
-  </h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
-  </h3>
-      <h4><a class="xref" href="Sepia.Globalization.Plurals.Plural.html">Plural</a></h4>
-      <section><p>Manages the plural information.</p>
-</section>
-      <h4><a class="xref" href="Sepia.Globalization.Plurals.Rule.html">Rule</a></h4>
-      <section><p>A plural rule.</p>
-</section>
-      <h4><a class="xref" href="Sepia.Globalization.Plurals.RuleContext.html">RuleContext</a></h4>
-      <section><p>The context to evaulate a <a class="xref" href="Sepia.Globalization.Plurals.Rule.html">Rule</a>.</p>
-</section>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="category">Category</h1>
+
+<p>The <a class="xref" href="../../api/Sepia.Globalization.Plurals.Plural.html#Sepia_Globalization_Plurals_Plural_Category_">plural categories</a> s
+do not necessarily match the traditional grammatical 
+categories. Instead, the categoy is determined by changes required in a phrase or 
+sentence if a numeric placeholder changes value.</p>
+<h2 id="usage">Usage</h2>
+<pre><code class="lang-csharp">var locale = Locale.Create(&quot;ksh&quot;);
+var plural = Plural.Create(locale);
+
+Assert.AreEqual(&quot;zero&quot;, plural.Category(0));
+Assert.AreEqual(&quot;one&quot;, plural.Category(1));
+Assert.AreEqual(&quot;other&quot;, plural.Category(2));
+</code></pre><h2 id="examples">Examples</h2>
+<table>
+<thead>
+<tr>
+<th>Number</th>
+<th>Category (en)</th>
+<th>Category (cy)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>other</td>
+<td>zero</td>
+</tr>
+<tr>
+<td>1</td>
+<td>one</td>
+<td>one</td>
+</tr>
+<tr>
+<td>2</td>
+<td>other</td>
+<td>two</td>
+</tr>
+<tr>
+<td>3</td>
+<td>other</td>
+<td>few</td>
+</tr>
+<tr>
+<td>4</td>
+<td>other</td>
+<td>other</td>
+</tr>
+<tr>
+<td>5</td>
+<td>other</td>
+<td>other</td>
+</tr>
+<tr>
+<td>6</td>
+<td>other</td>
+<td>many</td>
+</tr>
+<tr>
+<td>7</td>
+<td>other</td>
+<td>other</td>
+</tr>
+<tr>
+<td>8</td>
+<td>other</td>
+<td>other</td>
+</tr>
+<tr>
+<td>9</td>
+<td>other</td>
+<td>other</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
@@ -93,6 +149,9 @@
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/richardschneider/net-cldr/blob/plurals/doc/articles/plurals/category.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
@@ -117,8 +176,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
   </body>
 </html>
