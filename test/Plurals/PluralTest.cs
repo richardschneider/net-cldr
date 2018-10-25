@@ -51,5 +51,16 @@ namespace Sepia.Globalization.Plurals
             var b = Plural.Create(Locale.Create("en-NZ"));
             Assert.AreSame(a, b);
         }
+
+        [TestMethod]
+        public void Example()
+        {
+            var en = Plural.Create(Locale.Create("en"));
+            var cy = Plural.Create(Locale.Create("cy"));
+            for (int i = 0; i <= 10; ++i)
+            {
+                Console.WriteLine($"| {i} | {en.Category(i)} | {cy.Category(i)} |");
+            }
+        }
     }
 }

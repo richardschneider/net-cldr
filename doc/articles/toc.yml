@@ -28,5 +28,9 @@
        href: numbers/currency.md
      - name: Spelling out
        href: numbers/spelling.md
+- name: Plurals
+  items:
+     - name: Category
+       href: plurals/category.md
 - name: Class Reference
   href: ../api/Sepia.Globalization.yml

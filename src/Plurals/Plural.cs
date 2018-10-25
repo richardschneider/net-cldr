@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Sepia.Globalization.Plurals
 {
     /// <summary>
-    ///   Manages the plural informaton.
+    ///   Manages the plural information.
     /// </summary>
     public class Plural
     {

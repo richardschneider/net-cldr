@@ -86,7 +86,7 @@ namespace Sepia.Globalization.Plurals
         ///  "zero", "one", "two", "few", "many" or "other".
         /// </param>
         /// <param name="s">
-        ///   The <see cref="Text"/> and <see cref="Samples"/>
+        ///   The <see cref="Text"/> and/or <see cref="Samples"/>
         /// </param>
         /// <returns>
         ///   A new rule.
