@@ -34,6 +34,14 @@ namespace Sepia.Globalization.Plurals
         /// <returns>
         ///  "zero", "one", "two", "few", "many" or "other".
         /// </returns>
+        /// <remarks>
+        ///   The category is only a mnemonic; the name does noy necessarily imply 
+        ///   the exact contents of the category. For example, for both English and French the
+        ///   number 1 has the category "one" (singular). In English, every other number has a
+        ///   plural form, and is given the category "other". French is similar, except that 
+        ///   the number 0 has the category "one" and not "other" or "zero", 
+        ///   because the form of units qualified by 0 is also singular.
+        /// </remarks>
         public string Category(decimal value)
         {
             var context = RuleContext.Create(value);
