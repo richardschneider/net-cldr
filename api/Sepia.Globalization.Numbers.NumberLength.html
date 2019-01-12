@@ -5,9 +5,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Locale Data | Sepia Globalization </title>
+    <title>Enum NumberLength
+   | Sepia Globalization </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Locale Data | Sepia Globalization ">
+    <meta name="title" content="Enum NumberLength
+   | Sepia Globalization ">
     <meta name="generator" content="docfx 2.40.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -66,71 +68,63 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="locale-data">Locale Data</h1>
-
-<p>Finding locale specific data requires searching multiple documents that are associated with 
-the locale; see <a href="http://unicode.org/reports/tr35/#Locale_Inheritance">Locale Inheritance</a> 
-for the gory details.</p>
-<h2 id="search-chain">Search Chain</h2>
-<p><a class="xref" href="../api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_SearchChain_">SearchChain</a> provides the names that 
-are ordered from the most specific subtag to least specific. <a class="xref" href="../api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_ResourceBundle_">ResourceBundle</a> 
-provides the fully qualifed document name in a locale folder, such as <code>common/main/</code>, that need to be searched.</p>
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>Search chain</th>
-<th>Comments</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>en</td>
-<td>en_Latn_US en_US en_Latn en root</td>
-<td>Defaults the <a class="xref" href="../api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Region">region</a> to <code>US</code> and <a class="xref" href="../api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Script">script</a> to <code>Latn</code></td>
-</tr>
-<tr>
-<td>en-NZ</td>
-<td>en_Latn_NZ en_NZ en_001 en root</td>
-<td>Defaults the <a class="xref" href="../api/Sepia.Globalization.LocaleIdentifier.html#Sepia_Globalization_LocaleIdentifier_Script">script</a> to <code>Latn</code> and also uses the World&#39;s (en_001) data</td>
-</tr>
-<tr>
-<td>zh-MO</td>
-<td>zh_Hant_MO zh_Hant_HK zh_HK zh_Hant root</td>
-<td>Uses Macau and then Hong Kong data</td>
-</tr>
-</tbody>
-</table>
-<h2 id="findng-data">Findng Data</h2>
-<p>The following methods are used to find some locale specific data with 
-a XPath expression.</p>
-<table>
-<thead>
-<tr>
-<th>Method</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a class="xref" href="../api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_Find_">Find</a></td>
-<td>Find the first element that matches</td>
-</tr>
-<tr>
-<td><a class="xref" href="../api/Sepia.Globalization.Locale.html#Sepia_Globalization_Locale_FindOrDefault_">FindOrDefault</a></td>
-<td>Find the first element that matches or return the default value</td>
-</tr>
-</tbody>
-</table>
-<h2 id="example">Example</h2>
-<p>Find the format string to display a gram unit in the plural form.</p>
-<pre><code class="lang-csharp">var locale = Locale.Create(&quot;fr-CA&quot;);
-var plural = locale
-  .Find(@&quot;ldml/units/unitLength[@type=&#39;long&#39;]/unit[@type=&#39;mass-gram&#39;]/unitPattern[@count=&#39;other&#39;]&quot;)
-  .Value;
-Assert.AreEqual(&quot;{0} grammes&quot;, plural);
-</code></pre></article>
+            <article class="content wrap" id="_content" data-uid="Sepia.Globalization.Numbers.NumberLength">
+  
+  
+  <h1 id="Sepia_Globalization_Numbers_NumberLength" data-uid="Sepia.Globalization.Numbers.NumberLength" class="text-break">Enum NumberLength
+  </h1>
+  <div class="markdown level0 summary"><p>Determines the length rules for <a class="xref" href="Sepia.Globalization.Numbers.NumberFormatter.html">NumberFormatter</a> numeric quantities.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sepia.Globalization.Numbers.html">Sepia.Globalization.Numbers</a></h6>
+  <h6><strong>Assembly</strong>: Sepia.Globalization.dll</h6>
+  <h5 id="Sepia_Globalization_Numbers_NumberLength_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum NumberLength</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="Sepia_Globalization_Numbers_NumberLength_Default">Default</td>
+        <td><p>The normal locale specific way to format a base 10 number. </p>
+</td>
+      </tr>
+      <tr>
+        <td id="Sepia_Globalization_Numbers_NumberLength_Full">Full</td>
+        <td><p>The full locale specific wat to format a base 10 number.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Sepia_Globalization_Numbers_NumberLength_Long">Long</td>
+        <td><p>The long locale specific way to format a base 10 number; such as &apos;1 thousand&apos; for &apos;1,000&apos;.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Sepia_Globalization_Numbers_NumberLength_Medium">Medium</td>
+        <td><p>The medium locale specific wat to format a base 10 number.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Sepia_Globalization_Numbers_NumberLength_Short">Short</td>
+        <td><p>The compact locale specific way to format a base 10 number; such as &apos;1K&apos; for &apos;1,000&apos;.</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+  <h5 id="Sepia_Globalization_Numbers_NumberLength_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Sepia.Globalization.Numbers.NumberOptions.html">NumberOptions</a></div>
+      <div><a class="xref" href="Sepia.Globalization.Numbers.NumberFormatter.html">NumberFormatter</a></div>
+  </div>
+</article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -138,7 +132,10 @@ Assert.AreEqual(&quot;{0} grammes&quot;, plural);
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/richardschneider/net-cldr/blob/master/doc/articles/locale-data.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/richardschneider/net-cldr/new/master/apiSpec/new?filename=Sepia_Globalization_Numbers_NumberLength.md&amp;value=---%0Auid%3A%20Sepia.Globalization.Numbers.NumberLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/richardschneider/net-cldr/blob/master/src/Numbers/NumberLength.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

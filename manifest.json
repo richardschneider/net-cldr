@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Cldr.html",
-          "hash": "FTeUtbpc5TSimCXQwMqSOw=="
+          "hash": "L0LzeNWT18jqqc53WCVUDA=="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.CldrContext.html",
-          "hash": "Jx1Ntv//7lZmbFwPPHHlcw=="
+          "hash": "z3NozDWU3CCV/85i5Kc2hg=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.CldrExtensions.html",
-          "hash": "R65cjNqZXkr62T+fyzr+Kw=="
+          "hash": "flun+l4cuqJtAw+kMZXvrA=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.CodeList.html",
-          "hash": "0PkG0B3m4MvaVbrH9s26EA=="
+          "hash": "LtvD+cviFQMaV7MQ5DcTug=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Locale.html",
-          "hash": "X1mZaShk+WLCdl1iiRcHxQ=="
+          "hash": "outrbZCWK1l2bdaLKX717g=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.LocaleExtension.html",
-          "hash": "EL2W2tWs5z7SBIEcEJe8xQ=="
+          "hash": "REzhtw6dYGGHhHKEmhDsvQ=="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.LocaleIdentifier.html",
-          "hash": "Qs0t4IhV/vP9nRVqplweXQ=="
+          "hash": "SC2q8hciW/AgXp11ttMSNQ=="
         }
       },
       "is_incremental": false,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.INumberFormatter.html",
-          "hash": "Y6sdaSaZ9roFUJrhjy6X7w=="
+          "hash": "gEuywGXgXczmnGuRUs/KhA=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.NumberFormatter.html",
-          "hash": "6mka7htlQ8lIqEE56pzNgQ=="
+          "hash": "8isXYO+g84CsEM9M8rZf4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Numbers.NumberLength.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Numbers.NumberLength.html",
+          "hash": "ZMhW/4rjRKQfoDjU6xy0lw=="
         }
       },
       "is_incremental": false,
@@ -117,7 +129,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.NumberOptions.html",
-          "hash": "TqWpBYdTIzRlGDOfsGwUxw=="
+          "hash": "wJZFCokx/ZlpnI0zGsrZSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Sepia.Globalization.Numbers.NumberPattern.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Sepia.Globalization.Numbers.NumberPattern.html",
+          "hash": "FJW2JNbefKhRJqB8D9J0sA=="
         }
       },
       "is_incremental": false,
@@ -129,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.NumberStyle.html",
-          "hash": "JGq9Nq5KN9sIzN9ORYE6UA=="
+          "hash": "WlrFHiOAHcXbJGVghbR5Hw=="
         }
       },
       "is_incremental": false,
@@ -141,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.NumberSymbols.html",
-          "hash": "gtwOy/oMdNbXoEnidw5+wA=="
+          "hash": "RQkE20poEiM77En8IPmbXw=="
         }
       },
       "is_incremental": false,
@@ -153,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.NumberingSystem.html",
-          "hash": "Ajx/57ERRwP2mmmBMDqtWQ=="
+          "hash": "EnATTFuXX+orj3bgJEWLuA=="
         }
       },
       "is_incremental": false,
@@ -165,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.Rules.IRule.html",
-          "hash": "xnN0QZugr78mQpXshwYGgg=="
+          "hash": "dbK6W9d436fTE9pJWOoa5Q=="
         }
       },
       "is_incremental": false,
@@ -177,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.Rules.RbnfContext.html",
-          "hash": "GEJFB4HTJmh6ihIzU5nynQ=="
+          "hash": "a3Y5obX0RfENnrfnczooGQ=="
         }
       },
       "is_incremental": false,
@@ -189,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.Rules.Rule.html",
-          "hash": "PS/Uu/0sLniDM1LEr8R6/w=="
+          "hash": "58/7Xi5j4/x0UOOXNAy38Q=="
         }
       },
       "is_incremental": false,
@@ -201,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.Rules.Ruleset.html",
-          "hash": "4GyhkvCT5GWYenWjaXHogg=="
+          "hash": "XJgJTgmQHl28m7URxaKFWA=="
         }
       },
       "is_incremental": false,
@@ -213,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.Rules.RulesetGroup.html",
-          "hash": "rRfy4yI0sc7UOf4fgnjLfA=="
+          "hash": "ikjn+GLCuTP1a7pWAg7MPQ=="
         }
       },
       "is_incremental": false,
@@ -225,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.Rules.Substitution.html",
-          "hash": "L3ckWV+ElLvGg9cC+sHfcw=="
+          "hash": "M6gUE4hGZpMnewoHClo6LQ=="
         }
       },
       "is_incremental": false,
@@ -237,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.Rules.html",
-          "hash": "2xtfiU0BpknC3hrKq5tvew=="
+          "hash": "xYCN0J/2fZ+nJoFepoSHug=="
         }
       },
       "is_incremental": false,
@@ -249,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.SpellingFormatter.html",
-          "hash": "21on4J17hiQTEJR6v5BgFQ=="
+          "hash": "/dfT8s5hqrwZosdi7ZP1IQ=="
         }
       },
       "is_incremental": false,
@@ -261,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.SpellingOptions.html",
-          "hash": "gKDi+meCygN7qrizUZ9xxg=="
+          "hash": "AQAefRvXSO3+zciPeOFaqg=="
         }
       },
       "is_incremental": false,
@@ -273,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.SpellingStyle.html",
-          "hash": "ulKT6z7gQHaUNekon32gPg=="
+          "hash": "GctO4+fUbvbLjUFNlqG0XQ=="
         }
       },
       "is_incremental": false,
@@ -285,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Numbers.html",
-          "hash": "g465tAAEH4lzpBVglGPnqw=="
+          "hash": "AFK3p9X+jyzONNJU2Fsdzw=="
         }
       },
       "is_incremental": false,
@@ -297,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Plurals.Plural.html",
-          "hash": "2WiBt76ufsNmXAj919ua/A=="
+          "hash": "tOEtFkpGelMvRDgXwofKcA=="
         }
       },
       "is_incremental": false,
@@ -309,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Plurals.Rule.html",
-          "hash": "JbbFD8LS3Yj9HC6vjh2zIA=="
+          "hash": "N0ctJN4k2hDyaSK2g45YbA=="
         }
       },
       "is_incremental": false,
@@ -321,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Plurals.RuleContext.html",
-          "hash": "smmvj0ZGkVC5fN0KEZP5fg=="
+          "hash": "Pop4JqGLyiX/wKC/TGJAXQ=="
         }
       },
       "is_incremental": false,
@@ -333,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.Plurals.html",
-          "hash": "dhcdXtTSbRdi+nCsMY8IDw=="
+          "hash": "To5nKD5KtMHDptrx3ci5Mg=="
         }
       },
       "is_incremental": false,
@@ -345,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.StringRange.html",
-          "hash": "8ubwj53yKpVaxWFW2kDd3g=="
+          "hash": "KIRtmhv0JxAMamnRqfrB1Q=="
         }
       },
       "is_incremental": false,
@@ -357,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Sepia.Globalization.html",
-          "hash": "3PL8RLAyt4QdgZLNzt4kHA=="
+          "hash": "lo2k1GPOTuNA2q+osmijZA=="
         }
       },
       "is_incremental": false,
@@ -369,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "dUDUws7+S8nN07FkpV9QTw=="
+          "hash": "cFijTPz2bPHxoSgTsXyPgA=="
         }
       },
       "is_incremental": false,
@@ -381,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cldr.html",
-          "hash": "nKJnN8bzQo4tMi7aPRn68w=="
+          "hash": "dq/zf4U/mSG9KBrw/w4lHQ=="
         }
       },
       "is_incremental": false,
@@ -393,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cldr/downloading.html",
-          "hash": "PzzEjExD5UP7+Djn6AFWpw=="
+          "hash": "EwUgg3Q1UnZCLyD3ES+Kpw=="
         }
       },
       "is_incremental": false,
@@ -405,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cldr/extending.html",
-          "hash": "nYNIpTu5hQLsPMHhmWfmfg=="
+          "hash": "Pq344dVxHo+L6XhrzD9jCA=="
         }
       },
       "is_incremental": false,
@@ -417,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cldr/get-docs.html",
-          "hash": "DeiQ7xN9vzzGGaN2E8Ucyg=="
+          "hash": "jZcS4xSS6EfBg5mOO2crnw=="
         }
       },
       "is_incremental": false,
@@ -429,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/cldr/searching.html",
-          "hash": "UoKJ3ZjqyAkw+uuwd2cnkw=="
+          "hash": "IxCXggTj+wQ9mNxArrdprw=="
         }
       },
       "is_incremental": false,
@@ -441,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "4nLnM8nrxdLoXZhbXoMjyA=="
+          "hash": "ZqzCHHRPcIU7BQz6iDRg9w=="
         }
       },
       "is_incremental": false,
@@ -453,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/locale-data.html",
-          "hash": "xDmuUZFqiwdiFJKa/SEDcw=="
+          "hash": "7WhhLsj/IUEfQIU6u8FtAw=="
         }
       },
       "is_incremental": false,
@@ -465,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/locale-id.html",
-          "hash": "HF7qFKay/ico8schpUcfCQ=="
+          "hash": "aHzrDDMygEKdEVf+yIW+kw=="
         }
       },
       "is_incremental": false,
@@ -477,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/locale.html",
-          "hash": "w1ZMqQJlwL/bz8Djns3OdA=="
+          "hash": "JBDVmoe6pvHjUT+49JMZFA=="
         }
       },
       "is_incremental": false,
@@ -489,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/numbers/currency.html",
-          "hash": "nioc2U6f6WXf5GcmC+T0+w=="
+          "hash": "evw1xkAc76Ger9N0QPsxEA=="
         }
       },
       "is_incremental": false,
@@ -501,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/numbers/formatting.html",
-          "hash": "tvY0jwsFqYyQxsCdFIUElA=="
+          "hash": "k84sQofYfNmcDFS/QMNgdg=="
         }
       },
       "is_incremental": false,
@@ -513,7 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/numbers/spelling.html",
-          "hash": "Zslt+oCrRdoYdeKMlZ1RKg=="
+          "hash": "jwQRNX0938rGkXtbyS4SyA=="
         }
       },
       "is_incremental": false,
@@ -525,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/plurals/category.html",
-          "hash": "t7g1Gz0S0EZVHvjrztfgrQ=="
+          "hash": "GGU+dxPblVy5PnYp3rGhYg=="
         }
       },
       "is_incremental": false,
@@ -549,7 +573,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/u-ext.html",
-          "hash": "GuXQ/bLhP5cp8cZC004vmg=="
+          "hash": "jix56K/9dY871+0XdPMe3Q=="
         }
       },
       "is_incremental": false,
@@ -561,7 +585,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/usage.html",
-          "hash": "evLN79dYWXodoxNCRXccIQ=="
+          "hash": "Ou5J/+fCLp00vvSowoSxZA=="
         }
       },
       "is_incremental": false,
@@ -584,7 +608,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "pwroK71P2fK94PvtfYnn1w=="
+          "hash": "XTRciwb0yBngGQJey2ogug=="
         }
       },
       "is_incremental": false,
@@ -611,22 +635,22 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ResourceDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

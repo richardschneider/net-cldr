@@ -1146,6 +1146,42 @@ references:
   isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberingSystem.Type
   nameWithType: NumberingSystem.Type
+- uid: Sepia.Globalization.Numbers.NumberLength
+  name: NumberLength
+  href: api/Sepia.Globalization.Numbers.NumberLength.html
+  commentId: T:Sepia.Globalization.Numbers.NumberLength
+  fullName: Sepia.Globalization.Numbers.NumberLength
+  nameWithType: NumberLength
+- uid: Sepia.Globalization.Numbers.NumberLength.Default
+  name: Default
+  href: api/Sepia.Globalization.Numbers.NumberLength.html#Sepia_Globalization_Numbers_NumberLength_Default
+  commentId: F:Sepia.Globalization.Numbers.NumberLength.Default
+  fullName: Sepia.Globalization.Numbers.NumberLength.Default
+  nameWithType: NumberLength.Default
+- uid: Sepia.Globalization.Numbers.NumberLength.Full
+  name: Full
+  href: api/Sepia.Globalization.Numbers.NumberLength.html#Sepia_Globalization_Numbers_NumberLength_Full
+  commentId: F:Sepia.Globalization.Numbers.NumberLength.Full
+  fullName: Sepia.Globalization.Numbers.NumberLength.Full
+  nameWithType: NumberLength.Full
+- uid: Sepia.Globalization.Numbers.NumberLength.Long
+  name: Long
+  href: api/Sepia.Globalization.Numbers.NumberLength.html#Sepia_Globalization_Numbers_NumberLength_Long
+  commentId: F:Sepia.Globalization.Numbers.NumberLength.Long
+  fullName: Sepia.Globalization.Numbers.NumberLength.Long
+  nameWithType: NumberLength.Long
+- uid: Sepia.Globalization.Numbers.NumberLength.Medium
+  name: Medium
+  href: api/Sepia.Globalization.Numbers.NumberLength.html#Sepia_Globalization_Numbers_NumberLength_Medium
+  commentId: F:Sepia.Globalization.Numbers.NumberLength.Medium
+  fullName: Sepia.Globalization.Numbers.NumberLength.Medium
+  nameWithType: NumberLength.Medium
+- uid: Sepia.Globalization.Numbers.NumberLength.Short
+  name: Short
+  href: api/Sepia.Globalization.Numbers.NumberLength.html#Sepia_Globalization_Numbers_NumberLength_Short
+  commentId: F:Sepia.Globalization.Numbers.NumberLength.Short
+  fullName: Sepia.Globalization.Numbers.NumberLength.Short
+  nameWithType: NumberLength.Short
 - uid: Sepia.Globalization.Numbers.NumberOptions
   name: NumberOptions
   href: api/Sepia.Globalization.Numbers.NumberOptions.html
@@ -1158,6 +1194,19 @@ references:
   commentId: F:Sepia.Globalization.Numbers.NumberOptions.Default
   fullName: Sepia.Globalization.Numbers.NumberOptions.Default
   nameWithType: NumberOptions.Default
+- uid: Sepia.Globalization.Numbers.NumberOptions.Length
+  name: Length
+  href: api/Sepia.Globalization.Numbers.NumberOptions.html#Sepia_Globalization_Numbers_NumberOptions_Length
+  commentId: P:Sepia.Globalization.Numbers.NumberOptions.Length
+  fullName: Sepia.Globalization.Numbers.NumberOptions.Length
+  nameWithType: NumberOptions.Length
+- uid: Sepia.Globalization.Numbers.NumberOptions.Length*
+  name: Length
+  href: api/Sepia.Globalization.Numbers.NumberOptions.html#Sepia_Globalization_Numbers_NumberOptions_Length_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberOptions.Length
+  isSpec: "True"
+  fullName: Sepia.Globalization.Numbers.NumberOptions.Length
+  nameWithType: NumberOptions.Length
 - uid: Sepia.Globalization.Numbers.NumberOptions.Style
   name: Style
   href: api/Sepia.Globalization.Numbers.NumberOptions.html#Sepia_Globalization_Numbers_NumberOptions_Style
@@ -1184,6 +1233,90 @@ references:
   isSpec: "True"
   fullName: Sepia.Globalization.Numbers.NumberOptions.UseGrouping
   nameWithType: NumberOptions.UseGrouping
+- uid: Sepia.Globalization.Numbers.NumberPattern
+  name: NumberPattern
+  href: api/Sepia.Globalization.Numbers.NumberPattern.html
+  commentId: T:Sepia.Globalization.Numbers.NumberPattern
+  fullName: Sepia.Globalization.Numbers.NumberPattern
+  nameWithType: NumberPattern
+- uid: Sepia.Globalization.Numbers.NumberPattern.Adjust(System.Decimal)
+  name: Adjust(Decimal)
+  href: api/Sepia.Globalization.Numbers.NumberPattern.html#Sepia_Globalization_Numbers_NumberPattern_Adjust_System_Decimal_
+  commentId: M:Sepia.Globalization.Numbers.NumberPattern.Adjust(System.Decimal)
+  fullName: Sepia.Globalization.Numbers.NumberPattern.Adjust(System.Decimal)
+  nameWithType: NumberPattern.Adjust(Decimal)
+- uid: Sepia.Globalization.Numbers.NumberPattern.Adjust*
+  name: Adjust
+  href: api/Sepia.Globalization.Numbers.NumberPattern.html#Sepia_Globalization_Numbers_NumberPattern_Adjust_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberPattern.Adjust
+  isSpec: "True"
+  fullName: Sepia.Globalization.Numbers.NumberPattern.Adjust
+  nameWithType: NumberPattern.Adjust
+- uid: Sepia.Globalization.Numbers.NumberPattern.Count
+  name: Count
+  href: api/Sepia.Globalization.Numbers.NumberPattern.html#Sepia_Globalization_Numbers_NumberPattern_Count
+  commentId: P:Sepia.Globalization.Numbers.NumberPattern.Count
+  fullName: Sepia.Globalization.Numbers.NumberPattern.Count
+  nameWithType: NumberPattern.Count
+- uid: Sepia.Globalization.Numbers.NumberPattern.Count*
+  name: Count
+  href: api/Sepia.Globalization.Numbers.NumberPattern.html#Sepia_Globalization_Numbers_NumberPattern_Count_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberPattern.Count
+  isSpec: "True"
+  fullName: Sepia.Globalization.Numbers.NumberPattern.Count
+  nameWithType: NumberPattern.Count
+- uid: Sepia.Globalization.Numbers.NumberPattern.FormatString
+  name: FormatString
+  href: api/Sepia.Globalization.Numbers.NumberPattern.html#Sepia_Globalization_Numbers_NumberPattern_FormatString
+  commentId: P:Sepia.Globalization.Numbers.NumberPattern.FormatString
+  fullName: Sepia.Globalization.Numbers.NumberPattern.FormatString
+  nameWithType: NumberPattern.FormatString
+- uid: Sepia.Globalization.Numbers.NumberPattern.FormatString*
+  name: FormatString
+  href: api/Sepia.Globalization.Numbers.NumberPattern.html#Sepia_Globalization_Numbers_NumberPattern_FormatString_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberPattern.FormatString
+  isSpec: "True"
+  fullName: Sepia.Globalization.Numbers.NumberPattern.FormatString
+  nameWithType: NumberPattern.FormatString
+- uid: Sepia.Globalization.Numbers.NumberPattern.MinValue
+  name: MinValue
+  href: api/Sepia.Globalization.Numbers.NumberPattern.html#Sepia_Globalization_Numbers_NumberPattern_MinValue
+  commentId: P:Sepia.Globalization.Numbers.NumberPattern.MinValue
+  fullName: Sepia.Globalization.Numbers.NumberPattern.MinValue
+  nameWithType: NumberPattern.MinValue
+- uid: Sepia.Globalization.Numbers.NumberPattern.MinValue*
+  name: MinValue
+  href: api/Sepia.Globalization.Numbers.NumberPattern.html#Sepia_Globalization_Numbers_NumberPattern_MinValue_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberPattern.MinValue
+  isSpec: "True"
+  fullName: Sepia.Globalization.Numbers.NumberPattern.MinValue
+  nameWithType: NumberPattern.MinValue
+- uid: Sepia.Globalization.Numbers.NumberPattern.NumberNeedsAdjusting
+  name: NumberNeedsAdjusting()
+  href: api/Sepia.Globalization.Numbers.NumberPattern.html#Sepia_Globalization_Numbers_NumberPattern_NumberNeedsAdjusting
+  commentId: M:Sepia.Globalization.Numbers.NumberPattern.NumberNeedsAdjusting
+  fullName: Sepia.Globalization.Numbers.NumberPattern.NumberNeedsAdjusting()
+  nameWithType: NumberPattern.NumberNeedsAdjusting()
+- uid: Sepia.Globalization.Numbers.NumberPattern.NumberNeedsAdjusting*
+  name: NumberNeedsAdjusting
+  href: api/Sepia.Globalization.Numbers.NumberPattern.html#Sepia_Globalization_Numbers_NumberPattern_NumberNeedsAdjusting_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberPattern.NumberNeedsAdjusting
+  isSpec: "True"
+  fullName: Sepia.Globalization.Numbers.NumberPattern.NumberNeedsAdjusting
+  nameWithType: NumberPattern.NumberNeedsAdjusting
+- uid: Sepia.Globalization.Numbers.NumberPattern.Parse(System.Xml.XPath.XPathNavigator)
+  name: Parse(XPathNavigator)
+  href: api/Sepia.Globalization.Numbers.NumberPattern.html#Sepia_Globalization_Numbers_NumberPattern_Parse_System_Xml_XPath_XPathNavigator_
+  commentId: M:Sepia.Globalization.Numbers.NumberPattern.Parse(System.Xml.XPath.XPathNavigator)
+  fullName: Sepia.Globalization.Numbers.NumberPattern.Parse(System.Xml.XPath.XPathNavigator)
+  nameWithType: NumberPattern.Parse(XPathNavigator)
+- uid: Sepia.Globalization.Numbers.NumberPattern.Parse*
+  name: Parse
+  href: api/Sepia.Globalization.Numbers.NumberPattern.html#Sepia_Globalization_Numbers_NumberPattern_Parse_
+  commentId: Overload:Sepia.Globalization.Numbers.NumberPattern.Parse
+  isSpec: "True"
+  fullName: Sepia.Globalization.Numbers.NumberPattern.Parse
+  nameWithType: NumberPattern.Parse
 - uid: Sepia.Globalization.Numbers.NumberStyle
   name: NumberStyle
   href: api/Sepia.Globalization.Numbers.NumberStyle.html

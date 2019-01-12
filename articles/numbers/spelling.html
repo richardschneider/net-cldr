@@ -8,7 +8,7 @@
     <title>Spelling a number | Sepia Globalization </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Spelling a number | Sepia Globalization ">
-    <meta name="generator" content="docfx 2.40.1.0">
+    <meta name="generator" content="docfx 2.40.7.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -75,7 +75,7 @@
 is used to create a formatter for a specific locale and a set of 
 <a class="xref" href="../../api/Sepia.Globalization.Numbers.SpellingOptions.html">options</a>.</p>
 <pre><code class="lang-csharp">var locale = Locale.Create(&quot;fr&quot;);
-var formatter = NumberFormatter.Create(locale);
+var formatter = SpellingFormatter.Create(locale);
 
 Assert.AreEqual(&quot;moins un&quot;, formatter.Format(-1));
 Assert.AreEqual(&quot;zéro&quot;, formatter.Format(0));

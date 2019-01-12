@@ -8,7 +8,7 @@
     <title>Formatting a number | Sepia Globalization </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Formatting a number | Sepia Globalization ">
-    <meta name="generator" content="docfx 2.40.1.0">
+    <meta name="generator" content="docfx 2.40.7.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -81,8 +81,12 @@ Assert.AreEqual(&quot;123&quot;, formatter.Format(123));
 Assert.AreEqual(&quot;1234&quot;, formatter.Format(1234));
 Assert.AreEqual(&quot;1234,568&quot;, formatter.Format(1234.56789));
 </code></pre><h2 id="options">Options</h2>
-<p><a class="xref" href="../../api/Sepia.Globalization.Numbers.NumberOptions.html">NumberOptions</a> is used to 
-determine the <a class="xref" href="../../api/Sepia.Globalization.Numbers.NumberStyle.html">style</a> for formatting numeric quantities
+<p>The <a class="xref" href="../../api/Sepia.Globalization.Numbers.NumberOptions.html">NumberOptions</a> determines how 
+the number is formatted.</p>
+<h3 id="style">Style</h3>
+<p><a class="xref" href="../../api/Sepia.Globalization.Numbers.NumberStyle.html">Style</a> determines the use of the 
+formatted number. </p>
+<p>for formatting numeric quantities
 and if digit grouping seperators should be used.</p>
 <table>
 <thead>
@@ -111,6 +115,51 @@ and if digit grouping seperators should be used.</p>
 <tr>
 <td>Scientific</td>
 <td>-1.2345E4</td>
+</tr>
+</tbody>
+</table>
+<h3 id="length">Length</h3>
+<p><a class="xref" href="../../api/Sepia.Globalization.Numbers.NumberLength.html">Length</a> determines the overall size 
+of the formatted number.  For <code>Short</code> the &#39;K&#39;, &#39;M&#39;, &#39;B&#39; ... suffixes are used for 
+powers of 10.</p>
+<table>
+<thead>
+<tr>
+<th>Length</th>
+<th>Style</th>
+<th>Format (en-GB)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default</td>
+<td>Decimal</td>
+<td>1234.56</td>
+</tr>
+<tr>
+<td>Default</td>
+<td>CurrencyStandard</td>
+<td>€1234.56</td>
+</tr>
+<tr>
+<td>Short</td>
+<td>Decimal</td>
+<td>1K</td>
+</tr>
+<tr>
+<td>Short</td>
+<td>CurrencyStandard</td>
+<td>€1K</td>
+</tr>
+<tr>
+<td>Long</td>
+<td>Decimal</td>
+<td>1 thousand</td>
+</tr>
+<tr>
+<td>Long</td>
+<td>CurrencyStandard</td>
+<td>€1234.56</td>
 </tr>
 </tbody>
 </table>
