@@ -8,7 +8,7 @@ is used to create a formatter for a specific locale and a set of
 
 ```csharp
 var locale = Locale.Create("fr");
-var formatter = NumberFormatter.Create(locale);
+var formatter = SpellingFormatter.Create(locale);
 
 Assert.AreEqual("moins un", formatter.Format(-1));
 Assert.AreEqual("zéro", formatter.Format(0));

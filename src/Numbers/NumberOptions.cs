@@ -14,6 +14,9 @@ namespace Sepia.Globalization.Numbers
         /// <summary>
         ///   The default number options.
         /// </summary>
+        /// <value>
+        ///   <see cref="Style"/> = Decimal, <see cref="UseGrouping"/> = true.
+        /// </value>
         public static readonly NumberOptions Default = new NumberOptions();
 
         /// <summary>
@@ -21,6 +24,15 @@ namespace Sepia.Globalization.Numbers
         /// </summary>
         /// <value>Default value is <see cref="NumberStyle.Decimal"/>.</value>
         public NumberStyle Style { get; set; } = NumberStyle.Decimal;
+
+        /// <summary>
+        ///   The length for formatting numeric quantities.
+        /// </summary>
+        /// <remarks>
+        ///   If the locale does not define a pattern for the number length,
+        ///   then the defaul number length is used.
+        /// </remarks>
+        public NumberLength Length { get; set; } = NumberLength.Default;
 
         /// <summary>
         ///   Determines if grouping seperators should be used.

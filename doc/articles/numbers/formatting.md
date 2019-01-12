@@ -17,8 +17,15 @@ Assert.AreEqual("1234,568", formatter.Format(1234.56789));
 
 ## Options
 
-[NumberOptions](xref:Sepia.Globalization.Numbers.NumberOptions) is used to 
-determine the [style](xref:Sepia.Globalization.Numbers.NumberStyle) for formatting numeric quantities
+The [NumberOptions](xref:Sepia.Globalization.Numbers.NumberOptions) determines how 
+the number is formatted.
+
+### Style
+
+[Style](xref:Sepia.Globalization.Numbers.NumberStyle) determines the use of the 
+formatted number. 
+
+for formatting numeric quantities
 and if digit grouping seperators should be used.
 
 | Style | Format (en-GB) |
@@ -29,3 +36,17 @@ and if digit grouping seperators should be used.
 | Percent | -1,234,500% |
 | Scientific | -1.2345E4 |
 
+### Length
+
+[Length](xref:Sepia.Globalization.Numbers.NumberLength) determines the overall size 
+of the formatted number.  For `Short` the 'K', 'M', 'B' ... suffixes are used for 
+powers of 10.
+
+| Length | Style | Format (en-GB) |
+| ------ | ----- | -------------- |
+| Default | Decimal | 1234.56 |
+| Default | CurrencyStandard | €1234.56 |
+| Short | Decimal | 1K |
+| Short | CurrencyStandard | €1K |
+| Long | Decimal | 1 thousand |
+| Long | CurrencyStandard | €1234.56 |

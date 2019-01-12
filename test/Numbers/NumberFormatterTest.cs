@@ -51,7 +51,22 @@ namespace Sepia.Globalization.Numbers
                 Console.WriteLine($"{style} {formatter.Format(-1234.56, "CNY")}");
                 Console.WriteLine($"{style} {formatter.Format(-1234.56, "USD")}");
             }
+        }
 
+        [TestMethod]
+        public void Length_Example()
+        {
+            var locale = Locale.Create("en-GB");
+            foreach (var length in new[] {  NumberLength.Default, NumberLength.Short, NumberLength.Long })
+            foreach (var style in new[] { NumberStyle.Decimal, NumberStyle.CurrencyStandard })
+            {
+                var formatter = NumberFormatter.Create(locale, new NumberOptions
+                {
+                    Style = style,
+                    Length = length
+                });
+                Console.WriteLine($"| {length} | {style} | {formatter.Format(1234.56, "EUR")} |");
+            }
         }
     }
 }

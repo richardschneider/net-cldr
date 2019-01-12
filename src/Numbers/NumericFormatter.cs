@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sepia.Globalization.Plurals;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -16,69 +17,93 @@ namespace Sepia.Globalization.Numbers
 
         public override string Format(long value)
         {
+            var pattern = FindPattern(value);
+            if (pattern.NumberNeedsAdjusting())
+            {
+                value = (long) pattern.Adjust(value);
+            }
             int nDigits = (value == 0) ? 1 : ((int)Math.Floor(Math.Log10(Math.Abs(value))) + 1);
-            string pattern;
-            NumberFormatInfo nfi;
-            NumberInfo(null, nDigits, out pattern, out nfi);
-            return Transform(value.ToString(pattern, nfi), null, pattern, nfi);
+            var nfi = NumberInfo(null, nDigits, pattern);
+            return Transform(value.ToString(pattern.FormatString, nfi), null, pattern.FormatString, nfi);
         }
 
         public override string Format(decimal value)
         {
+            var pattern = FindPattern(value);
+            if (pattern.NumberNeedsAdjusting())
+            {
+                value = pattern.Adjust(value);
+            }
             int nDigits = (value == 0) ? 1 : ((int)Math.Floor(Math.Log10((double)Math.Abs(value))) + 1);
-            string pattern;
-            NumberFormatInfo nfi;
-            NumberInfo(null, nDigits, out pattern, out nfi);
-            return Transform(value.ToString(pattern, nfi), null, pattern, nfi);
+            var nfi = NumberInfo(null, nDigits, pattern);
+            return Transform(value.ToString(pattern.FormatString, nfi), null, pattern.FormatString, nfi);
         }
 
         public override string Format(double value)
         {
+            decimal dvalue = Double.IsInfinity(value) || Double.IsNaN(value)
+                ? 0
+                : (decimal)value;
+            var pattern = FindPattern(dvalue);
+            if (pattern.NumberNeedsAdjusting())
+            {
+                value = (double)pattern.Adjust(dvalue);
+            }
             int nDigits = (value == 0) ? 1 : ((int)Math.Floor(Math.Log10(Math.Abs(value))) + 1);
-            string pattern;
-            NumberFormatInfo nfi;
-            NumberInfo(null, nDigits, out pattern, out nfi);
-            return Transform(value.ToString(pattern, nfi), null, pattern, nfi);
+            var nfi = NumberInfo(null, nDigits, pattern);
+            return Transform(value.ToString(pattern.FormatString, nfi), null, pattern.FormatString, nfi);
         }
 
         public override string Format(long value, string currencyCode)
         {
+            var pattern = FindPattern(value);
+            if (pattern.NumberNeedsAdjusting())
+            {
+                value = (long)pattern.Adjust(value);
+            }
             int nDigits = (value == 0) ? 1 : ((int)Math.Floor(Math.Log10(Math.Abs(value))) + 1);
-            string pattern;
-            NumberFormatInfo nfi;
-            NumberInfo(currencyCode, nDigits, out pattern, out nfi);
-            return Transform(value.ToString(pattern, nfi), currencyCode, pattern, nfi);
+            var nfi = NumberInfo(currencyCode, nDigits, pattern);
+            return Transform(value.ToString(pattern.FormatString, nfi), currencyCode, pattern.FormatString, nfi);
         }
 
         public override string Format(decimal value, string currencyCode)
         {
+            var pattern = FindPattern(value);
+            if (pattern.NumberNeedsAdjusting())
+            {
+                value = pattern.Adjust(value);
+            }
             int nDigits = (value == 0) ? 1 : ((int)Math.Floor(Math.Log10((double)Math.Abs(value))) + 1);
-            string pattern;
-            NumberFormatInfo nfi;
-            NumberInfo(currencyCode, nDigits, out pattern, out nfi);
-            return Transform(value.ToString(pattern, nfi), currencyCode, pattern, nfi);
+            var nfi = NumberInfo(currencyCode, nDigits, pattern);
+            return Transform(value.ToString(pattern.FormatString, nfi), currencyCode, pattern.FormatString, nfi);
         }
 
         public override string Format(double value, string currencyCode)
         {
+            decimal dvalue = Double.IsInfinity(value) || Double.IsNaN(value)
+                ? 0
+                : (decimal)value;
+            var pattern = FindPattern(dvalue);
+            if (pattern.NumberNeedsAdjusting())
+            {
+                value = (double)pattern.Adjust(dvalue);
+            }
             int nDigits = (value == 0) ? 1 : ((int)Math.Floor(Math.Log10(Math.Abs(value))) + 1);
-            string pattern;
-            NumberFormatInfo nfi;
-            NumberInfo(currencyCode, nDigits, out pattern, out nfi);
-            return Transform(value.ToString(pattern, nfi), currencyCode, pattern, nfi);
+            var nfi = NumberInfo(currencyCode, nDigits, pattern);
+            return Transform(value.ToString(pattern.FormatString, nfi), currencyCode, pattern.FormatString, nfi);
         }
 
 
-        void NumberInfo(string currencyCode, int nDigits, out string pattern, out NumberFormatInfo nfi)
+        NumberFormatInfo NumberInfo(string currencyCode, int nDigits, NumberPattern pattern)
         {
-            nfi = new NumberFormatInfo
+            var nfi = new NumberFormatInfo
             {
                 NaNSymbol = Symbols.NotANumber,
                 NegativeSign = Symbols.MinusSign,
                 NegativeInfinitySymbol = Symbols.MinusSign + Symbols.Infinity,
                 NumberDecimalSeparator = Symbols.Decimal,
                 NumberGroupSeparator = Symbols.Group,
-                // NativeDigits is NOT used the formatter!!
+                // NativeDigits is NOT by used the C# formatter!!
                 //NativeDigits = NumberingSystem.Digits,
                 PercentDecimalSeparator = Symbols.Decimal,
                 PercentSymbol = Symbols.PercentSign,
@@ -87,37 +112,15 @@ namespace Sepia.Globalization.Numbers
                 PositiveSign = Symbols.PlusSign
             };
 
-            pattern = null;
-            if (Options.Style == NumberStyle.Decimal)
+            if (Options.Style == NumberStyle.Scientific && pattern.FormatString == "#E0")
             {
-                var path = $"ldml/numbers/decimalFormats[@numberSystem='{NumberingSystem.Id}']/decimalFormatLength[not(@type)]/decimalFormat/pattern";
-                pattern = Locale.Find(path).Value;
-            }
-
-            else if (Options.Style == NumberStyle.Percent)
-            {
-                var path = $"ldml/numbers/percentFormats[@numberSystem='{NumberingSystem.Id}']/percentFormatLength[not(@type)]/percentFormat/pattern";
-                pattern = Locale.Find(path).Value;
-            }
-
-            else if (Options.Style == NumberStyle.Scientific)
-            {
-                var path = $"ldml/numbers/scientificFormats[@numberSystem='{NumberingSystem.Id}']/scientificFormatLength[not(@type)]/scientificFormat/pattern";
-                pattern = Locale.Find(path).Value;
-                pattern = pattern == "#E0" ? "0.0######E0" : pattern;
+                pattern.FormatString = "0.0######E0";
             }
 
             else if (Options.Style == NumberStyle.CurrencyStandard || Options.Style == NumberStyle.CurrencyAccounting)
             {
                 nfi.NumberDecimalSeparator = Symbols.CurrencyDecimal;
                 nfi.NumberGroupSeparator = Symbols.CurrencyGroup;
-
-                string path = null;
-                if (Options.Style == NumberStyle.CurrencyStandard)
-                    path = $"ldml/numbers/currencyFormats[@numberSystem='{NumberingSystem.Id}']/currencyFormatLength/currencyFormat[@type='standard']/pattern";
-                else if (Options.Style == NumberStyle.CurrencyAccounting)
-                    path = $"ldml/numbers/currencyFormats[@numberSystem='{NumberingSystem.Id}']/currencyFormatLength/currencyFormat[@type='accounting']/pattern";
-                pattern = Locale.Find(path).Value;
 
                 // Apply currency decimal places
                 if (currencyCode == null)
@@ -128,13 +131,8 @@ namespace Sepia.Globalization.Numbers
                 if (digits != null)
                 {
                     int significantDigits = Int32.Parse(digits.Value);
-                    pattern = significantDigitsPattern.Replace(pattern, "." + new String('0', significantDigits));
+                    pattern.FormatString = significantDigitsPattern.Replace(pattern.FormatString, "." + new String('0', significantDigits));
                 }
-            }
-
-            else
-            {
-                throw new NotImplementedException();
             }
 
             // Grouping of digits.
@@ -142,7 +140,7 @@ namespace Sepia.Globalization.Numbers
             if (useGrouping)
             {
                 // Grouping digits, "#,##,##0" => [3, 2, 1]
-                var parts = pattern.Split(';');
+                var parts = pattern.FormatString.Split(';');
                 nfi.NumberGroupSizes = groupingPattern
                     .Matches(parts[0])
                     .Cast<Match>()
@@ -167,6 +165,98 @@ namespace Sepia.Globalization.Numbers
             }
             nfi.PercentGroupSizes = nfi.NumberGroupSizes;
             nfi.PercentGroupSeparator = nfi.NumberGroupSeparator;
+
+            return nfi;
+        }
+
+        NumberPattern FindPattern(decimal value, NumberLength? nl = null)
+        {
+            if (!nl.HasValue)
+            {
+                nl = Options.Length;
+            }
+            value = Math.Abs(value);
+
+            // Determine the format length type.
+            var flt = nl == NumberLength.Default
+                ? "[not(@type)]"
+                : $"[@type='{nl.ToString().ToLowerInvariant()}']";
+
+            // Determine the path in the ldml to the pattern(s)
+            var path = String.Empty;
+            if (Options.Style == NumberStyle.Decimal)
+            {
+                path = $"ldml/numbers/decimalFormats[@numberSystem='{NumberingSystem.Id}']/decimalFormatLength{flt}/decimalFormat";
+            }
+            else if (Options.Style == NumberStyle.Percent)
+            {
+                path = $"ldml/numbers/percentFormats[@numberSystem='{NumberingSystem.Id}']/percentFormatLength{flt}/percentFormat";
+            }
+            else if (Options.Style == NumberStyle.Scientific)
+            {
+                path = $"ldml/numbers/scientificFormats[@numberSystem='{NumberingSystem.Id}']/scientificFormatLength{flt}/scientificFormat";
+            }
+            else if (Options.Style == NumberStyle.CurrencyStandard)
+            {
+                path = $"ldml/numbers/currencyFormats[@numberSystem='{NumberingSystem.Id}']/currencyFormatLength{flt}/currencyFormat[@type='standard']";
+            }
+            else if (Options.Style == NumberStyle.CurrencyAccounting)
+            {
+                path = $"ldml/numbers/currencyFormats[@numberSystem='{NumberingSystem.Id}']/currencyFormatLength{flt}/currencyFormat[@type='accounting']";
+            }
+            else
+            {
+                throw new NotImplementedException($"Unknown NumberStyle '{Options.Style}'.");
+            }
+
+            var xml = Locale.FindOrDefault(path);
+
+            // Fall back to default number length;
+            if (xml == null && nl != NumberLength.Default)
+            {
+                return FindPattern(value, NumberLength.Default);
+            }
+
+            // Should not happen.
+            if (xml == null)
+            {
+                throw new KeyNotFoundException($"Cannot find CLDR '{path}'.");
+            }
+
+            // Get the best pattern.
+            var category = Plural.Create(Locale).Category(value);
+            NumberPattern best = null;
+            NumberPattern previous = null;
+            var pattern = xml.SelectChildren("pattern", "");
+            while (pattern.MoveNext())
+            {
+                var p = NumberPattern.Parse(pattern.Current);
+
+                // If not a value range, then this is the best pattern.
+                if (!p.MinValue.HasValue)
+                {
+                    best = p;
+                    break;
+                }
+
+                // Only consider a pattern with the correct count.
+                if (p.Count != category)
+                {
+                    continue;
+                }
+
+                // Get closest value in the range.
+                if (p.MinValue.Value > value)
+                {
+                    best = previous;
+                    break;
+                }
+
+                previous = p;
+            }
+            best = best ?? previous ?? new NumberPattern { FormatString = "0" };
+
+            return best;
         }
 
         string Transform(string s, string currencyCode, string pattern, NumberFormatInfo nfi)
