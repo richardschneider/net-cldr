@@ -27,6 +27,8 @@
       href: numbering-systems/algorithmic.md
     - name: Numeric
       href: numbering-systems/numeric.md
+    - name: Category
+      href: numbering-systems/category.md
 - name: Numbers
   items:
      - name: Formatting
