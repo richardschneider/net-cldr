@@ -509,6 +509,54 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/numbering-systems/algorithmic.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/numbering-systems/algorithmic.html",
+          "hash": "QdMYnlLiH7RCvW/SW2YoBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/numbering-systems/category.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/numbering-systems/category.html",
+          "hash": "Znx5MVgrZt0IR5k8FzONlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/numbering-systems/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/numbering-systems/index.html",
+          "hash": "N4PsHtaeYh8ewvhi8ziFAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/numbering-systems/numeric.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/numbering-systems/numeric.html",
+          "hash": "0z4p6JZIjMduHr+zWU/PPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/numbers/currency.md",
       "output": {
         ".html": {
@@ -561,7 +609,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "dxYMYJqVpzJ9gcGz0H6SiA=="
+          "hash": "gJzxgjz9aoigSc4XY+06Sg=="
         }
       },
       "is_incremental": false,
@@ -620,7 +668,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "V9liO+2j8J72Qgcyu0RLDw=="
+          "hash": "i1iHUnaFeNytk2iRMSjEVg=="
         }
       },
       "is_incremental": false,
