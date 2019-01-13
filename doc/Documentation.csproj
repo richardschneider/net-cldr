@@ -85,6 +85,7 @@
     <Content Include="articles\numbering-systems\index.md" />
     <Content Include="articles\numbering-systems\numeric.md" />
     <Content Include="articles\numbering-systems\algorithmic.md" />
+    <Content Include="articles\numbering-systems\category.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

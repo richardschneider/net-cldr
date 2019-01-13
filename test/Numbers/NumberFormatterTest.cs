@@ -68,5 +68,17 @@ namespace Sepia.Globalization.Numbers
                 Console.WriteLine($"| {length} | {style} | {formatter.Format(1234.56, "EUR")} |");
             }
         }
+
+        [TestMethod]
+        public void Category_Example()
+        {
+            foreach (var lang in new[] { "en", "zh-TW" })
+            foreach (var cat in new[] { "", "-u-nu-native", "-u-nu-traditio", "-u-nu-finance" })
+            {
+                    var locale = Locale.Create(lang + cat);
+                    var formatter = NumberFormatter.Create(locale);
+                    Console.WriteLine($"| {lang + cat} | {formatter.Format(123)} |");
+            }
+        }
     }
 }
