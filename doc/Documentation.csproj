@@ -82,6 +82,9 @@
     <Content Include="articles\numbers\currency.md" />
     <Content Include="articles\numbers\spelling.md" />
     <Content Include="articles\plurals\category.md" />
+    <Content Include="articles\numbering-systems\index.md" />
+    <Content Include="articles\numbering-systems\numeric.md" />
+    <Content Include="articles\numbering-systems\algorithmic.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

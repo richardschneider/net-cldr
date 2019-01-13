@@ -29,6 +29,30 @@ namespace Sepia.Globalization.Numbers
         }
 
         [TestMethod]
+        public void TraditionalChinese()
+        {
+            var locale = Locale.Create("zh-u-nu-hant");
+            var formatter = NumberFormatter.Create(locale);
+            Assert.AreEqual("一百二十三", formatter.Format(123));
+        }
+
+        [TestMethod]
+        public void Japan()
+        {
+            var locale = Locale.Create("ja-u-nu-jpan");
+            var formatter = NumberFormatter.Create(locale);
+            Assert.AreEqual("百二十三", formatter.Format(123));
+        }
+
+        [TestMethod]
+        public void Hebrew()
+        {
+            var locale = Locale.Create("he-u-nu-hebr");
+            var formatter = NumberFormatter.Create(locale);
+            Assert.AreEqual("קכ״ג", formatter.Format(123));
+        }
+
+        [TestMethod]
         public void Decimal_Finance()
         {
             var locale = Locale.Create("zh-TW-u-nu-finance");

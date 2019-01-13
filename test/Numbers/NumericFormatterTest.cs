@@ -140,6 +140,30 @@ namespace Sepia.Globalization.Numbers
         }
 
         [TestMethod]
+        public void Decimal_Digit_Chinese()
+        {
+            var locale = Locale.Create("zh-u-nu-hanidec");
+            var formatter = NumberFormatter.Create(locale);
+            Assert.AreEqual("一二三", formatter.Format(123));
+        }
+
+        [TestMethod]
+        public void Decimal_Digit_Thai()
+        {
+            var locale = Locale.Create("th-u-nu-thai");
+            var formatter = NumberFormatter.Create(locale);
+            Assert.AreEqual("๑๒๓", formatter.Format(123));
+        }
+
+        [TestMethod]
+        public void Decimal_Digit_Devanagari()
+        {
+            var locale = Locale.Create("hi-u-nu-deva");
+            var formatter = NumberFormatter.Create(locale);
+            Assert.AreEqual("१२३", formatter.Format(123));
+        }
+
+        [TestMethod]
         public void Percent()
         {
             var locale = Locale.Create("en");
