@@ -69,8 +69,8 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="categories">Categories</h1>
 
-<p>Instead of using a specific numbering system name, a category name is
-used to request a locale specific number system for the category.</p>
+<p>Instead of using a specific numbering system name, a category name can be
+used to request a locale specific numbering system for the category.</p>
 <table>
 <thead>
 <tr>
@@ -84,12 +84,57 @@ used to request a locale specific number system for the category.</p>
 <td>Requests the numbering system used for the native digits, usually defined as a part of the script used to write the language.</td>
 </tr>
 <tr>
-<td>financial</td>
-<td>Requests the numbering system used for financial quantities. This is often used for ideographic languages such as Chinese, where it would be easy to alter an amount represented in the default numbering system simply by adding additional strokes. If the financial numbering system is not specified, applications should use the default numbering system as a fallback.</td>
+<td>finance</td>
+<td>Requests the numbering system used for financial quantities. This is often used for ideographic languages such as Chinese, where it would be easy to alter an amount represented in the default numbering system simply by adding additional strokes.</td>
 </tr>
 <tr>
-<td>traditional</td>
+<td>traditio</td>
 <td>Requests the traditional numerals for a locale. If the traditional numbering system is not defined, applications should use the native numbering system as a fallback.</td>
+</tr>
+</tbody>
+</table>
+<p>If the locale does not define a numbering system for the category, then the default numbering system is used as a fallback.</p>
+<h2 id="example">Example</h2>
+<p>The following table shows the number <code>123</code> represented in various locales.</p>
+<table>
+<thead>
+<tr>
+<th>Locale</th>
+<th>Formatted</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>en</td>
+<td>123</td>
+</tr>
+<tr>
+<td>en-u-nu-native</td>
+<td>123</td>
+</tr>
+<tr>
+<td>en-u-nu-traditio</td>
+<td>123</td>
+</tr>
+<tr>
+<td>en-u-nu-finance</td>
+<td>123</td>
+</tr>
+<tr>
+<td>zh-TW</td>
+<td>123</td>
+</tr>
+<tr>
+<td>zh-TW-u-nu-native</td>
+<td>一二三</td>
+</tr>
+<tr>
+<td>zh-TW-u-nu-traditio</td>
+<td>一百二十三</td>
+</tr>
+<tr>
+<td>zh-TW-u-nu-finance</td>
+<td>壹佰貳拾參</td>
 </tr>
 </tbody>
 </table>
