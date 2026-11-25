@@ -259,17 +259,32 @@ namespace Sepia.Globalization
             if (log.IsDebugEnabled)
                 log.Debug("Loading parent locales");
 
-            return Cldr.Instance
+            // Since CLDR 44, supplementalData.xml has several <parentLocales> groups. Only the
+            // group without a "component" attribute holds the general inheritance chain; the
+            // others (e.g. component="collations", "segmentations grammaticalFeatures plurals")
+            // override it for one component and repeat some of the same child locales.
+            var parents = new Dictionary<string, string>();
+            var pairs = Cldr.Instance
                 .GetDocuments("common/supplemental/supplementalData.xml")
-                .Elements("supplementalData/parentLocales/parentLocale")
+                .Elements("supplementalData/parentLocales[not(@component)]/parentLocale")
                 .SelectMany(x =>
                 {
                     var parent = x.GetAttribute("parent", "");
                     return x
                         .GetAttribute("locales", "").Split(new[] { ' ', '\t', '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries)
                         .Select(child => new { Parent = parent, Child = child });
-                })
-                .ToDictionary(x => x.Child, x => x.Parent);
+                });
+            foreach (var pair in pairs)
+            {
+                if (parents.ContainsKey(pair.Child))
+                {
+                    if (log.IsDebugEnabled)
+                        log.DebugFormat("Ignoring duplicate parent locale for '{0}'", pair.Child);
+                    continue;
+                }
+                parents.Add(pair.Child, pair.Parent);
+            }
+            return parents;
         }
 
         static Alias[] LoadAliases()
