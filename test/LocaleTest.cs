@@ -103,6 +103,18 @@ namespace Sepia.Globalization
         }
 
         [TestMethod]
+        public void SearchChain_ParentLocale_IgnoresComponentOverrides()
+        {
+            // CLDR 44+ adds <parentLocales component="collations"> (and others) that repeat
+            // child locales of the general group with a different parent. "yue_Hans" is one:
+            // its general parent is "root", its collation parent is "zh_Hans".
+            var locale = Locale.Create("yue-Hans");
+            var chain = locale.SearchChain().ToArray();
+            CollectionAssert.DoesNotContain(chain, "zh_Hans");
+            Assert.AreEqual("root", chain[chain.Length - 1]);
+        }
+
+        [TestMethod]
         public void Find_Simple()
         {
             var locale = Locale.Create("ar");
